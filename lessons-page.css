@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+:root{--ink:#17364a;--blue:#086f8b;--deep:#12364c;--mint:#dff5e6;--sky:#dff5ff;--sun:#ffd45d;--orange:#ff8659;--paper:#fffdf7;--white:#fff;--line:#dce8ea;--shadow:0 12px 34px rgba(21,60,78,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#f5fbf8,#fffdf7 520px);color:var(--ink);font:16px/1.55 Nunito,system-ui,sans-serif}button,input,a{font:inherit}a{color:inherit}.wrap{width:min(1160px,92%);margin:auto}h1,h2,h3{font-family:'Baloo 2',sans-serif;line-height:1.08;margin:0}
+.catalog-header{position:sticky;top:0;z-index:30;border-bottom:1px solid #dbe9e6;background:#fffdf7ed;backdrop-filter:blur(16px)}.catalog-nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 1.35rem 'Baloo 2'}.logo{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:var(--sun)}.nav-actions{display:flex;align-items:center;gap:10px}.nav-actions a{text-decoration:none;font-weight:900}.home-link{padding:10px 14px;border:1px solid #d3e3e2;border-radius:999px;background:#fff}
+.catalog-hero{padding:70px 0 46px}.catalog-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}.kicker{display:inline-flex;padding:7px 13px;border:2px solid #c9e3e7;border-radius:999px;background:#fff;color:var(--blue);font-weight:900}.catalog-hero h1{max-width:780px;margin:15px 0 12px;font-size:clamp(3rem,7vw,5.6rem);letter-spacing:-.035em}.catalog-hero h1 span{color:var(--blue)}.catalog-hero p{max-width:700px;margin:0;font-size:1.15rem;color:#4d6b78}.catalog-note{padding:28px;border:1px solid #d8e8df;border-radius:28px;background:linear-gradient(145deg,#eaf8ee,#e8f7ff);box-shadow:var(--shadow)}.catalog-note b{display:block;margin-bottom:8px;font:800 1.45rem 'Baloo 2'}.catalog-note p{font-size:1rem}.catalog-count{display:inline-flex;margin-top:16px;padding:8px 12px;border-radius:999px;background:#fff;color:var(--blue);font-weight:900}
+.catalog-main{padding:12px 0 76px}.catalog-tools{position:sticky;top:83px;z-index:20;display:grid;grid-template-columns:1fr auto;gap:14px;margin-bottom:28px;padding:14px;border:1px solid #dae7e6;border-radius:20px;background:#fffdf7ed;backdrop-filter:blur(14px);box-shadow:0 10px 30px #17364a0d}.search{min-width:0;padding:13px 16px;border:2px solid #cfe0e3;border-radius:14px;background:#fff}.filters{display:flex;gap:8px;flex-wrap:wrap}.chip{border:2px solid #d6e4e6;border-radius:999px;padding:9px 14px;background:#fff;font-weight:900;cursor:pointer}.chip.active{border-color:var(--blue);background:var(--blue);color:#fff}.result-line{margin:0 0 16px;color:#5c7783;font-weight:800}
+.lesson-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.lesson-card{position:relative;display:flex;min-width:0;overflow:hidden;flex-direction:column;border:1px solid var(--line);border-radius:25px;background:#fff;box-shadow:0 8px 24px #17364a12;transition:transform .2s ease,box-shadow .2s ease}.lesson-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.lesson-cover{display:block;width:100%;height:clamp(205px,18vw,235px);object-fit:cover;object-position:center;background:#e8f5ef}.lesson-body{display:flex;flex:1;flex-direction:column;padding:20px}.lesson-top{display:flex;align-items:center;justify-content:space-between;gap:12px}.lesson-number{padding:6px 10px;border-radius:999px;background:var(--sky);color:var(--blue);font-size:.8rem;font-weight:900}.lesson-category{color:#617a85;font-size:.78rem;font-weight:900}.lesson-card h2{margin:13px 0 7px;font-size:1.6rem}.lesson-card p{margin:0 0 13px;color:#55707c}.lesson-reference{margin-top:auto;color:var(--blue);font-weight:900}.lesson-status{display:inline-flex;width:max-content;margin-top:10px;padding:6px 10px;border-radius:999px;background:#f1f6f6;color:#58717c;font-size:.78rem;font-weight:900}.lesson-status.progress{background:#fff2c8;color:#735713}.lesson-status.complete{background:#dff5e6;color:#28633a}.lesson-actions{display:grid;gap:9px;margin-top:16px}.open,.print-link{display:flex;min-height:46px;align-items:center;justify-content:center;border-radius:999px;text-align:center;text-decoration:none;font-weight:900}.open{background:#def2d1;color:#214c2a}.print-link{border:1px solid #cfe1e4;background:#fff;color:var(--blue)}.favorite-auth-btn{border-radius:999px!important}.empty{grid-column:1/-1;padding:44px;border:1px dashed #c9dfe0;border-radius:24px;background:#fff;text-align:center}.catalog-footer{padding:34px 0;background:#0d293b;color:#d2e5ed}.catalog-footer .wrap{display:flex;justify-content:space-between;gap:20px}.catalog-footer strong{color:#fff;font:800 1.25rem 'Baloo 2'}
+@media(max-width:900px){.catalog-hero-grid{grid-template-columns:1fr}.lesson-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-tools{grid-template-columns:1fr}.catalog-note{max-width:650px}}
+@media(max-width:600px){
+  .catalog-nav{min-height:64px}
+  .brand{font-size:1.08rem}.logo{width:38px;height:38px}
+  .nav-actions .home-label{display:none}.home-link{display:grid;width:44px;height:44px;place-items:center;padding:0}
+  .catalog-hero{padding:34px 0 26px}.catalog-hero-grid{gap:22px}
+  .catalog-hero h1{margin:12px 0 10px;font-size:clamp(2.35rem,11.5vw,3rem);line-height:1}
+  .catalog-hero p{font-size:1rem;line-height:1.5}
+  .catalog-note{padding:19px;border-radius:20px}.catalog-note b{font-size:1.25rem}.catalog-note p{margin:0;line-height:1.45}.catalog-count{margin-top:12px}
+  .catalog-main{padding:4px 0 54px}
+  .catalog-tools{position:static;gap:10px;margin-bottom:20px;padding:11px;border-radius:17px}
+  .search{min-height:48px;width:100%}
+  .filters{flex-wrap:nowrap;overflow-x:auto;padding:0 0 3px;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.chip{flex:0 0 auto;min-height:42px;padding:8px 13px}
+  .result-line{margin-bottom:12px}
+  .lesson-grid{grid-template-columns:1fr;gap:18px}
+  .lesson-card{border-radius:21px}
+  .lesson-cover{height:min(55vw,215px);min-height:178px;object-position:center 42%}
+  .lesson-body{padding:17px}
+  .lesson-card h2{margin-top:11px;font-size:1.45rem}
+  .lesson-card p{line-height:1.45}
+  .lesson-actions{gap:8px;margin-top:14px}
+  .lesson-actions a,.favorite-auth-btn{width:100%;min-height:48px;border-radius:999px!important}
+  .catalog-footer .wrap{flex-direction:column}
+}
+/* Enlaces legales en el pie. */
+.legal-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:.85rem;font-weight:800}
+.legal-links a{color:#bcd9e6;text-decoration:none}
+.legal-links a:hover{text-decoration:underline}

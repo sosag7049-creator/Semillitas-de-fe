@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#086f8b">
+  <meta name="description" content="Material imprimible de Semillitas de Fe para maestros y niños de 3 a 10 años.">
+  <title>Material imprimible · Semillitas de Fe</title>
+  <link rel="stylesheet" href="/printables-page.css?v=2">
+</head>
+<body>
+  <header class="print-toolbar">
+    <div class="toolbar-inner">
+      <a class="print-brand" href="/"><span>🌱</span><strong>Semillitas de Fe</strong></a>
+      <div class="toolbar-field">
+        <label for="lessonSelect">Lección</label>
+        <select id="lessonSelect" aria-label="Elegir lección"></select>
+      </div>
+      <div class="toolbar-actions">
+        <button class="toolbar-button secondary" id="printPage">Imprimir esta hoja</button>
+        <button class="toolbar-button secondary" id="printAll">Imprimir cuadernillo</button>
+        <button class="toolbar-button primary" id="downloadPdf">Guardar como PDF</button>
+      </div>
+    </div>
+    <nav class="page-tabs" id="pageTabs" aria-label="Partes del cuadernillo">
+      <button class="active" data-page="guide">1 · Maestro</button>
+      <button data-page="activity">2 · Actividad</button>
+      <button data-page="cards">3 · Tarjetas</button>
+      <button data-page="questions">4 · Preguntas</button>
+      <button data-page="family">5 · Familia</button>
+      <button data-page="preschool">6 · Dibujo y trazos (3–5)</button>
+    </nav>
+  </header>
+  <main id="printRoot" class="print-root" aria-live="polite"></main>
+  <p class="screen-help">También puedes pulsar <strong>Imprimir</strong> y elegir “Guardar como PDF”.</p>
+  <script type="module" src="/printables-page.js?v=3"></script><script type="module" src="/sion-widget.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Account identity stays visible even when legacy mobile rules hide spans. */
+#accountLaunch{display:flex;align-items:center;gap:9px;min-height:52px;padding:6px 14px 6px 6px;border:2px solid #ffffff;border-radius:999px;background:#126b79;color:#fff;box-shadow:0 6px 22px #143c4b40;max-width:calc(100vw - 28px)}
+#accountLaunch .account-icon{display:grid!important;place-items:center;flex:0 0 38px;width:38px;height:38px;background:#ffda75;color:#17364a;box-shadow:none;border-radius:50%}
+#accountLaunch .account-icon svg{display:block;width:24px;height:24px;flex-shrink:0}
+#accountLaunch>span:last-child{display:block!important;font-size:14px;line-height:1.2;font-weight:900}
+#accountLaunch:focus-visible{outline:3px solid #e9a933;outline-offset:4px}
+#accountDialog{width:min(94vw,500px);max-height:90dvh;border-radius:28px;background:#fffdf7;overflow:auto;overscroll-behavior:contain}
+#accountDialog .account-head{padding:24px;gap:12px;position:relative;background:linear-gradient(105deg,#123e50f5,#126b79e8),url('/images/lessons/la-creacion.webp') center/cover;color:#fff;border-bottom:4px solid #ffd45d}
+#accountDialog .account-head>div{min-width:0}
+#accountDialog .account-head small{display:block;color:#ffdc82;font-size:12px;letter-spacing:.12em;margin-top:12px}
+#accountDialog .account-head h2{font-size:2rem;color:#fff;line-height:1.15;margin:7px 0}
+#accountDialog .account-head p{font-size:16px;line-height:1.45;margin:0;max-width:300px;color:#e8f5f6}
+.account-cover-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:16px;background:#ffda75;color:#17364a}
+.account-cover-icon svg{width:30px;height:30px}
+#accountDialog .account-close{flex:0 0 44px;width:44px;height:44px;background:#fff;color:#17364a;line-height:1;font-size:28px;position:sticky;top:10px}
+#accountDialog>section{padding:8px 0}
+#accountDialog .account-tabs{padding:5px;background:#eaf2f3;border-radius:999px;gap:3px;margin:18px 22px}
+#accountDialog .account-tabs button{border:0;border-radius:999px;background:transparent;min-height:46px;font-size:14px;color:#355969}
+#accountDialog .account-tabs button.active{background:#126b79;color:#fff;box-shadow:0 3px 9px #16465320}
+#accountDialog .account-form{padding:0 22px 22px;gap:16px}
+#accountDialog .account-form label{font-size:14px;color:#244e60}
+#accountDialog .account-form input{min-height:48px;border-radius:16px;background:#fff;border:1px solid #b9d1d6;font-size:16px;color:#17364a}
+#accountDialog .account-form input[type=checkbox]{min-height:20px;width:20px;flex-shrink:0;accent-color:#126b79}
+#accountDialog .account-primary{background:#126b79;border-radius:999px;min-height:48px;font-size:16px;box-shadow:0 4px 12px #126b7920}
+#accountDialog .account-secondary{border-radius:999px;min-height:46px}
+#accountDialog .account-link{min-height:44px;font-size:14px}
+#accountDialog .account-note{font-size:14px;line-height:1.5}
+#accountDialog .google-button{min-height:50px;border-color:#b9d1d6}
+#accountDialog .account-welcome{border:1px solid #cbe2df;border-radius:20px;background:#eaf7f1;gap:14px}
+#accountDialog .account-welcome>div{min-width:0;overflow-wrap:anywhere}
+#accountDialog .account-avatar{flex:0 0 48px;background:#ffda75;color:#17364a}
+#accountDialog .account-avatar,.profile-launch-avatar{display:grid;place-items:center;border-radius:50%;width:50px;height:50px;line-height:1;background:#ffda75;border:3px solid #fff;box-shadow:0 5px 14px #16465322;overflow:hidden}
+.profile-launch-avatar{width:38px!important;height:38px!important;flex-basis:38px!important;background:#ffda75!important;border:0!important}
+.avatar-art{display:block;width:100%;height:100%;background-image:url('/icons/bible-avatars.png');background-repeat:no-repeat;background-size:400% 200%;background-color:#dff5ff;border-radius:inherit}
+.avatar-art-semilla{background-position:0 0}.avatar-art-biblia{background-position:33.333% 0}.avatar-art-maestra{background-position:66.667% 0}.avatar-art-maestro{background-position:100% 0}.avatar-art-leon{background-position:0 100%}.avatar-art-noe{background-position:33.333% 100%}.avatar-art-david{background-position:66.667% 100%}.avatar-art-paloma{background-position:100% 100%}
+.profile-launch-avatar{width:38px!important;height:38px!important;flex-basis:38px!important;font-size:1.35rem!important;background:#ffda75!important;border:0!important}
+.avatar-picker{border:0;padding:0;margin:0}.avatar-picker legend{font-size:14px;font-weight:900;color:#244e60;margin-bottom:9px}.avatar-options{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.avatar-choice{display:grid;place-items:center;gap:3px;min-height:64px!important;padding:7px 3px!important;border:2px solid #d4e4e5!important;border-radius:17px!important;background:#fff!important;color:#17364a!important}.avatar-choice .avatar-art{width:38px;height:38px;border-radius:50%;box-shadow:0 2px 5px #17364a22}.avatar-choice small{font-size:10px;font-weight:900}.avatar-choice.selected{border-color:#126b79!important;background:#e5f6f1!important;box-shadow:0 0 0 3px #ffd45d66}
+#accountDialog .account-panel-link{min-height:48px;border-radius:16px;background:#126b79}
+#accountDialog :focus-visible{outline:3px solid #e9a933;outline-offset:3px}
+#teacherPanel .teacher-header{background:linear-gradient(100deg,#123e50f5,#126b79e8),url('/images/lessons/la-creacion.webp') center/cover;color:#fff;border-bottom:4px solid #ffd45d;padding:28px}
+#teacherPanel .teacher-header small{color:#ffdc82;letter-spacing:.08em}
+#teacherPanel .teacher-header h2{color:#fff;font-size:2rem}
+#teacherPanel .teacher-header p{color:#e7f5f5}
+#teacherPanel .teacher-identity{display:flex;align-items:center;gap:14px}#teacherHeaderAvatar{flex:0 0 58px;width:58px;height:58px;border:3px solid #fff;border-radius:50%;box-shadow:0 5px 14px #08243344}.teacher-identity small{display:block}
+#teacherPanel .teacher-header button{width:44px;min-height:44px;background:#fff;color:#17364a}
+#teacherPanel .teacher-stats button{border-radius:22px;border-color:#c9dce0;box-shadow:none;min-width:0}
+#teacherPanel .teacher-stats button:first-child{background:#fff0e9}
+#teacherPanel .teacher-stats button:nth-child(2){background:#e9f5fc}
+#teacherPanel .teacher-stats button:nth-child(4){background:#fff5d4}
+#teacherPanel .teacher-tabs{gap:8px;border:0;background:#eaf2f3;border-radius:20px;padding:6px}
+#teacherPanel .teacher-tabs button[aria-selected=true]{background:#126b79;border-color:#126b79;box-shadow:0 3px 9px #16465320}
+#teacherPanel .teacher-bottom{flex-wrap:wrap;font-size:14px}
+@media(max-width:620px){
+ #accountLaunch{top:auto;right:14px;bottom:calc(92px + env(safe-area-inset-bottom,0px));padding:5px 11px 5px 5px;min-height:48px}
+ #accountLaunch .account-icon{width:34px;height:34px;flex-basis:34px}
+ #accountDialog .account-head{padding:20px}
+ #accountDialog .avatar-options{grid-template-columns:repeat(4,minmax(0,1fr))}
+ #teacherPanel{width:calc(100vw - 16px);max-height:94dvh;border-radius:24px}
+ #teacherPanel .teacher-header{padding:20px;gap:12px}
+ #teacherPanel .teacher-header h2{font-size:1.6rem}
+ #teacherPanel .teacher-toolbar{padding:12px 16px}
+ #teacherPanel .teacher-toolbar>div{width:100%}
+ #teacherPanel .teacher-toolbar button{flex:1;min-height:44px}
+ #teacherPanel .teacher-scroll{padding:16px}
+ #teacherPanel .teacher-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+ #teacherPanel .teacher-tabs button{min-width:0;white-space:normal;min-height:46px;line-height:1.3}
+ #teacherPanel .teacher-stats button{padding:14px 12px}
+}
+
+/* ---------------------------------------------------------------
+   Fix movil: la pildora "Mi cuenta" medía 128x48 flotando y tapaba
+   las tarjetas del inicio y los filtros de categoria del catalogo.
+   En pantallas chicas se reduce a un boton circular (sin texto),
+   alineado con el lanzador de Sion. El texto sigue en aria-label.
+   --------------------------------------------------------------- */
+@media(max-width:620px){
+  #accountLaunch{
+    display:grid;place-items:center;
+    width:54px;height:54px;min-height:54px;padding:0;
+    border-radius:50%;
+    right:14px;bottom:calc(92px + env(safe-area-inset-bottom,0px));
+    box-shadow:0 9px 24px #143c4b4d;
+  }
+  #accountLaunch>span:last-child{display:none!important}
+  #accountLaunch .account-icon,
+  #accountLaunch .profile-launch-avatar{
+    width:40px!important;height:40px!important;flex-basis:40px!important;
+  }
+}

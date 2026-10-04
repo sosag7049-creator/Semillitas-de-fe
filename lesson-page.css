@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+:root{--ink:#17364a;--blue:#086f8b;--deep:#12364c;--mint:#dff5e6;--sky:#dff5ff;--sun:#ffd45d;--orange:#ff8659;--paper:#fffdf7;--white:#fff;--line:#dce8ea;--shadow:0 12px 34px rgba(21,60,78,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Nunito,system-ui,sans-serif}button,a{font:inherit}a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}h1,h2,h3{font-family:'Baloo 2',sans-serif;line-height:1.12;margin:0}h2{font-size:clamp(1.8rem,4vw,2.7rem)}
+.site-head{position:sticky;top:0;z-index:30;border-bottom:1px solid #dce8ea;background:#fffdf7ed;backdrop-filter:blur(14px)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand,.back{text-decoration:none;font-weight:900}.brand{font:800 1.25rem 'Baloo 2'}.brand span{display:inline-grid;place-items:center;width:39px;height:39px;margin-right:8px;border-radius:13px;background:var(--sun)}.back{color:var(--blue);font-size:.9rem}
+.class-hero{background:linear-gradient(135deg,#daf5ff,#ecffe4 64%,#fff7d5);padding:50px 0}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:34px}.eyebrow{display:inline-flex;padding:7px 13px;border:2px solid #c9e3e7;border-radius:999px;background:#fff;color:var(--blue);font-weight:900}.class-hero h1{margin:13px 0 8px;font-size:clamp(2.7rem,6vw,4.8rem);letter-spacing:-.03em}.promise{max-width:720px;font-size:1.18rem}.facts{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.facts span{padding:7px 11px;border-radius:999px;background:#fff;border:1px solid #d4e5e3;font-weight:800;font-size:.88rem}.primary,.secondary{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:14px;padding:12px 17px;text-decoration:none;font-weight:900;cursor:pointer}.primary{background:var(--orange);color:#17364a}.secondary{background:#e7f5d9;color:#214c2a}.hero-art{display:grid;place-items:center;min-height:290px;border:3px solid #fff;border-radius:36px;background:linear-gradient(145deg,#fff9d7,#dff5ff);box-shadow:var(--shadow);animation:float 3.2s ease-in-out infinite;overflow:hidden}.hero-art.emoji-art{font-size:8rem}.hero-art.illustrated{aspect-ratio:3/2}.hero-art img{display:block;width:100%;height:100%;object-fit:cover}@keyframes float{50%{transform:translateY(-7px)}}
+.progress-shell{position:sticky;top:68px;z-index:25;border-bottom:1px solid #d9e8e9;background:#fff}.progress-row{display:flex;align-items:center;gap:8px;overflow-x:auto;padding:11px 0}.progress-label{white-space:nowrap;font-weight:900;color:var(--blue);margin-right:4px}.step-pill{white-space:nowrap;border:1px solid #d8e6e7;border-radius:999px;background:#f7fbfb;padding:7px 10px;font-weight:800;font-size:.82rem}.step-pill.done{background:var(--mint);border-color:#9fd8b0;color:#225b35}.bar{height:5px;background:#e5eeee}.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--orange),#40a77c);transition:width .3s}
+main section{padding:54px 0}.section-head{display:flex;align-items:center;gap:12px;margin-bottom:20px}.section-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:16px;background:var(--sky);font-size:1.5rem}.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.story-card,.panel,.takeaway,.question-card,.activity-step{border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 7px 20px #1e47580d}.story-card{padding:22px}.story-card b{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--sun);margin-bottom:12px}.story-card h3{font-size:1.35rem}.story-card p{margin:8px 0 0}.section-action{margin-top:20px}.bible-section{background:#12364c;color:#fff}.bible-card{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;padding:28px;border-radius:26px;background:#1c4b62;border:1px solid #35657b}.bible-ref{font:800 clamp(2rem,5vw,3.4rem) 'Baloo 2'}.bible-card p{margin:4px 0;color:#dcebf0}.bible-mark{font-size:4rem}.video-wrap{overflow:hidden;border-radius:24px;background:#0d293b;box-shadow:var(--shadow);aspect-ratio:16/9}.video-wrap iframe{width:100%;height:100%;border:0}.video-note{margin-top:12px;color:#5e7783}.learned{background:#eefaf1}.takeaways{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.takeaway{padding:19px;font-weight:900}.questions{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;counter-reset:q}.question-card{padding:17px;display:flex;gap:12px}.question-card:before{counter-increment:q;content:counter(q);flex:0 0 30px;height:30px;display:grid;place-items:center;border-radius:50%;background:var(--sun);font-weight:900}.question-card p{margin:2px 0}
+.quiz{max-width:760px}.quiz-card{padding:24px;border:2px solid #e6ddf1;border-radius:24px;background:#fff}.quiz-meta{color:#695882;font-weight:900}.quiz-options{display:grid;gap:9px;margin-top:16px}.quiz-option{border:2px solid #dce5e8;border-radius:13px;padding:11px 13px;text-align:left;background:#fff;cursor:pointer;font-weight:800}.quiz-option.correct{background:#e1f5e7;border-color:#63b47b}.quiz-option.wrong{background:#ffebe8;border-color:#eb8177}.quiz-feedback{min-height:26px;margin:12px 0 0;font-weight:900}.quiz-result{padding:24px;text-align:center;border-radius:24px;background:#fff3c8}.quiz-result strong{display:block;font:800 2rem 'Baloo 2'}.activity-section{background:#f3efff}.activity-board{padding:25px;border:1px solid #dfd5ef;border-radius:27px;background:#fff}.activity-board>p{margin-top:5px}.activity-list{display:grid;gap:10px;margin-top:18px}.activity-step{padding:15px 17px;text-align:left;cursor:pointer;font-weight:800}.activity-step.done{background:#e3f6e8;border-color:#79bf8c;text-decoration:none}.activity-step.done:before{content:'✓ ';color:#277344}.activity-progress{margin-top:14px;font-weight:900;color:#5a4385}
+.print-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.print-link{display:flex;flex-direction:column;padding:19px;border:1px solid var(--line);border-radius:20px;background:#fff;text-decoration:none}.print-link span{font-size:1.8rem}.print-link strong{margin-top:8px}.memory-card{position:relative;overflow:hidden;padding:34px;border-radius:28px;background:linear-gradient(135deg,#fff1ad,#dff5ff);text-align:center;box-shadow:var(--shadow)}.memory-card blockquote{margin:10px auto;max-width:760px;font:800 clamp(1.35rem,3vw,2rem) 'Baloo 2'}.memory-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.memory-actions button{border:0;border-radius:12px;padding:9px 13px;background:#fff;font-weight:900;cursor:pointer}.prayer{max-width:800px;padding:25px;border-radius:24px;background:#e7f7ff;border-left:6px solid var(--blue);font-size:1.08rem}.finish{padding:60px 0;text-align:center;background:linear-gradient(135deg,#e5f7eb,#fff4c7)}.finish-card{max-width:720px;margin:auto}.finish-card p{font-size:1.08rem}.finish-button{font-size:1.08rem}.finish-button:disabled{opacity:.55;cursor:not-allowed}.celebration{display:none;margin-top:20px;padding:24px;border-radius:24px;background:#fff;box-shadow:var(--shadow)}.celebration.show{display:block;animation:pop .45s ease}@keyframes pop{from{transform:scale(.85);opacity:0}}.celebration b{display:block;font:800 2rem 'Baloo 2'}.sync-note{min-height:24px;font-weight:800}.lesson-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;padding:28px 0}.lesson-nav a{text-decoration:none;font-weight:900;color:var(--blue)}.lesson-nav a:last-child{text-align:right}.lesson-nav span{text-align:center;font-weight:900}.site-footer{padding:30px 0;background:#0d293b;color:#d2e5ed}.footer-row{display:flex;justify-content:space-between;gap:15px}.credit{font-size:.76rem;color:#86a7b6}
+@media(max-width:800px){.hero-grid,.bible-card{grid-template-columns:1fr}.hero-art{min-height:220px;font-size:6rem}.story-grid,.takeaways{grid-template-columns:1fr}.questions,.print-grid{grid-template-columns:1fr}.bible-mark{display:none}}
+@media(max-width:560px){.class-hero{padding:34px 0}.back{font-size:0}.back:after{content:'←';font-size:1.3rem}.progress-label{display:none}main section{padding:42px 0}.lesson-nav{grid-template-columns:1fr 1fr}.lesson-nav span{grid-column:1/-1;grid-row:1}.footer-row{flex-direction:column}.memory-card{padding:25px 18px}}
+@media print{.site-head,.progress-shell,.class-hero,.video-section,.quiz-section,.activity-section,.print-section,.finish,.lesson-nav,.site-footer,.section-action{display:none!important}body{background:#fff}.memory-card{box-shadow:none;border:2px solid #999}}
+.video-actions{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:12px}.video-actions .video-note{margin:0}
+.hero-art.illustrated{position:relative;display:block;width:100%;min-width:0;min-height:0;aspect-ratio:3/2;border:0;padding:0;background:transparent;isolation:isolate}.hero-art.illustrated img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.hero-art{animation:none}}
+.bible-version{font-size:.8125rem;line-height:1.6;color:#365467;margin:12px 0 20px}.verse-source{display:inline-block;color:inherit;font-size:.875rem;margin:0 0 18px;text-underline-offset:3px}.section-head span{line-height:1.5}
+
+/* Fix anclas: las barras fijas (cabecera 69px + progreso 65px) tapaban el inicio
+   de cada seccion al pulsar las pastillas de progreso. */
+:root{--semillitas-sticky:146px}
+html{scroll-padding-top:var(--semillitas-sticky)}
+@media(max-width:560px){:root{--semillitas-sticky:138px}}
+@media print{:root{--semillitas-sticky:0px}}
+
+/* ─────────── MODO CLASE ───────────
+   Para proyectar al televisor. El texto base era de 16px: desde las sillas
+   no se lee. Agranda lo que los ninos miran y oculta lo accesorio.
+   Reutiliza la idea del tv-mode que ya existe en juegos.css. */
+.classmode-toggle{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;border:1px solid #d8e6e7;border-radius:999px;background:#fff;color:var(--blue);padding:7px 12px;font-weight:900;font-size:.82rem;cursor:pointer}
+.classmode-toggle[aria-pressed="true"]{background:var(--deep);border-color:var(--deep);color:#fff}
+.progress-row .classmode-toggle{margin-left:auto}
+
+body.class-mode{font-size:20px}
+body.class-mode .class-hero,
+body.class-mode .facts,
+body.class-mode .bible-version,
+body.class-mode .print-section,
+body.class-mode .video-note,
+body.class-mode .section-head span,
+body.class-mode .site-footer,
+body.class-mode .lesson-nav,
+body.class-mode .section-action{display:none!important}
+body.class-mode main section{padding:34px 0}
+body.class-mode .wrap{width:min(1400px,94%)}
+body.class-mode .section-head h2{font-size:clamp(2.4rem,4.6vw,3.6rem)}
+body.class-mode .story-grid{grid-template-columns:1fr;gap:20px}
+body.class-mode .story-card{padding:30px}
+body.class-mode .story-card h3{font-size:clamp(1.9rem,3.4vw,2.6rem)}
+body.class-mode .story-card p{font-size:clamp(1.35rem,2.4vw,1.9rem);line-height:1.5}
+body.class-mode .takeaways{grid-template-columns:1fr}
+body.class-mode .takeaway{font-size:clamp(1.3rem,2.3vw,1.8rem);padding:26px}
+body.class-mode .questions{grid-template-columns:1fr}
+body.class-mode .question-card p{font-size:clamp(1.3rem,2.3vw,1.8rem)}
+body.class-mode .bible-ref{font-size:clamp(2.6rem,6vw,4.4rem)}
+body.class-mode .bible-card p{font-size:clamp(1.2rem,2vw,1.6rem)}
+body.class-mode .memory-card blockquote{font-size:clamp(2rem,4.4vw,3.4rem)}
+body.class-mode .prayer{font-size:clamp(1.3rem,2.3vw,1.8rem);max-width:1100px}
+body.class-mode .quiz-card h3{font-size:clamp(1.6rem,3vw,2.4rem)}
+body.class-mode .quiz-option{font-size:clamp(1.15rem,2vw,1.5rem);padding:18px}
+body.class-mode .activity-step{font-size:clamp(1.15rem,2vw,1.5rem);padding:18px}
+body.class-mode .finish-card h2{font-size:clamp(2rem,4vw,3rem)}
+@media(max-width:700px){
+  body.class-mode{font-size:18px}
+  body.class-mode .wrap{width:92%}
+}
+@media print{.classmode-toggle{display:none!important}}
+/* Enlaces legales en el pie. */
+.legal-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:.85rem;font-weight:800}
+.legal-links a{color:#bcd9e6;text-decoration:none}
+.legal-links a:hover{text-decoration:underline}
+
+/* Adaptacion por edad dentro de la clase: la promesa "todos aprenden juntos"
+   solo se veia en la hoja imprimible de preescolar. */
+.age-split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.age-card{padding:16px 18px;border-radius:18px;border:1px solid var(--line)}
+.age-card.small{background:var(--sky);border-color:#bfe3ee}
+.age-card.big{background:var(--mint);border-color:#aedcbd}
+.age-card b{display:block;margin-bottom:5px;font-family:'Baloo 2',sans-serif;font-size:1.05rem}
+.age-card p{margin:0;font-size:.95rem}
+@media(max-width:700px){.age-split{grid-template-columns:1fr}}
+body.class-mode .age-split{grid-template-columns:1fr 1fr}
+body.class-mode .age-card p{font-size:1.1rem}

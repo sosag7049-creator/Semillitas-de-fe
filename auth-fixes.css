@@ -1,0 +1,51 @@
+.password-field{position:relative;display:block}.password-field input{padding-right:3.2rem}.password-toggle{position:absolute;right:.35rem;top:50%;transform:translateY(-50%);border:0;background:transparent;border-radius:8px;padding:.4rem;font-size:1rem;cursor:pointer}.password-toggle:hover{background:#edf7f4}.account-form button:disabled,.google-button:disabled{opacity:.6;cursor:wait}.google-area{padding:1.2rem 1.4rem 0}.google-button{width:100%;display:flex;align-items:center;justify-content:center;gap:.7rem;border:1px solid #c8d2db;border-radius:999px;padding:.78rem 1rem;background:#fff;color:#263238;font:800 .95rem Nunito,system-ui,sans-serif;cursor:pointer;box-shadow:0 2px 5px #172b3a14}.google-button:hover{background:#f8fafb}.google-g{font:bold 1.25rem Arial,sans-serif;color:#4285f4}.account-divider{display:flex;align-items:center;gap:.65rem;margin:1rem 0 0;color:#71817e;font-size:.78rem}.account-divider::before,.account-divider::after{content:"";height:1px;background:#dce6e3;flex:1}.favorite-auth-btn{border-radius:999px!important;padding:.58rem 1rem!important;transition:transform .15s ease,background .15s ease,color .15s ease,box-shadow .15s ease}.favorite-auth-btn:hover{transform:translateY(-1px);box-shadow:0 5px 14px #e76f5130}.favorite-auth-btn.saving{opacity:.75}
+
+/* Ajuste móvil pequeño: más aire y controles cómodos, sin alterar el diseño. */
+@media(max-width:600px){
+  body{overflow-x:hidden}
+  .wrap{width:calc(100% - 28px)}
+  .nav{min-height:64px;gap:12px}
+  .brand{min-width:0;font-size:1.12rem;line-height:1.15}
+  .brand .logo{flex:0 0 38px;width:38px;height:38px}
+  .hero{padding:42px 0 34px}
+  h1{font-size:clamp(2.15rem,11vw,3rem);line-height:1.02;letter-spacing:-.04rem}
+  .lead{font-size:1rem;line-height:1.55}
+  .head{gap:12px;margin-bottom:20px}
+  .head h2{font-size:clamp(1.8rem,9vw,2.35rem);line-height:1.08}
+  .head p,.notice,.card p,.video p,.resource li{line-height:1.55}
+  .notice,.card,.panel,.method,.video,.channel,.resource{padding:18px}
+  .card h3,.video h3,.channel h3,.resource h3{line-height:1.18}
+  .tools{gap:12px}
+  .search{min-height:48px;padding:12px 14px;font-size:1rem}
+  .filters{gap:8px}
+  .chip{min-height:44px;padding:9px 13px}
+  .btn,.open,.roulette-btn,.install-close{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 16px;line-height:1.25;text-align:center}
+  .open{width:100%}
+  .roulette-row{gap:10px}
+  .roulette-row .roulette-btn{flex:1 1 140px}
+  .question-box{padding:17px}
+  .jerubi-panel{right:10px;bottom:84px;width:calc(100vw - 20px);max-height:calc(100dvh - 106px);border-radius:20px}
+  .jerubi-head{padding:14px}
+  .jerubi-title,.jerubi-title>div{min-width:0}
+  .jerubi-head small{line-height:1.25}
+  .jerubi-messages{min-height:190px;padding:14px}
+  .jerubi-bubble{max-width:96%;overflow-wrap:anywhere}
+  .jerubi-quick{padding:9px 12px}
+  .jerubi-quick button{min-height:42px}
+  .jerubi-form{flex-wrap:wrap;padding:10px 12px}
+  .jerubi-form input{flex:1 1 190px;min-height:46px}
+  .jerubi-form button{flex:1 0 78px;min-height:46px}
+  .account-dialog{width:calc(100vw - 20px);max-height:calc(100dvh - 20px)}
+  .account-head,.account-form{padding-left:18px;padding-right:18px}
+  .account-tabs{margin-left:18px;margin-right:18px}
+  .account-tabs button,.account-primary,.account-secondary,.google-button{min-height:46px;line-height:1.25}
+  .footer{line-height:1.55}
+}
+
+@media(max-width:370px){
+  .wrap{width:calc(100% - 22px)}
+  .brand{font-size:1rem}
+  h1{font-size:2rem}
+  .chip{flex:1 1 44%}
+  .jerubi-note{font-size:.72rem}
+}
