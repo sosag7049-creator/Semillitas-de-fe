@@ -4,8 +4,10 @@
 User-agent: *
 Allow: /
 
-# El modo sin conexión y las páginas de servicio no aportan nada en buscadores.
+# El modo sin conexión, las utilidades de mantenimiento y las páginas de
+# servicio no aportan nada en buscadores.
 Disallow: /offline.html
+Disallow: /tools/
 Disallow: /*?app=1
 
 Sitemap: https://semillitasbiblicas.space/sitemap.xml
