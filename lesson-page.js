@@ -1,4 +1,6 @@
 import { LESSONS, lessonBySlug } from '/lesson-data.js?v=10';
+// Versión de 800 px de una portada, para que el celular no baje la de escritorio.
+const small = url => (typeof url === 'string' && url.endsWith('.webp') ? url.slice(0, -5) + '-800.webp' : url);
 
 const root=document.getElementById('lessonApp');
 const slug=document.body.dataset.lesson||location.pathname.split('/').filter(Boolean).at(-1);
@@ -7,7 +9,7 @@ if(!lesson){root.innerHTML='<main class="wrap" style="padding:80px 0"><h1>Lecci�
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const index=LESSONS.indexOf(lesson),prev=LESSONS[index-1],next=LESSONS[index+1];
 const heroArt=lesson.coverImage
- ? `<div class="hero-art illustrated"><img src="${lesson.coverImage}" alt="Ilustración infantil de ${esc(lesson.title)}" width="1200" height="800" fetchpriority="high" decoding="async"></div>`
+ ? `<div class="hero-art illustrated"><img src="${lesson.coverImage}" srcset="${small(lesson.coverImage)} 800w, ${lesson.coverImage} 1200w" sizes="(max-width:800px) 94vw, 470px" alt="Ilustración infantil de ${esc(lesson.title)}" width="1200" height="800" fetchpriority="high" decoding="async"></div>`
  : `<div class="hero-art emoji-art" role="img" aria-label="Ilustración de ${esc(lesson.title)}">${lesson.icon}</div>`;
 document.title=`${lesson.title} · Clase bíblica | Semillitas de Fe`;
 document.querySelector('meta[name="description"]')?.setAttribute('content',`${lesson.title}: clase bíblica completa para niños de 3 a 10 años basada en ${lesson.reference}.`);

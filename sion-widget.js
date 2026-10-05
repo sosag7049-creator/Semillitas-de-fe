@@ -11,7 +11,7 @@ if (!document.querySelector('.jerubi-launch')) {
     document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="/sion-widget.css?v=1">');
   }
   if (!document.querySelector('link[href^="/sion-ui.css"]')) {
-    document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="/sion-ui.css?v=2">');
+    document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="/sion-ui.css?v=3">');
   }
 
   const slug = document.body.dataset.lesson || location.pathname.split('/').filter(Boolean).at(-1);
