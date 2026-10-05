@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Página no encontrada · Semillitas de Fe</title>
+<meta name="description" content="Esa página no existe en Semillitas de Fe. Busca aquí la clase bíblica que necesitas o vuelve al inicio.">
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#086f8b">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icons/icon-192.png">
+<link rel="stylesheet" href="/pagina.css?v=1">
+<style>
+.nf-hero{text-align:center}
+.nf-code{display:block;font:900 clamp(4rem,16vw,8rem)/1 'Baloo 2',system-ui,sans-serif;color:#086f8b;letter-spacing:-3px;margin:0}
+.nf-seed{font-size:clamp(3rem,10vw,4.5rem);display:block;line-height:1}
+.nf-search{display:flex;gap:10px;flex-wrap:wrap;margin:4px 0 18px}
+.nf-search input{flex:1 1 240px;min-width:0;border:2px solid #cfe0e3;background:#fff;border-radius:15px;padding:13px 16px;font:inherit;color:inherit}
+.nf-search input:focus-visible{outline:3px solid #086f8b;outline-offset:2px;border-color:#086f8b}
+.nf-results{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.nf-results li{margin:0}
+.nf-results a{display:flex;align-items:center;gap:12px;text-decoration:none;border:1px solid #dce8ea;border-radius:16px;padding:13px 15px;background:#fff;transition:.15s}
+.nf-results a:hover,.nf-results a:focus-visible{border-color:#086f8b;transform:translateX(3px)}
+.nf-results .nf-ico{font-size:1.7rem;line-height:1;flex:none}
+.nf-results strong{display:block;font-family:'Baloo 2',system-ui,sans-serif;font-size:1.15rem}
+.nf-results small{color:#5d7785;font-weight:700}
+.nf-empty{color:#5d7785;margin:0}
+.nf-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:6px}
+.nf-links a{text-decoration:none;font-weight:900;border-radius:15px;padding:12px 18px;border:2px solid #cfe0e3;background:#fff;color:#17364a}
+.nf-links a.primary{background:#ff8659;border-color:#ff8659}
+.nf-links a:hover,.nf-links a:focus-visible{border-color:#086f8b}
+.visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+</style>
+</head>
+<body>
+<header class="page-header"><nav class="page-nav"><a class="brand" href="/"><span class="logo">🌱</span> Semillitas de Fe</a><a class="home-link" href="/" aria-label="Volver al inicio">← Volver al inicio</a></nav></header>
+
+<section class="page-hero nf-hero">
+  <div class="wrap">
+    <span class="nf-seed" aria-hidden="true">🌱</span>
+    <span class="nf-code">404</span>
+    <h1>Esta semillita no germinó</h1>
+    <p>La página que buscabas no existe o cambió de dirección. No te preocupes: todo el material sigue aquí.</p>
+  </div>
+</section>
+
+<main><div class="wrap">
+
+  <div class="card">
+    <h2>Busca tu clase</h2>
+    <p>Escribe el nombre de una historia, un personaje o un libro de la Biblia.</p>
+    <form class="nf-search" id="nfForm" role="search">
+      <label class="visually-hidden" for="nfInput">Buscar una clase bíblica</label>
+      <input id="nfInput" type="search" placeholder="Por ejemplo: Jonás, David, Génesis…" autocomplete="off" aria-describedby="nfHint">
+    </form>
+    <p id="nfHint" class="nf-empty">Mostrando algunas de las 31 clases disponibles.</p>
+    <ul class="nf-results" id="nfResults" aria-live="polite"></ul>
+  </div>
+
+  <div class="card sun">
+    <h2>O ve directo a una sección</h2>
+    <div class="nf-links">
+      <a class="primary" href="/lecciones/">📖 Todas las clases</a>
+      <a href="/juegos/">🎲 Juegos</a>
+      <a href="/printables.html">🖨️ Imprimibles</a>
+      <a href="/contacto.html">💬 Contacto</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>¿Crees que es un error nuestro?</h2>
+    <p>Si llegaste desde un enlace de Semillitas de Fe y esta página debería existir, <a class="mail" href="mailto:semillitasdefe1212@gmail.com?subject=Enlace%20roto%20en%20Semillitas%20de%20Fe">escríbenos</a> y lo arreglamos.</p>
+  </div>
+
+</div></main>
+
+<footer class="page-footer"><div class="wrap">
+  <div><strong>🌱 Semillitas de Fe</strong><br><small>Material educativo basado en la Reina-Valera 1960.</small><br><small class="credit">Creado por Gerardo Sosa</small></div>
+  <div class="footer-links"><a href="/">Inicio</a><a href="/lecciones/">Clases</a><a href="/privacidad.html">Privacidad</a><a href="/terminos.html">Términos</a><a href="/contacto.html">Contacto</a></div>
+</div></footer>
+
+<script type="module">
+// Busca entre las clases reales del catálogo, sin duplicar la lista aquí.
+import { LESSONS } from '/lesson-data.js?v=10';
+
+const input = document.getElementById('nfInput');
+const results = document.getElementById('nfResults');
+const hint = document.getElementById('nfHint');
+const escapar = valor => String(valor).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+// Si la dirección fallida se parecía a una lección, se proponen esas primero.
+const pistas = decodeURIComponent(location.pathname).toLowerCase().replace(/[^a-záéíóúñ]+/g, ' ').trim();
+
+const normalizar = texto => String(texto).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+function puntuar(leccion, consulta) {
+  if (!consulta) return 0;
+  const campos = normalizar(`${leccion.title} ${leccion.reference} ${leccion.category || ''} ${leccion.objective || ''}`);
+  return consulta.split(/\s+/).filter(p => p.length > 2).reduce((suma, palabra) => suma + (campos.includes(normalizar(palabra)) ? 1 : 0), 0);
+}
+
+function pintar(lista, mensaje) {
+  hint.textContent = mensaje;
+  results.innerHTML = lista.map(leccion => `<li><a href="/lecciones/${escapar(leccion.slug)}/">
+      <span class="nf-ico" aria-hidden="true">${escapar(leccion.icon || '📖')}</span>
+      <span><strong>${escapar(leccion.title)}</strong><small>${escapar(leccion.reference)}</small></span>
+    </a></li>`).join('');
+}
+
+function buscar(consulta) {
+  const texto = consulta.trim();
+  if (!texto) {
+    pintar(LESSONS.slice(0, 6), `Mostrando 6 de las ${LESSONS.length} clases disponibles.`);
+    return;
+  }
+  const encontradas = LESSONS.map(l => ({ l, p: puntuar(l, texto) })).filter(x => x.p > 0).sort((a, b) => b.p - a.p).slice(0, 8).map(x => x.l);
+  if (encontradas.length) pintar(encontradas, `${encontradas.length} resultado${encontradas.length === 1 ? '' : 's'} para “${texto}”.`);
+  else pintar(LESSONS.slice(0, 6), `No encontramos “${texto}”. Te mostramos algunas clases por si acaso.`);
+}
+
+const sugeridas = LESSONS.map(l => ({ l, p: puntuar(l, pistas) })).filter(x => x.p > 0).slice(0, 4).map(x => x.l);
+if (sugeridas.length) pintar(sugeridas, 'Quizá buscabas una de estas clases:');
+else buscar('');
+
+input.addEventListener('input', () => buscar(input.value));
+document.getElementById('nfForm').addEventListener('submit', e => { e.preventDefault(); buscar(input.value); });
+</script>
+</body>
+</html>

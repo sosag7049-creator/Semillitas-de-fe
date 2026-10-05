@@ -36,8 +36,8 @@
 .account-avatar{display:grid;place-items:center;width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,#fff2b7,#e5f6e9);color:#70452b}
 .account-avatar svg{width:31px;height:31px}
 .mini-bible{display:inline-grid;vertical-align:middle;place-items:center;width:22px;height:22px;color:#70452b}.mini-bible svg{width:22px;height:22px}
-.jerubi-launch:not(:has(.sion-launch-icon)){font-size:0;background-image:url('/icons/sion-bible.png');background-position:center;background-repeat:no-repeat;background-size:78% auto}
-.jerubi-avatar:not(:has(img)){font-size:0;background-image:url('/icons/sion-bible.png');background-position:center;background-repeat:no-repeat;background-size:85% auto}
-.account-launch:not(:has(.account-icon))::before{content:"";display:block;width:25px;height:25px;border-radius:50%;background:linear-gradient(135deg,#f2c75c,#54a486) url('/icons/sion-bible.png') center/80% auto no-repeat;box-shadow:inset 0 0 0 2px #fff8}
+.jerubi-launch:not(:has(.sion-launch-icon)){font-size:0;background-image:url('/icons/sion-bible.webp?v=3');background-position:center;background-repeat:no-repeat;background-size:78% auto}
+.jerubi-avatar:not(:has(img)){font-size:0;background-image:url('/icons/sion-bible.webp?v=3');background-position:center;background-repeat:no-repeat;background-size:85% auto}
+.account-launch:not(:has(.account-icon))::before{content:"";display:block;width:25px;height:25px;border-radius:50%;background:linear-gradient(135deg,#f2c75c,#54a486) url('/icons/sion-bible.webp?v=3') center/80% auto no-repeat;box-shadow:inset 0 0 0 2px #fff8}
 @media(max-width:600px){.jerubi-launch{right:14px;bottom:14px}.jerubi-panel{right:14px;bottom:88px}}
 @media(prefers-reduced-motion:reduce){.jerubi-launch{animation:none}}

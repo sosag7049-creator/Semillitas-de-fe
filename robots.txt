@@ -1,0 +1,11 @@
+# Semillitas de Fe — https://semillitasbiblicas.space
+# Material bíblico gratuito para maestros de niños de 3 a 10 años.
+
+User-agent: *
+Allow: /
+
+# El modo sin conexión y las páginas de servicio no aportan nada en buscadores.
+Disallow: /offline.html
+Disallow: /*?app=1
+
+Sitemap: https://semillitasbiblicas.space/sitemap.xml

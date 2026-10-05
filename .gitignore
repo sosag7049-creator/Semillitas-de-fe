@@ -1,0 +1,46 @@
+# Semillitas de Fe — archivos que NO deben subirse al repositorio
+# El sitio es estático: todo lo que está aquí se publica tal cual en
+# https://semillitasbiblicas.space, así que conviene mantenerlo limpio.
+
+# Respaldos y copias completas del sitio (ocupan espacio y quedan públicos)
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+SITIO-COMPLETO*
+
+# Archivos temporales y de respaldo
+*.bak
+*.old
+*.tmp
+*.swp
+*~
+*.orig
+* copia*
+*copy*.html
+
+# Basura del sistema operativo
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.sublime-*
+
+# Dependencias y builds (por si en el futuro se usa alguna herramienta)
+node_modules/
+dist/
+build/
+.cache/
+
+# Secretos: nunca subir llaves ni variables de entorno
+.env
+.env.*
+*.pem
+*.key
