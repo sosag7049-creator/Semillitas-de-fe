@@ -18,6 +18,7 @@ const SITIO = 'https://semillitasbiblicas.space';
 const PAGINAS_FIJAS = [
   ['/', '1.0', 'weekly'],
   ['/lecciones/', '0.9', 'weekly'],
+  ['/series/', '0.9', 'weekly'],
   ['/juegos/', '0.8', 'monthly'],
   ['/printables.html', '0.8', 'monthly'],
   ['/contacto.html', '0.4', 'yearly'],

@@ -34,12 +34,14 @@ desde la rama `main`.
 index.html              Portada (lleva su propio catálogo, ver más abajo)
 lecciones/index.html    Listado de las 31 clases
 lecciones/<nombre>/     Una carpeta por clase
+series/index.html       Planes de enseñanza (agrupan las clases en rutas)
 juegos/                 Juegos para proyectar
 printables.html         Material imprimible
 
 printables-data.js      ⭐ FUENTE DE VERDAD del contenido de las 31 lecciones
 additional-lessons*.js  Material extra de las lecciones 25 a 31
 lesson-data.js          Arma el catálogo completo a partir de lo anterior
+series-data.js          ⭐ FUENTE DE VERDAD de los planes de enseñanza
 
 sw.js                   Service worker: caché y modo sin conexión
 manifest.webmanifest    Datos de la app instalable
@@ -92,6 +94,26 @@ convert images/lessons/<nombre>.webp -resize 800x -quality 82 images/lessons/<no
 
 ### Comprobar que nada se rompió
 
+**1. Revisión bíblica** — que el contenido respete la Reina-Valera 1960:
+
+```bash
+node tools/revisar-biblia.mjs
+```
+
+No necesita instalar nada. Avisa si aparece un libro deuterocanónico, otra
+versión de la Biblia, vocabulario devocional católico, un «San» antepuesto a un
+personaje bíblico o «Yahvé» en lugar de «Jehová», y lista los libros citados.
+Termina con error si encuentra algo, así que **conviene correrlo antes de
+publicar**.
+
+**2. Revisión de los planes** — que ninguna serie apunte a una clase que no existe:
+
+```bash
+node tools/revisar-series.mjs
+```
+
+**3. Revisión técnica** — que la página siga funcionando:
+
 ```bash
 npm install jsdom            # solo la primera vez
 node tools/probar-portada.mjs
@@ -113,8 +135,32 @@ Al subir a la rama `main`, GitHub Pages reconstruye el sitio en 1-2 minutos.
 
 ## Reglas del proyecto
 
-- Todo el contenido bíblico se basa en la **Reina-Valera 1960** y se cita con su
-  pasaje exacto.
+### 📖 Regla bíblica (no negociable)
+
+**Todo el contenido se basa en la Reina-Valera 1960, Biblia evangélica.** Esta
+regla manda sobre cualquier otra consideración y se aplica a lecciones, juegos,
+imprimibles, canciones y a las respuestas del asistente Sion.
+
+En la práctica significa:
+
+| Sí | No |
+| --- | --- |
+| Reina-Valera 1960 (RVR1960) | NVI, NTV, TLA, LBLA, DHH, PDT, Nueva Versión Internacional, Nueva Traducción Viviente, Traducción en Lenguaje Actual, Dios Habla Hoy, Biblia Latinoamericana u otra versión |
+| Los **66 libros** del canon evangélico | Deuterocanónicos: Tobías, Judit, Sabiduría, Eclesiástico, Baruc, 1-2 Macabeos y las adiciones a Ester y Daniel |
+| **Jehová** (como traduce la RVR1960) | Yahvé, Yahveh, Yahweh |
+| Pedro, Pablo, María, José | «San Pedro», «Santa María», «la Virgen María» |
+| La Biblia como única autoridad | Tradición, catecismo, santos como intercesores, rosario, purgatorio, sacramentos |
+| Orar a Dios por medio de Jesucristo | Orar a María, a los santos o a los ángeles |
+
+Cada lección cita su **pasaje exacto** (libro, capítulo y versículo) para que el
+maestro pueda abrir la Biblia y comprobarlo.
+
+> Antes de publicar contenido nuevo, pasar la revisión de la sección
+> [Comprobar que nada se rompió](#comprobar-que-nada-se-rompió), que incluye un
+> chequeo automático de esta regla.
+
+### Las demás reglas
+
 - El material es para **niños de 3 a 10 años**: lenguaje sencillo, sin imágenes
   ni descripciones que puedan asustar.
 - **No se suben respaldos `.zip`, archivos temporales ni credenciales** (ver

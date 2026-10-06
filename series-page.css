@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+:root{--ink:#17364a;--blue:#086f8b;--deep:#12364c;--mint:#dff5e6;--sky:#dff5ff;--sun:#ffd45d;--orange:#ff8659;--paper:#fffdf7;--white:#fff;--line:#dce8ea;--shadow:0 12px 34px rgba(21,60,78,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#f5fbf8,#fffdf7 520px);color:var(--ink);font:16px/1.55 Nunito,system-ui,sans-serif}
+button,input,a{font:inherit}a{color:inherit}
+.wrap{width:min(1160px,92%);margin:auto}
+h1,h2,h3{font-family:'Baloo 2',sans-serif;line-height:1.08;margin:0}
+
+/* ---------------------------------------------------------- barra superior */
+.catalog-header{position:sticky;top:0;z-index:30;border-bottom:1px solid #dbe9e6;background:#fffdf7ed;backdrop-filter:blur(16px)}
+.catalog-nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 1.35rem 'Baloo 2'}
+.logo{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:var(--sun)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.nav-actions a{text-decoration:none;font-weight:900}
+.home-link{padding:10px 14px;border:1px solid #d3e3e2;border-radius:999px;background:#fff}
+
+/* ------------------------------------------------------------------- hero */
+.series-hero{padding:64px 0 34px}
+.kicker{display:inline-flex;padding:7px 13px;border:2px solid #c9e3e7;border-radius:999px;background:#fff;color:var(--blue);font-weight:900}
+.series-hero h1{max-width:860px;margin:15px 0 12px;font-size:clamp(2.7rem,6.4vw,4.9rem);letter-spacing:-.035em}
+.series-hero h1 span{color:var(--blue)}
+.series-hero p{max-width:720px;margin:0;font-size:1.15rem;color:#4d6b78}
+
+/* -------------------------------------------- tarjeta «qué enseño ahora» */
+.next-card{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;margin:30px 0 8px;padding:24px 28px;border:1px solid #cfe6d8;border-radius:26px;background:linear-gradient(145deg,#eafaf0,#e6f6ff);box-shadow:var(--shadow)}
+.next-emoji{width:70px;height:70px;display:grid;place-items:center;border-radius:22px;background:#fff;font-size:2.1rem;box-shadow:0 6px 18px #17364a14}
+.next-card .label{display:block;margin-bottom:5px;color:#4f7a68;font-size:.82rem;font-weight:900;letter-spacing:.07em;text-transform:uppercase}
+.next-card h2{font-size:1.85rem}
+.next-card .meta{margin:7px 0 0;color:#50707d;font-weight:700}
+.next-card .meta b{color:var(--blue)}
+.next-go{display:inline-flex;min-height:50px;align-items:center;padding:0 24px;border-radius:999px;background:var(--blue);color:#fff;text-decoration:none;font-weight:900;white-space:nowrap}
+.next-go:hover{background:#06596f}
+
+/* ------------------------------------------------------------ rejilla */
+.series-main{padding:22px 0 80px}
+.series-intro{margin:0 0 20px;color:#5c7783;font-weight:800}
+.series-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+
+.serie-card{display:flex;min-width:0;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:26px;background:#fff;box-shadow:0 8px 24px #17364a12;transition:transform .2s ease,box-shadow .2s ease}
+.serie-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.serie-top{display:flex;align-items:flex-start;gap:16px;padding:24px 24px 0}
+.serie-emoji{width:58px;height:58px;flex:0 0 auto;display:grid;place-items:center;border-radius:18px;font-size:1.7rem}
+.serie-card h2{font-size:1.72rem}
+.serie-tagline{margin:6px 0 0;color:#5c7783;font-weight:700}
+.serie-body{display:flex;flex:1;flex-direction:column;padding:16px 24px 24px}
+.serie-body>p{margin:0 0 14px;color:#55707c}
+.serie-badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.badge{padding:6px 11px;border-radius:999px;background:#f1f7f7;color:#4f6c78;font-size:.8rem;font-weight:900}
+.badge.weeks{background:var(--sky);color:var(--blue)}
+.badge.done{background:#dff5e6;color:#28633a}
+.serie-verse{margin:0 0 16px;padding:12px 15px;border-left:4px solid #cfe3e6;border-radius:0 12px 12px 0;background:#fbfdfd;color:#4d6b78;font-size:.94rem;font-style:italic}
+
+/* barra de avance */
+.progress{height:9px;margin-bottom:6px;overflow:hidden;border-radius:999px;background:#eaf1f2}
+.progress i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#7fd1a6,#3fae87);transition:width .35s ease}
+.progress-text{margin:0 0 16px;color:#627881;font-size:.86rem;font-weight:800}
+
+.serie-actions{display:flex;gap:10px;margin-top:auto}
+.serie-toggle{flex:1;min-height:48px;border:1px solid #cfe1e4;border-radius:999px;background:#fff;color:var(--blue);font-weight:900;cursor:pointer}
+.serie-toggle:hover{background:#f3fafb}
+.serie-start{display:flex;flex:1;min-height:48px;align-items:center;justify-content:center;border-radius:999px;background:#def2d1;color:#214c2a;text-decoration:none;font-weight:900}
+
+/* ------------------------------------------------------ lista de semanas */
+.weeks{margin:18px 0 0;padding:0;list-style:none;border-top:1px dashed #dbe8ea}
+.weeks[hidden]{display:none}
+.week{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:13px 2px;border-bottom:1px solid #f0f5f6}
+.week:last-child{border-bottom:0}
+.week-no{width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:#f3f8f8;color:#57737f;font-size:.82rem;font-weight:900}
+.week.is-done .week-no{background:#dff5e6;color:#28633a}
+.week-title{min-width:0}
+.week-title a{display:block;overflow:hidden;color:var(--ink);text-decoration:none;text-overflow:ellipsis;font-weight:900;white-space:nowrap}
+.week-title a:hover{color:var(--blue);text-decoration:underline}
+.week-ref{display:block;color:#5c757f;font-size:.84rem;font-weight:700}
+.week-print{padding:8px 12px;border:1px solid #e0ebec;border-radius:999px;color:var(--blue);text-decoration:none;font-size:.84rem;font-weight:900;white-space:nowrap}
+.week-print:hover{background:#f3fafb}
+
+/* ----------------------------------------------------------- tonos */
+.tono-azul .serie-emoji{background:var(--sky)}
+.tono-verde .serie-emoji{background:var(--mint)}
+.tono-naranja .serie-emoji{background:#ffe6d8}
+.tono-rosa .serie-emoji{background:#ffe1e8}
+.tono-amarillo .serie-emoji{background:#fff1c9}
+.tono-morado .serie-emoji{background:#e9e2ff}
+
+/* ------------------------------------------------------------- pie */
+.catalog-footer{padding:34px 0;background:#0d293b;color:#d2e5ed}
+.catalog-footer .wrap{display:flex;justify-content:space-between;gap:20px}
+.catalog-footer strong{color:#fff;font:800 1.25rem 'Baloo 2'}
+.legal-links{display:flex;gap:16px}
+.catalog-footer a{color:#d2e5ed}
+
+/* -------------------------------------------------------- responsivo */
+@media(max-width:900px){
+  .series-grid{grid-template-columns:1fr}
+  .next-card{grid-template-columns:auto 1fr;gap:18px}
+  .next-go{grid-column:1/-1;justify-content:center}
+}
+@media(max-width:600px){
+  .catalog-nav{min-height:64px}
+  .brand{font-size:1.08rem}.logo{width:38px;height:38px}
+  .nav-actions .home-label{display:none}
+  .home-link{display:grid;width:44px;height:44px;place-items:center;padding:0}
+  .series-hero{padding:32px 0 20px}
+  .series-hero h1{margin:12px 0 10px;font-size:clamp(2.2rem,10.5vw,2.9rem);line-height:1}
+  .series-hero p{font-size:1rem}
+  .next-card{grid-template-columns:1fr;gap:14px;padding:20px;border-radius:20px;text-align:center}
+  .next-emoji{margin:auto}
+  .next-card h2{font-size:1.5rem}
+  .series-main{padding:14px 0 56px}
+  .serie-top{gap:13px;padding:20px 18px 0}
+  .serie-emoji{width:50px;height:50px;font-size:1.5rem}
+  .serie-card h2{font-size:1.45rem}
+  .serie-body{padding:14px 18px 20px}
+  .serie-actions{flex-direction:column}
+  .serie-toggle,.serie-start{width:100%}
+  .week{grid-template-columns:auto 1fr;gap:11px}
+  .week-print{grid-column:2;justify-self:start}
+  .catalog-footer .wrap{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+  .serie-card,.progress i{transition:none}
+  html{scroll-behavior:auto}
+}
