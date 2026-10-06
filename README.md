@@ -82,6 +82,10 @@ Imita a GitHub Pages: carpetas con `index.html` y la página `404.html` propia.
    ```bash
    node tools/generar-sitemap.mjs
    ```
+5. Si cambiaste un `.js` o un `.css`, súbele el número a su `?v=` **en todos los
+   archivos que lo piden, incluido `sw.js`**, y cambia el nombre de `CACHE` en
+   `sw.js`. Si no, quien ya visitó el sitio seguirá viendo la versión vieja.
+   `node tools/revisar-sitio.mjs` avisa cuando los números no coinciden.
 
 ### Agregar la portada de una lección
 
@@ -112,7 +116,18 @@ publicar**.
 node tools/revisar-series.mjs
 ```
 
-**3. Revisión técnica** — que la página siga funcionando:
+**3. Revisión del sitio** — que ninguna página esté cortada ni le falte su JavaScript:
+
+```bash
+node tools/revisar-sitio.mjs
+```
+
+No necesita instalar nada. Busca páginas incompletas, enlaces y recursos que no
+existen, archivos pedidos con dos versiones distintas de `?v=`, precargas rotas
+en `sw.js` y lecciones sin descripción propia. Termina con error si encuentra
+algo, así que **conviene correrlo antes de publicar**.
+
+**4. Revisión técnica** — que la página siga funcionando:
 
 ```bash
 npm install jsdom            # solo la primera vez

@@ -1,10 +1,14 @@
 import { PRINTABLES } from '/printables-data.js';
-import { ADDITIONAL_LESSONS } from '/additional-lessons.js?v=1';
+import { ADDITIONAL_LESSONS } from '/additional-lessons.js?v=2';
 import { SECOND_BLOCK } from '/additional-lessons-2.js?v=1';
 import { THIRD_BLOCK } from '/additional-lessons-3.js?v=1';
 
 const slugs=['la-creacion','noe-y-el-arca','abraham-espera','jose-perdona','moises-y-la-zarza','dios-abre-el-mar','diez-mandamientos','josue-y-jerico','rut-es-fiel','samuel-escucha','david-y-goliat','david-y-jonatan','salomon-y-la-sabiduria','elias-y-la-viuda','ester-actua','daniel-y-la-oracion','jonas','jesus-nace','jesus-calma-el-mar','panes-y-peces','buen-samaritano','oveja-perdida','zaqueo-cambia','jesus-vive'];
-const icons=['🌍','🌈','⭐','🧥','🔥','🌊','📜','🎺','🌾','👂','🪨','🤝','👑','🏺','👸','🦁','🐋','⭐','⛵','🥖','❤️','🐑','🌳','☀️'];
+// Un icono distinto por lección: se repite en el catálogo, en la ruleta y en
+// los planes, así que dos lecciones nunca deben compartir el mismo.
+// Abraham usa ✨ («como las estrellas del cielo») y la ⭐ de Belén queda
+// reservada para «Jesús nace».
+const icons=['🌍','🌈','✨','🧥','🔥','🌊','📜','🎺','🌾','👂','🪨','🤝','👑','🏺','👸','🦁','🐋','⭐','⛵','🥖','❤️','🐑','🌳','☀️'];
 const coverImages=Object.fromEntries(slugs.map(slug=>[slug,`/images/lessons/${slug}.webp`]));
 
 const stories=[
@@ -98,26 +102,26 @@ const quizzes=[
 const activities=[
  ['Ordena los siete días','Toca en orden: Luz|Cielo|Tierra y plantas|Astros|Aves y peces|Animales y personas|Descanso'],
  ['Parejas hacia el arca','Une cada pareja: León|Elefante|Jirafa|Paloma'],
- ['Cielo de promesas','Cuenta 10 estrellas y elige una promesa de Dios para recordar esta semana.'],
+ ['Cielo de promesas','Reparte diez estrellas de papel|Cuéntenlas juntos en voz alta|Recuerden la promesa que Dios hizo a Abraham|Cada niño elige una promesa para llevar a casa|Oren dando gracias porque Dios cumple a su tiempo'],
  ['Camino del perdón','Ordena: Reconocer el daño|Buscar ayuda segura|Hablar con verdad|Perdonar sin aceptar abuso|Elegir hacer el bien'],
- ['Heme aquí','Escucha cinco nombres del grupo; quien oye el suyo responde “Heme aquí” y elige una acción de servicio.'],
- ['Cruza el Mar Rojo','Coloca dos telas azules y guía al grupo por el camino central llevando a todos sin soltarse.'],
+ ['Heme aquí','Siéntense en círculo y hagan silencio|Llama a cinco niños por su nombre|Quien escucha el suyo responde: “Heme aquí”|Cada uno elige una acción de servicio para la semana|Repitan juntos: “Dios está conmigo”'],
+ ['Cruza el Mar Rojo','Coloquen dos telas azules formando un camino|Fórmense en fila tomados de la mano|Crucen el camino sin soltarse|Al llegar, digan: “Jehová peleará por vosotros”|Conversen sobre a quién pedimos ayuda cuando tenemos miedo'],
  ['Dos grandes amores','Clasifica: Orar|Decir la verdad|Respetar a la familia|Adorar a Dios|Cuidar lo ajeno'],
  ['Marcha de Jericó','Representa una vuelta cada día durante seis días|Representa siete vueltas el séptimo día|Al terminar la séptima vuelta, da la señal para las trompetas y el grito|Recuerda: esta representación resume siete días; no fueron solo siete vueltas en total.'],
- ['Espigas de bondad','Recoge tarjetas de “espigas” y menciona una ayuda concreta por cada una.'],
- ['¿Quién llamó?','Con ojos cerrados reconoce tres voces; luego todos responden juntos: “Habla, Señor”.'],
+ ['Espigas de bondad','Esconde espigas de papel por el salón|Búsquenlas entre todos, sin competir|Por cada espiga digan una manera de ayudar|Reúnan las espigas en una canasta|Elijan una ayuda para hacer en casa esta semana'],
+ ['¿Quién llamó?','Siéntense en círculo y cierren los ojos|Tres niños dicen una frase, uno por uno|Adivinen de quién era cada voz|Respondan todos: “Habla, porque tu siervo oye”|Conversen sobre cómo nos habla Dios por su Palabra'],
  ['Cinco piedras de valor','Escribe en cinco piedras de papel: Dios está conmigo|Puedo orar|Puedo pedir ayuda|Recordaré su Palabra|Haré lo correcto'],
- ['Cadena de amistad','Cada niño entrega una tarjeta con una cualidad amable a otro compañero; nadie queda fuera.'],
+ ['Cadena de amistad','Reparte una tarjeta a cada niño|Escriban o dibujen una cualidad amable de un compañero|Entreguen la tarjeta diciendo algo bueno|Unan las tarjetas formando una cadena|Revisen que nadie se haya quedado sin recibir'],
  ['Semáforo sabio','Practica una decisión con cuatro pasos: Rojo—para|Amarillo—piensa|Azul—ora y pide consejo|Verde—actúa bien'],
- ['Frasco que alcanza','Reparte fichas de harina y aceite hasta que cada familia del juego reciba lo necesario.'],
+ ['Frasco que alcanza','Formen familias de dos o tres niños|Reparte fichas de harina y aceite|Cuenten qué familia tiene de más y cuál de menos|Compartan hasta que todas tengan lo necesario|Den gracias porque Dios cuida y provee'],
  ['Camino valiente de Ester','Elige en cada estación: orar|pedir consejo|preparar palabras|hablar con respeto|buscar protección.'],
  ['Ventana de oración','Abre tres ventanas de papel: Gracias|Ayúdame|Cuida a otros; añade un motivo en cada una.'],
  ['Rutas de Jonás','Sigue decisiones: Huir o escuchar|Ocultar o reconocer|Enojarse o aprender misericordia.'],
  ['Camino a Belén','Pasa por cuatro estaciones: anuncio|viaje|pesebre|pastores, y cuenta qué ocurrió en cada una.'],
- ['Tormenta y calma','Mueve una tela azul con fuerza; al oír “¡Calla!” todos quedan en silencio y mencionan una oración ante el miedo.'],
- ['Canasta compartida','Reparte 5 panes y 2 peces de papel para que cada equipo proponga una manera de compartir.'],
+ ['Tormenta y calma','Tomen una tela azul entre todos|Muévanla con fuerza imitando la tormenta|Al oír “Calla, enmudece”, deténganse en silencio|Cada niño dice algo que le da miedo, sin burlas|Oren juntos pidiendo la paz de Jesús'],
+ ['Canasta compartida','Recorten cinco panes y dos peces de papel|Entréguenlos a un equipo pequeño|Cada equipo propone una manera de compartir|Coloquen todo en una canasta común|Repártanlo de nuevo y vean que alcanza para todos'],
  ['Estaciones de cuidado','Representa: observar|avisar a un adulto|acompañar|buscar ayuda; sin simular heridas reales.'],
- ['Busca la oveja','Sigue cinco pistas por el salón hasta hallar la oveja; al encontrarla todos celebran sin competir.'],
+ ['Busca la oveja','Esconde una oveja de papel antes de la clase|Reparte cinco pistas sencillas|Búsquenla juntos, sin competir|Al encontrarla, celebren todos a la vez|Repitan: Jesús busca a cada uno y se alegra'],
  ['Frutos de cambio','Coloca en el árbol cuatro frutos: confesar|pedir perdón|devolver|cambiar la conducta.'],
  ['La tumba está vacía','Ordena cinco escenas: cruz|sepultura|mujeres llegan|tumba vacía|Jesús aparece.']
 ];

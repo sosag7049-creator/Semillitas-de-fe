@@ -1,4 +1,4 @@
-import { LESSONS } from '/lesson-data.js?v=10';
+import { LESSONS } from '/lesson-data.js?v=11';
 import { SERIES } from '/series-data.js?v=1';
 // Versión de 800 px de una portada, para que el celular no baje la de escritorio.
 const small = url => (typeof url === 'string' && url.endsWith('.webp') ? url.slice(0, -5) + '-800.webp' : url);
@@ -128,4 +128,4 @@ ages?.querySelectorAll('[data-age]').forEach(item=>{
 
 if(age==='3-5')await cargarParvulos();
 render();
-await import('/auth.js?v=11');
+await import('/auth.js?v=12');
