@@ -6,3 +6,17 @@
 .legal-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:.85rem;font-weight:800}
 .legal-links a{color:#bcd9e6;text-decoration:none}
 .legal-links a:hover{text-decoration:underline}
+/* Memoria: selector de 6/8/10 parejas y figuras con emoji. */
+.memory-size{display:flex;align-items:center;gap:8px;font-weight:900}
+.memory-size select{min-height:44px;border:2px solid #cfe0e3;border-radius:12px;padding:7px 10px;background:#fff;font-weight:800;color:var(--ink)}
+.memory-emoji{font-size:clamp(2rem,6vw,2.9rem);line-height:1}
+.memory-board.memory-10{grid-template-columns:repeat(5,1fr);max-width:880px}
+/* ¿Quién soy?: pistas progresivas, una a la vez. */
+.who-clues{list-style:none;display:grid;gap:9px;margin:14px auto 6px;max-width:640px;padding:0}
+.who-clues li{background:#fff;border:1px solid #cfe6dc;border-radius:14px;padding:10px 14px;font-weight:700;font-size:clamp(1.02rem,2vw,1.3rem);color:#24495c;text-align:left;box-shadow:0 3px 10px #17364a10}
+.who-clues li b{color:var(--blue)}
+.who-progress{margin:6px 0 10px;font-weight:900;color:#5a7882}
+.who-emoji{font-size:4.2rem}
+.tv-mode .who-clues{max-width:860px}
+.tv-mode .who-clues li{font-size:1.75rem}
+@media(max-width:760px){.memory-board.memory-10{grid-template-columns:repeat(4,1fr)}.who-emoji{font-size:3.2rem}}

@@ -24,7 +24,9 @@ export const ADDITIONAL_LESSONS = [
   },
   {
     slug: 'el-hijo-prodigo',
-    icon: '🏡',
+    // 🤗 (el recibimiento del padre) y no 🏡, que se confundía con el 🏠 de
+    // «La casa sobre la roca» en el catálogo y en la ruleta.
+    icon: '🤗',
     story: [
       ['Una decisión que lo alejó', 'Jesús contó una parábola sobre un padre y sus dos hijos. El menor pidió la parte de los bienes que le correspondía y se marchó lejos. Allí gastó todo de manera irresponsable. Después llegó una gran escasez, y empezó a pasar necesidad.'],
       ['Reconocer y regresar', 'El joven consiguió trabajo cuidando cerdos, pero seguía con hambre. Recordó que los trabajadores de su padre tenían alimento. Reconoció que había pecado y decidió regresar, confesar su falta y pedir ser tratado como un trabajador. No se quedó solamente pensando: emprendió el camino.'],

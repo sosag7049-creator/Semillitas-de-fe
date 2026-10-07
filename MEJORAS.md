@@ -106,13 +106,73 @@ una lección, cómo probar y las reglas del proyecto.
 
 ---
 
-## 3. Comprobaciones realizadas
+## 3. Rediseño de la portada · 7 de octubre de 2026
+
+La portada hacía de todo: presentación, método de clase, videoteca, canales,
+recursos, la Ruleta Bíblica completa y el catálogo de las 31 lecciones, con
+cuatro botones flotantes encima. Se acortó y se repartió el contenido.
+
+### Qué se pidió y cómo quedó
+
+| Pedido | Solución |
+| --- | --- |
+| Acortar la portada | De 21 secciones a **seis**: bienvenida, accesos rápidos, destacadas, planes, herramientas y protección infantil. El método, el programa de clase, la videoteca y los canales se mudaron a **`/maestros/`**. |
+| Accesos rápidos arriba | `#accesos`: seis tarjetas (Lecciones, Planes, Juegos, Imprimibles, Guía del maestro, Mi cuenta) justo debajo de la bienvenida. En el celular hacen de menú, porque la barra superior se oculta por debajo de 900 px. |
+| Un solo botón flotante | `home-dock.js`: un único botón abre una bandeja con Sion, la agenda, las favoritas, la cuenta e «instalar la app». Antes había cuatro botones sueltos tapándose entre sí. |
+| Lecciones destacadas con sus datos | `#destacadas`: cinco tarjetas con **duración, rango de edad, pasaje y materiales necesarios**. Cuatro son fijas por tema y una rota cada semana entre 14 lecciones (`home-destacadas.js`). |
+
+La **Ruleta Bíblica** no se eliminó: sigue completa en `/juegos/`, y la portada
+la ofrece como una tarjeta más de accesos rápidos.
+
+### Añadidos
+
+- `maestros/index.html` — guía del maestro con el método de clase mixta, el
+  programa de 60 minutos, la videoteca y los canales recomendados.
+- `home-destacadas.js` — una sola lista con las destacadas, la rotación semanal
+  y los materiales de las 31 lecciones.
+- `home.js` — además de las destacadas, arma los planes y la tarjeta
+  «continúa donde quedaste» leyendo el progreso guardado en el navegador.
+- `tools/revisar-destacadas.mjs` — avisa si una destacada apunta a una lección
+  que no existe o si alguna clase se quedó sin materiales.
+
+### Fallos encontrados de paso
+
+| Dónde | Qué pasaba |
+| --- | --- |
+| `series/index.html` | El archivo estaba cortado a la mitad: la página de planes se quedaba para siempre en «Cargando los planes…». |
+| `series-page.js` | Cargaba `auth.js` sin definir antes `window.Semillitas`, y eso rompía la sesión del maestro en `/series/`. |
+| `home-dock.js` | Un `MutationObserver` se disparaba a sí mismo sin parar (escribía `hidden` con el mismo valor que ya tenía). Bastaba cualquier cambio en la página para **congelar el navegador**. Ahora solo escribe cuando el estado cambia de verdad. |
+| `index.html` | El guion de Sion buscaba el enlace «Sion» del menú viejo; al no existir, fallaba y perdía los demás botones del chat. Y un botón llevaba a una videoteca que ya no estaba en la portada. |
+
+### Integración con lo que ya estaba en `main`
+
+Mientras se rediseñaba la portada, `main` recibió cuatro mejoras (PR #3 a #6).
+Se fusionaron antes de publicar, resolviendo 39 conflictos, para no borrar nada:
+
+| De `main` | Qué se conservó |
+| --- | --- |
+| #4 · carga de `/series/` | Su arreglo, que es el mismo que se había hecho aquí. |
+| #5 · correcciones del sitio | Datos de lección corregidos (emoji de «Fe» y «El hijo pródigo»), `rel="noopener"` y la herramienta `tools/revisar-sitio.mjs`. |
+| #6 · menú móvil accesible | El botón hamburguesa con ARIA, cierre con Escape, al tocar fuera y al elegir una opción. Se adaptó a la portada nueva y ahora **sí tiene pruebas** (el PR original no pudo ejecutarlas). |
+
+Los accesos rápidos no sustituyen al menú: en el celular conviven el
+desplegable de la barra superior y la rejilla de `#accesos`.
+
+---
+
+## 4. Comprobaciones realizadas
 
 - ✅ Las 38 páginas responden correctamente; ninguna dirección rota.
 - ✅ Las 58 direcciones del modo sin conexión existen (si una fallara, el modo
   sin conexión no se instalaría).
-- ✅ 10 pruebas automáticas sobre la portada: catálogo de 31 lecciones, títulos
-  únicos, ventana de lección, asistente Sion, ruleta bíblica y buscador.
+- ✅ 26 pruebas automáticas sobre la portada (`tools/probar-portada.mjs`):
+  catálogo de 31 lecciones, títulos únicos, seis accesos rápidos, **un solo
+  botón flotante**, la bandeja, la ventana de lección, el asistente Sion, el
+  buscador, las destacadas con sus cuatro datos, «continúa donde quedaste» y
+  los planes.
+- ✅ Las 70 direcciones del modo sin conexión responden tras el rediseño.
+- ✅ Los planes, las destacadas y el catálogo de la portada apuntan a lecciones
+  que existen (`revisar-series`, `revisar-destacadas`, `sincronizar-portada`).
 - ✅ Sin errores de JavaScript en consola.
 - ✅ **Contraste de color**: los 11 pares principales superan el mínimo de
   accesibilidad WCAG AA (el más bajo, 4.73:1, sobre un mínimo de 4.5:1).
@@ -121,7 +181,7 @@ una lección, cómo probar y las reglas del proyecto.
 
 ---
 
-## 4. Lo que queda pendiente
+## 5. Lo que queda pendiente
 
 ### 🟡 El asistente Sion está duplicado
 
