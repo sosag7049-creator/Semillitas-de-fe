@@ -1,4 +1,4 @@
-import { LESSONS, lessonBySlug } from '/lesson-data.js?v=10';
+import { LESSONS, lessonBySlug } from '/lesson-data.js?v=11';
 // Versión de 800 px de una portada, para que el celular no baje la de escritorio.
 const small = url => (typeof url === 'string' && url.endsWith('.webp') ? url.slice(0, -5) + '-800.webp' : url);
 
@@ -12,7 +12,12 @@ const heroArt=lesson.coverImage
  ? `<div class="hero-art illustrated"><img src="${lesson.coverImage}" srcset="${small(lesson.coverImage)} 800w, ${lesson.coverImage} 1200w" sizes="(max-width:800px) 94vw, 470px" alt="Ilustración infantil de ${esc(lesson.title)}" width="1200" height="800" fetchpriority="high" decoding="async"></div>`
  : `<div class="hero-art emoji-art" role="img" aria-label="Ilustración de ${esc(lesson.title)}">${lesson.icon}</div>`;
 document.title=`${lesson.title} · Clase bíblica | Semillitas de Fe`;
-document.querySelector('meta[name="description"]')?.setAttribute('content',`${lesson.title}: clase bíblica completa para niños de 3 a 10 años basada en ${lesson.reference}.`);
+// Cada /lecciones/<slug>/index.html ya trae su propia descripción, más rica y
+// distinta para cada clase. Solo se rellena aquí si viniera vacía, para no
+// sobrescribirla con un texto genérico e igual en las 31 lecciones.
+const metaDescripcion=document.querySelector('meta[name="description"]');
+if(metaDescripcion&&!metaDescripcion.getAttribute('content')?.trim())
+  metaDescripcion.setAttribute('content',`${lesson.title} (${lesson.reference}): ${lesson.objective}. Clase bíblica para niños de 3 a 10 años.`);
 document.querySelector('link[rel="canonical"]')?.setAttribute('href',`https://semillitasbiblicas.space/lecciones/${lesson.slug}/`);
 
 root.innerHTML=`

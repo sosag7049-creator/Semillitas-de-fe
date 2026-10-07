@@ -9,7 +9,7 @@
  * distintas sobre lo mismo.
  */
 
-import { LESSONS } from '/lesson-data.js?v=10';
+import { LESSONS } from '/lesson-data.js?v=11';
 import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=1';
 
 const safe = (value) =>
@@ -204,4 +204,4 @@ if (linea) {
   linea.textContent = `${series.length} planes · ${total} clases programadas · las mismas 31 lecciones, ordenadas de distintas formas`;
 }
 
-await import('/auth.js?v=12');
+await import('/auth.js?v=13');
