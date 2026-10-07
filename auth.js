@@ -101,9 +101,12 @@ const openAccount = (message = "") => {
   showStatus(message);
   if (!dialog.open) dialog.showModal();
 };
-// Red de seguridad: si una página carga auth.js sin haber publicado el
-// catálogo, la cuenta debe seguir funcionando en vez de romper toda la página.
-const lessons = window.Semillitas?.lessons || [];
+// Algunas páginas (como /series/) cargan este módulo sin pasar por el
+// catálogo de la portada. No dejemos que la cuenta rompa toda la página si
+// el catálogo todavía no fue inicializado.
+const lessons = Array.isArray(window.Semillitas?.lessons)
+  ? window.Semillitas.lessons
+  : [];
 const teacherStore = createTeacherStore(supabase, lessons.map(lesson => lesson.id));
 const teacherPanel = mountTeacherPanel({ store: teacherStore, lessons, openAccount, errorMessage: humanError, client: supabase });
 teacherStore.subscribe(state => {
