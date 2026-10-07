@@ -30,9 +30,8 @@ const vc = new VirtualConsole();
 vc.on('jsdomError', e => { const m = String(e.message || e); if (!/Not implemented|Could not parse CSS/.test(m)) errores.push(m); });
 vc.on('error', (...a) => errores.push(a.join(' ')));
 
-// Solo se descarga lo del propio sitio: las tipografías de Google o un video
-// de YouTube dejarían la prueba colgada en una máquina sin internet, y no es
-// lo que se quiere comprobar aquí.
+// Solo se descarga lo del propio sitio: las tipografías de Google u otros
+// recursos externos dejarían la prueba colgada en una máquina sin internet.
 // (jsdom 27 y posteriores usan interceptores; las versiones anteriores, ResourceLoader.)
 function soloDelSitio() {
   if (typeof requestInterceptor === 'function') {
@@ -59,12 +58,28 @@ reloj.unref?.();
 // "prefiere menos movimiento" o si la app ya está instalada. Se añade antes de
 // que se ejecute cualquier script de la página.
 function prepararVentana(w) {
-  if (typeof w.matchMedia === 'function') return;
-  w.matchMedia = (consulta) => ({
-    matches: false, media: String(consulta), onchange: null,
-    addListener() {}, removeListener() {},
-    addEventListener() {}, removeEventListener() {}, dispatchEvent: () => false,
-  });
+  if (typeof w.matchMedia !== 'function') {
+    w.matchMedia = (consulta) => ({
+      matches: false, media: String(consulta), onchange: null,
+      addListener() {}, removeListener() {},
+      addEventListener() {}, removeEventListener() {}, dispatchEvent: () => false,
+    });
+  }
+  // jsdom no incluye Canvas 2D. Este stub permite ejecutar y probar el bucle
+  // de dibujo sin necesitar un navegador gráfico ni un paquete nativo.
+  let cuadrosCanvas = 0;
+  const gradiente = { addColorStop() {} };
+  const contexto = {
+    clearRect() { cuadrosCanvas++; }, setTransform() {},
+    createLinearGradient() { return gradiente; },
+    createRadialGradient() { return gradiente; },
+    save() {}, restore() {}, beginPath() {}, moveTo() {}, lineTo() {}, closePath() {},
+    fill() {}, fillRect() {}, translate() {}, scale() {}, arc() {}, ellipse() {},
+  };
+  w.CanvasRenderingContext2D = class CanvasRenderingContext2D {};
+  w.HTMLCanvasElement.prototype.getContext = () => contexto;
+  Object.defineProperty(w, '__heroCanvasFrameCount', { configurable: true, value: () => cuadrosCanvas });
+
   // jsdom anuncia navigator.serviceWorker pero register() no devuelve promesa.
   try {
     Object.defineProperty(w.navigator, 'serviceWorker', {
@@ -72,13 +87,6 @@ function prepararVentana(w) {
       value: { register: () => Promise.resolve({ scope: '/' }), addEventListener() {} },
     });
   } catch { /* si no se puede redefinir, se ignora */ }
-  // jsdom tampoco reproduce video: play() debe devolver una promesa como en
-  // el navegador, porque el video del hero encadena .catch().
-  try {
-    w.HTMLMediaElement.prototype.play = () => Promise.resolve();
-    w.HTMLMediaElement.prototype.pause = () => {};
-    w.HTMLMediaElement.prototype.load = () => {};
-  } catch { /* idem */ }
 }
 
 const dom = await JSDOM.fromURL(BASE + '/', {
@@ -93,7 +101,7 @@ const { window } = dom;
 window.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
 window.HTMLDialogElement.prototype.close = function () { this.open = false; };
 await new Promise(r => window.addEventListener('load', r, { once: true }));
-await new Promise(r => setTimeout(r, 1200));
+await new Promise(r => setTimeout(r, 1500));
 const d = window.document;
 let fallos = 0;
 const prueba = (n, c, extra = '') => { if (!c) fallos++; console.log(`${c ? '✅' : '❌'} ${n}${extra ? ' — ' + extra : ''}`); };
@@ -116,6 +124,16 @@ prueba('ya no lleva ruleta, videoteca, método, canales ni recursos',
   fuera.filter(sel => d.querySelector(sel)).join(' ') || 'portada limpia');
 prueba('las seis secciones de la portada están en orden',
   ['#inicio', '#accesos', '#destacadas', '#planes', '#herramientas', '#proteccion'].every(sel => d.querySelector(sel)));
+
+const posterHero = d.querySelector('#heroScenes .hero-scene.is-active');
+const ambientCanvas = d.querySelector('#heroAmbient');
+prueba('la portada conserva el póster mientras prepara el fondo vivo',
+  Boolean(posterHero) && posterHero.getAttribute('style')?.includes('/media/hero-poster.webp'));
+prueba('el fondo decorativo tiene un canvas accesible como contenido oculto',
+  Boolean(ambientCanvas) && ambientCanvas.getAttribute('aria-hidden') === 'true');
+const cuadrosCanvas = window.__heroCanvasFrameCount?.() || 0;
+prueba('el motor dibuja partículas y rayos en el canvas', cuadrosCanvas > 0, `${cuadrosCanvas} cuadros`);
+prueba('el hero ya no descarga videos', !d.querySelector('#inicio video, #inicio source[type="video/mp4"]'));
 
 /* --------------------------------------------------------------------------
  * Accesos rápidos
