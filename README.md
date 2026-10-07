@@ -15,7 +15,7 @@ niñas de **3 a 10 años**, basados en la **Reina-Valera 1960**.
 | Clases | `/lecciones/` | Las **31 lecciones**, con buscador y filtros |
 | Planes | `/series/` | Rutas de enseñanza que agrupan las clases por semanas |
 | Cada clase | `/lecciones/<nombre>/` | Historia, versículo, preguntas, dinámica, manualidad y oración |
-| Juegos | `/juegos/` | Ruleta, memoria, juego de mesa y “adivina quién”, para proyectar |
+| Juegos | `/juegos/` | Ruleta, memoria de 6 a 10 parejas, “¿quién soy?” con pistas y juego de mesa con dado 3D, para proyectar |
 | Imprimibles | `/printables.html` | Hojas para colorear, versículos y actividades |
 | Guía del maestro | `/maestros/` | Método de clase mixta, programa de 60 minutos, videos y canales |
 
