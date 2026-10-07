@@ -2,7 +2,7 @@
 // Antes el asistente solo existia en la portada y en el catalogo: desaparecia
 // justo donde el maestro pasa la mayor parte del tiempo. Este modulo inyecta el
 // mismo panel (reutiliza sion-ui.css) y lo hace consciente de la leccion abierta.
-import { LESSONS, lessonBySlug } from '/lesson-data.js?v=10';
+import { LESSONS, lessonBySlug } from '/lesson-data.js?v=11';
 
 if (!document.querySelector('.jerubi-launch')) {
   // sion-widget.css trae la geometria base del panel; sion-ui.css va despues

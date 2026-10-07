@@ -9,12 +9,33 @@
  * distintas sobre lo mismo.
  */
 
-import { LESSONS } from '/lesson-data.js?v=10';
+import { LESSONS } from '/lesson-data.js?v=11';
 import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=1';
 
 const safe = (value) =>
   String(value).replace(/[&<>"']/g, (char) =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+
+// /series/ también usa auth.js para el panel del maestro. Inicializa aquí
+// el catálogo con la misma forma pública que usa /lecciones/ antes de que
+// auth.js intente leerlo.
+if (!window.Semillitas) {
+  window.Semillitas = Object.freeze({
+    lessons: Object.freeze(LESSONS.map((lesson, index) => Object.freeze({
+      id: String(lesson.id),
+      index,
+      title: lesson.title,
+      reference: lesson.reference,
+      category: lesson.category,
+      emoji: lesson.icon || '📖',
+      objective: lesson.objective,
+    }))),
+    openLesson: (id) => {
+      const lesson = LESSONS.find((item) => String(item.id) === String(id));
+      if (lesson) window.location.href = `/lecciones/${lesson.slug}/`;
+    },
+  });
+}
 
 const porSlug = new Map(LESSONS.map((lesson) => [lesson.slug, lesson]));
 
@@ -183,4 +204,4 @@ if (linea) {
   linea.textContent = `${series.length} planes · ${total} clases programadas · las mismas 31 lecciones, ordenadas de distintas formas`;
 }
 
-await import('/auth.js?v=11');
+await import('/auth.js?v=13');
