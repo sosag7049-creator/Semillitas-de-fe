@@ -131,6 +131,22 @@ prueba('la agenda y las favoritas abren el panel del maestro',
 /* --------------------------------------------------------------------------
  * Un solo botón flotante
  * ----------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------
+ * El menú móvil de la barra superior
+ * ----------------------------------------------------------------------- */
+const botonMenu = d.querySelector('#menuToggle');
+const menu = d.querySelector('#mainMenu');
+prueba('la barra superior tiene menú móvil accesible',
+  Boolean(botonMenu && menu)
+  && botonMenu.getAttribute('aria-controls') === 'mainMenu'
+  && botonMenu.getAttribute('aria-expanded') === 'false');
+botonMenu.click();
+prueba('el menú móvil se abre y se anuncia',
+  menu.classList.contains('is-open') && botonMenu.getAttribute('aria-expanded') === 'true');
+menu.querySelector('a').click();
+prueba('el menú móvil se cierra al elegir una opción',
+  !menu.classList.contains('is-open') && botonMenu.getAttribute('aria-expanded') === 'false');
+
 prueba('solo hay un botón flotante', d.querySelectorAll('.dock-toggle').length === 1);
 prueba('Sion y la cuenta se recogen en la bandeja',
   d.body.classList.contains('has-dock') && Boolean(d.querySelector('.dock-item[data-dock="sion"]')));

@@ -144,6 +144,20 @@ la ofrece como una tarjeta más de accesos rápidos.
 | `home-dock.js` | Un `MutationObserver` se disparaba a sí mismo sin parar (escribía `hidden` con el mismo valor que ya tenía). Bastaba cualquier cambio en la página para **congelar el navegador**. Ahora solo escribe cuando el estado cambia de verdad. |
 | `index.html` | El guion de Sion buscaba el enlace «Sion» del menú viejo; al no existir, fallaba y perdía los demás botones del chat. Y un botón llevaba a una videoteca que ya no estaba en la portada. |
 
+### Integración con lo que ya estaba en `main`
+
+Mientras se rediseñaba la portada, `main` recibió cuatro mejoras (PR #3 a #6).
+Se fusionaron antes de publicar, resolviendo 39 conflictos, para no borrar nada:
+
+| De `main` | Qué se conservó |
+| --- | --- |
+| #4 · carga de `/series/` | Su arreglo, que es el mismo que se había hecho aquí. |
+| #5 · correcciones del sitio | Datos de lección corregidos (emoji de «Fe» y «El hijo pródigo»), `rel="noopener"` y la herramienta `tools/revisar-sitio.mjs`. |
+| #6 · menú móvil accesible | El botón hamburguesa con ARIA, cierre con Escape, al tocar fuera y al elegir una opción. Se adaptó a la portada nueva y ahora **sí tiene pruebas** (el PR original no pudo ejecutarlas). |
+
+Los accesos rápidos no sustituyen al menú: en el celular conviven el
+desplegable de la barra superior y la rejilla de `#accesos`.
+
 ---
 
 ## 4. Comprobaciones realizadas
@@ -151,7 +165,7 @@ la ofrece como una tarjeta más de accesos rápidos.
 - ✅ Las 38 páginas responden correctamente; ninguna dirección rota.
 - ✅ Las 58 direcciones del modo sin conexión existen (si una fallara, el modo
   sin conexión no se instalaría).
-- ✅ 23 pruebas automáticas sobre la portada (`tools/probar-portada.mjs`):
+- ✅ 26 pruebas automáticas sobre la portada (`tools/probar-portada.mjs`):
   catálogo de 31 lecciones, títulos únicos, seis accesos rápidos, **un solo
   botón flotante**, la bandeja, la ventana de lección, el asistente Sion, el
   buscador, las destacadas con sus cuatro datos, «continúa donde quedaste» y

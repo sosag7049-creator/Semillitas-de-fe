@@ -88,6 +88,10 @@ Imita a GitHub Pages: carpetas con `index.html` y la página `404.html` propia.
    ```bash
    node tools/generar-sitemap.mjs
    ```
+5. Si cambiaste un `.js` o un `.css`, súbele el número a su `?v=` **en todos los
+   archivos que lo piden, incluido `sw.js`**, y cambia el nombre de `CACHE` en
+   `sw.js`. Si no, quien ya visitó el sitio seguirá viendo la versión vieja.
+   `node tools/revisar-sitio.mjs` avisa cuando los números no coinciden.
 
 ### Agregar la portada de una lección
 
@@ -130,7 +134,18 @@ publicar**.
 node tools/revisar-series.mjs
 ```
 
-**3. Revisión de las destacadas** — que la portada destaque clases que existen:
+**3. Revisión del sitio** — que ninguna página esté cortada ni le falte su JavaScript:
+
+```bash
+node tools/revisar-sitio.mjs
+```
+
+No necesita instalar nada. Busca páginas incompletas, enlaces y recursos que no
+existen, archivos pedidos con dos versiones distintas de `?v=`, precargas rotas
+en `sw.js` y lecciones sin descripción propia. Termina con error si encuentra
+algo, así que **conviene correrlo antes de publicar**.
+
+**4. Revisión de las destacadas** — que la portada destaque clases que existen:
 
 ```bash
 node tools/revisar-destacadas.mjs
@@ -139,14 +154,14 @@ node tools/revisar-destacadas.mjs
 Comprueba las tarjetas fijas, la rotación semanal y que ninguna lección se
 quede sin lista de materiales en `home-destacadas.js`.
 
-**4. Revisión técnica** — que la página siga funcionando:
+**5. Revisión técnica** — que la página siga funcionando:
 
 ```bash
 npm install jsdom            # solo la primera vez
 node tools/probar-portada.mjs
 ```
 
-Levanta la portada en un navegador de mentira y revisa las 23 comprobaciones:
+Levanta la portada en un navegador de mentira y revisa las 26 comprobaciones:
 el catálogo, los seis accesos rápidos, que haya **un solo botón flotante**, la
 bandeja, la ventana de lección, el asistente Sion, el buscador, las tarjetas
 destacadas (duración, edad, pasaje y materiales), «continúa donde quedaste» y

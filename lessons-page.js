@@ -1,4 +1,4 @@
-import { LESSONS } from '/lesson-data.js?v=10';
+import { LESSONS } from '/lesson-data.js?v=11';
 import { SERIES } from '/series-data.js?v=1';
 // Versión de 800 px de una portada, para que el celular no baje la de escritorio.
 const small = url => (typeof url === 'string' && url.endsWith('.webp') ? url.slice(0, -5) + '-800.webp' : url);
@@ -116,17 +116,7 @@ ages?.addEventListener('click',async event=>{
     item.classList.toggle('active',activo);
     item.setAttribute('aria-pressed',String(activo));
   });
-  if(age==='3-5')await cargarParvulos();
-  render();
-});
-// Dejar marcada la edad recordada de la visita anterior.
-ages?.querySelectorAll('[data-age]').forEach(item=>{
-  const activo=item.dataset.age===age;
-  item.classList.toggle('active',activo);
-  item.setAttribute('aria-pressed',String(activo));
-});
-
-/* --------------------------------------------------------------------------
+  /* --------------------------------------------------------------------------
  * Llegadas desde fuera: /lecciones/?categoria=Jesús o /lecciones/?buscar=perdón
  *
  * La portada y las tarjetas destacadas enlazan aquí con el filtro ya puesto,
@@ -148,5 +138,15 @@ ages?.querySelectorAll('[data-age]').forEach(item=>{
 }
 
 if(age==='3-5')await cargarParvulos();
+  render();
+});
+// Dejar marcada la edad recordada de la visita anterior.
+ages?.querySelectorAll('[data-age]').forEach(item=>{
+  const activo=item.dataset.age===age;
+  item.classList.toggle('active',activo);
+  item.setAttribute('aria-pressed',String(activo));
+});
+
+if(age==='3-5')await cargarParvulos();
 render();
-await import('/auth.js?v=11');
+await import('/auth.js?v=13');
