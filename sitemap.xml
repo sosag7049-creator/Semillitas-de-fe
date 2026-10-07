@@ -32,6 +32,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://semillitasbiblicas.space/maestros/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://semillitasbiblicas.space/contacto.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>yearly</changefreq>

@@ -114,7 +114,16 @@ teacherStore.subscribe(state => {
 });
 document.getElementById("openTeacherPanel").addEventListener("click", () => teacherPanel.open());
 document.getElementById("openTeacherAgenda").addEventListener("click", () => teacherPanel.open("agenda"));
+// Atajos de la portada: la agenda y las secciones del panel se abren desde
+// cualquier tarjeta o desde la bandeja del botón flotante.
 document.addEventListener("click", event => { if(event.target.closest("[data-open-agenda]")) { event.preventDefault(); teacherPanel.open("agenda"); } });
+document.addEventListener("click", event => {
+  const trigger = event.target.closest("[data-open-panel]");
+  if (!trigger) return;
+  event.preventDefault();
+  const section = trigger.dataset.openPanel || "favorites";
+  teacherPanel.open(["favorites", "progress", "agenda", "notes"].includes(section) ? section : "favorites");
+});
 const panelLink = document.createElement("a");
 panelLink.href = "#mi-panel"; panelLink.textContent = "Mi panel"; panelLink.className = "teacher-nav-link";
 panelLink.addEventListener("click", event => { event.preventDefault(); teacherPanel.open(); });
