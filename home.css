@@ -1,0 +1,212 @@
+/* ---------------------------------------------------------------------------
+ * home.css — Portada corta
+ *
+ * La portada dejó de ser un folleto largo (método, programa, ruleta, videos,
+ * canales, recursos…) y pasó a ser una página de entrada con seis bloques:
+ * presentación, accesos rápidos, lecciones destacadas, planes, herramientas
+ * del maestro y protección infantil.
+ *
+ * Todo lo que se quitó vive ahora en /maestros/ y en /juegos/.
+ * ------------------------------------------------------------------------ */
+
+/* Con seis enlaces, la barra necesita un poco menos de aire entre ellos. */
+.links { gap: 16px; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+
+.home-section { padding: 56px 0; }
+.home-head { max-width: 760px; margin: 0 auto 26px; text-align: center; }
+.home-head h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); }
+.home-head p { margin: 10px 0 0; color: #52707d; font-size: 1.05rem; }
+.home-head .kicker { margin-bottom: 12px; }
+.home-more {
+  display: inline-flex; align-items: center; gap: 7px; margin-top: 24px;
+  border-radius: 999px; padding: 12px 20px; text-decoration: none;
+  background: #fff; border: 2px solid #cde0e4; color: var(--blue); font-weight: 900;
+}
+.home-more:hover { border-color: var(--blue); }
+.home-center { text-align: center; }
+
+/* --- 2. Accesos rápidos -------------------------------------------------- */
+
+.home-quick { padding: 44px 0 10px; }
+.quick-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.quick-tile {
+  display: flex; flex-direction: column; gap: 3px; align-items: flex-start;
+  min-height: 112px; padding: 18px 19px; text-align: left; text-decoration: none;
+  border: 1px solid var(--line); border-radius: 22px; background: #fff; color: inherit;
+  box-shadow: 0 7px 20px #1e475812; cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  font: inherit;
+}
+.quick-tile:hover { transform: translateY(-3px); border-color: #9fd0d8; box-shadow: var(--shadow); }
+.quick-tile:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.quick-emoji {
+  display: grid; place-items: center; width: 46px; height: 46px; margin-bottom: 6px;
+  border-radius: 15px; background: var(--sky); font-size: 1.5rem;
+}
+.quick-tile strong { font: 800 1.12rem 'Baloo 2', sans-serif; }
+.quick-tile small { color: #5d7785; font-weight: 700; line-height: 1.35; }
+.quick-tile:nth-child(2) .quick-emoji { background: var(--mint); }
+.quick-tile:nth-child(3) .quick-emoji { background: #f1e8ff; }
+.quick-tile:nth-child(4) .quick-emoji { background: #fff1d2; }
+.quick-tile:nth-child(5) .quick-emoji { background: #e3f3ff; }
+.quick-tile:nth-child(6) .quick-emoji { background: #ffe6e0; }
+
+/* --- 3. Continúa donde quedaste + lecciones destacadas ------------------- */
+
+.home-featured { background: linear-gradient(180deg, #f6fbf8, #fffdf7 70%); }
+
+.resume-card {
+  display: grid; grid-template-columns: 220px 1fr; gap: 0; overflow: hidden;
+  margin-bottom: 30px; border: 1px solid #cfe5df; border-radius: 26px;
+  background: #fff; box-shadow: 0 14px 38px #15493c14;
+}
+.resume-cover { width: 100%; height: 100%; min-height: 170px; object-fit: cover; }
+.resume-body { padding: 22px 26px; }
+.resume-label { display: inline-block; font-weight: 900; color: #2b7a5d; font-size: .9rem; }
+.resume-body h3 { margin: 6px 0; font-size: clamp(1.5rem, 3vw, 2rem); }
+.resume-body p { margin: 0 0 12px; color: #52707d; }
+.resume-bar { display: block; height: 10px; border-radius: 999px; background: #e3eeec; overflow: hidden; }
+.resume-bar span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #35a179, #8bd05f); }
+.resume-steps { display: block; margin: 7px 0 14px; color: #5d7785; font-weight: 800; }
+.resume-go {
+  display: inline-block; border-radius: 999px; padding: 12px 20px; text-decoration: none;
+  background: var(--blue); color: #fff; font-weight: 900;
+}
+.resume-go:hover { background: #0a5e76; }
+
+.feat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 18px; }
+.feat-card {
+  display: flex; flex-direction: column; overflow: hidden;
+  border: 1px solid var(--line); border-radius: 24px; background: #fff;
+  box-shadow: 0 7px 20px #1e475812; transition: transform .18s ease, box-shadow .18s ease;
+}
+.feat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.feat-cover { position: relative; display: block; aspect-ratio: 3 / 2; background: var(--sky); }
+.feat-cover img { width: 100%; height: 100%; object-fit: cover; }
+.feat-badge {
+  position: absolute; left: 12px; top: 12px; padding: 7px 13px; border-radius: 999px;
+  background: #17364a; color: #fff; font-weight: 900; font-size: .8rem;
+  box-shadow: 0 5px 14px #0a1f2b45;
+}
+.feat-semana .feat-badge { background: #b4590f; }
+.feat-guardadas .feat-badge { background: #b5324c; }
+.feat-miedo .feat-badge { background: #2c5fa8; }
+.feat-perdon .feat-badge { background: #2f7d57; }
+.feat-jesus .feat-badge { background: #6a3fa0; }
+.feat-body { display: flex; flex-direction: column; flex: 1; padding: 18px 20px 20px; }
+.feat-body h3 { font-size: 1.45rem; margin-bottom: 6px; }
+.feat-body h3 a { text-decoration: none; }
+.feat-body h3 a:hover { color: var(--blue); }
+.feat-why { margin: 0 0 12px; color: #52707d; }
+.feat-facts { display: grid; gap: 5px; list-style: none; margin: 0 0 12px; padding: 0; font-weight: 800; font-size: .92rem; }
+.feat-facts li { display: flex; gap: 8px; align-items: baseline; }
+.feat-materials {
+  margin: 0 0 14px; padding: 11px 13px; border-radius: 14px;
+  background: #fdf6e3; color: #6a5420; font-size: .88rem; line-height: 1.45;
+}
+.feat-materials b { color: #4f3f14; }
+.feat-done { margin: 0 0 12px; color: #2b7a5d; font-weight: 900; font-size: .9rem; }
+.feat-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; }
+.feat-open, .feat-print {
+  flex: 1 1 auto; border-radius: 999px; padding: 11px 15px; text-align: center;
+  text-decoration: none; font-weight: 900; font-size: .94rem;
+}
+.feat-open { background: var(--orange); color: #37180c; }
+.feat-print { background: #eaf6fa; color: var(--blue); }
+.feat-more { display: inline-block; margin-top: 12px; color: var(--blue); font-weight: 900; font-size: .88rem; }
+
+/* Lo que se ve si el navegador no puede ejecutar los módulos. */
+.feat-fallback, .plan-fallback { grid-column: 1 / -1; margin: 0; font-weight: 800; }
+.feat-fallback a { color: var(--blue); }
+
+/* --- 4. Planes de enseñanza --------------------------------------------- */
+
+.plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.plan-card {
+  display: flex; flex-direction: column; padding: 24px;
+  border: 1px solid var(--line); border-left: 7px solid var(--blue); border-radius: 22px;
+  background: #fff; box-shadow: 0 7px 20px #1e475812;
+}
+.plan-azul { border-left-color: #3f7fc4; }
+.plan-verde { border-left-color: #35a179; }
+.plan-naranja { border-left-color: #e3813f; }
+.plan-rosa { border-left-color: #d1567a; }
+.plan-amarillo { border-left-color: #e0ab27; }
+.plan-morado { border-left-color: #7a55bb; }
+.plan-emoji { font-size: 2rem; }
+.plan-card h3 { margin: 9px 0 6px; font-size: 1.4rem; }
+.plan-card h3 a { text-decoration: none; }
+.plan-card h3 a:hover { color: var(--blue); }
+.plan-tagline { margin: 0 0 10px; color: #52707d; }
+.plan-meta { margin: 0 0 12px; font-weight: 900; color: var(--blue); font-size: .9rem; }
+.plan-bar { display: block; height: 9px; border-radius: 999px; background: #e9eff0; overflow: hidden; }
+.plan-bar span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #086f8b, #35a179); }
+.plan-steps { display: block; margin: 7px 0 0; color: #5d7785; font-weight: 800; }
+.plan-next { display: block; margin-top: auto; padding-top: 14px; color: var(--blue); font-weight: 900; font-size: .95rem; }
+.plan-finished { color: #2b7a5d; }
+
+/* --- 5. Herramientas para maestros -------------------------------------- */
+
+.home-tools { background: #0f3348; color: #fff; }
+.home-tools .home-head h2 { color: #fff; }
+.home-tools .home-head p { color: #cfe3ec; }
+.home-tools .kicker { border-color: #ffffff4d; background: #ffffff17; color: #ffd76d; }
+.tool-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.tool-card {
+  display: flex; flex-direction: column; gap: 5px; align-items: flex-start;
+  padding: 22px; text-align: left; text-decoration: none; cursor: pointer; font: inherit;
+  border: 1px solid #2f5f76; border-radius: 22px; background: #164056; color: #fff;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+.tool-card:hover { transform: translateY(-3px); border-color: #ffd76d; background: #1b4c64; }
+.tool-card:focus-visible { outline: 3px solid #ffd76d; outline-offset: 3px; }
+.tool-card .tool-emoji { font-size: 1.9rem; }
+.tool-card strong { font: 800 1.2rem 'Baloo 2', sans-serif; }
+.tool-card span.tool-text { color: #cfe3ec; line-height: 1.45; }
+.tool-card em { margin-top: 8px; color: #ffd76d; font-style: normal; font-weight: 900; font-size: .9rem; }
+
+/* La ruleta ya no vive en la portada: esta tarjeta solo invita a abrirla. */
+.tool-wheel { background: linear-gradient(120deg, #1d4f67, #27705c); border-color: #3b7f6d; }
+.tool-wheel .wheel-mini {
+  width: 56px; height: 56px; margin-bottom: 4px; border-radius: 50%; border: 5px solid #fff;
+  background: conic-gradient(#ffd45d 0 45deg, #8bd8d0 45deg 90deg, #ff9b76 90deg 135deg, #c9e99f 135deg 180deg, #83c9e8 180deg 225deg, #f7c6d8 225deg 270deg, #ffd45d 270deg 315deg, #8bd8d0 315deg);
+  box-shadow: 0 8px 20px #04171f55;
+}
+
+/* --- 6. Protección infantil --------------------------------------------- */
+
+.home-safety { padding: 56px 0 70px; }
+
+/* --- Adaptaciones -------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .quick-grid { grid-template-columns: repeat(2, 1fr); }
+  .plan-grid, .tool-grid { grid-template-columns: 1fr 1fr; }
+  .resume-card { grid-template-columns: 1fr; }
+  .resume-cover { max-height: 190px; }
+}
+
+@media (max-width: 600px) {
+  .home-section { padding: 42px 0; }
+  .home-quick { padding: 30px 0 6px; }
+  .home-head { margin-bottom: 20px; text-align: left; }
+  .home-head p { font-size: 1rem; }
+  .quick-grid { gap: 11px; }
+  .quick-tile { min-height: 0; padding: 14px; border-radius: 18px; }
+  .quick-emoji { width: 40px; height: 40px; font-size: 1.3rem; border-radius: 13px; }
+  .quick-tile strong { font-size: 1rem; line-height: 1.2; }
+  .quick-tile small { font-size: .8rem; }
+  .feat-grid, .plan-grid, .tool-grid { grid-template-columns: 1fr; }
+  .resume-body { padding: 18px; }
+  .feat-actions { display: grid; }
+  .home-more, .resume-go { display: flex; justify-content: center; width: 100%; }
+}
+
+@media (max-width: 380px) {
+  .quick-grid { grid-template-columns: 1fr; }
+}

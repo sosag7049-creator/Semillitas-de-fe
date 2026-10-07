@@ -8,7 +8,7 @@ if (!document.querySelector('.jerubi-launch')) {
   // sion-widget.css trae la geometria base del panel; sion-ui.css va despues
   // porque reestiliza el lanzador y debe ganar.
   if (!document.querySelector('link[href^="/sion-widget.css"]')) {
-    document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="/sion-widget.css?v=1">');
+    document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="/sion-widget.css?v=2">');
   }
   if (!document.querySelector('link[href^="/sion-ui.css"]')) {
     document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="/sion-ui.css?v=3">');

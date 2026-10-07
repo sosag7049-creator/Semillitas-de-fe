@@ -126,6 +126,27 @@ ages?.querySelectorAll('[data-age]').forEach(item=>{
   item.setAttribute('aria-pressed',String(activo));
 });
 
+/* --------------------------------------------------------------------------
+ * Llegadas desde fuera: /lecciones/?categoria=Jesús o /lecciones/?buscar=perdón
+ *
+ * La portada y las tarjetas destacadas enlazan aquí con el filtro ya puesto,
+ * para que el maestro no tenga que repetir la búsqueda al llegar.
+ * ----------------------------------------------------------------------- */
+{
+  const parametros=new URLSearchParams(location.search);
+  const pedida=(parametros.get('categoria')||'').trim();
+  if(pedida){
+    const chip=[...document.querySelectorAll('[data-category]')]
+      .find(item=>item.dataset.category.toLocaleLowerCase('es')===pedida.toLocaleLowerCase('es'));
+    if(chip){
+      category=chip.dataset.category;
+      document.querySelectorAll('[data-category]').forEach(item=>item.classList.toggle('active',item===chip));
+    }
+  }
+  const texto=(parametros.get('buscar')||'').trim();
+  if(texto)search.value=texto.slice(0,80);
+}
+
 if(age==='3-5')await cargarParvulos();
 render();
 await import('/auth.js?v=11');

@@ -11,11 +11,13 @@ niñas de **3 a 10 años**, basados en la **Reina-Valera 1960**.
 
 | Sección | Dirección | Qué hay |
 | --- | --- | --- |
-| Portada | `/` | Presentación, método de clase, videos y la Ruleta Bíblica |
+| Portada | `/` | Bienvenida corta, accesos rápidos y lecciones destacadas de la semana |
 | Clases | `/lecciones/` | Las **31 lecciones**, con buscador y filtros |
+| Planes | `/series/` | Rutas de enseñanza que agrupan las clases por semanas |
 | Cada clase | `/lecciones/<nombre>/` | Historia, versículo, preguntas, dinámica, manualidad y oración |
 | Juegos | `/juegos/` | Ruleta, memoria, juego de mesa y “adivina quién”, para proyectar |
 | Imprimibles | `/printables.html` | Hojas para colorear, versículos y actividades |
+| Guía del maestro | `/maestros/` | Método de clase mixta, programa de 60 minutos, videos y canales |
 
 Además es una **PWA**: se puede instalar en el celular y funciona sin internet
 una vez visitadas las páginas.
@@ -32,10 +34,14 @@ desde la rama `main`.
 
 ```
 index.html              Portada (lleva su propio catálogo, ver más abajo)
+home.js  home.css       Accesos rápidos, destacadas, planes y «continúa donde quedaste»
+home-destacadas.js      ⭐ Qué lecciones se destacan en la portada y sus materiales
+home-dock.js/.css       El único botón flotante y su bandeja (Sion, agenda, cuenta…)
+maestros/index.html     Guía del maestro: método, programa de clase, videos y canales
 lecciones/index.html    Listado de las 31 clases
 lecciones/<nombre>/     Una carpeta por clase
 series/index.html       Planes de enseñanza (agrupan las clases en rutas)
-juegos/                 Juegos para proyectar
+juegos/                 Juegos para proyectar (incluye la Ruleta Bíblica)
 printables.html         Material imprimible
 
 printables-data.js      ⭐ FUENTE DE VERDAD del contenido de las 31 lecciones
@@ -92,6 +98,18 @@ genera la versión pequeña que usan los celulares:
 convert images/lessons/<nombre>.webp -resize 800x -quality 82 images/lessons/<nombre>-800.webp
 ```
 
+### Cambiar las lecciones destacadas de la portada
+
+Todo está en **`home-destacadas.js`**:
+
+- `DESTACADAS` — las tarjetas fijas (título de la etiqueta, lección, duración,
+  edad y pasaje). La que lleva `rotatoria: true` cambia sola cada semana.
+- `ROTACION_SEMANAL` — la lista de lecciones por las que va pasando esa
+  tarjeta, una por semana.
+- `MATERIALES` — qué hace falta llevar a clase, por lección.
+
+Después conviene correr `node tools/revisar-destacadas.mjs`.
+
 ### Comprobar que nada se rompió
 
 **1. Revisión bíblica** — que el contenido respete la Reina-Valera 1960:
@@ -112,15 +130,32 @@ publicar**.
 node tools/revisar-series.mjs
 ```
 
-**3. Revisión técnica** — que la página siga funcionando:
+**3. Revisión de las destacadas** — que la portada destaque clases que existen:
+
+```bash
+node tools/revisar-destacadas.mjs
+```
+
+Comprueba las tarjetas fijas, la rotación semanal y que ninguna lección se
+quede sin lista de materiales en `home-destacadas.js`.
+
+**4. Revisión técnica** — que la página siga funcionando:
 
 ```bash
 npm install jsdom            # solo la primera vez
 node tools/probar-portada.mjs
 ```
 
-Revisa el catálogo, la ventana de lección, el asistente Sion, la ruleta y el
-buscador.
+Levanta la portada en un navegador de mentira y revisa las 23 comprobaciones:
+el catálogo, los seis accesos rápidos, que haya **un solo botón flotante**, la
+bandeja, la ventana de lección, el asistente Sion, el buscador, las tarjetas
+destacadas (duración, edad, pasaje y materiales), «continúa donde quedaste» y
+los planes. Necesita el servidor local encendido:
+
+```bash
+node tools/servidor-local.mjs &   # en otra terminal
+node tools/probar-portada.mjs
+```
 
 ### Publicar los cambios
 

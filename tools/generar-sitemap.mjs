@@ -21,6 +21,7 @@ const PAGINAS_FIJAS = [
   ['/series/', '0.9', 'weekly'],
   ['/juegos/', '0.8', 'monthly'],
   ['/printables.html', '0.8', 'monthly'],
+  ['/maestros/', '0.7', 'monthly'],
   ['/contacto.html', '0.4', 'yearly'],
   ['/privacidad.html', '0.3', 'yearly'],
   ['/terminos.html', '0.3', 'yearly'],

@@ -126,7 +126,7 @@ function pintarSeries() {
         })
         .join('');
 
-      return `<article class="serie-card tono-${safe(serie.tone)}">
+      return `<article class="serie-card tono-${safe(serie.tone)}" id="${safe(serie.id)}">
         <div class="serie-top">
           <span class="serie-emoji" aria-hidden="true">${safe(serie.emoji)}</span>
           <div>
@@ -177,10 +177,32 @@ document.getElementById('seriesGrid')?.addEventListener('click', (event) => {
 pintarSeries();
 pintarProxima();
 
+/* Las tarjetas se dibujan con JavaScript, así que el navegador ya pasó por el
+ * ancla de la dirección (#cuando-tengo-miedo) cuando aún no existía. Se repite
+ * el salto una vez que la rejilla está en pantalla. */
+if (location.hash.length > 1) {
+  document.getElementById(decodeURIComponent(location.hash.slice(1)))
+    ?.scrollIntoView({ block: 'start' });
+}
+
 const total = series.reduce((suma, serie) => suma + serie.total, 0);
 const linea = document.getElementById('seriesIntro');
 if (linea) {
   linea.textContent = `${series.length} planes · ${total} clases programadas · las mismas 31 lecciones, ordenadas de distintas formas`;
 }
+
+/* auth.js (cuenta, panel y agenda) lee el catálogo desde `window.Semillitas`,
+ * igual que en la portada y en /lecciones/. Sin esto, la cuenta no arranca en
+ * esta página. */
+window.Semillitas = Object.freeze({
+  lessons: Object.freeze(LESSONS.map((lesson, index) => Object.freeze({
+    id: String(lesson.id), index, title: lesson.title, reference: lesson.reference,
+    category: lesson.category, emoji: lesson.icon || '📖', objective: lesson.objective,
+  }))),
+  openLesson: (id) => {
+    const lesson = LESSONS.find((item) => String(item.id) === String(id));
+    if (lesson) location.href = `/lecciones/${lesson.slug}/`;
+  },
+});
 
 await import('/auth.js?v=11');
