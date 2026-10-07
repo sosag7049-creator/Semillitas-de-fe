@@ -16,12 +16,7 @@
 .hero-cinematic .summary{grid-template-columns:1fr 1fr;align-self:end}
 .hero-cinematic .stat{border-color:#ffffff3d;background:#0e3446a8;color:#fff;backdrop-filter:none;box-shadow:0 16px 44px #06192333}
 .hero-cinematic .stat b{color:#ffd76d;font-size:clamp(1.5rem,3vw,2.1rem)}
-.home-library{padding:38px 0 58px;background:linear-gradient(180deg,#f5fbf7,#fffdf7)}
-.home-library-card{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:clamp(24px,4vw,42px);border:1px solid #d5e7e3;border-radius:30px;background:#fff;box-shadow:0 18px 50px rgba(21,60,78,.09)}
-.home-library-card h2{max-width:690px;margin:10px 0 8px;font-size:clamp(2rem,4vw,3rem)}
-.home-library-card p{max-width:700px;margin:0;color:#52707d}
-.home-library-card>.btn{flex:none;border-radius:999px;background:#086f8b;color:#fff}
-@media(max-width:900px){.hero-cinematic{min-height:720px}.hero-cinematic .hero-grid{grid-template-columns:1fr}.hero-cinematic .summary{max-width:620px}.hero-shade{background:linear-gradient(90deg,rgba(8,28,40,.88),rgba(8,35,46,.58)),linear-gradient(0deg,rgba(5,24,34,.5),transparent)}.home-library-card{align-items:flex-start;flex-direction:column}}
+@media(max-width:900px){.hero-cinematic{min-height:720px}.hero-cinematic .hero-grid{grid-template-columns:1fr}.hero-cinematic .summary{max-width:620px}.hero-shade{background:linear-gradient(90deg,rgba(8,28,40,.88),rgba(8,35,46,.58)),linear-gradient(0deg,rgba(5,24,34,.5),transparent)}}
 @media(max-width:600px){
   .hero-cinematic{min-height:auto;padding:46px 0 38px}
   .hero-cinematic .hero-grid{gap:26px}
@@ -37,13 +32,8 @@
   .hero-cinematic .stat{min-width:0;padding:12px;border-radius:16px}
   .hero-cinematic .stat b{overflow-wrap:anywhere;font-size:1.28rem;line-height:1.1}
   .hero-cinematic .stat span{font-size:.76rem;line-height:1.25}
-  .home-library{padding:24px 0 42px}
-  .home-library-card{gap:22px;padding:22px;border-radius:22px}
-  .home-library-card h2{font-size:1.95rem;line-height:1.05}
-  .home-library-card>.btn{width:100%;text-align:center}
-  .install-app-btn{left:84px;max-width:calc(100vw - 172px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 }
-@media(max-width:370px){.hero-cinematic .summary{grid-template-columns:1fr 1fr}.hero-cinematic .stat b{font-size:1.12rem}.home-library-card h2{font-size:1.75rem}}
+@media(max-width:370px){.hero-cinematic .summary{grid-template-columns:1fr 1fr}.hero-cinematic .stat b{font-size:1.12rem}}
 /* Avoid repeatedly blurring moving video layers on touch devices. */
 @media(hover:none) and (pointer:coarse){
   .hero-cinematic .kicker,.hero-cinematic .hero-secondary,.hero-cinematic .stat{backdrop-filter:none;-webkit-backdrop-filter:none}

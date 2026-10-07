@@ -1,22 +1,27 @@
-import { LESSONS, lessonBySlug } from '/lesson-data.js?v=10';
+import { LESSONS, lessonBySlug } from '/lesson-data.js?v=11';
 // Versión de 800 px de una portada, para que el celular no baje la de escritorio.
 const small = url => (typeof url === 'string' && url.endsWith('.webp') ? url.slice(0, -5) + '-800.webp' : url);
 
 const root=document.getElementById('lessonApp');
 const slug=document.body.dataset.lesson||location.pathname.split('/').filter(Boolean).at(-1);
 const lesson=lessonBySlug(slug);
-if(!lesson){root.innerHTML='<main class="wrap" style="padding:80px 0"><h1>Lección no encontrada</h1><p><a href="/#lecciones">Volver a todas las lecciones</a></p></main>';throw new Error('Unknown lesson');}
+if(!lesson){root.innerHTML='<main class="wrap" style="padding:80px 0"><h1>Lección no encontrada</h1><p><a href="/lecciones/">Volver a todas las lecciones</a></p></main>';throw new Error('Unknown lesson');}
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const index=LESSONS.indexOf(lesson),prev=LESSONS[index-1],next=LESSONS[index+1];
 const heroArt=lesson.coverImage
  ? `<div class="hero-art illustrated"><img src="${lesson.coverImage}" srcset="${small(lesson.coverImage)} 800w, ${lesson.coverImage} 1200w" sizes="(max-width:800px) 94vw, 470px" alt="Ilustración infantil de ${esc(lesson.title)}" width="1200" height="800" fetchpriority="high" decoding="async"></div>`
  : `<div class="hero-art emoji-art" role="img" aria-label="Ilustración de ${esc(lesson.title)}">${lesson.icon}</div>`;
 document.title=`${lesson.title} · Clase bíblica | Semillitas de Fe`;
-document.querySelector('meta[name="description"]')?.setAttribute('content',`${lesson.title}: clase bíblica completa para niños de 3 a 10 años basada en ${lesson.reference}.`);
+// Cada /lecciones/<slug>/index.html ya trae su propia descripción, más rica y
+// distinta para cada clase. Solo se rellena aquí si viniera vacía, para no
+// sobrescribirla con un texto genérico e igual en las 31 lecciones.
+const metaDescripcion=document.querySelector('meta[name="description"]');
+if(metaDescripcion&&!metaDescripcion.getAttribute('content')?.trim())
+  metaDescripcion.setAttribute('content',`${lesson.title} (${lesson.reference}): ${lesson.objective}. Clase bíblica para niños de 3 a 10 años.`);
 document.querySelector('link[rel="canonical"]')?.setAttribute('href',`https://semillitasbiblicas.space/lecciones/${lesson.slug}/`);
 
 root.innerHTML=`
-<header class="site-head"><nav class="nav wrap"><a class="brand" href="/"><span>🌱</span>Semillitas de Fe</a><a class="back" href="/#lecciones">← Todas las lecciones</a></nav></header>
+<header class="site-head"><nav class="nav wrap"><a class="brand" href="/"><span>🌱</span>Semillitas de Fe</a><a class="back" href="/lecciones/">← Todas las lecciones</a></nav></header>
 <div class="progress-shell"><div class="wrap progress-row"><span class="progress-label">Mi progreso</span>${['story','bible','video','quiz','activity'].map((s,i)=>`<button class="step-pill" data-jump="${s}">${['Historia','Biblia','Video','Quiz','Actividad'][i]}</button>`).join('')}<span class="step-pill" id="completePill">🏆 Clase</span><button class="classmode-toggle" id="classModeToggle" aria-pressed="false" title="Agranda el texto para proyectar al televisor">📺 Modo clase</button></div><div class="bar"><span id="progressBar"></span></div></div>
 <main>
 <section class="class-hero"><div class="wrap hero-grid"><div><span class="eyebrow">LECCIÓN ${String(lesson.number).padStart(2,'0')} DE ${LESSONS.length}</span><h1>${esc(lesson.title)}</h1><p class="promise">${esc(lesson.objective)}.</p><div class="facts"><span>👧🏽👦🏻 ${lesson.age}</span><span>⏱️ ${lesson.duration}</span><span>📖 ${esc(lesson.reference)}</span></div><p class="bible-version">Referencia bíblica: ${esc(lesson.bibleVersion)}</p><button class="primary" id="startClass">Comenzar clase ↓</button></div>${heroArt}</div></section>
@@ -31,12 +36,21 @@ root.innerHTML=`
 <section><div class="wrap"><div class="section-head"><span class="section-icon">💛</span><div><h2>Versículo para memorizar</h2><span>Repite una frase cada vez y agrega movimientos</span></div></div><div class="memory-card"><small>${esc(lesson.memory.reference)} · RVR1960${lesson.memory.excerpt?" · Fragmento":""}</small><blockquote>“${esc(lesson.memory.text)}${/[.!?]$/.test(lesson.memory.text)?"":"."}”</blockquote><a class="verse-source" href="${lesson.memory.sourceUrl}" target="_blank" rel="noopener noreferrer">Leer el versículo completo en RVR1960 ↗</a><div class="memory-actions"><button id="memoryMode">🧠 Memorizar</button><button id="copyVerse">📋 Copiar</button><button id="printVerse">🖨️ Imprimir</button></div></div></div></section>
 <section><div class="wrap"><div class="section-head"><span class="section-icon">🙏</span><div><h2>Momento de oración</h2><span>Oración sugerida, no una cita bíblica. Pueden usar sus propias palabras.</span></div></div><div class="prayer">${esc(lesson.prayer)}</div></div></section>
 <section class="finish"><div class="wrap finish-card"><h2>¿Terminaste las partes principales?</h2><p>Cuando Historia, Biblia, Video, Actividad y Quiz estén completos, celebra el aprendizaje.</p><button class="primary finish-button" id="finishClass" disabled>🏆 ¡Terminé mi clase!</button><p class="sync-note" id="syncNote"></p><div class="celebration" id="celebration"><b>🏆 ¡Clase completada!</b><p>🌱 Ganaste 10 Semillitas.</p></div></div></section>
-<nav class="lesson-nav wrap">${prev?`<a href="/lecciones/${prev.slug}/">← ${esc(prev.title)}</a>`:'<span></span>'}<span>Lección ${lesson.number} de ${LESSONS.length}</span>${next?`<a href="/lecciones/${next.slug}/">${esc(next.title)} →</a>`:'<a href="/#lecciones">Todas las lecciones →</a>'}</nav>
+<nav class="lesson-nav wrap">${prev?`<a href="/lecciones/${prev.slug}/">← ${esc(prev.title)}</a>`:'<span></span>'}<span>Lección ${lesson.number} de ${LESSONS.length}</span>${next?`<a href="/lecciones/${next.slug}/">${esc(next.title)} →</a>`:'<a href="/lecciones/">Todas las lecciones →</a>'}</nav>
 </main><footer class="site-footer"><div class="wrap footer-row"><strong>🌱 Semillitas de Fe</strong><span>Referencia bíblica: Reina-Valera 1960 (RVR1960). Relatos, ilustraciones y actividades son adaptaciones educativas.</span><small class="credit">Creado por Gerardo Sosa</small><nav class="legal-links"><a href="/privacidad.html">Privacidad</a><a href="/terminos.html">Términos</a><a href="/contacto.html">Contacto</a></nav></div></footer>`;
 
 const key=`semillitas-class-${lesson.id}`,steps=['story','bible','video','activity','quiz'];
 let state={};try{state=JSON.parse(localStorage.getItem(key)||'{}')}catch{state={}}state.parts ||= {};
-const save=()=>localStorage.setItem(key,JSON.stringify(state));
+// `updatedAt` y `semillitas-ultima-clase` son lo que permite a la portada
+// ofrecer «Continúa donde quedaste» sin necesidad de tener cuenta.
+const save=()=>{
+  state.updatedAt=Date.now();
+  try{
+    localStorage.setItem(key,JSON.stringify(state));
+    localStorage.setItem('semillitas-ultima-clase',JSON.stringify({id:lesson.id,slug:lesson.slug,at:state.updatedAt}));
+  }catch{/* el navegador puede bloquear el almacenamiento: la clase sigue funcionando */}
+};
+try{localStorage.setItem('semillitas-ultima-clase',JSON.stringify({id:lesson.id,slug:lesson.slug,at:Date.now()}))}catch{}
 function renderProgress(){const done=steps.filter(s=>state.parts[s]).length;document.querySelectorAll('[data-jump]').forEach(b=>b.classList.toggle('done',!!state.parts[b.dataset.jump]));document.getElementById('progressBar').style.width=`${done/steps.length*100}%`;document.getElementById('finishClass').disabled=done<steps.length;document.querySelectorAll('[data-mark]').forEach(b=>{const yes=!!state.parts[b.dataset.mark];b.textContent=yes?'✓ Completado':'✓ '+({story:'Terminé la historia',bible:'Lectura realizada',video:'Vimos el video'}[b.dataset.mark]);b.classList.toggle('done',yes)});if(state.completed){document.getElementById('completePill').classList.add('done');document.getElementById('celebration').classList.add('show')}}
 function mark(part){state.parts[part]=true;save();renderProgress()}
 // Modo clase: agranda el texto para proyectar y recuerda la preferencia.
