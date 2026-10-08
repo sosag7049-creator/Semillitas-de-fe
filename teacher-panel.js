@@ -213,7 +213,7 @@ export function mountTeacherPanel({ store, lessons, openAccount, errorMessage, c
     if (tool.hasAttribute('data-library')) {
       panel.close();
       const library = document.getElementById('lecciones');
-      if (library) library.scrollIntoView({ behavior: 'smooth' });
+      if (library) library.scrollIntoView({ behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ? 'auto' : 'smooth' });
       else location.href = '/lecciones/';
     }
     if (tool.hasAttribute('data-delete-note')) {

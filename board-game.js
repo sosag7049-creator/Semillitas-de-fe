@@ -29,7 +29,7 @@ if(typeof document!=='undefined'&&$('game-board')){
  const die=$('journeyDie');let dieTimer;
  const setDie=v=>{die.className=`journey-die die-cube show-${v}`;die.setAttribute('aria-label',`Dado: ${v}`)};
  const resetDie=()=>{clearTimeout(dieTimer);die.className='journey-die die-cube';die.setAttribute('aria-label','Dado sin lanzar')};
- const reducedMotion=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const reducedMotion=()=>window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches===true;
  function tumbleDie(value,done){clearTimeout(dieTimer);if(reducedMotion()){setDie(value);done();return}die.className='journey-die die-cube die-tumble';dieTimer=setTimeout(()=>{setDie(value);done()},700)}
  function render(){
   let cells='';for(let row=5;row>=0;row--)for(let col=0;col<6;col++){const n=row*6+(row%2?6-col:col+1),end=jumps[n];cells+=`<div class="journey-cell ${end?(end>n?'ladder-cell':'snake-cell'):''}" style="grid-row:${6-row};grid-column:${col+1}"><b>${n}</b><small>${n===36?'META':end?`${end>n?'Sube':'Baja'} a ${end}`:n%4===0?'Reto':''}</small></div>`}

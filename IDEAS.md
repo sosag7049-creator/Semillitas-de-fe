@@ -151,41 +151,33 @@ pequeños y refuerza la secuencia del relato.
 
 ### 🔴 Alta prioridad
 
-> ✅ **Hecho (5 oct 2026):** las *series y planes trimestrales* y el bloque
-> *«¿qué enseño este domingo?»* están en `/series/`, y el *filtro por edad*
-> ya funciona en el catálogo. Queda pendiente el **modo presentación / TV**
-> para las lecciones.
+> ✅ **Hecho:** las *series y planes trimestrales*, la sugerencia de próxima
+> clase y el *filtro por edad* ya funcionan. Las lecciones también tienen un
+> **modo clase** que agranda el texto; queda como mejora futura una presentación
+> secuencial a pantalla completa, avanzable con teclado.
 
-**1. Series y planes trimestrales** ⭐ *la mejor relación valor/esfuerzo*
+**1. ✅ Series y planes trimestrales — hecho**
 
-Hoy las 31 lecciones son una lista plana. Un maestro no quiere “una lección”,
-quiere **saber qué va a enseñar los próximos 3 meses**.
+`/series/` agrupa las 31 clases en seis rutas con duración, edad sugerida,
+progreso y enlaces a cada semana. La serie recomendada y la página que recuerda
+el avance ayudan a empezar sin preparar el trimestre desde cero.
 
-Agrupar lo que ya existe en rutas:
-- *“Héroes de la fe” — 13 semanas* (Noé, Abraham, José, Moisés, Josué, David…)
-- *“La vida de Jesús” — 13 semanas*
-- *“Carácter que agrada a Dios” — 8 semanas*
-- *“Mis primeras historias” — 10 semanas, para 3-5 años*
+**2. ✅ Sugerencia “¿Qué enseño este domingo?” — hecho, con mejora pendiente**
 
-**No requiere contenido nuevo**, solo organizar y añadir una página `/series/`.
+`/series/` ya propone la siguiente lección de la ruta recomendada o de la serie
+que el maestro lleva más avanzada. Queda como mejora futura priorizar Navidad y
+Semana Santa según el calendario.
 
-**2. “¿Qué enseño este domingo?”**
+**3. Modo presentación secuencial para las lecciones — pendiente**
 
-Un bloque en la portada que, según la fecha, sugiera la lección: en diciembre
-Navidad, en Semana Santa la resurrección, el resto siguiendo la serie activa.
-Resuelve exactamente el problema del maestro que prepara el sábado por la noche.
+Las lecciones ya cuentan con **Modo clase**, que agranda el texto y reduce los
+elementos accesorios para proyectar. La mejora pendiente sería una vista a
+pantalla completa que muestre una parte a la vez y permita avanzar con flechas.
 
-**3. Modo presentación para las lecciones**
+**4. ✅ Filtro por edad en el catálogo — hecho**
 
-Los juegos ya tienen “modo TV”, las lecciones no. Una vista a pantalla completa
-con la historia en partes, letra grande y la ilustración, para avanzar con las
-flechas mientras se proyecta.
-
-**4. Filtro por edad en el catálogo**
-
-Ya tienes los datos (`preschool-data.json` y los campos *versión sencilla* /
-*versión profunda*), pero no se puede filtrar. Dos botones —**3-5 años** y
-**6-10 años**— y que la lección muestre la versión correspondiente.
+El catálogo ya permite ver las clases para **3-5 años**, **6-10 años** o todas
+las edades, y recuerda la preferencia en el dispositivo del maestro.
 
 ### 🟠 Prioridad media
 

@@ -1,6 +1,6 @@
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2.57.4";
 import { createTeacherStore, request } from "./teacher-store.js";
-import { mountTeacherPanel } from "./teacher-panel.js";
+import { mountTeacherPanel } from "./teacher-panel.js?v=2";
 
 // Capture the callback before Supabase consumes the URL. Never log tokens.
 const callbackParams = new URLSearchParams(location.hash.slice(1));

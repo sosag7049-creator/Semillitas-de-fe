@@ -88,13 +88,13 @@ selector.addEventListener('change', () => {
   history.replaceState(null, '', `/printables.html?leccion=${current.id}`);
   render(current);
   selectPage('guide', false);
-  window.scrollTo({top: 0, behavior: 'smooth'});
+  window.scrollTo({top: 0, behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ? 'auto' : 'smooth'});
 });
 
 function selectPage(page, scroll = true) {
   document.querySelectorAll('.print-page').forEach(sheet => sheet.classList.toggle('print-target', sheet.dataset.page === page));
   tabs.querySelectorAll('button').forEach(button => button.classList.toggle('active', button.dataset.page === page));
-  if (scroll) document.querySelector(`[data-page="${page}"]`)?.scrollIntoView({behavior:'smooth', block:'start'});
+  if (scroll) document.querySelector(`[data-page="${page}"]`)?.scrollIntoView({behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches?'auto':'smooth', block:'start'});
 }
 
 tabs.addEventListener('click', event => {

@@ -209,3 +209,35 @@ navegador de verdad.
 ---
 
 *Documento generado durante la revisión técnica del repositorio.*
+
+---
+
+## 6. Accesibilidad, PWA y resiliencia · 8 de octubre de 2026
+
+Esta actualización se aplicó sobre la versión vigente de `main`, conservando el
+rediseño de portada y las mejoras publicadas previamente. No se agregó contenido
+bíblico.
+
+- **Accesibilidad global:** las 42 páginas HTML incluyen un enlace para saltar
+  al contenido, foco de teclado visible y respeto a la preferencia de movimiento
+  reducido. Los elementos principales reciben un destino de foco explícito.
+- **PWA en entradas directas:** `pwa-register.js` registra el service worker en
+  todas las páginas y permite guardar también la página abierta al entrar desde
+  un enlace compartido o un buscador. Se excluyen URLs con parámetros para no
+  almacenar búsquedas ni callbacks de autenticación.
+- **Progreso de clases:** el indicador anuncia su porcentaje a tecnologías de
+  asistencia; cada parte de la dinámica se conserva localmente y se puede
+  desmarcar; el desplazamiento respeta movimiento reducido.
+- **Copiar versículo:** se usa Clipboard API cuando está disponible y un recurso
+  compatible como alternativa, sin interrumpir la clase si el navegador lo
+  bloquea.
+- **Robustez de componentes:** se protegen las consultas de `matchMedia` en
+  juegos y portada; el diálogo de Sion devuelve el foco al botón que lo abrió.
+- **Caché renovada:** service worker `semillitas-v56-pwa-accesible`, con las
+  versiones actualizadas de los recursos PWA y de accesibilidad.
+
+### Verificación
+
+`node tools/revisar-plataforma.mjs`, `node tools/revisar-series.mjs`,
+`node tools/revisar-biblia.mjs`, `node tools/revisar-destacadas.mjs`,
+`node tools/sincronizar-portada.mjs` y `node tools/probar-portada.mjs`.

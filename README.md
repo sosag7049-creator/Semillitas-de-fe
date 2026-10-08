@@ -50,6 +50,8 @@ lesson-data.js          Arma el catálogo completo a partir de lo anterior
 series-data.js          ⭐ FUENTE DE VERDAD de los planes de enseñanza
 
 sw.js                   Service worker: caché y modo sin conexión
+pwa-register.js         Registra la PWA también en las páginas de entrada directa
+accessibility.css       Enlace para saltar al contenido, foco y movimiento reducido
 manifest.webmanifest    Datos de la app instalable
 sitemap.xml  robots.txt Para los buscadores
 404.html                Página de error con buscador de clases
@@ -170,6 +172,14 @@ los planes. Necesita el servidor local encendido:
 ```bash
 node tools/servidor-local.mjs &   # en otra terminal
 node tools/probar-portada.mjs
+```
+
+**6. Revisión de plataforma** — valida las rutas del caché, el registro de la
+PWA y el enlace de navegación por teclado en todas las páginas. No necesita
+instalar dependencias:
+
+```bash
+node tools/revisar-plataforma.mjs
 ```
 
 ### Publicar los cambios
