@@ -27,7 +27,7 @@ const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = 'http://127.0.0.1:8000';
 const errores = [];
 const vc = new VirtualConsole();
-vc.on('jsdomError', e => { const m = String(e.message || e); if (!/Not implemented|Could not parse CSS/.test(m)) errores.push(m); });
+vc.on('jsdomError', e => { const m = String(e.message || e); if (!/Not implemented|Could not parse CSS|Could not load style: .*fonts\.googleapis\.com/.test(m)) errores.push(m); });
 vc.on('error', (...a) => errores.push(a.join(' ')));
 
 // Solo se descarga lo del propio sitio: las tipografías de Google u otros

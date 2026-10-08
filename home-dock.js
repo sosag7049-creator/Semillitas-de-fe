@@ -138,7 +138,7 @@
    * equivalente, así que allí se explican los dos pasos a mano.
    */
   const instalar = dock.querySelector('.dock-item-instalar');
-  const yaInstalada = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  const yaInstalada = window.matchMedia?.('(display-mode: standalone)')?.matches === true || navigator.standalone === true;
   let aviso = null;
 
   window.addEventListener('beforeinstallprompt', (evento) => {

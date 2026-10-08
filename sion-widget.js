@@ -67,7 +67,7 @@ if (!document.querySelector('.jerubi-launch')) {
     if (open) input.focus();
   };
   launch.addEventListener('click', () => toggle(!panel.classList.contains('is-open')));
-  document.getElementById('jerubiClose').addEventListener('click', () => toggle(false));
+  document.getElementById('jerubiClose').addEventListener('click', () => { toggle(false); launch.focus(); });
   // Cerrar con Escape y devolver el foco al boton, igual que en la portada.
   document.addEventListener('keydown', (ev) => {
     if (ev.key !== 'Escape') return;
