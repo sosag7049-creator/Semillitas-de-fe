@@ -15,6 +15,10 @@
  * script ya no: se edita solo `printables-data.js` (y los bloques adicionales)
  * y luego se ejecuta esto para que la portada quede igual.
  *
+ * Lo mismo con el enlace «Ver los N planes →»: el número se escribe a mano en
+ * la portada y los planes son los de `series-data.js`, así que aquí se
+ * comparan también (el 14 de octubre la portada decía 6 con 7 series).
+ *
  * No necesita instalar nada: usa únicamente Node.
  */
 import { readFileSync, writeFileSync, mkdtempSync, copyFileSync, readdirSync } from 'node:fs';
@@ -41,12 +45,13 @@ async function cargarModulos() {
     writeFileSync(join(temporal, archivo), contenido);
   }
   const url = nombre => pathToFileURL(join(temporal, nombre)).href;
-  const [printables, extra1, extra2, extra3, extra4] = await Promise.all([
+  const [printables, extra1, extra2, extra3, extra4, series] = await Promise.all([
     import(url('printables-data.js')),
     import(url('additional-lessons.js')),
     import(url('additional-lessons-2.js')),
     import(url('additional-lessons-3.js')),
     import(url('additional-lessons-4.js')),
+    import(url('series-data.js')),
   ]);
   // Los emojis de las 24 primeras lecciones viven en lesson-data.js.
   const iconosBase = JSON.parse(
@@ -57,6 +62,7 @@ async function cargarModulos() {
     PRINTABLES: printables.PRINTABLES,
     EXTRAS: [...extra1.ADDITIONAL_LESSONS, ...extra2.SECOND_BLOCK, ...extra3.THIRD_BLOCK, ...extra4.FOURTH_BLOCK],
     iconosBase,
+    SERIES: series.SERIES,
   };
 }
 
@@ -113,6 +119,7 @@ const bloque = localizarArrayL(html);
 const actuales = eval(bloque.texto);
 
 let diferencias = 0;
+const anunciados = html.match(/Ver los (\d+) planes/);
 if (actuales.length !== esperadas.length) {
   console.log(`⚠️  La portada tiene ${actuales.length} lecciones y la fuente de verdad ${esperadas.length}.`);
   diferencias++;
@@ -128,10 +135,25 @@ for (let i = 0; i < Math.min(actuales.length, esperadas.length); i++) {
   }
 }
 
+/* ------------------------------------------------------------------ *
+ * 6. El enlace «Ver los N planes →» de la portada.
+ * ------------------------------------------------------------------ */
+if (!anunciados) {
+  console.log('⚠️  No se encontró el enlace «Ver los N planes» en index.html.');
+  diferencias++;
+} else if (Number(anunciados[1]) !== datos.SERIES.length) {
+  console.log(`⚠️  La portada anuncia «Ver los ${anunciados[1]} planes» y en series-data.js hay ${datos.SERIES.length}.`);
+  diferencias++;
+}
+
 if (!diferencias) {
-  console.log(`✅ La portada está sincronizada: ${esperadas.length} lecciones, sin diferencias.`);
+  console.log(`✅ La portada está sincronizada: ${esperadas.length} lecciones y ${datos.SERIES.length} planes, sin diferencias.`);
 } else if (ESCRIBIR) {
-  writeFileSync(join(RAIZ, 'index.html'), html.slice(0, bloque.inicio) + serializar(esperadas) + html.slice(bloque.fin));
+  let nuevo = html.slice(0, bloque.inicio) + serializar(esperadas) + html.slice(bloque.fin);
+  if (anunciados && Number(anunciados[1]) !== datos.SERIES.length) {
+    nuevo = nuevo.replace(/Ver los \d+ planes/, `Ver los ${datos.SERIES.length} planes`);
+  }
+  writeFileSync(join(RAIZ, 'index.html'), nuevo);
   console.log(`\n✍️  index.html actualizado: ${diferencias} diferencia(s) corregida(s).`);
 } else {
   console.log(`\n${diferencias} diferencia(s). Ejecuta con --escribir para corregir index.html.`);

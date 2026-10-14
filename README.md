@@ -51,7 +51,8 @@ series-data.js          ⭐ FUENTE DE VERDAD de los planes de enseñanza
 
 sw.js                   Service worker: caché y modo sin conexión
 pwa-register.js         Registra la PWA también en las páginas de entrada directa
-accessibility.css       Enlace para saltar al contenido, foco y movimiento reducido
+accessibility.css       Enlace para saltar al contenido, foco, movimiento reducido
+                        y el agrandado de pantallas grandes y proyector (≥ 1440 px)
 manifest.webmanifest    Datos de la app instalable
 sitemap.xml  robots.txt Para los buscadores
 404.html                Página de error con buscador de clases
@@ -84,6 +85,9 @@ Imita a GitHub Pages: carpetas con `index.html` y la página `404.html` propia.
    node tools/sincronizar-portada.mjs            # muestra las diferencias
    node tools/sincronizar-portada.mjs --escribir # las corrige
    ```
+   El mismo script revisa el enlace «Ver los N planes →»: los planes son los de
+   `series-data.js` y el número de la portada se escribe a mano, así que también
+   compara cuántos hay (el 14 de octubre decía 6 con 7 series).
 3. Si agregaste una lección nueva, crea su carpeta en `lecciones/<nombre>/` y su
    portada en `images/lessons/` (ver abajo).
 4. Vuelve a generar el mapa del sitio:
@@ -136,6 +140,9 @@ publicar**.
 node tools/revisar-series.mjs
 ```
 
+Comprueba además que la portada anuncie el número correcto de planes
+(«Ver los 7 planes») y cuántas lecciones del catálogo quedan fuera de todo plan.
+
 **3. Revisión del sitio** — que ninguna página esté cortada ni le falte su JavaScript:
 
 ```bash
@@ -163,7 +170,7 @@ npm install jsdom            # solo la primera vez
 node tools/probar-portada.mjs
 ```
 
-Levanta la portada en un navegador de mentira y revisa las 26 comprobaciones:
+Levanta la portada en un navegador de mentira y revisa las 31 comprobaciones:
 el catálogo, los seis accesos rápidos, que haya **un solo botón flotante**, la
 bandeja, la ventana de lección, el asistente Sion, el buscador, las tarjetas
 destacadas (duración, edad, pasaje y materiales), «continúa donde quedaste» y
