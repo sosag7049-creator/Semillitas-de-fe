@@ -9,7 +9,7 @@
 
 | | |
 | --- | --- |
-| **Lecciones** | 31 — Antiguo Testamento **20** · Nuevo Testamento **11** |
+| **Lecciones** | 39 — Antiguo Testamento **28** · Nuevo Testamento **11** |
 | **Categorías** | Jesús 11 · Fe 8 · Carácter 7 · Dios 5 |
 | **Juegos** | 4 — Ruleta bíblica, Memoria, ¿Quién soy?, Escaleras y serpientes |
 | **Imprimibles** | 6 tipos por lección — guía del maestro, hoja infantil, tarjetas, repaso, para la familia, trazos 3-5 años |
@@ -117,7 +117,7 @@ Ya tienes 4 buenos juegos. Estos cinco encajan con lo que ya funciona:
 ### 1. Lotería bíblica ⭐ el más recomendado
 
 La lotería es parte de la cultura centroamericana: todos saben jugarla.
-- Cartillas de 4×4 con las ilustraciones que **ya tienes** de las 31 lecciones.
+- Cartillas de 4×4 con las ilustraciones que **ya tienes** de las 39 lecciones.
 - El maestro proyecta la carta que sale; los niños marcan en su cartilla.
 - Las cartillas se generan distintas cada vez y **se imprimen** desde el sitio.
 - Aprovecha dos cosas que ya existen: las ilustraciones y el sistema de
@@ -158,7 +158,7 @@ pequeños y refuerza la secuencia del relato.
 
 **1. ✅ Series y planes trimestrales — hecho**
 
-`/series/` agrupa las 31 clases en seis rutas con duración, edad sugerida,
+`/series/` agrupa las 39 clases en siete rutas con duración, edad sugerida,
 progreso y enlaces a cada semana. La serie recomendada y la página que recuerda
 el avance ayudan a empezar sin preparar el trimestre desde cero.
 

@@ -9,8 +9,8 @@
  * distintas sobre lo mismo.
  */
 
-import { LESSONS } from '/lesson-data.js?v=12';
-import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=2';
+import { LESSONS } from '/lesson-data.js?v=13';
+import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=3';
 
 const safe = (value) =>
   String(value).replace(/[&<>"']/g, (char) =>
@@ -107,7 +107,7 @@ function pintarProxima() {
         <h2>Terminaste todos los planes</h2>
         <p class="meta">Puedes repetir una serie con un grupo nuevo o revisar el catálogo completo.</p>
       </div>
-      <a class="next-go" href="/lecciones/">Ver las 31 clases</a>`;
+      <a class="next-go" href="/lecciones/">Ver las 39 clases</a>`;
     return;
   }
 
@@ -201,7 +201,7 @@ pintarProxima();
 const total = series.reduce((suma, serie) => suma + serie.total, 0);
 const linea = document.getElementById('seriesIntro');
 if (linea) {
-  linea.textContent = `${series.length} planes · ${total} clases programadas · las mismas 31 lecciones, ordenadas de distintas formas`;
+  linea.textContent = `${series.length} planes · ${total} clases programadas · las mismas 39 lecciones, ordenadas de distintas formas`;
 }
 
 await import('/auth.js?v=14');

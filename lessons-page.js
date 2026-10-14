@@ -1,5 +1,5 @@
-import { LESSONS } from '/lesson-data.js?v=12';
-import { SERIES } from '/series-data.js?v=2';
+import { LESSONS } from '/lesson-data.js?v=13';
+import { SERIES } from '/series-data.js?v=3';
 // Versión de 800 px de una portada, para que el celular no baje la de escritorio.
 const small = url => (typeof url === 'string' && url.endsWith('.webp') ? url.slice(0, -5) + '-800.webp' : url);
 
@@ -12,7 +12,7 @@ let category='Todos';
 /* ---------------------------------------------------------------------------
  * Filtro por edad
  *
- * No esconde lecciones: las 31 sirven para todo el grupo y el sitio entero se
+ * No esconde lecciones: las 39 sirven para todo el grupo y el sitio entero se
  * apoya en que los hermanos aprendan juntos. Lo que cambia es QUÉ se muestra
  * de cada clase: cómo participan los pequeños o cómo profundizan los mayores.
  *

@@ -26,7 +26,7 @@ Semillitas de Fe, comprobado con las herramientas de `tools/`.
 | 10 | **Aviso de privacidad y términos** | Obligatorio si hay cuentas o datos, y más aún si son de menores. | ✅ `privacidad.html` y `terminos.html` |
 | 11 | **Aparecer en Google y en redes** | Sin esto el trabajo existe, pero nadie lo encuentra. | ✅ `sitemap.xml` (38 direcciones), `robots.txt`, Open Graph y datos estructurados |
 | 12 | **Analítica respetuosa** ⬅️ **es lo único que falta** | Sin datos, se crea contenido a ciegas: no se sabe qué lecciones se usan ni cuáles sobran. | ❌ **No hay** |
-| 13 | **Respaldo fuera del sitio** | Si se pierde el repositorio, se pierden 31 lecciones escritas a mano. | ⚠️ Solo GitHub (conviene una copia externa) |
+| 13 | **Respaldo fuera del sitio** | Si se pierde el repositorio, se pierden 39 lecciones escritas a mano. | ⚠️ Solo GitHub (conviene una copia externa) |
 | 14 | **Pruebas y mantenimiento automatizados** | Un sitio sin revisiones se rompe en silencio. | ✅ **Excelente**: 7 revisiones que pasan en verde |
 
 > **Conclusión de la Parte 1:** en lo técnico el sitio está por encima de la
@@ -89,31 +89,43 @@ si nunca ha dado clase.
 
 ### 🔴 Falta 2 — Falta más de la mitad del Antiguo Testamento
 
-De los 39 libros del Antiguo Testamento, el sitio usa **10**: Génesis, Éxodo,
-Josué, Jueces, Rut, 1 Samuel, 1 Reyes, Ester, Daniel y Jonás. Hay libros
-enteros, muy queridos por los niños, con **cero lecciones**:
+De los 39 libros del Antiguo Testamento, el sitio usa hoy **19**: Génesis,
+Éxodo, Números, Deuteronomio, Josué, Jueces, Rut, 1 Samuel, 2 Samuel, 1 Reyes,
+2 Reyes, Nehemías, Ester, Job, Salmo, Proverbios, Isaías, Daniel y Jonás.
+
+> **Actualizado el 14 de octubre de 2026.** El catálogo pasó de 31 a **39
+> lecciones** y con eso seis libros del Antiguo Testamento se estrenaron:
+> **Números** (los doce espías), **2 Reyes** (Naamán), **Nehemías** (el muro),
+> **Job**, **Salmo** (el 23) e **Isaías** (el llamado). **Deuteronomio** y
+> **Proverbios** ya aparecían como versículos sueltos y ahora tienen su propia
+> clase. Quedan **20 libros del Antiguo Testamento sin una sola clase**, y ahí
+> sigue el mayor terreno por cubrir.
+
+Lo que falta del Antiguo Testamento, en el orden en que conviene escribirlo:
 
 | Libro | Qué enseñar |
 | --- | --- |
-| **Números** | Los doce espías (Números 13–14) · la serpiente de bronce (Números 21:4–9) |
-| **2 Samuel** | El reinado de David · su cántico de gratitud (2 Samuel 22) |
-| **2 Reyes** | Naamán el leproso (2 Reyes 5) · Eliseo y la viuda |
-| **Nehemías** | El pueblo reconstruye el muro, trabajando unido (Nehemías 2–6) |
-| **Job** | La paciencia y la honestidad ante Dios (Job 1–2; 42) |
-| **Salmos** | El Salmo 23, el 100 y el 121: ideales para memorizar con gestos |
-| **Proverbios** | Proverbios 3:5–6: confiar de todo corazón |
-| **Isaías** | El llamado de Isaías (Isaías 6) · fuerzas como águilas (Isaías 40:31) |
-| **Deuteronomio** | «Amarás a Jehová tu Dios» (Deuteronomio 6:4–7) |
-| **1–2 Crónicas · Esdras · Jeremías** | Sin ninguna lección todavía |
+| **2 Samuel** | El reinado de David y su cántico de gratitud (2 Samuel 22) |
+| **1–2 Crónicas · Esdras** | El templo, el regreso del destierro y la lectura pública de la Ley |
+| **Jeremías · Lamentaciones** | La fidelidad de Dios en medio del dolor del pueblo |
+| **Levítico · Eclesiastés · Cantares** | La adoración con orden, el sentido de la vida y el amor fiel |
+| **Profetas menores (Oseas a Malaquías)** | La misericordia, la justicia y el anuncio del Mesías |
+| **Ezequiel** | El cuidado de Dios por su pueblo y su promesa de restauración |
 
-**Son 29 libros del Antiguo Testamento sin una sola clase.** Ahí está el mayor
-terreno por cubrir, y es el que más encaja con la regla del proyecto.
+Seis de los libros que antes encabezaban esta lista ya tienen clase: Números,
+2 Reyes, Nehemías, Job, Salmo e Isaías se estrenaron el 14 de octubre de 2026, y
+Deuteronomio y Proverbios, que solo aparecían como versículos sueltos, ahora
+tienen su propia clase. **2 Samuel sigue esperando su turno**: el sitio cita sus
+versículos, pero todavía no enseña el reinado de David.
 
 ### 🔴 Falta 3 — El Nuevo Testamento se acaba en los evangelios
 
-De los 21 libros que el sitio cita, **los cuatro del Nuevo Testamento son
-Mateo, Marcos, Lucas y Juan**. No hay **una sola lección de Hechos** ni de las
-cartas: los niños aprenden sobre Jesús, pero no qué pasó después.
+De los 29 libros que el sitio cita, **todos los del Nuevo Testamento siguen
+saliendo de los evangelios**: Mateo, Marcos, Lucas y Juan. Los demás —1
+Corintios, Gálatas, Efesios, 1 Tesalonicenses, Santiago y Hebreos— aparecen
+solo en versículos clave de los planes, no en una clase. No hay **una sola
+lección de Hechos** ni de las cartas: los niños aprenden sobre Jesús, pero no
+qué pasó después.
 
 - **Hechos:** Pentecostés · Saulo cambia en el camino · Pablo y Silas cantan en
   la cárcel · Pedro y Juan sanan al cojo · Dorcas ayuda a los demás · Felipe y
@@ -121,7 +133,7 @@ cartas: los niños aprenden sobre Jesús, pero no qué pasó después.
 
 ### 🔴 Falta 4 — Solo hay historias, no formación
 
-Las **31 lecciones son narrativas**: alguien hace algo y Dios interviene. Está
+Las **39 lecciones son narrativas**: alguien hace algo y Dios interviene. Está
 muy bien, pero falta la otra mitad de un ministerio infantil: las enseñanzas.
 
 - El Padrenuestro (Mateo 6:9–13) · Salmo 23, el buen pastor · las

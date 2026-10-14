@@ -47,7 +47,17 @@ export const MATERIALES = {
   'debora-sirve-con-valentia': ['Cartulina verde y café', 'Tijeras sin punta', 'Marcadores'],
   'bautismo-de-jesus': ['Papel blanco y azul', 'Tijeras sin punta', 'Hilo para colgar la paloma'],
   'gedeon-y-los-300': ['Vasos de papel', 'Papel de colores', 'Linternas pequeñas (opcional)'],
+
+  'los-doce-espias': ['Doce círculos de papel para las uvas', 'Un palo o tubo de cartón', 'Crayones'],
+  'naaman-sana': ['Hoja azul y crayones', 'Tiras de papel para las olas', 'Tijeras sin punta'],
+  'nehemias-y-el-muro': ['Cajitas o bloques de papel', 'Cinta adhesiva', 'Marcadores'],
+  'job-confia-en-dios': ['Cartulina para la mano abierta', 'Crayones', 'Tarjetas con frases de ánimo'],
+  'el-senor-es-mi-pastor': ['Cartulina', 'Algodón para la oveja', 'Crayones azules'],
+  'isaias-es-llamado': ['Papel con forma de llama', 'Marcadores', 'Un mural o cartulina grande'],
+  'ama-a-dios-de-corazon': ['Cartulina para la casa', 'Marcadores', 'Tarjetas con los cuatro momentos del día'],
+  'confia-de-todo-corazon': ['Cartulina para la brújula', 'Un broche o chincheta de papel', 'Crayones'],
 };
+
 
 /** Si una clase todavía no tiene lista propia, se muestra esto. */
 export const MATERIALES_POR_DEFECTO = ['Biblia Reina-Valera', 'Hojas y crayones', 'Cinta adhesiva'];

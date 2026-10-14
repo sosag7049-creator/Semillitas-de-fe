@@ -11,7 +11,7 @@
  * scripts, así que lo lleva escrito dentro del propio index.html (el array `L`).
  * Las demás páginas lo leen de `printables-data.js` y `additional-lessons*.js`.
  *
- * Eso significaba mantener las 31 lecciones en DOS lugares a mano. Con este
+ * Eso significaba mantener las 39 lecciones en DOS lugares a mano. Con este
  * script ya no: se edita solo `printables-data.js` (y los bloques adicionales)
  * y luego se ejecuta esto para que la portada quede igual.
  *
@@ -41,11 +41,12 @@ async function cargarModulos() {
     writeFileSync(join(temporal, archivo), contenido);
   }
   const url = nombre => pathToFileURL(join(temporal, nombre)).href;
-  const [printables, extra1, extra2, extra3] = await Promise.all([
+  const [printables, extra1, extra2, extra3, extra4] = await Promise.all([
     import(url('printables-data.js')),
     import(url('additional-lessons.js')),
     import(url('additional-lessons-2.js')),
     import(url('additional-lessons-3.js')),
+    import(url('additional-lessons-4.js')),
   ]);
   // Los emojis de las 24 primeras lecciones viven en lesson-data.js.
   const iconosBase = JSON.parse(
@@ -54,7 +55,7 @@ async function cargarModulos() {
   );
   return {
     PRINTABLES: printables.PRINTABLES,
-    EXTRAS: [...extra1.ADDITIONAL_LESSONS, ...extra2.SECOND_BLOCK, ...extra3.THIRD_BLOCK],
+    EXTRAS: [...extra1.ADDITIONAL_LESSONS, ...extra2.SECOND_BLOCK, ...extra3.THIRD_BLOCK, ...extra4.FOURTH_BLOCK],
     iconosBase,
   };
 }
