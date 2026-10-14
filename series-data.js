@@ -55,7 +55,7 @@ export const SERIES = [
     description:
       'Once clases que siguen la vida de Jesús: su nacimiento, su bautismo, ' +
       'sus milagros, sus parábolas y su resurrección. Termina en «Jesús vive», ' +
-      'así que encaja muy bien si quieres cerrar en Semana Santa.',
+      'la esperanza que sostiene toda la serie.',
     keyVerse:
       'Yo soy el camino, y la verdad, y la vida. — Juan 14:6',
     lessons: [

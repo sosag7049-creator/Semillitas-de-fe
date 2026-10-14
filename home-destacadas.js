@@ -113,7 +113,7 @@ export const DESTACADAS = [
     etiqueta: 'Especiales sobre Jesús',
     tono: 'jesus',
     slug: 'jesus-vive',
-    motivo: 'El cierre natural para Semana Santa.',
+    motivo: 'Para cerrar el ciclo sobre Jesús y hablar de esperanza.',
     enlace: { texto: 'Ver las 11 clases sobre Jesús', href: '/lecciones/?categoria=Jes%C3%BAs' },
   },
 ];

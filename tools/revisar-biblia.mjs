@@ -171,7 +171,16 @@ for (const ruta of archivos(RAIZ)) {
     }
   }
 
-  const citas = /\b((?:[123]\s)?[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)\s+\d+[:\d\s,;–-]*/gu;
+  /*
+   * Ojo: aquí NO se puede usar `\b`. Los libros que empiezan con vocal
+   * acentuada —«Éxodo»— quedarían fuera del recuento, porque `\b` no
+   * considera letra a la «É» (el mismo motivo explicado más arriba). Con los
+   * límites propios, «Éxodo 3–4» sí se cuenta.
+   */
+  const citas = new RegExp(
+    `${INICIO}((?:[123]\\s)?[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)\\s+\\d+[:\\d\\s,;–-]*`,
+    'gu',
+  );
   for (const m of texto.matchAll(citas)) {
     const libro = m[1].trim();
     if (!CANON.has(libro)) continue;

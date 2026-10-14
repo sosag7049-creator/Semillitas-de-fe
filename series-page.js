@@ -9,8 +9,8 @@
  * distintas sobre lo mismo.
  */
 
-import { LESSONS } from '/lesson-data.js?v=11';
-import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=1';
+import { LESSONS } from '/lesson-data.js?v=12';
+import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=2';
 
 const safe = (value) =>
   String(value).replace(/[&<>"']/g, (char) =>
