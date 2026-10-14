@@ -60,7 +60,7 @@ const wrongTeachings=[
  ['Es mejor callar para no meterse en problemas','Ester actuó sola, sin orar ni pedir apoyo'],
  ['Orar sirve para que nunca nos pase nada difícil','Daniel dejó de orar para evitar el castigo'],
  ['Dios se olvida de quienes huyen de Él','Jonás fue castigado sin posibilidad de volver'],
- ['La Navidad se trata sobre todo de los regalos','Jesús nació en un palacio porque era rey'],
+ ['El nacimiento de Jesús se trata sobre todo de los regalos','Jesús nació en un palacio porque era rey'],
  ['La tormenta se calmó sola con el tiempo','Los discípulos no debieron despertar a Jesús'],
  ['Solo sirve lo que es grande y suficiente','La gente comió porque cada uno trajo su comida'],
  ['Ayudamos solo a quienes se parecen a nosotros','Basta con sentir pena por el que sufre'],

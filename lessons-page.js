@@ -1,5 +1,5 @@
-import { LESSONS } from '/lesson-data.js?v=11';
-import { SERIES } from '/series-data.js?v=1';
+import { LESSONS } from '/lesson-data.js?v=12';
+import { SERIES } from '/series-data.js?v=2';
 // Versión de 800 px de una portada, para que el celular no baje la de escritorio.
 const small = url => (typeof url === 'string' && url.endsWith('.webp') ? url.slice(0, -5) + '-800.webp' : url);
 
