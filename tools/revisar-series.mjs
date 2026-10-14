@@ -7,7 +7,8 @@
  *   1. Cada slug referenciado existe de verdad como carpeta en /lecciones/.
  *   2. Ninguna serie repite la misma lección dos veces.
  *   3. Los identificadores de serie no se repiten.
- *   4. Informa qué lecciones del catálogo no aparecen en ninguna serie.
+ *   4. Que la portada anuncie el número correcto de planes («Ver los N planes»).
+ *   5. Informa qué lecciones del catálogo no aparecen en ninguna serie.
  *
  * Uso:
  *     node tools/revisar-series.mjs
@@ -52,6 +53,18 @@ function leccionesPublicadas() {
   );
 }
 
+/**
+ * Cuántos planes anuncia la portada. El enlace «Ver los N planes →» lleva el
+ * número escrito a mano y se quedó en 6 cuando entró la séptima serie; ahora
+ * se comprueba aquí y `node tools/sincronizar-portada.mjs --escribir` lo
+ * corrige sin tocar nada más.
+ */
+function planesAnunciados() {
+  const html = readFileSync(join(RAIZ, 'index.html'), 'utf8');
+  const coincidencia = html.match(/Ver los (\d+) planes/);
+  return coincidencia ? Number(coincidencia[1]) : null;
+}
+
 const series = cargarSeries();
 const publicadas = leccionesPublicadas();
 const problemas = [];
@@ -84,13 +97,25 @@ for (const serie of series) {
   }
 }
 
+// La portada promete un número de planes: que sea el de verdad.
+const anunciados = planesAnunciados();
+if (anunciados === null) {
+  problemas.push('index.html: no se encontró el enlace «Ver los N planes».');
+} else if (anunciados !== series.length) {
+  problemas.push(
+    `index.html: anuncia «Ver los ${anunciados} planes» y hay ${series.length}. ` +
+    'Ejecuta node tools/sincronizar-portada.mjs --escribir.',
+  );
+}
+
 // ---------------------------------------------------------------------------
 // Informe
 // ---------------------------------------------------------------------------
 console.log('\n📚 Revisión de los planes de enseñanza\n');
 console.log(`   Series definidas:     ${series.length}`);
 console.log(`   Lecciones publicadas: ${publicadas.size}`);
-console.log(`   Lecciones usadas:     ${usadas.size}\n`);
+console.log(`   Lecciones usadas:     ${usadas.size}`);
+console.log(`   Planes en la portada: ${anunciados ?? '—'}\n`);
 
 for (const serie of series) {
   const semanas = serie.lessons.length;
@@ -112,4 +137,4 @@ if (problemas.length) {
   process.exit(1);
 }
 
-console.log('\n✅ Todos los planes apuntan a lecciones que existen.\n');
+console.log(`\n✅ Los ${series.length} planes apuntan a lecciones que existen y la portada los anuncia bien.\n`);

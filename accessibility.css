@@ -53,3 +53,60 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---------------------------------------------------------------------------
+ * Pantallas grandes y proyector
+ * ---------------------------------------------------------------------------
+ * El contenido estaba topado a 1160 px y el texto base a 16 px: en un monitor
+ * grande o al proyectar sobraba espacio a los lados y las letras se veían
+ * chicas. El «modo clase» de las lecciones y el «modo TV» de los juegos sí
+ * agrandan, pero hay que activarlos y solo existen dentro de esas páginas.
+ *
+ * Desde 1440 px de ancho se agranda todo de una vez, y SOLO aquí: en celular,
+ * tableta y laptop normal (menos de 1440 px) no cambia absolutamente nada.
+ * El «modo clase» sigue mandando sobre esta regla (20 px) porque
+ * `body.class-mode` tiene más especificidad que `body`.
+ *
+ * Las páginas de texto legal (privacidad, términos, contacto y 404) conservan
+ * su columna de lectura de 860 px: se reconocen por su barra `.page-nav`.
+ * `:has()` funciona en todos los navegadores actuales (2022 en adelante); en
+ * uno más viejo simplemente se ensancha también esa columna, nada más.
+ *
+ * Va en `screen`: imprimir no se toca.
+ * ------------------------------------------------------------------------ */
+@media screen and (min-width: 1440px) {
+  /* 1 · Todo lo que se mide en rem crece un 9 % (16 px → 17.5 px). */
+  html {
+    font-size: 17.5px;
+  }
+
+  /* 2 · El texto corrido también: cada página fija su `font` en px. */
+  body {
+    font-size: 17.5px;
+  }
+
+  /* 3 · Más ancho útil: 1160 px → 1320 px. */
+  body .wrap {
+    width: min(1320px, 92%);
+  }
+
+  /* …menos las páginas de texto legal, que vuelven a su columna de lectura. */
+  body:has(.page-nav) .wrap {
+    width: min(860px, 92%);
+  }
+
+  /* 4 · La portada respira: titular y entradilla más anchos. */
+  body .hero-copy,
+  body .hero-cinematic h1 {
+    max-width: 880px;
+  }
+
+  body .hero-cinematic .lead {
+    max-width: 780px;
+  }
+
+  /* 5 · La barra fija de las lecciones acompaña al texto (146 px → 159 px). */
+  html:root {
+    --semillitas-sticky: 159px;
+  }
+}

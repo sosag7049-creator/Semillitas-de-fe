@@ -316,3 +316,74 @@ node tools/revisar-calendario.mjs
 
 Las nueve terminan en verde: 39 lecciones publicadas, 29 libros citados y
 39 lecciones usadas en los planes.
+
+---
+
+## 8. Pantallas grandes y el número de planes · 14 de octubre de 2026
+
+Dos arreglos de presentación que venían de la misma pregunta: «¿por qué se ve
+tan pequeño al proyectar?».
+
+### La página se veía chica en un monitor grande
+
+El ancho del contenido estaba topado a **1160 px** (1120 px en las lecciones) y
+el texto base era de **16 px**. En un monitor grande o al proyectar sobraba
+espacio a los lados y las letras se veían chicas. Lo único que agrandaba algo
+era el **modo clase** de las lecciones (1400 px y 20 px de texto) y el **modo
+TV** de los juegos, pero hay que activarlos y solo existen dentro de esas
+páginas: la portada, el catálogo, los planes, los imprimibles y la guía del
+maestro se quedaban sin arreglo.
+
+Se añadió **un solo bloque** al final de `accessibility.css`, la hoja que
+comparten las 50 páginas, que se activa **solo desde 1440 px de ancho**:
+
+| Ajuste | Antes | Desde 1440 px |
+| --- | --- | --- |
+| Tamaño base de la página | 16 px | **17.5 px** (todo lo que usa `rem` crece un 9 %) |
+| Texto corrido | 16 px | **17.5 px** |
+| Ancho del contenido | 1160 px (1120 px en las lecciones) | **1320 px** |
+| Columna del titular de la portada | 760 px | **880 px** |
+| Entradilla de la portada | 690 px | **780 px** |
+| Barra fija de las lecciones (`--semillitas-sticky`) | 146 px | **159 px** |
+
+Detalles de la implementación, que importan para no romper nada:
+
+- Va en `@media screen and (min-width: 1440px)`: **imprimir no se toca** y el
+  bloque de `@media print` de las lecciones sigue mandando.
+- **En celular, tableta y laptop normal no cambia absolutamente nada.** Se
+  comprobó con un navegador real a 1439 px, 1366 px y 412 px.
+- El **modo clase** sigue mandando sobre el nuevo tamaño: `body.class-mode`
+  tiene más especificidad que `body`, así que conserva sus 20 px y sus 1400 px.
+  El **modo TV** de los juegos gana el 9 % a favor.
+- Las páginas de texto legal (privacidad, términos, contacto y 404) se
+  reconocen por su barra `.page-nav` y **conservan su columna de lectura de
+  860 px**.
+- Se subió la hoja a `/accessibility.css?v=2` en las 50 páginas y en `sw.js`, y
+  el caché pasó a `semillitas-v59-pantallas-grandes` para que quien ya visitó
+  el sitio reciba el cambio.
+
+### La portada decía «Ver los 6 planes» y ya eran 7
+
+La séptima serie entró con el catálogo de 39 lecciones y el número del enlace
+se quedó en 6. Ahora dice **«Ver los 7 planes →»** y ya no depende de que
+alguien se acuerde:
+
+- `tools/sincronizar-portada.mjs` compara ese número con `series-data.js` y
+  `--escribir` lo corrige (antes solo sincronizaba el catálogo de lecciones).
+- `tools/revisar-series.mjs` termina en error si la portada anuncia un número
+  distinto al real, y lo dice en su informe («Planes en la portada: 7»).
+
+### Verificación
+
+```bash
+node tools/revisar-sitio.mjs        node tools/revisar-biblia.mjs
+node tools/revisar-series.mjs       node tools/revisar-destacadas.mjs
+node tools/revisar-plataforma.mjs   node tools/revisar-juegos.mjs
+node tools/sincronizar-portada.mjs  node tools/revisar-cobertura.mjs
+node tools/revisar-calendario.mjs   node tools/probar-portada.mjs
+```
+
+Las nueve revisiones, la sincronización y las 31 comprobaciones de la portada
+terminan en verde. Además se midió el resultado con Chromium de verdad a
+1920 px, 1440 px, 1439 px, 1366 px y 412 px: texto de 17.5 px y contenido de
+1320 px desde 1440 px, y exactamente los mismos valores de antes por debajo.

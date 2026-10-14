@@ -54,7 +54,7 @@ for (const archivo of paginas) {
   const ids = new Set([...html.matchAll(/\bid=["']([^"']+)["']/gi)].map(match => match[1]));
   exigir(Boolean(skip), `${nombre}: falta el enlace para saltar al contenido.`);
   if (skip) exigir(ids.has(skip[1]), `${nombre}: el destino del enlace de salto no existe.`);
-  exigir(html.includes('/accessibility.css?v=1'), `${nombre}: falta la hoja de accesibilidad compartida.`);
+  exigir(html.includes('/accessibility.css?v=2'), `${nombre}: falta la hoja de accesibilidad compartida.`);
   exigir(html.includes('/pwa-register.js?v=1'), `${nombre}: falta el registro universal de la PWA.`);
 }
 
