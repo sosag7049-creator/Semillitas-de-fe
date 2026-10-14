@@ -19,6 +19,7 @@
 import jsdom from 'jsdom';
 import { readFileSync, writeFileSync, mkdtempSync, readdirSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
+import { statSync, existsSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { pathToFileURL, fileURLToPath } from 'node:url';
 
@@ -110,10 +111,16 @@ const prueba = (n, c, extra = '') => { if (!c) fallos++; console.log(`${c ? '✅
  * El catálogo que comparten Sion, la cuenta y el panel del maestro
  * ----------------------------------------------------------------------- */
 const cat = window.Semillitas?.lessons;
-prueba('catálogo global con 31 lecciones', cat?.length === 31, `${cat?.length}`);
-prueba('los 31 títulos son únicos', new Set(cat.map(l => l.title)).size === 31);
+/* El número esperado se cuenta en /lecciones/, no se escribe a mano: así la
+ * prueba sigue sirviendo cuando el catálogo crece (pasó de 31 a 39 clases). */
+const publicadas = readdirSync(join(RAIZ, 'lecciones')).filter(nombre => {
+  const carpeta = join(RAIZ, 'lecciones', nombre);
+  return existsSync(join(carpeta, 'index.html')) && statSync(carpeta).isDirectory();
+}).length;
+prueba(`catálogo global con ${publicadas} lecciones`, cat?.length === publicadas, `${cat?.length}`);
+prueba(`los ${publicadas} títulos son únicos`, new Set(cat.map(l => l.title)).size === publicadas);
 prueba('todas tienen emoji y pasaje', cat.every(l => l.emoji && l.reference));
-prueba('el catálogo interno se renderiza', d.querySelectorAll('#grid .card').length === 31, `${d.querySelectorAll('#grid .card').length} tarjetas`);
+prueba('el catálogo interno se renderiza', d.querySelectorAll('#grid .card').length === publicadas, `${d.querySelectorAll('#grid .card').length} tarjetas`);
 
 /* --------------------------------------------------------------------------
  * La portada ya no es un folleto largo
@@ -195,7 +202,7 @@ prueba('el asistente Sion responde', d.querySelectorAll('#jerubiMessages .jerubi
 const buscador = d.getElementById('search');
 buscador.value = 'jonás'; buscador.dispatchEvent(new window.Event('input', { bubbles: true }));
 await new Promise(r => setTimeout(r, 200));
-prueba('el buscador filtra', d.querySelectorAll('#grid .card').length < 31, `${d.querySelectorAll('#grid .card').length} tras buscar`);
+prueba('el buscador filtra', d.querySelectorAll('#grid .card').length < publicadas, `${d.querySelectorAll('#grid .card').length} tras buscar`);
 
 /* --------------------------------------------------------------------------
  * Destacadas, «Continúa donde quedaste» y planes

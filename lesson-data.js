@@ -2,6 +2,7 @@ import { PRINTABLES } from '/printables-data.js';
 import { ADDITIONAL_LESSONS } from '/additional-lessons.js?v=2';
 import { SECOND_BLOCK } from '/additional-lessons-2.js?v=1';
 import { THIRD_BLOCK } from '/additional-lessons-3.js?v=1';
+import { FOURTH_BLOCK } from '/additional-lessons-4.js?v=1';
 
 const slugs=['la-creacion','noe-y-el-arca','abraham-espera','jose-perdona','moises-y-la-zarza','dios-abre-el-mar','diez-mandamientos','josue-y-jerico','rut-es-fiel','samuel-escucha','david-y-goliat','david-y-jonatan','salomon-y-la-sabiduria','elias-y-la-viuda','ester-actua','daniel-y-la-oracion','jonas','jesus-nace','jesus-calma-el-mar','panes-y-peces','buen-samaritano','oveja-perdida','zaqueo-cambia','jesus-vive'];
 // Un icono distinto por lección: se repite en el catálogo, en la ruleta y en
@@ -143,7 +144,7 @@ export const LESSONS=PRINTABLES.slice(0,24).map((base,i)=>({
  activity:{title:activities[i][0],steps:activities[i][1].split('|')},
  memory:{text:memories[i][0],reference:memories[i][1],excerpt:![1,2,5,22].includes(i),sourceUrl:`https://www.bible.com/es/bible/149/${memoryPassages[i]}.RVR1960`},videoQuery:videos[i],videoId:videoIds[i],videoUrl:`https://www.youtube.com/watch?v=${videoIds[i]}`,printable:`/printables.html?leccion=${base.id}`,
  prayer:`Señor, gracias por enseñarnos por medio de ${base.title}. Ayúdanos a recordar que ${base.objective.toLowerCase()}. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén.`
-})).concat([...ADDITIONAL_LESSONS,...SECOND_BLOCK,...THIRD_BLOCK].map((extra,i)=>({
+})).concat([...ADDITIONAL_LESSONS,...SECOND_BLOCK,...THIRD_BLOCK,...FOURTH_BLOCK].map((extra,i)=>({
  ...PRINTABLES[24+i], ...extra, bibleVersion:BIBLE_VERSION,
  coverImage:`/images/lessons/${extra.slug}.webp`,age:'3 a 10 años',duration:'45 a 60 minutos',
  videoUrl:extra.videoId?`https://www.youtube.com/watch?v=${extra.videoId}`:`https://www.youtube.com/results?search_query=${encodeURIComponent(extra.videoQuery)}`,

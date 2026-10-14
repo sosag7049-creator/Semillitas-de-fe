@@ -165,6 +165,33 @@ export const SERIES = [
       'gedeon-y-los-300',
     ],
   },
+  {
+    id: 'confiar-en-dios',
+    title: 'Confiar en Dios en todo momento',
+    tagline: 'Ocho clases del Antiguo Testamento para los días difíciles',
+    emoji: '🛤️',
+    tone: 'morado',
+    audience: '3 a 10 años',
+    description:
+      'Ocho clases que recorren casi todo el Antiguo Testamento: el miedo ' +
+      'ante una tierra nueva, una enfermedad, un muro por reconstruir, una ' +
+      'pérdida, el cuidado del pastor, un llamado, el amor a Dios y las ' +
+      'decisiones de cada día. Sirve cuando el grupo pasa por un momento ' +
+      'difícil o cuando quieres enseñar que Dios acompaña en toda situación.',
+    keyVerse:
+      'Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia ' +
+      'prudencia. — Proverbios 3:5',
+    lessons: [
+      'los-doce-espias',
+      'naaman-sana',
+      'nehemias-y-el-muro',
+      'job-confia-en-dios',
+      'el-senor-es-mi-pastor',
+      'isaias-es-llamado',
+      'ama-a-dios-de-corazon',
+      'confia-de-todo-corazon',
+    ],
+  },
 ];
 
 /** Serie que se sugiere a quien todavía no ha empezado ninguna. */

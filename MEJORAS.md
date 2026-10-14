@@ -241,3 +241,78 @@ bíblico.
 `node tools/revisar-plataforma.mjs`, `node tools/revisar-series.mjs`,
 `node tools/revisar-biblia.mjs`, `node tools/revisar-destacadas.mjs`,
 `node tools/sincronizar-portada.mjs` y `node tools/probar-portada.mjs`.
+
+---
+
+## 7. Catálogo de 39 lecciones · 14 de octubre de 2026
+
+El catálogo pasa de **31 a 39 clases** con ocho lecciones nuevas del Antiguo
+Testamento, una serie más y dos herramientas de mantenimiento. Se mantiene la
+regla del proyecto: Reina-Valera 1960, canon de 66 libros, «Jehová», sin
+vocabulario devocional católico y **sin encuadre de calendario religioso**.
+
+### Las ocho clases nuevas
+
+| # | Clase | Pasaje | Libro que se estrena |
+| :-: | --- | --- | --- |
+| 32 | Los doce espías | Números 13–14 | **Números** |
+| 33 | Naamán sana | 2 Reyes 5 | **2 Reyes** |
+| 34 | Nehemías y el muro | Nehemías 2–6 | **Nehemías** |
+| 35 | Job confía en Dios | Job 1–2; 42 | **Job** |
+| 36 | El Señor es mi pastor | Salmo 23 | **Salmo** |
+| 37 | Isaías es llamado | Isaías 6 | **Isaías** |
+| 38 | Ama a Dios de corazón | Deuteronomio 6:4–9 | **Deuteronomio** |
+| 39 | Confía de todo corazón | Proverbios 3:5–6 | **Proverbios** |
+
+Con ellas el sitio cita **29 libros** de los 66 y pasa de 13 a **19 libros del
+Antiguo Testamento**. Ninguna usa vocabulario devocional católico ni se apoya
+en una fecha del año: cada una sirve cualquier domingo.
+
+Cada clase nueva trae lo mismo que las anteriores: cuatro partes de historia,
+verdades para repetir, preguntas para conversar, mini quiz, actividad con pasos
+seguros, versículo con enlace a su fuente en la RVR1960, oración y consigna de
+dibujo para los más pequeños.
+
+### Serie nueva
+
+**«Confiar en Dios en todo momento»** (`confiar-en-dios`): las ocho clases
+nuevas en un solo plan de ocho semanas, para cuando el grupo pasa por un momento
+difícil. El sitio pasa de 6 a **7 series** y las 39 lecciones quedan dentro de
+al menos un plan.
+
+### Dos herramientas nuevas
+
+| Archivo | Para qué |
+| --- | --- |
+| `tools/revisar-cobertura.mjs` | Que ninguna clase se quede a medias: carpeta, dos portadas, consigna de párvulos, materiales y contenido completo |
+| `tools/revisar-calendario.mjs` | Que el contenido no dependa del calendario religioso (adviento, cuaresma, Semana Santa, Navidad…) |
+
+La segunda cubre un hueco real: `revisar-biblia.mjs` vigila la traducción, el
+canon y el vocabulario, pero **no** el encuadre de temporada, que es por donde
+se habían colado las tres líneas corregidas el 14 de octubre.
+
+### Otros cambios
+
+- `additional-lessons-4.js`: el cuarto bloque de contenido, con las ocho clases.
+- `printables-data.js` llega a **39 entradas**; `preschool-data.json`, a 39.
+- `home-destacadas.js` gana los materiales de las ocho clases y sube a `?v=3`.
+- `series-data.js` gana la serie nueva y sube a `?v=3`.
+- `lesson-page.js` (`?v=15`) muestra la búsqueda de video cuando una clase
+  todavía no tiene un video revisado, en vez de un reproductor vacío. Las ocho
+  clases nuevas no presumen de un video que nadie ha verificado.
+- `index.html` se resincronizó con el catálogo, `sitemap.xml` pasó a 48
+  direcciones y el caché del service worker se renombró a
+  `semillitas-v58-catalogo-39`.
+
+### Verificación
+
+```bash
+node tools/revisar-sitio.mjs        node tools/revisar-biblia.mjs
+node tools/revisar-series.mjs       node tools/revisar-destacadas.mjs
+node tools/revisar-plataforma.mjs   node tools/revisar-juegos.mjs
+node tools/sincronizar-portada.mjs  node tools/revisar-cobertura.mjs
+node tools/revisar-calendario.mjs
+```
+
+Las nueve terminan en verde: 39 lecciones publicadas, 29 libros citados y
+39 lecciones usadas en los planes.

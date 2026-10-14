@@ -12,7 +12,7 @@ niñas de **3 a 10 años**, basados en la **Reina-Valera 1960**.
 | Sección | Dirección | Qué hay |
 | --- | --- | --- |
 | Portada | `/` | Bienvenida corta, accesos rápidos y lecciones destacadas de la semana |
-| Clases | `/lecciones/` | Las **31 lecciones**, con buscador y filtros |
+| Clases | `/lecciones/` | Las **39 lecciones**, con buscador y filtros |
 | Planes | `/series/` | Rutas de enseñanza que agrupan las clases por semanas |
 | Cada clase | `/lecciones/<nombre>/` | Historia, versículo, preguntas, dinámica, manualidad y oración |
 | Juegos | `/juegos/` | Ruleta, memoria de 6 a 10 parejas, “¿quién soy?” con pistas y juego de mesa con dado 3D, para proyectar |
@@ -38,14 +38,14 @@ home.js  home.css       Accesos rápidos, destacadas, planes y «continúa donde
 home-destacadas.js      ⭐ Qué lecciones se destacan en la portada y sus materiales
 home-dock.js/.css       El único botón flotante y su bandeja (Sion, agenda, cuenta…)
 maestros/index.html     Guía del maestro: método, programa de clase, videos y canales
-lecciones/index.html    Listado de las 31 clases
+lecciones/index.html    Listado de las 39 clases
 lecciones/<nombre>/     Una carpeta por clase
 series/index.html       Planes de enseñanza (agrupan las clases en rutas)
 juegos/                 Juegos para proyectar (incluye la Ruleta Bíblica)
 printables.html         Material imprimible
 
-printables-data.js      ⭐ FUENTE DE VERDAD del contenido de las 31 lecciones
-additional-lessons*.js  Material extra de las lecciones 25 a 31
+printables-data.js      ⭐ FUENTE DE VERDAD del contenido de las 39 lecciones
+additional-lessons*.js  Material extra de las lecciones 25 a 39
 lesson-data.js          Arma el catálogo completo a partir de lo anterior
 series-data.js          ⭐ FUENTE DE VERDAD de los planes de enseñanza
 
@@ -181,6 +181,28 @@ instalar dependencias:
 ```bash
 node tools/revisar-plataforma.mjs
 ```
+
+**7. Revisión de cobertura** — que ninguna clase se quede a medias:
+
+```bash
+node tools/revisar-cobertura.mjs
+```
+
+Carga el catálogo tal como lo ve el navegador y revisa lección por lección que
+existan la carpeta, las dos portadas, la consigna de párvulos en
+`preschool-data.json`, los materiales de `home-destacadas.js` y el contenido
+completo (historia, preguntas, quiz con una sola respuesta válida, actividad,
+versículo y oración). También avisa si un emoji, un título o un slug se repite.
+
+**8. Revisión del calendario** — que el contenido no dependa de la fecha:
+
+```bash
+node tools/revisar-calendario.mjs
+```
+
+Vigila la regla del proyecto: el contenido se elige por el pasaje que enseña,
+no por el calendario religioso. Busca adviento, cuaresma, Semana Santa, Navidad
+y demás encuadres de temporada en las páginas, el contenido y los planes.
 
 ### Publicar los cambios
 
