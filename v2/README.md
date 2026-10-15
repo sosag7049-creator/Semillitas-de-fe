@@ -84,3 +84,21 @@ src/
   instantánea sin red.
 - **Imágenes sin optimizar por ahora** (`next.config.ts`): al desplegar en
   Vercel se activa la optimización nativa y se sirve AVIF/WebP automático.
+- **Supabase reutilizado, no duplicado:** la v2 se conecta al mismo proyecto
+  del sitio v1, así que los maestros con cuenta no crean nada nuevo. La clave
+  pública vive en `.env.local` (nunca se sube); el esquema y sus políticas
+  RLS están documentados en `supabase/migrations/0001_esquema_base.sql`.
+
+## Cuentas y Supabase
+
+1. Crea `v2/.env.local` a partir de `.env.example` con la URL y la clave
+   pública (anon/publishable) de tu proyecto: Supabase → Settings → API.
+2. Nada más. Login por correo/contraseña y Google OAuth salen funcionando.
+3. Para que Google regrese bien al sitio, agrega tu dominio en
+   Supabase → Authentication → URL Configuration (p. ej.
+   `http://localhost:3000/**` para desarrollo y `https://tudominio/**` en
+   producción). El login con correo funciona sin tocar nada.
+
+El esquema completo de tablas (`profiles`, `lesson_favorites`,
+`lesson_progress`, `teacher_notes`) con sus políticas RLS está en
+[`supabase/migrations/0001_esquema_base.sql`](supabase/migrations/0001_esquema_base.sql).

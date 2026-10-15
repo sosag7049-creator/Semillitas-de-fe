@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Quiz } from "@/components/quiz";
+import { FavoriteButton } from "@/components/favorite-button";
 import {
   CATEGORY_META,
   LESSONS,
@@ -207,6 +208,8 @@ export default async function LessonPage({
 
         {/* Columna lateral */}
         <aside className="space-y-8">
+          <FavoriteButton lessonSlug={lesson.slug} />
+
           <section className="card space-y-3 bg-gradient-to-br from-leaf-600 to-leaf-800 p-6 text-white sm:p-7">
             <h2 className="flex items-center gap-2 font-display text-lg font-semibold">
               <span aria-hidden>✍️</span> Versículo para memorizar

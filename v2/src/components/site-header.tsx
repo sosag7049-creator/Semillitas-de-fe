@@ -33,10 +33,16 @@ export function SiteHeader() {
             Juegos · muy pronto
           </span>
           <a
+            href="/cuenta"
+            className="rounded-full px-3 py-2 transition hover:bg-leaf-100/70 hover:text-leaf-700"
+          >
+            Mi cuenta
+          </a>
+          <a
             href="https://github.com/sosag7049-creator/Semillitas-de-fe"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full px-3 py-2 transition hover:bg-leaf-100/70 hover:text-leaf-700"
+            className="hidden rounded-full px-3 py-2 transition hover:bg-leaf-100/70 hover:text-leaf-700 md:inline"
           >
             GitHub
           </a>
