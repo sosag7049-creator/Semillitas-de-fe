@@ -1,0 +1,3866 @@
+[
+  {
+    "id": "0",
+    "number": 1,
+    "slug": "la-creacion",
+    "title": "La creación",
+    "icon": "🌍",
+    "category": "Dios",
+    "testament": "antiguo",
+    "reference": "Génesis 1:1–2:3; 2:15",
+    "objective": "Dios creó un mundo bueno y cada persona tiene valor",
+    "application": "Dar gracias por tres cosas creadas.",
+    "narration": "Explora elementos de la creación y repite: “Dios lo hizo y era bueno”.",
+    "dynamic": "Clasificar tarjetas en cielo, tierra y mar.",
+    "craft": "Mural colectivo de los siete días.",
+    "drawPrompt": "Dibuja una parte de la creación por la que quieres dar gracias a Dios.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/la-creacion.webp",
+    "story": [
+      {
+        "title": "Antes de todo",
+        "text": "Antes de que existieran las montañas, los animales o las personas, Dios ya estaba allí. Dios habló y comenzó a crear un mundo bueno, hermoso y ordenado."
+      },
+      {
+        "title": "Siete días maravillosos",
+        "text": "Dios hizo la luz; el cielo; la tierra, el mar y las plantas; el sol, la luna y las estrellas; los peces y las aves; los animales y las personas. El séptimo día descansó."
+      },
+      {
+        "title": "Una creación muy especial",
+        "text": "Dios creó al ser humano a su imagen. Eso significa que cada niño y cada niña tiene gran valor. Dios nos encargó cuidar lo que hizo."
+      }
+    ],
+    "takeaways": [
+      "🌱 Dios creó un mundo bueno y cada persona tiene valor.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: dar gracias por tres cosas creadas."
+    ],
+    "questions": [
+      "¿Qué creó Dios?",
+      "¿Qué te gusta más?",
+      "¿Cómo cuidamos lo creado?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con dios creó un mundo bueno y cada persona tiene valor?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué creó Dios el primer día?",
+        "options": [
+          "La luz",
+          "Los animales",
+          "Las plantas"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Solo las cosas grandes de la creación son importantes",
+          "Dios creó un mundo bueno y cada persona tiene valor",
+          "El mundo apareció solo, sin que nadie lo hiciera"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Arrancar flores para llevarlas a casa",
+          "Quedarnos callados sin dar gracias",
+          "Dar gracias por tres cosas creadas."
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "Ordena los siete días",
+      "steps": [
+        "Toca en orden: Luz",
+        "Cielo",
+        "Tierra y plantas",
+        "Astros",
+        "Aves y peces",
+        "Animales y personas",
+        "Descanso"
+      ]
+    },
+    "memory": {
+      "text": "Y vio Dios todo lo que había hecho, y he aquí que era bueno en gran manera",
+      "reference": "Génesis 1:31",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/GEN.1.31.RVR1960"
+    },
+    "videoId": "UVou_Dmndqc",
+    "videoQuery": "creacion biblia niños",
+    "videoUrl": "https://www.youtube.com/watch?v=UVou_Dmndqc",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=0",
+    "prayer": "Señor, gracias por enseñarnos por medio de La creación. Ayúdanos a recordar que dios creó un mundo bueno y cada persona tiene valor. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "1",
+    "number": 2,
+    "slug": "noe-y-el-arca",
+    "title": "Noé confía",
+    "icon": "🌈",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "Génesis 6–9",
+    "objective": "Confiamos y obedecemos a Dios aunque sea difícil",
+    "application": "Obedecer una instrucción buena en casa.",
+    "narration": "Narra el arca con sonidos de lluvia y animales.",
+    "dynamic": "Entrar animales por parejas siguiendo instrucciones.",
+    "craft": "Arcoíris con una promesa escrita.",
+    "drawPrompt": "Dibuja el arca, la lluvia y el arco iris que recordó la promesa de Dios.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/noe-y-el-arca.webp",
+    "story": [
+      {
+        "title": "Una tarea sorprendente",
+        "text": "La maldad había crecido, pero Noé caminaba con Dios. Dios le indicó construir una enorme arca para proteger a su familia y a los animales."
+      },
+      {
+        "title": "Obedecer antes de ver",
+        "text": "Noé hizo lo que Dios mandó aunque nunca había vivido algo parecido. Entraron los animales según la instrucción de Dios: siete parejas de los limpios y de las aves, y una pareja de los no limpios. Llovió cuarenta días y cuarenta noches, y Dios cuidó a los que estaban en el arca."
+      },
+      {
+        "title": "La promesa del arcoíris",
+        "text": "Cuando las aguas bajaron, Noé salió y adoró a Dios. Dios puso el arcoíris como señal de su pacto: no volvería a destruir a todos los seres vivos con un diluvio."
+      }
+    ],
+    "takeaways": [
+      "🌱 Confiamos y obedecemos a Dios aunque sea difícil.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: obedecer una instrucción buena en casa."
+    ],
+    "questions": [
+      "¿Qué pidió Dios?",
+      "¿Cómo respondió Noé?",
+      "¿Qué es obedecer?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con confiamos y obedecemos a dios aunque sea difícil?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué señal recordó la promesa de Dios?",
+        "options": [
+          "Una estrella",
+          "El arcoíris",
+          "Una corona"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Obedecemos a Dios solo cuando entendemos todo",
+          "Noé construyó el arca por su cuenta, sin que Dios se lo pidiera",
+          "Confiamos y obedecemos a Dios aunque sea difícil"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Obedecer una instrucción buena en casa.",
+          "Obedecer solo si nos dan un premio",
+          "Esperar a que nos lo repitan muchas veces"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Parejas hacia el arca",
+      "steps": [
+        "Une cada pareja: León",
+        "Elefante",
+        "Jirafa",
+        "Paloma"
+      ]
+    },
+    "memory": {
+      "text": "E hizo Noé conforme a todo lo que le mandó Jehová",
+      "reference": "Génesis 7:5",
+      "excerpt": false,
+      "sourceUrl": "https://www.bible.com/es/bible/149/GEN.7.5.RVR1960"
+    },
+    "videoId": "iOLi2mXQOjo",
+    "videoQuery": "noe arca biblia niños",
+    "videoUrl": "https://www.youtube.com/watch?v=iOLi2mXQOjo",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=1",
+    "prayer": "Señor, gracias por enseñarnos por medio de Noé confía. Ayúdanos a recordar que confiamos y obedecemos a dios aunque sea difícil. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "2",
+    "number": 3,
+    "slug": "abraham-espera",
+    "title": "Abraham espera",
+    "icon": "✨",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "Génesis 12; 15; 21",
+    "objective": "Dios cumple sus promesas en su tiempo",
+    "application": "Orar por algo que esperan.",
+    "narration": "Usa estrellas para explicar la promesa y la espera.",
+    "dynamic": "Contar estrellas y formar “confía”.",
+    "craft": "Frasco de estrellas y oración.",
+    "drawPrompt": "Dibuja las estrellas que Abraham pudo mirar mientras esperaba en Dios.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/abraham-espera.webp",
+    "story": [
+      {
+        "title": "Una invitación",
+        "text": "Dios llamó a Abram para dejar su tierra y viajar a un lugar que le mostraría. Le prometió una familia numerosa y bendición para muchas naciones."
+      },
+      {
+        "title": "Una espera larga",
+        "text": "Pasaron años y Abraham y Sara todavía no tenían el hijo prometido. Dios le mostró las estrellas y le recordó que podía confiar en su palabra."
+      },
+      {
+        "title": "La promesa llega",
+        "text": "En el tiempo de Dios nació Isaac. Abraham aprendió que esperar no significa que Dios haya olvidado; Él cumple lo que promete."
+      }
+    ],
+    "takeaways": [
+      "🌱 Dios cumple sus promesas en su tiempo.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: orar por algo que esperan."
+    ],
+    "questions": [
+      "¿Qué prometió Dios?",
+      "¿Fue fácil esperar?",
+      "¿Cómo esperamos bien?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con dios cumple sus promesas en su tiempo?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué mostró Dios a Abraham?",
+        "options": [
+          "Un palacio",
+          "Un barco",
+          "Las estrellas"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Dios cumple sus promesas en su tiempo",
+          "Si una promesa tarda, es que Dios se olvidó",
+          "Dios cumple solo si se lo pedimos muy rápido"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Pedir lo mismo a muchas personas hasta conseguirlo",
+          "Orar por algo que esperan.",
+          "Dejar de orar si la respuesta tarda"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "Cielo de promesas",
+      "steps": [
+        "Reparte diez estrellas de papel",
+        "Cuéntenlas juntos en voz alta",
+        "Recuerden la promesa que Dios hizo a Abraham",
+        "Cada niño elige una promesa para llevar a casa",
+        "Oren dando gracias porque Dios cumple a su tiempo"
+      ]
+    },
+    "memory": {
+      "text": "Y creyó a Jehová, y le fue contado por justicia",
+      "reference": "Génesis 15:6",
+      "excerpt": false,
+      "sourceUrl": "https://www.bible.com/es/bible/149/GEN.15.6.RVR1960"
+    },
+    "videoId": "hTNGJe267pc",
+    "videoQuery": "abraham promesa biblia niños",
+    "videoUrl": "https://www.youtube.com/watch?v=hTNGJe267pc",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=2",
+    "prayer": "Señor, gracias por enseñarnos por medio de Abraham espera. Ayúdanos a recordar que dios cumple sus promesas en su tiempo. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "3",
+    "number": 4,
+    "slug": "jose-perdona",
+    "title": "José perdona",
+    "icon": "🧥",
+    "category": "Carácter",
+    "testament": "antiguo",
+    "reference": "Génesis 37; 39–45; 50:15–21",
+    "objective": "Dios nos acompaña y ayuda a perdonar",
+    "application": "Pedir ayuda ante un conflicto.",
+    "narration": "Resume con una túnica de colores y lenguaje sensible.",
+    "dynamic": "Ordenar cinco escenas.",
+    "craft": "Túnica con palabras de bondad.",
+    "drawPrompt": "Dibuja a José recibiendo nuevamente a sus hermanos con perdón.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/jose-perdona.webp",
+    "story": [
+      {
+        "title": "Sueños y dificultades",
+        "text": "José recibió sueños, pero sus hermanos sintieron celos y lo vendieron. En Egipto enfrentó injusticias; aun así, Dios estuvo con él y José siguió actuando correctamente."
+      },
+      {
+        "title": "Dios prepara el camino",
+        "text": "Dios dio a José sabiduría para explicar los sueños del faraón. José organizó alimento para los años difíciles y llegó a servir con gran responsabilidad."
+      },
+      {
+        "title": "Un perdón que restaura",
+        "text": "Cuando sus hermanos buscaron comida, José decidió perdonar. No llamó bueno al daño, pero vio cómo Dios había convertido el sufrimiento en una oportunidad para salvar vidas."
+      }
+    ],
+    "takeaways": [
+      "🌱 Dios nos acompaña y ayuda a perdonar.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: pedir ayuda ante un conflicto."
+    ],
+    "questions": [
+      "¿Qué pasó?",
+      "¿Qué hizo José?",
+      "¿Qué no significa perdonar?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con dios nos acompaña y ayuda a perdonar?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué decidió hacer José con sus hermanos?",
+        "options": [
+          "Perdonarlos",
+          "Ignorarlos siempre",
+          "Vengarse"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Debemos devolver el daño que nos hicieron",
+          "Dios nos acompaña y ayuda a perdonar",
+          "Perdonar significa que lo malo no importó"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Guardar el enojo en silencio",
+          "Dejar de hablarle a esa persona para siempre",
+          "Pedir ayuda ante un conflicto."
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "Camino del perdón",
+      "steps": [
+        "Ordena: Reconocer el daño",
+        "Buscar ayuda segura",
+        "Hablar con verdad",
+        "Perdonar sin aceptar abuso",
+        "Elegir hacer el bien"
+      ]
+    },
+    "memory": {
+      "text": "Vosotros pensasteis mal contra mí, mas Dios lo encaminó a bien",
+      "reference": "Génesis 50:20",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/GEN.50.20.RVR1960"
+    },
+    "videoId": "eSUUHKPKL8I",
+    "videoQuery": "jose perdona biblia niños",
+    "videoUrl": "https://www.youtube.com/watch?v=eSUUHKPKL8I",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=3",
+    "prayer": "Señor, gracias por enseñarnos por medio de José perdona. Ayúdanos a recordar que dios nos acompaña y ayuda a perdonar. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "4",
+    "number": 5,
+    "slug": "moises-y-la-zarza",
+    "title": "Moisés es llamado",
+    "icon": "🔥",
+    "category": "Dios",
+    "testament": "antiguo",
+    "reference": "Éxodo 3–4",
+    "objective": "Dios llama, acompaña y capacita",
+    "application": "Servir en una tarea.",
+    "narration": "Cuenta la zarza con papel de colores y reverencia.",
+    "dynamic": "Responder “Heme aquí” al oír su nombre.",
+    "craft": "Sandalia con una misión de servicio.",
+    "drawPrompt": "Dibuja la zarza y a Moisés escuchando el llamado de Dios.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/moises-y-la-zarza.webp",
+    "story": [
+      {
+        "title": "Dios llama a Moisés",
+        "text": "Mientras cuidaba ovejas, Moisés vio una zarza que ardía sin consumirse. Dios lo llamó por su nombre y le pidió ayudar a liberar a su pueblo."
+      },
+      {
+        "title": "Moisés tiene preguntas",
+        "text": "Moisés sintió temor y presentó excusas. Dios no se burló: prometió acompañarlo y le dio ayuda para cumplir la misión."
+      },
+      {
+        "title": "Una respuesta valiente",
+        "text": "Moisés regresó a Egipto confiando en la presencia de Dios. Aprendió que no necesitamos sentirnos perfectos para obedecer."
+      }
+    ],
+    "takeaways": [
+      "🌱 Dios llama, acompaña y capacita.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: servir en una tarea."
+    ],
+    "questions": [
+      "¿Quién llamó?",
+      "¿Qué excusas dio?",
+      "¿Cómo ayudó Dios?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con dios llama, acompaña y capacita?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Desde dónde llamó Dios a Moisés?",
+        "options": [
+          "Un palacio",
+          "Una zarza ardiente",
+          "Un barco"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Dios solo llama a quienes ya hacen todo bien",
+          "Moisés se nombró líder a sí mismo",
+          "Dios llama, acompaña y capacita"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Servir en una tarea.",
+          "Esperar a ser grandes para servir",
+          "Servir solo cuando alguien nos mira"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Heme aquí",
+      "steps": [
+        "Siéntense en círculo y hagan silencio",
+        "Llama a cinco niños por su nombre",
+        "Quien escucha el suyo responde: “Heme aquí”",
+        "Cada uno elige una acción de servicio para la semana",
+        "Repitan juntos: “Dios está conmigo”"
+      ]
+    },
+    "memory": {
+      "text": "Ve, porque yo estaré contigo",
+      "reference": "Éxodo 3:12",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/EXO.3.12.RVR1960"
+    },
+    "videoId": "xF0xMJAgVzg",
+    "videoQuery": "moises zarza ardiente niños",
+    "videoUrl": "https://www.youtube.com/watch?v=xF0xMJAgVzg",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=4",
+    "prayer": "Señor, gracias por enseñarnos por medio de Moisés es llamado. Ayúdanos a recordar que dios llama, acompaña y capacita. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "5",
+    "number": 6,
+    "slug": "dios-abre-el-mar",
+    "title": "Dios abre el mar",
+    "icon": "🌊",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "Éxodo 14",
+    "objective": "Cuando tememos podemos clamar y confiar",
+    "application": "Hablar con Dios y un adulto.",
+    "narration": "Usa dos telas azules y evita detalles violentos.",
+    "dynamic": "Cruzar obstáculos en equipo.",
+    "craft": "Mar plegable con camino.",
+    "drawPrompt": "Dibuja un camino seco entre las aguas y al pueblo avanzando con fe.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/dios-abre-el-mar.webp",
+    "story": [
+      {
+        "title": "Atrapados frente al mar",
+        "text": "El pueblo salió de Egipto, pero pronto quedó entre el mar y el ejército. Tuvieron miedo y clamaron. Moisés les recordó que Dios podía ayudarlos."
+      },
+      {
+        "title": "Un camino inesperado",
+        "text": "Dios abrió un camino en medio del mar. El pueblo cruzó por tierra seca mientras las aguas estaban a los lados."
+      },
+      {
+        "title": "Libres para seguir",
+        "text": "Al llegar seguros a la otra orilla, celebraron la ayuda de Dios. Cuando sentimos miedo podemos orar, buscar a un adulto seguro y dar el siguiente paso correcto."
+      }
+    ],
+    "takeaways": [
+      "🌱 Cuando tememos podemos clamar y confiar.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: hablar con dios y un adulto."
+    ],
+    "questions": [
+      "¿Qué sintieron?",
+      "¿Qué hizo Dios?",
+      "¿A quién pedimos ayuda?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con cuando tememos podemos clamar y confiar?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Por dónde cruzó el pueblo?",
+        "options": [
+          "Por un puente",
+          "Por una montaña",
+          "Por tierra seca en el mar"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Cuando tememos podemos clamar y confiar",
+          "El pueblo se salvó porque corrió muy rápido",
+          "Tener miedo significa que no confiamos en Dios"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Resolver todo solos sin pedir ayuda",
+          "Hablar con Dios y un adulto.",
+          "Esconder el miedo y no contarlo a nadie"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "Cruza el Mar Rojo",
+      "steps": [
+        "Coloquen dos telas azules formando un camino",
+        "Fórmense en fila tomados de la mano",
+        "Crucen el camino sin soltarse",
+        "Al llegar, digan: “Jehová peleará por vosotros”",
+        "Conversen sobre a quién pedimos ayuda cuando tenemos miedo"
+      ]
+    },
+    "memory": {
+      "text": "Jehová peleará por vosotros, y vosotros estaréis tranquilos",
+      "reference": "Éxodo 14:14",
+      "excerpt": false,
+      "sourceUrl": "https://www.bible.com/es/bible/149/EXO.14.14.RVR1960"
+    },
+    "videoId": "7MLMIau0nzw",
+    "videoQuery": "mar rojo biblia niños",
+    "videoUrl": "https://www.youtube.com/watch?v=7MLMIau0nzw",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=5",
+    "prayer": "Señor, gracias por enseñarnos por medio de Dios abre el mar. Ayúdanos a recordar que cuando tememos podemos clamar y confiar. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "6",
+    "number": 7,
+    "slug": "diez-mandamientos",
+    "title": "Diez mandamientos",
+    "icon": "📜",
+    "category": "Carácter",
+    "testament": "antiguo",
+    "reference": "Éxodo 20:1–17; Mateo 22:37–40",
+    "objective": "Dios nos enseña a amarle y amar al prójimo",
+    "application": "Elegir un acto de amor.",
+    "narration": "Agrupa los mandamientos en dos grandes amores.",
+    "dynamic": "Clasificar situaciones por categoría.",
+    "craft": "Tablas con palabras clave.",
+    "drawPrompt": "Dibuja dos tablas y escribe dentro dos maneras de amar a Dios y al prójimo.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/diez-mandamientos.webp",
+    "story": [
+      {
+        "title": "Un pueblo libre",
+        "text": "Dios había rescatado a Israel de Egipto. En el monte Sinaí les dio mandamientos para enseñarles a vivir como su pueblo."
+      },
+      {
+        "title": "Dos grandes amores",
+        "text": "Los mandamientos enseñan a amar y honrar a Dios, y a respetar la vida, la familia, la verdad y lo que pertenece a otros."
+      },
+      {
+        "title": "Reglas que protegen",
+        "text": "Las instrucciones de Dios no eran para ganar su amor; eran una respuesta al Dios que ya los había rescatado. Sus caminos protegen y guían."
+      }
+    ],
+    "takeaways": [
+      "🌱 Dios nos enseña a amarle y amar al prójimo.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: elegir un acto de amor."
+    ],
+    "questions": [
+      "¿Por qué hay reglas?",
+      "¿Qué protegen?",
+      "¿Cuál practicarás?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con dios nos enseña a amarle y amar al prójimo?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué enseñan juntos los mandamientos?",
+        "options": [
+          "Amar a Dios y al prójimo",
+          "Ganar premios",
+          "Ser más fuerte"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Cumplir reglas nos hace mejores que los demás",
+          "Dios nos enseña a amarle y amar al prójimo",
+          "Las reglas de Dios existen para que nadie disfrute"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Recitar los mandamientos sin practicarlos",
+          "Vigilar quién se porta mal",
+          "Elegir un acto de amor."
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "Dos grandes amores",
+      "steps": [
+        "Clasifica: Orar",
+        "Decir la verdad",
+        "Respetar a la familia",
+        "Adorar a Dios",
+        "Cuidar lo ajeno"
+      ]
+    },
+    "memory": {
+      "text": "Yo soy Jehová tu Dios",
+      "reference": "Éxodo 20:2",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/EXO.20.2.RVR1960"
+    },
+    "videoId": "F0gnCkAcZv8",
+    "videoQuery": "diez mandamientos niños",
+    "videoUrl": "https://www.youtube.com/watch?v=F0gnCkAcZv8",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=6",
+    "prayer": "Señor, gracias por enseñarnos por medio de Diez mandamientos. Ayúdanos a recordar que dios nos enseña a amarle y amar al prójimo. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "7",
+    "number": 8,
+    "slug": "josue-y-jerico",
+    "title": "Josué y Jericó",
+    "icon": "🎺",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "Josué 1:9; 6",
+    "objective": "Obedecer requiere confianza y paciencia",
+    "application": "Seguir una instrucción completa.",
+    "narration": "Narra las vueltas con ritmo y dependencia de Dios.",
+    "dynamic": "Marcha silenciosa y señal final.",
+    "craft": "Trompeta “Confío en Dios”.",
+    "drawPrompt": "Dibuja los muros de Jericó y al pueblo obedeciendo las instrucciones de Dios.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/josue-y-jerico.webp",
+    "story": [
+      {
+        "title": "Una ciudad cerrada",
+        "text": "Jericó tenía grandes murallas. Dios dio a Josué un plan extraño: marchar alrededor de la ciudad durante varios días y esperar la señal."
+      },
+      {
+        "title": "Paciencia y unidad",
+        "text": "Soldados, sacerdotes y pueblo siguieron las instrucciones juntos. No corrieron antes de tiempo ni cambiaron el plan."
+      },
+      {
+        "title": "Dios da la victoria",
+        "text": "En el día señalado tocaron las trompetas y gritaron; las murallas cayeron. La victoria vino de Dios, no de la fuerza del pueblo."
+      }
+    ],
+    "takeaways": [
+      "🌱 Obedecer requiere confianza y paciencia.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: seguir una instrucción completa."
+    ],
+    "questions": [
+      "¿Cuánto esperaron?",
+      "¿Qué hicieron?",
+      "¿Quién dio victoria?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con obedecer requiere confianza y paciencia?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué debía hacer el pueblo alrededor de Jericó?",
+        "options": [
+          "Esconderse",
+          "Marchar y obedecer",
+          "Construir otro muro"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Los muros cayeron por la fuerza de los soldados",
+          "Obedecer sirve solo cuando vemos resultados el primer día",
+          "Obedecer requiere confianza y paciencia"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Seguir una instrucción completa.",
+          "Hacer solo la parte de la tarea que nos gusta",
+          "Dejar la instrucción a la mitad"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Marcha de Jericó",
+      "steps": [
+        "Representa una vuelta cada día durante seis días",
+        "Representa siete vueltas el séptimo día",
+        "Al terminar la séptima vuelta, da la señal para las trompetas y el grito",
+        "Recuerda: esta representación resume siete días; no fueron solo siete vueltas en total."
+      ]
+    },
+    "memory": {
+      "text": "Mira que te mando que te esfuerces y seas valiente",
+      "reference": "Josué 1:9",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/JOS.1.9.RVR1960"
+    },
+    "videoId": "w-eqGmWeioU",
+    "videoQuery": "josue jerico niños",
+    "videoUrl": "https://www.youtube.com/watch?v=w-eqGmWeioU",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=7",
+    "prayer": "Señor, gracias por enseñarnos por medio de Josué y Jericó. Ayúdanos a recordar que obedecer requiere confianza y paciencia. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "8",
+    "number": 9,
+    "slug": "rut-es-fiel",
+    "title": "Rut es fiel",
+    "icon": "🌾",
+    "category": "Carácter",
+    "testament": "antiguo",
+    "reference": "Rut 1–4; Mateo 1:5–6",
+    "objective": "La bondad se muestra en acciones pequeñas",
+    "application": "Ayudar sin que lo pidan.",
+    "narration": "Representa el viaje con huellas de papel.",
+    "dynamic": "Recoger espigas con actos bondadosos.",
+    "craft": "Canasta de ayuda familiar.",
+    "drawPrompt": "Dibuja a Rut acompañando con fidelidad a Noemí.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/rut-es-fiel.webp",
+    "story": [
+      {
+        "title": "Una decisión fiel",
+        "text": "Después de perder a sus esposos, Noemí quiso volver a Belén. Rut decidió acompañarla, cuidar de ella y confiar en el Dios de Israel."
+      },
+      {
+        "title": "Trabajo y bondad",
+        "text": "Rut recogía espigas que quedaban en el campo para conseguir alimento. Booz vio su fidelidad y procuró que estuviera segura."
+      },
+      {
+        "title": "Dios cuida por medio de personas",
+        "text": "La historia de Rut muestra actos pequeños de lealtad, trabajo y generosidad. Dios usó esa familia dentro de la historia que conduciría a David y, más adelante, a Jesús."
+      }
+    ],
+    "takeaways": [
+      "🌱 La bondad se muestra en acciones pequeñas.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: ayudar sin que lo pidan."
+    ],
+    "questions": [
+      "¿A quién ayudó?",
+      "¿Cómo trabajó?",
+      "¿Quién fue bondadoso?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con la bondad se muestra en acciones pequeñas?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿A quién acompañó Rut?",
+        "options": [
+          "A Ester",
+          "A María",
+          "A Noemí"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "La bondad se muestra en acciones pequeñas",
+          "Solo cuentan las ayudas grandes y llamativas",
+          "Rut ayudó esperando recibir algo a cambio"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Contarle a todos lo que ayudamos",
+          "Ayudar sin que lo pidan.",
+          "Ayudar solo cuando nos lo ruegan"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "Espigas de bondad",
+      "steps": [
+        "Esconde espigas de papel por el salón",
+        "Búsquenlas entre todos, sin competir",
+        "Por cada espiga digan una manera de ayudar",
+        "Reúnan las espigas en una canasta",
+        "Elijan una ayuda para hacer en casa esta semana"
+      ]
+    },
+    "memory": {
+      "text": "Tu pueblo será mi pueblo, y tu Dios mi Dios",
+      "reference": "Rut 1:16",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/RUT.1.16.RVR1960"
+    },
+    "videoId": "VTmoQYWaRsY",
+    "videoQuery": "rut biblia niños",
+    "videoUrl": "https://www.youtube.com/watch?v=VTmoQYWaRsY",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=8",
+    "prayer": "Señor, gracias por enseñarnos por medio de Rut es fiel. Ayúdanos a recordar que la bondad se muestra en acciones pequeñas. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "9",
+    "number": 10,
+    "slug": "samuel-escucha",
+    "title": "Samuel escucha",
+    "icon": "👂",
+    "category": "Dios",
+    "testament": "antiguo",
+    "reference": "1 Samuel 3",
+    "objective": "Escuchamos la Palabra de Dios",
+    "application": "Leer un pasaje en casa.",
+    "narration": "Repite el llamado y deja que respondan.",
+    "dynamic": "Reconocer voces y sonidos.",
+    "craft": "Orejas con “Habla, Señor”.",
+    "drawPrompt": "Dibuja a Samuel atento, listo para escuchar a Dios.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/samuel-escucha.webp",
+    "story": [
+      {
+        "title": "Una voz en la noche",
+        "text": "Samuel era niño y ayudaba en el santuario. Una noche oyó su nombre y pensó que Elí lo llamaba. Esto ocurrió tres veces."
+      },
+      {
+        "title": "Elí ayuda a comprender",
+        "text": "Elí entendió que Dios llamaba a Samuel y le enseñó a responder: “Habla, Jehová, porque tu siervo oye”. Samuel necesitó la guía de un adulto."
+      },
+      {
+        "title": "Escuchar y obedecer",
+        "text": "Dios habló y Samuel escuchó con atención. Hoy escuchamos a Dios al leer la Biblia y comprobamos toda enseñanza con su Palabra."
+      }
+    ],
+    "takeaways": [
+      "🌱 Escuchamos la Palabra de Dios.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: leer un pasaje en casa."
+    ],
+    "questions": [
+      "¿Quién llamó?",
+      "¿Quién ayudó?",
+      "¿Cómo habla Dios hoy?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con escuchamos la palabra de dios?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué respondió Samuel?",
+        "options": [
+          "Habla, porque tu siervo oye",
+          "No quiero escuchar",
+          "Volveré mañana"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Escuchar es quedarse callado sin prestar atención",
+          "Escuchamos la Palabra de Dios",
+          "Dios solo habla a las personas mayores"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Leer la Biblia solo cuando hay una tarea",
+          "Esperar a que otro nos lo cuente",
+          "Leer un pasaje en casa."
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "¿Quién llamó?",
+      "steps": [
+        "Siéntense en círculo y cierren los ojos",
+        "Tres niños dicen una frase, uno por uno",
+        "Adivinen de quién era cada voz",
+        "Respondan todos: “Habla, porque tu siervo oye”",
+        "Conversen sobre cómo nos habla Dios por su Palabra"
+      ]
+    },
+    "memory": {
+      "text": "Habla, porque tu siervo oye",
+      "reference": "1 Samuel 3:10",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/1SA.3.10.RVR1960"
+    },
+    "videoId": "wwzlWBMTnig",
+    "videoQuery": "samuel escucha a dios niños",
+    "videoUrl": "https://www.youtube.com/watch?v=wwzlWBMTnig",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=9",
+    "prayer": "Señor, gracias por enseñarnos por medio de Samuel escucha. Ayúdanos a recordar que escuchamos la palabra de dios. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "10",
+    "number": 11,
+    "slug": "david-y-goliat",
+    "title": "David y Goliat",
+    "icon": "🪨",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "1 Samuel 17",
+    "objective": "El valor nace de confiar en Dios",
+    "application": "Pedir ayuda y actuar bien.",
+    "narration": "Compara tamaños; enfoca fe, no violencia.",
+    "dynamic": "Derribar vasos de “miedos” con pelotas.",
+    "craft": "Cinco piedras con verdades.",
+    "drawPrompt": "Dibuja a David confiando en Dios frente al gigante.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/david-y-goliat.webp",
+    "story": [
+      {
+        "title": "Un gigante amenaza",
+        "text": "Goliat era un guerrero enorme que llenaba de temor al ejército. David llegó para llevar comida y oyó sus amenazas."
+      },
+      {
+        "title": "David recuerda a Dios",
+        "text": "David no confió en una armadura que no sabía usar. Recordó cómo Dios lo había ayudado antes y tomó su honda y cinco piedras."
+      },
+      {
+        "title": "Valor con confianza",
+        "text": "David enfrentó a Goliat en el nombre de Dios y venció. El valor no es buscar peligro; es hacer lo correcto confiando en Dios y pidiendo ayuda sabia."
+      }
+    ],
+    "takeaways": [
+      "🌱 El valor nace de confiar en Dios.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: pedir ayuda y actuar bien."
+    ],
+    "questions": [
+      "¿En quién confió?",
+      "¿Qué recordó?",
+      "¿Cómo enfrentamos problemas?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con el valor nace de confiar en dios?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿En quién confió David?",
+        "options": [
+          "En la armadura de Saúl",
+          "En Dios",
+          "En su tamaño"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "David venció porque era el más fuerte",
+          "Ser valiente es no sentir miedo nunca",
+          "El valor nace de confiar en Dios"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Pedir ayuda y actuar bien.",
+          "Enfrentar todo solos para demostrar valor",
+          "Responder con gritos cuando nos molestan"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Cinco piedras de valor",
+      "steps": [
+        "Escribe en cinco piedras de papel: Dios está conmigo",
+        "Puedo orar",
+        "Puedo pedir ayuda",
+        "Recordaré su Palabra",
+        "Haré lo correcto"
+      ]
+    },
+    "memory": {
+      "text": "de Jehová es la batalla",
+      "reference": "1 Samuel 17:47",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/1SA.17.47.RVR1960"
+    },
+    "videoId": "I8bV6U7VYfg",
+    "videoQuery": "david goliat niños",
+    "videoUrl": "https://www.youtube.com/watch?v=I8bV6U7VYfg",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=10",
+    "prayer": "Señor, gracias por enseñarnos por medio de David y Goliat. Ayúdanos a recordar que el valor nace de confiar en dios. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "11",
+    "number": 12,
+    "slug": "david-y-jonatan",
+    "title": "David y Jonatán",
+    "icon": "🤝",
+    "category": "Carácter",
+    "testament": "antiguo",
+    "reference": "1 Samuel 18; 20",
+    "objective": "Un amigo busca el bien del otro",
+    "application": "Incluir a alguien solo.",
+    "narration": "Cuenta su lealtad y habla de secretos seguros.",
+    "dynamic": "Cadena de cumplidos.",
+    "craft": "Tarjeta de amistad.",
+    "drawPrompt": "Dibuja a dos amigos ayudándose como David y Jonatán.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/david-y-jonatan.webp",
+    "story": [
+      {
+        "title": "Una amistad sincera",
+        "text": "David y Jonatán se hicieron grandes amigos. Jonatán no sintió celos del éxito de David; buscó su bien y cumplió sus promesas."
+      },
+      {
+        "title": "Ayuda en un momento difícil",
+        "text": "Cuando David estuvo en peligro, Jonatán le avisó y trató de hablar con su padre. Su amistad incluyó verdad, valor y cuidado."
+      },
+      {
+        "title": "Amigos que hacen el bien",
+        "text": "Una amistad sana ayuda a acercarnos a Dios y a hacer lo correcto. Los secretos que implican daño o peligro siempre deben contarse a un adulto seguro."
+      }
+    ],
+    "takeaways": [
+      "🌱 Un amigo busca el bien del otro.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: incluir a alguien solo."
+    ],
+    "questions": [
+      "¿Cómo ayudó?",
+      "¿Qué es amistad sana?",
+      "¿Cuándo contamos un secreto?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con un amigo busca el bien del otro?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Cómo trató Jonatán a David?",
+        "options": [
+          "Como enemigo",
+          "Con celos",
+          "Como amigo fiel"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Un amigo busca el bien del otro",
+          "Un buen amigo siempre nos da la razón",
+          "La amistad sirve para conseguir favores"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Elegir amigos por lo que tienen",
+          "Incluir a alguien solo.",
+          "Jugar únicamente con nuestro mejor amigo"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "Cadena de amistad",
+      "steps": [
+        "Reparte una tarjeta a cada niño",
+        "Escriban o dibujen una cualidad amable de un compañero",
+        "Entreguen la tarjeta diciendo algo bueno",
+        "Unan las tarjetas formando una cadena",
+        "Revisen que nadie se haya quedado sin recibir"
+      ]
+    },
+    "memory": {
+      "text": "En todo tiempo ama el amigo",
+      "reference": "Proverbios 17:17",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/PRO.17.17.RVR1960"
+    },
+    "videoId": "azVk3hcxNVU",
+    "videoQuery": "david jonatan niños",
+    "videoUrl": "https://www.youtube.com/watch?v=azVk3hcxNVU",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=11",
+    "prayer": "Señor, gracias por enseñarnos por medio de David y Jonatán. Ayúdanos a recordar que un amigo busca el bien del otro. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "12",
+    "number": 13,
+    "slug": "salomon-y-la-sabiduria",
+    "title": "Salomón y sabiduría",
+    "icon": "👑",
+    "category": "Dios",
+    "testament": "antiguo",
+    "reference": "1 Reyes 3:5–14",
+    "objective": "Pedimos sabiduría para escoger lo correcto",
+    "application": "Usar el semáforo al decidir.",
+    "narration": "Presenta decisiones antes de contar lo que pidió.",
+    "dynamic": "Semáforo: parar, pensar, orar, actuar.",
+    "craft": "Bombilla con Santiago 1:5.",
+    "drawPrompt": "Dibuja a Salomón pidiendo sabiduría para tomar una buena decisión.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/salomon-y-la-sabiduria.webp",
+    "story": [
+      {
+        "title": "Una oferta de Dios",
+        "text": "Al comenzar a reinar, Salomón sabía que necesitaba ayuda. En un sueño, Dios le dijo que pidiera lo que quisiera."
+      },
+      {
+        "title": "Una petición sabia",
+        "text": "Salomón no pidió riqueza ni fama. Pidió un corazón entendido para gobernar y distinguir entre lo bueno y lo malo."
+      },
+      {
+        "title": "Sabiduría para cada día",
+        "text": "A Dios le agradó su petición y le concedió sabiduría. Nosotros también podemos parar, pensar, orar, leer la Biblia y pedir consejo antes de decidir."
+      }
+    ],
+    "takeaways": [
+      "🌱 Pedimos sabiduría para escoger lo correcto.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: usar el semáforo al decidir."
+    ],
+    "questions": [
+      "¿Qué pudo pedir?",
+      "¿Qué eligió?",
+      "¿Dónde necesitas sabiduría?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con pedimos sabiduría para escoger lo correcto?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué pidió Salomón?",
+        "options": [
+          "Sabiduría",
+          "Más soldados",
+          "Un barco"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Salomón pidió riquezas y poder",
+          "Pedimos sabiduría para escoger lo correcto",
+          "La sabiduría llega sola cuando crecemos"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Decidir rápido y sin pensar",
+          "Hacer lo que haga la mayoría",
+          "Usar el semáforo al decidir."
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "Semáforo sabio",
+      "steps": [
+        "Practica una decisión con cuatro pasos: Rojo—para",
+        "Amarillo—piensa",
+        "Azul—ora y pide consejo",
+        "Verde—actúa bien"
+      ]
+    },
+    "memory": {
+      "text": "Da, pues, a tu siervo corazón entendido para juzgar a tu pueblo",
+      "reference": "1 Reyes 3:9",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/1KI.3.9.RVR1960"
+    },
+    "videoId": "yBcRErmjems",
+    "videoQuery": "salomon sabiduria niños",
+    "videoUrl": "https://www.youtube.com/watch?v=yBcRErmjems",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=12",
+    "prayer": "Señor, gracias por enseñarnos por medio de Salomón y sabiduría. Ayúdanos a recordar que pedimos sabiduría para escoger lo correcto. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "13",
+    "number": 14,
+    "slug": "elias-y-la-viuda",
+    "title": "Elías y la viuda",
+    "icon": "🏺",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "1 Reyes 17:8–16",
+    "objective": "Dios ve necesidades y usa generosidad",
+    "application": "Compartir tiempo o atención.",
+    "narration": "Usa un frasco, harina y aceite.",
+    "dynamic": "Compartir fichas hasta que todos tengan.",
+    "craft": "Frasco de gratitud.",
+    "drawPrompt": "Dibuja la harina y el aceite que Dios hizo alcanzar en casa de la viuda.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/elias-y-la-viuda.webp",
+    "story": [
+      {
+        "title": "Muy poco alimento",
+        "text": "Durante una sequía, Dios envió a Elías a una viuda. Ella solo tenía un poco de harina y aceite para preparar la última comida de su casa."
+      },
+      {
+        "title": "Una acción de fe",
+        "text": "Elías le comunicó la promesa de Dios. La mujer compartió lo que tenía y preparó alimento con confianza."
+      },
+      {
+        "title": "Dios sostiene",
+        "text": "La harina y el aceite no se acabaron durante la escasez. Dios vio su necesidad y mostró cuidado; la generosidad nunca debe usarse para presionar a quien necesita ayuda."
+      }
+    ],
+    "takeaways": [
+      "🌱 Dios ve necesidades y usa generosidad.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: compartir tiempo o atención."
+    ],
+    "questions": [
+      "¿Qué tenía?",
+      "¿Qué compartió?",
+      "¿Cómo cuidó Dios?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con dios ve necesidades y usa generosidad?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué no se terminó en la casa?",
+        "options": [
+          "Las joyas",
+          "La harina y el aceite",
+          "Las monedas"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Solo quien tiene mucho puede compartir",
+          "La viuda compartió porque le sobraba comida",
+          "Dios ve necesidades y usa generosidad"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Compartir tiempo o atención.",
+          "Compartir solo lo que ya no queremos",
+          "Esperar a tener de sobra para compartir"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Frasco que alcanza",
+      "steps": [
+        "Formen familias de dos o tres niños",
+        "Reparte fichas de harina y aceite",
+        "Cuenten qué familia tiene de más y cuál de menos",
+        "Compartan hasta que todas tengan lo necesario",
+        "Den gracias porque Dios cuida y provee"
+      ]
+    },
+    "memory": {
+      "text": "Y la harina de la tinaja no escaseó, ni el aceite de la vasija menguó",
+      "reference": "1 Reyes 17:16",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/1KI.17.16.RVR1960"
+    },
+    "videoId": "ZcOM_mriHUA",
+    "videoQuery": "elias viuda niños",
+    "videoUrl": "https://www.youtube.com/watch?v=ZcOM_mriHUA",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=13",
+    "prayer": "Señor, gracias por enseñarnos por medio de Elías y la viuda. Ayúdanos a recordar que dios ve necesidades y usa generosidad. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "14",
+    "number": 15,
+    "slug": "ester-actua",
+    "title": "Ester actúa",
+    "icon": "👸",
+    "category": "Carácter",
+    "testament": "antiguo",
+    "reference": "Ester 4–9",
+    "objective": "Dios puede usarnos para defender lo correcto",
+    "application": "Defender con respeto.",
+    "narration": "Resume el peligro con lenguaje apropiado.",
+    "dynamic": "Camino de decisiones valientes.",
+    "craft": "Corona con una acción valiente.",
+    "drawPrompt": "Dibuja a Ester siendo valiente para ayudar a su pueblo.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/ester-actua.webp",
+    "story": [
+      {
+        "title": "Una reina en el momento preciso",
+        "text": "Ester era reina cuando su pueblo quedó en peligro. Mardoqueo le pidió hablar con el rey, aunque acercarse sin invitación podía ser arriesgado."
+      },
+      {
+        "title": "Ayuno, consejo y valor",
+        "text": "Ester no actuó impulsivamente. Pidió que el pueblo ayunara, preparó sus palabras y escogió el momento para hablar."
+      },
+      {
+        "title": "Defender lo correcto",
+        "text": "Ester denunció a Amán ante el rey. Más adelante se permitió a los judíos defenderse; el primer decreto no podía anularse. Dios puede usar nuestra voz; cuando hay peligro, buscamos primero ayuda de adultos responsables."
+      }
+    ],
+    "takeaways": [
+      "🌱 Dios puede usarnos para defender lo correcto.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: defender con respeto."
+    ],
+    "questions": [
+      "¿Quién necesitaba ayuda?",
+      "¿Qué hizo Ester?",
+      "¿A qué adulto acudimos?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con dios puede usarnos para defender lo correcto?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué hizo Ester antes de hablar?",
+        "options": [
+          "Huyó sola",
+          "Gritó al pueblo",
+          "Pidió apoyo y se preparó"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Dios puede usarnos para defender lo correcto",
+          "Es mejor callar para no meterse en problemas",
+          "Ester actuó sola, sin orar ni pedir apoyo"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Mirar hacia otro lado cuando algo está mal",
+          "Defender con respeto.",
+          "Defender lo correcto gritando más fuerte"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "Camino valiente de Ester",
+      "steps": [
+        "Elige en cada estación: orar",
+        "pedir consejo",
+        "preparar palabras",
+        "hablar con respeto",
+        "buscar protección."
+      ]
+    },
+    "memory": {
+      "text": "¿Y quién sabe si para esta hora has llegado al reino?",
+      "reference": "Ester 4:14",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/EST.4.14.RVR1960"
+    },
+    "videoId": "VK3p3TmcHE0",
+    "videoQuery": "ester biblia niños",
+    "videoUrl": "https://www.youtube.com/watch?v=VK3p3TmcHE0",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=14",
+    "prayer": "Señor, gracias por enseñarnos por medio de Ester actúa. Ayúdanos a recordar que dios puede usarnos para defender lo correcto. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "15",
+    "number": 16,
+    "slug": "daniel-y-la-oracion",
+    "title": "Daniel ora",
+    "icon": "🦁",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "Daniel 6",
+    "objective": "Somos constantes en oración y fieles a Dios",
+    "application": "Crear un momento diario.",
+    "narration": "Cuenta el hábito de Daniel y el cuidado de Dios.",
+    "dynamic": "Tres pausas: gracias, ayuda y otros.",
+    "craft": "Ventana con tres motivos.",
+    "drawPrompt": "Dibuja a Daniel orando con confianza aun en un momento difícil.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/daniel-y-la-oracion.webp",
+    "story": [
+      {
+        "title": "Una costumbre de oración",
+        "text": "Daniel servía con excelencia y otros funcionarios sintieron celos. Convencieron al rey de prohibir orar a cualquier otro durante treinta días."
+      },
+      {
+        "title": "Fiel aun con temor",
+        "text": "Daniel continuó orando a Dios como acostumbraba. Fue arrojado al foso de los leones, pero Dios envió su ángel y lo protegió."
+      },
+      {
+        "title": "Constancia que da testimonio",
+        "text": "El rey se alegró al encontrarlo vivo y reconoció al Dios de Daniel. Orar es hablar con Dios con sinceridad, en días fáciles y difíciles."
+      }
+    ],
+    "takeaways": [
+      "🌱 Somos constantes en oración y fieles a Dios.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: crear un momento diario."
+    ],
+    "questions": [
+      "¿Qué hacía?",
+      "¿Cambió por miedo?",
+      "¿Qué es orar?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con somos constantes en oración y fieles a dios?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Cuántas veces acostumbraba orar Daniel?",
+        "options": [
+          "Tres veces al día",
+          "Una vez al año",
+          "Nunca"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Daniel dejó de orar para evitar el castigo",
+          "Somos constantes en oración y fieles a Dios",
+          "Orar sirve para que nunca nos pase nada difícil"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Orar solo cuando algo sale mal",
+          "Orar únicamente en la iglesia",
+          "Crear un momento diario."
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "Ventana de oración",
+      "steps": [
+        "Abre tres ventanas de papel: Gracias",
+        "Ayúdame",
+        "Cuida a otros; añade un motivo en cada una."
+      ]
+    },
+    "memory": {
+      "text": "había confiado en su Dios",
+      "reference": "Daniel 6:23",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/DAN.6.23.RVR1960"
+    },
+    "videoId": "tNr_KjUf81s",
+    "videoQuery": "daniel leones niños",
+    "videoUrl": "https://www.youtube.com/watch?v=tNr_KjUf81s",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=15",
+    "prayer": "Señor, gracias por enseñarnos por medio de Daniel ora. Ayúdanos a recordar que somos constantes en oración y fieles a dios. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "16",
+    "number": 17,
+    "slug": "jonas",
+    "title": "Jonás",
+    "icon": "🐋",
+    "category": "Carácter",
+    "testament": "antiguo",
+    "reference": "Jonás 1–4",
+    "objective": "Dios corrige y muestra misericordia",
+    "application": "Dar otra oportunidad con límites.",
+    "narration": "Narra con barco, pez y planta.",
+    "dynamic": "Seguir rutas de decisiones.",
+    "craft": "Pez con una segunda oportunidad.",
+    "drawPrompt": "Dibuja a Jonás hablando con Dios y aprendiendo a obedecer.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/jonas.webp",
+    "story": [
+      {
+        "title": "Huir en dirección contraria",
+        "text": "Dios envió a Jonás a Nínive, pero él tomó un barco hacia otro lugar. Una tormenta mostró que no podía escapar de la misión."
+      },
+      {
+        "title": "Una segunda oportunidad",
+        "text": "Jonás fue arrojado al mar, un gran pez lo guardó y allí oró. Dios lo rescató y volvió a enviarlo a Nínive."
+      },
+      {
+        "title": "Misericordia para otros",
+        "text": "La gente de Nínive se arrepintió y Dios tuvo compasión. Jonás se enojó, y Dios le enseñó que su misericordia alcanza también a personas diferentes."
+      }
+    ],
+    "takeaways": [
+      "🌱 Dios corrige y muestra misericordia.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: dar otra oportunidad con límites."
+    ],
+    "questions": [
+      "¿De quién huyó?",
+      "¿Qué hizo Nínive?",
+      "¿Por qué se enojó?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con dios corrige y muestra misericordia?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué hizo Jonás dentro del gran pez?",
+        "options": [
+          "Construyó una casa",
+          "Oró",
+          "Durmió todo el tiempo"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Dios se olvida de quienes huyen de Él",
+          "Jonás fue castigado sin posibilidad de volver",
+          "Dios corrige y muestra misericordia"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Dar otra oportunidad con límites.",
+          "Recordar siempre lo malo que nos hicieron",
+          "Huir cuando algo nos cuesta"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Rutas de Jonás",
+      "steps": [
+        "Sigue decisiones: Huir o escuchar",
+        "Ocultar o reconocer",
+        "Enojarse o aprender misericordia."
+      ]
+    },
+    "memory": {
+      "text": "Mas yo con voz de alabanza te ofreceré sacrificios",
+      "reference": "Jonás 2:9",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/JON.2.9.RVR1960"
+    },
+    "videoId": "j13m5Evg-RE",
+    "videoQuery": "jonas gran pez niños",
+    "videoUrl": "https://www.youtube.com/watch?v=j13m5Evg-RE",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=16",
+    "prayer": "Señor, gracias por enseñarnos por medio de Jonás. Ayúdanos a recordar que dios corrige y muestra misericordia. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "17",
+    "number": 18,
+    "slug": "jesus-nace",
+    "title": "Jesús nace",
+    "icon": "⭐",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Lucas 1–2; Mateo 1:18–25",
+    "objective": "Jesús es el Salvador prometido",
+    "application": "Compartir esperanza.",
+    "narration": "Cuenta el anuncio y nacimiento con figuras.",
+    "dynamic": "Camino a Belén por estaciones.",
+    "craft": "Estrella con Lucas 2:11.",
+    "drawPrompt": "Dibuja el pesebre y a la familia recibiendo con alegría a Jesús.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/jesus-nace.webp",
+    "story": [
+      {
+        "title": "La promesa se acerca",
+        "text": "El ángel Gabriel anunció a María que tendría un hijo llamado Jesús. José también recibió dirección de Dios y decidió obedecer."
+      },
+      {
+        "title": "Una noche en Belén",
+        "text": "María y José viajaron a Belén. Jesús nació y fue acostado en un pesebre porque no había lugar disponible para ellos."
+      },
+      {
+        "title": "Buenas noticias para todos",
+        "text": "Ángeles anunciaron a pastores que había nacido el Salvador. Ellos fueron a verlo y contaron con alegría lo que habían oído."
+      }
+    ],
+    "takeaways": [
+      "🌱 Jesús es el Salvador prometido.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: compartir esperanza."
+    ],
+    "questions": [
+      "¿Qué anunció el ángel?",
+      "¿Quién visitó?",
+      "¿Por qué celebramos?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con jesús es el salvador prometido?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Dónde acostaron a Jesús?",
+        "options": [
+          "En un trono",
+          "En una barca",
+          "En un pesebre"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Jesús es el Salvador prometido",
+          "El nacimiento de Jesús se trata sobre todo de los regalos",
+          "Jesús nació en un palacio porque era rey"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Pedir muchos regalos",
+          "Compartir esperanza.",
+          "Guardar la buena noticia solo para nosotros"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "Camino a Belén",
+      "steps": [
+        "Pasa por cuatro estaciones: anuncio",
+        "viaje",
+        "pesebre",
+        "pastores, y cuenta qué ocurrió en cada una."
+      ]
+    },
+    "memory": {
+      "text": "que os ha nacido hoy, en la ciudad de David, un Salvador, que es CRISTO el Señor",
+      "reference": "Lucas 2:11",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/LUK.2.11.RVR1960"
+    },
+    "videoId": "fKcB1a9Vz7k",
+    "videoQuery": "nacimiento jesus niños",
+    "videoUrl": "https://www.youtube.com/watch?v=fKcB1a9Vz7k",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=17",
+    "prayer": "Señor, gracias por enseñarnos por medio de Jesús nace. Ayúdanos a recordar que jesús es el salvador prometido. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "18",
+    "number": 19,
+    "slug": "jesus-calma-el-mar",
+    "title": "Jesús calma el mar",
+    "icon": "⛵",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Marcos 4:35–41",
+    "objective": "Podemos acudir a Jesús cuando tememos",
+    "application": "Orar y hablar con un adulto.",
+    "narration": "Haz sonidos de tormenta y silencio.",
+    "dynamic": "Mover una tela y detenerla a la señal.",
+    "craft": "Barco con una oración.",
+    "drawPrompt": "Dibuja la barca tranquila después de que Jesús calmó el mar.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/jesus-calma-el-mar.webp",
+    "story": [
+      {
+        "title": "Una travesía tranquila",
+        "text": "Jesús y sus discípulos cruzaban el lago. Mientras Jesús dormía, una tormenta fuerte llenó la barca de agua y los discípulos sintieron terror."
+      },
+      {
+        "title": "“Calla, enmudece”",
+        "text": "Los discípulos despertaron a Jesús. Él reprendió al viento y al mar; de inmediato llegó una gran calma."
+      },
+      {
+        "title": "¿Quién es Jesús?",
+        "text": "Ellos quedaron asombrados porque hasta el viento y el mar le obedecían. Podemos llevar nuestros temores a Jesús y buscar ayuda segura."
+      }
+    ],
+    "takeaways": [
+      "🌱 Podemos acudir a Jesús cuando tememos.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: orar y hablar con un adulto."
+    ],
+    "questions": [
+      "¿Por qué temían?",
+      "¿Qué hizo Jesús?",
+      "¿Qué hacemos al temer?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con podemos acudir a jesús cuando tememos?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué hizo Jesús con la tormenta?",
+        "options": [
+          "La calmó",
+          "Se escondió",
+          "Saltó al agua"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Los discípulos no debieron despertar a Jesús",
+          "Podemos acudir a Jesús cuando tememos",
+          "La tormenta se calmó sola con el tiempo"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Aguantar el miedo sin decir nada",
+          "Esperar a que el miedo se vaya solo",
+          "Orar y hablar con un adulto."
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "Tormenta y calma",
+      "steps": [
+        "Tomen una tela azul entre todos",
+        "Muévanla con fuerza imitando la tormenta",
+        "Al oír “Calla, enmudece”, deténganse en silencio",
+        "Cada niño dice algo que le da miedo, sin burlas",
+        "Oren juntos pidiendo la paz de Jesús"
+      ]
+    },
+    "memory": {
+      "text": "Y cesó el viento, y se hizo grande bonanza",
+      "reference": "Marcos 4:39",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/MRK.4.39.RVR1960"
+    },
+    "videoId": "HHJ0xuHXBwo",
+    "videoQuery": "jesus calma tormenta niños",
+    "videoUrl": "https://www.youtube.com/watch?v=HHJ0xuHXBwo",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=18",
+    "prayer": "Señor, gracias por enseñarnos por medio de Jesús calma el mar. Ayúdanos a recordar que podemos acudir a jesús cuando tememos. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "19",
+    "number": 20,
+    "slug": "panes-y-peces",
+    "title": "Panes y peces",
+    "icon": "🥖",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Juan 6:1–14",
+    "objective": "Jesús usa lo que ofrecemos",
+    "application": "Compartir algo pequeño.",
+    "narration": "Destaca la participación del muchacho.",
+    "dynamic": "Repartir piezas para que todos tengan.",
+    "craft": "Canasta con panes y peces.",
+    "drawPrompt": "Dibuja una canasta con panes y peces para compartir.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/panes-y-peces.webp",
+    "story": [
+      {
+        "title": "Una multitud con hambre",
+        "text": "Muchas personas siguieron a Jesús y escucharon sus enseñanzas. Al hacerse tarde, Jesús preguntó cómo podrían alimentar a todos."
+      },
+      {
+        "title": "Una pequeña ofrenda",
+        "text": "Andrés señaló a un muchacho que tenía cinco panes de cebada y dos pececillos. Parecía muy poco para tantas personas; Jesús tomó esos alimentos."
+      },
+      {
+        "title": "Jesús multiplica",
+        "text": "Jesús dio gracias y repartieron alimento hasta que todos comieron. Aún recogieron doce canastas; lo pequeño puede servir mucho en manos de Jesús."
+      }
+    ],
+    "takeaways": [
+      "🌱 Jesús usa lo que ofrecemos.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: compartir algo pequeño."
+    ],
+    "questions": [
+      "¿Qué ofreció?",
+      "¿Qué hizo Jesús?",
+      "¿Qué compartimos?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con jesús usa lo que ofrecemos?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué alimentos tenía el muchacho?",
+        "options": [
+          "Una moneda",
+          "Cinco panes y dos peces",
+          "Doce panes"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Solo sirve lo que es grande y suficiente",
+          "La gente comió porque cada uno trajo su comida",
+          "Jesús usa lo que ofrecemos"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Compartir algo pequeño.",
+          "Esperar a tener mucho para compartir",
+          "Compartir solo con quien nos cae bien"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Canasta compartida",
+      "steps": [
+        "Recorten cinco panes y dos peces de papel",
+        "Entréguenlos a un equipo pequeño",
+        "Cada equipo propone una manera de compartir",
+        "Coloquen todo en una canasta común",
+        "Repártanlo de nuevo y vean que alcanza para todos"
+      ]
+    },
+    "memory": {
+      "text": "Y tomó Jesús aquellos panes, y habiendo dado gracias, los repartió entre los discípulos",
+      "reference": "Juan 6:11",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/JHN.6.11.RVR1960"
+    },
+    "videoId": "hWXV9yTspwY",
+    "videoQuery": "panes peces niños",
+    "videoUrl": "https://www.youtube.com/watch?v=hWXV9yTspwY",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=19",
+    "prayer": "Señor, gracias por enseñarnos por medio de Panes y peces. Ayúdanos a recordar que jesús usa lo que ofrecemos. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "20",
+    "number": 21,
+    "slug": "buen-samaritano",
+    "title": "Buen samaritano",
+    "icon": "❤️",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Lucas 10:25–37",
+    "objective": "Amar es ver, acercarnos y ayudar seguros",
+    "application": "Notar y avisar a un adulto.",
+    "narration": "Evita dramatizar heridas; enfatiza acciones.",
+    "dynamic": "Estaciones de cuidado.",
+    "craft": "Botiquín con actos compasivos.",
+    "drawPrompt": "Dibuja al buen samaritano ayudando al hombre herido.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/buen-samaritano.webp",
+    "story": [
+      {
+        "title": "Una pregunta importante",
+        "text": "Un experto preguntó a Jesús quién era su prójimo. Jesús respondió contando la historia de un viajero atacado en el camino."
+      },
+      {
+        "title": "Algunos pasaron de largo",
+        "text": "Dos personas religiosas vieron al herido pero no se detuvieron. Después llegó un samaritano, alguien que muchos despreciaban."
+      },
+      {
+        "title": "Compasión en acción",
+        "text": "El samaritano se acercó, cuidó las heridas y buscó un lugar seguro. Amar al prójimo significa ver la necesidad y ayudar con sabiduría."
+      }
+    ],
+    "takeaways": [
+      "🌱 Amar es ver, acercarnos y ayudar seguros.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: notar y avisar a un adulto."
+    ],
+    "questions": [
+      "¿Quién se detuvo?",
+      "¿Qué hizo?",
+      "¿Cómo ayudamos seguros?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con amar es ver, acercarnos y ayudar seguros?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Quién se detuvo para ayudar?",
+        "options": [
+          "Nadie",
+          "El primer viajero",
+          "El samaritano"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Amar es ver, acercarnos y ayudar seguros",
+          "Ayudamos solo a quienes se parecen a nosotros",
+          "Basta con sentir pena por el que sufre"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Resolver solos cualquier emergencia",
+          "Notar y avisar a un adulto.",
+          "Pasar de largo si llevamos prisa"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "Estaciones de cuidado",
+      "steps": [
+        "Representa: observar",
+        "avisar a un adulto",
+        "acompañar",
+        "buscar ayuda; sin simular heridas reales."
+      ]
+    },
+    "memory": {
+      "text": "Ve, y haz tú lo mismo",
+      "reference": "Lucas 10:37",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/LUK.10.37.RVR1960"
+    },
+    "videoId": "9jvobdpJCy4",
+    "videoQuery": "buen samaritano niños",
+    "videoUrl": "https://www.youtube.com/watch?v=9jvobdpJCy4",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=20",
+    "prayer": "Señor, gracias por enseñarnos por medio de Buen samaritano. Ayúdanos a recordar que amar es ver, acercarnos y ayudar seguros. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "21",
+    "number": 22,
+    "slug": "oveja-perdida",
+    "title": "Oveja perdida",
+    "icon": "🐑",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Lucas 15:1–7",
+    "objective": "Cada persona es valiosa para Jesús",
+    "application": "Incluir a quien está solo.",
+    "narration": "Esconde una oveja y celebra al hallarla.",
+    "dynamic": "Búsqueda por pistas.",
+    "craft": "Oveja con algodón.",
+    "drawPrompt": "Dibuja al pastor encontrando y cuidando a la oveja perdida.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/oveja-perdida.webp",
+    "story": [
+      {
+        "title": "Una oveja falta",
+        "text": "Jesús contó sobre un pastor que tenía cien ovejas. Al contar, descubrió que una se había perdido."
+      },
+      {
+        "title": "Una búsqueda cuidadosa",
+        "text": "El pastor salió a buscarla hasta encontrarla. La cargó con alegría y volvió a casa."
+      },
+      {
+        "title": "Fiesta por quien vuelve",
+        "text": "El pastor llamó a sus amigos para celebrar. Jesús explicó que hay gozo en el cielo cuando una persona se arrepiente y vuelve a Dios."
+      }
+    ],
+    "takeaways": [
+      "🌱 Cada persona es valiosa para Jesús.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: incluir a quien está solo."
+    ],
+    "questions": [
+      "¿Qué se perdió?",
+      "¿Quién buscó?",
+      "¿Qué revela el pastor?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con cada persona es valiosa para jesús?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Cuántas ovejas se perdieron?",
+        "options": [
+          "Una",
+          "Diez",
+          "Cien"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Solo valen quienes nunca se equivocan",
+          "Cada persona es valiosa para Jesús",
+          "El pastor prefirió quedarse con las noventa y nueve"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Dejar que cada quien se las arregle",
+          "Hacer amigos solo con los más populares",
+          "Incluir a quien está solo."
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "Busca la oveja",
+      "steps": [
+        "Esconde una oveja de papel antes de la clase",
+        "Reparte cinco pistas sencillas",
+        "Búsquenla juntos, sin competir",
+        "Al encontrarla, celebren todos a la vez",
+        "Repitan: Jesús busca a cada uno y se alegra"
+      ]
+    },
+    "memory": {
+      "text": "Gozaos conmigo, porque he encontrado mi oveja que se había perdido",
+      "reference": "Lucas 15:6",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/LUK.15.6.RVR1960"
+    },
+    "videoId": "OS0s7aJU7r4",
+    "videoQuery": "oveja perdida niños",
+    "videoUrl": "https://www.youtube.com/watch?v=OS0s7aJU7r4",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=21",
+    "prayer": "Señor, gracias por enseñarnos por medio de Oveja perdida. Ayúdanos a recordar que cada persona es valiosa para jesús. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "22",
+    "number": 23,
+    "slug": "zaqueo-cambia",
+    "title": "Zaqueo cambia",
+    "icon": "🌳",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Lucas 19:1–10",
+    "objective": "Jesús transforma decisiones",
+    "application": "Pedir perdón y reparar.",
+    "narration": "Usa una silla como árbol simbólico.",
+    "dynamic": "Cómo reparar distintas acciones.",
+    "craft": "Árbol con frutos de cambio.",
+    "drawPrompt": "Dibuja a Zaqueo bajando del árbol para recibir a Jesús.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/zaqueo-cambia.webp",
+    "story": [
+      {
+        "title": "Un hombre en un árbol",
+        "text": "Zaqueo cobraba impuestos y había tratado injustamente a personas. Como era bajo, subió a un árbol para poder ver pasar a Jesús."
+      },
+      {
+        "title": "Jesús lo llama",
+        "text": "Jesús se detuvo, lo llamó por su nombre y quiso visitar su casa. Zaqueo lo recibió con alegría aunque otros murmuraban."
+      },
+      {
+        "title": "Un cambio visible",
+        "text": "Zaqueo anunció que daría la mitad de sus bienes a los pobres y devolvería cuatro veces lo que hubiera defraudado. El arrepentimiento verdadero cambia decisiones y busca reparar el daño."
+      }
+    ],
+    "takeaways": [
+      "🌱 Jesús transforma decisiones.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: pedir perdón y reparar."
+    ],
+    "questions": [
+      "¿Por qué subió?",
+      "¿Qué devolvió?",
+      "¿Cómo se nota el cambio?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con jesús transforma decisiones?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Dónde estaba Zaqueo?",
+        "options": [
+          "En el templo",
+          "En un árbol",
+          "En una barca"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Zaqueo cambió porque la gente lo criticó",
+          "Jesús solo visita a quienes ya son buenos",
+          "Jesús transforma decisiones"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Pedir perdón y reparar.",
+          "Pedir perdón sin cambiar nada",
+          "Esperar a que el otro pida perdón primero"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Frutos de cambio",
+      "steps": [
+        "Coloca en el árbol cuatro frutos: confesar",
+        "pedir perdón",
+        "devolver",
+        "cambiar la conducta."
+      ]
+    },
+    "memory": {
+      "text": "Porque el Hijo del Hombre vino a buscar y a salvar lo que se había perdido",
+      "reference": "Lucas 19:10",
+      "excerpt": false,
+      "sourceUrl": "https://www.bible.com/es/bible/149/LUK.19.10.RVR1960"
+    },
+    "videoId": "uGz2E1f6o5w",
+    "videoQuery": "zaqueo niños",
+    "videoUrl": "https://www.youtube.com/watch?v=uGz2E1f6o5w",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=22",
+    "prayer": "Señor, gracias por enseñarnos por medio de Zaqueo cambia. Ayúdanos a recordar que jesús transforma decisiones. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "23",
+    "number": 24,
+    "slug": "jesus-vive",
+    "title": "Jesús vive",
+    "icon": "☀️",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Lucas 23–24",
+    "objective": "Jesús resucitó y nos da esperanza",
+    "application": "Compartir una esperanza.",
+    "narration": "Evita imágenes gráficas; centra la tumba vacía.",
+    "dynamic": "Ordenar cinco escenas.",
+    "craft": "Tumba abierta con “Él vive”.",
+    "drawPrompt": "Dibuja la tumba vacía y una mañana llena de esperanza.",
+    "age": "3 a 10 años",
+    "duration": "60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/jesus-vive.webp",
+    "story": [
+      {
+        "title": "Una mañana diferente",
+        "text": "Después de que Jesús murió y fue sepultado, varias mujeres fueron temprano a la tumba. Encontraron la piedra removida y la tumba vacía."
+      },
+      {
+        "title": "El anuncio más alegre",
+        "text": "Ángeles les recordaron que Jesús había dicho que resucitaría. Ellas corrieron a contarlo a los discípulos."
+      },
+      {
+        "title": "Jesús está vivo",
+        "text": "Jesús se apareció a sus seguidores y les explicó las Escrituras. Su resurrección nos da esperanza: el pecado y la muerte no tienen la última palabra."
+      }
+    ],
+    "takeaways": [
+      "🌱 Jesús resucitó y nos da esperanza.",
+      "❤️ Dios está presente y podemos confiar en Él.",
+      "👣 Esta historia nos invita a practicar: compartir una esperanza."
+    ],
+    "questions": [
+      "¿Qué hallaron?",
+      "¿Qué anunciaron?",
+      "¿Por qué hay esperanza?",
+      "¿Qué parte de la historia te sorprendió más?",
+      "¿Cómo se relaciona esta historia con jesús resucitó y nos da esperanza?",
+      "¿Qué acción pequeña puedes realizar esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué encontraron en la tumba?",
+        "options": [
+          "Una gran piedra cerrada",
+          "A los discípulos",
+          "Que estaba vacía"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿Cuál es la enseñanza principal?",
+        "options": [
+          "Jesús resucitó y nos da esperanza",
+          "Los discípulos solo recordaron a Jesús en su corazón",
+          "La tumba siguió cerrada"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué podemos practicar esta semana?",
+        "options": [
+          "Esperar a entenderlo todo para contarlo",
+          "Compartir una esperanza.",
+          "Guardar silencio sobre lo que creemos"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "La tumba está vacía",
+      "steps": [
+        "Ordena cinco escenas: cruz",
+        "sepultura",
+        "mujeres llegan",
+        "tumba vacía",
+        "Jesús aparece."
+      ]
+    },
+    "memory": {
+      "text": "No está aquí, sino que ha resucitado",
+      "reference": "Lucas 24:6",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/LUK.24.6.RVR1960"
+    },
+    "videoId": "hDAdKqkSp-o",
+    "videoQuery": "resurreccion jesus niños",
+    "videoUrl": "https://www.youtube.com/watch?v=hDAdKqkSp-o",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=23",
+    "prayer": "Señor, gracias por enseñarnos por medio de Jesús vive. Ayúdanos a recordar que jesús resucitó y nos da esperanza. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "24",
+    "number": 25,
+    "slug": "jesus-bendice-a-los-ninos",
+    "title": "Jesús bendice a los niños",
+    "icon": "💛",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Marcos 10:13–16",
+    "objective": "Los niños son importantes para Jesús",
+    "application": "Invitar a participar a un compañero que está solo.",
+    "narration": "Narra cómo los discípulos intentaron impedir el encuentro y Jesús recibió a los niños. Lee Marcos 10:14 y 16.",
+    "dynamic": "Círculo de bienvenida: hacer espacio y saludar a cada compañero sin obligar a abrazarse.",
+    "craft": "Marco de papel con un autorretrato y la frase Jesús me recibe.",
+    "drawPrompt": "Dibújate entre los niños que Jesús recibió con amor.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/jesus-bendice-a-los-ninos.webp",
+    "story": [
+      {
+        "title": "Un encuentro para los pequeños",
+        "text": "Unas personas llevaron niños a Jesús para que los tocara. Los discípulos reprendieron a quienes los acercaban. Parecía que los pequeños no tendrían lugar junto al Maestro. Detén aquí el relato y pregunta al grupo cómo se siente alguien cuando no lo dejan participar."
+      },
+      {
+        "title": "Jesús abre el camino",
+        "text": "Jesús vio lo que ocurría y se indignó. No estuvo de acuerdo con apartar a los niños: pidió que los dejaran acercarse. Para Él no eran una molestia. Los adultos necesitaban aprender a recibirlos, no a cerrarles el paso."
+      },
+      {
+        "title": "Recibir con confianza",
+        "text": "Jesús enseñó que debemos recibir el reino de Dios como un niño. No se trata de competir por ser el más importante, sino de acercarnos con confianza y dependencia de Dios. Los pequeños también podían enseñarle algo al grupo de adultos."
+      },
+      {
+        "title": "Una bendición y una bienvenida",
+        "text": "Jesús tomó a los niños en sus brazos, puso sus manos sobre ellos y los bendijo. En nuestra clase podemos reflejar ese cuidado al escuchar, hacer espacio y respetar a cada compañero. Nadie necesita hablar perfecto ni ser el mayor para participar."
+      }
+    ],
+    "takeaways": [
+      "💛 Jesús da importancia a los niños.",
+      "🌱 Podemos acercarnos a Él con confianza.",
+      "🤝 Hacemos espacio para que otros participen.",
+      "👂 Cuidar también es escuchar y respetar."
+    ],
+    "questions": [
+      "¿Para qué llevaban los niños a Jesús?",
+      "¿Quiénes intentaron impedir que se acercaran?",
+      "¿Qué hizo Jesús al verlo?",
+      "¿Cómo mostró cariño y cuidado a los niños?",
+      "¿Cómo te sientes cuando alguien te incluye?",
+      "¿Qué podemos hacer para recibir a un compañero nuevo?"
+    ],
+    "quiz": [
+      {
+        "question": "¿A quiénes recibió Jesús en esta historia?",
+        "options": [
+          "Solo a los adultos",
+          "A los niños",
+          "Solo a los discípulos"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué quería Jesús que hicieran los discípulos?",
+        "options": [
+          "Que dejaran acercarse a los niños",
+          "Que escondieran a los niños",
+          "Que cerraran el camino"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cómo podemos practicar lo aprendido?",
+        "options": [
+          "Burlarnos de quien habla despacio",
+          "Dejar fuera al más pequeño",
+          "Invitar a todos a participar"
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "Hay un lugar para ti",
+      "steps": [
+        "Preparen un círculo de sillas o cojines con espacio suficiente para todos. Nadie queda eliminado.",
+        "Cada niño dibuja su rostro en una tarjeta. Quien no quiera dibujar puede escoger un color.",
+        "Por turnos, coloquen las tarjetas en el círculo y saluden por su nombre a cada compañero. No obliguen a abrazarse.",
+        "Representen la llegada de un compañero nuevo: hagan espacio, ofrezcan materiales y expliquen el juego.",
+        "Terminen diciendo una forma concreta de escuchar o cuidar al grupo esta semana."
+      ]
+    },
+    "memory": {
+      "text": "Dejad a los niños venir a mí",
+      "reference": "Marcos 10:14",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/MRK.10.14.RVR1960"
+    },
+    "videoId": "ljWzfWsG738",
+    "videoQuery": "Jesús y los niños Saddleback Kids en Español",
+    "videoUrl": "https://www.youtube.com/watch?v=ljWzfWsG738",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=24",
+    "prayer": "Jesús, gracias porque recibes a los niños con amor. Ayúdanos a confiar en ti y a hacer espacio para otros. Enséñanos a escuchar, compartir y tratar con respeto a cada compañero. Amén."
+  },
+  {
+    "id": "25",
+    "number": 26,
+    "slug": "el-hijo-prodigo",
+    "title": "El hijo pródigo",
+    "icon": "🤗",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Lucas 15:11–32",
+    "objective": "Dios recibe con misericordia a quien vuelve a Él",
+    "application": "Reconocer un error y pedir ayuda para repararlo.",
+    "narration": "Explica que Jesús contó una parábola. Narra la partida, el arrepentimiento y el recibimiento; incluye al hermano mayor.",
+    "dynamic": "Camino de regreso: reconocer, volver, pedir perdón y recibir con alegría.",
+    "craft": "Puerta plegable de bienvenida con una acción para reparar un error.",
+    "drawPrompt": "Dibuja al padre recibiendo a su hijo que volvió a casa.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/el-hijo-prodigo.webp",
+    "story": [
+      {
+        "title": "Una decisión que lo alejó",
+        "text": "Jesús contó una parábola sobre un padre y sus dos hijos. El menor pidió la parte de los bienes que le correspondía y se marchó lejos. Allí gastó todo de manera irresponsable. Después llegó una gran escasez, y empezó a pasar necesidad."
+      },
+      {
+        "title": "Reconocer y regresar",
+        "text": "El joven consiguió trabajo cuidando cerdos, pero seguía con hambre. Recordó que los trabajadores de su padre tenían alimento. Reconoció que había pecado y decidió regresar, confesar su falta y pedir ser tratado como un trabajador. No se quedó solamente pensando: emprendió el camino."
+      },
+      {
+        "title": "El padre sale a su encuentro",
+        "text": "Cuando todavía estaba lejos, su padre lo vio y se llenó de compasión. Corrió a recibirlo y lo abrazó. El hijo reconoció su pecado. El padre pidió ropa, un anillo y calzado, y celebró su regreso. Su alegría no hacía buena la mala decisión: mostraba misericordia hacia el hijo que volvía."
+      },
+      {
+        "title": "También había un hermano mayor",
+        "text": "El hermano mayor se enojó al enterarse de la fiesta. El padre salió a hablar con él y lo invitó a alegrarse por su hermano. Jesús nos enseña a volver a Dios con arrepentimiento y a celebrar su misericordia, sin compararnos ni despreciar a otros."
+      }
+    ],
+    "takeaways": [
+      "🏡 Podemos volver a Dios y reconocer nuestros errores.",
+      "💛 El padre de la parábola muestra misericordia.",
+      "👣 Arrepentirse incluye cambiar de dirección.",
+      "🎉 Podemos alegrarnos cuando alguien vuelve a hacer el bien."
+    ],
+    "questions": [
+      "¿Qué pidió el hijo menor antes de irse?",
+      "¿Qué pasó después de gastar sus bienes?",
+      "¿Qué decidió hacer cuando reconoció su error?",
+      "¿Cómo lo recibió su padre?",
+      "¿Por qué estaba enojado el hermano mayor?",
+      "¿Qué diferencia hay entre decir perdón y querer cambiar?",
+      "¿Qué adulto seguro puede ayudarte a reparar un error?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué decidió hacer el hijo menor cuando pasó necesidad?",
+        "options": [
+          "Regresar y reconocer su falta",
+          "Esconderse para siempre",
+          "Culpar a su hermano"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cómo recibió el padre al hijo que volvió?",
+        "options": [
+          "Se escondió",
+          "Corrió a recibirlo con compasión",
+          "Le cerró la puerta"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿A quién invitó el padre a alegrarse también?",
+        "options": [
+          "A un soldado",
+          "A un rey",
+          "Al hermano mayor"
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "El camino de regreso",
+      "steps": [
+        "Coloca cuatro hojas grandes en el suelo: reconocer, regresar, pedir perdón y recibir con alegría.",
+        "Usen un personaje de papel para recorrer las estaciones; los pequeños pueden señalar sin caminar.",
+        "En cada estación, recuerden qué hizo el hijo o el padre. No pidan al grupo confesar faltas privadas.",
+        "Ensayen una situación imaginaria: alguien tomó un crayón sin permiso. Practiquen reconocerlo, devolverlo y disculparse.",
+        "Elijan cómo recibir con respeto a quien quiere cambiar. Perdonar no exige aceptar daño ni guardar secretos peligrosos."
+      ]
+    },
+    "memory": {
+      "text": "se había perdido, y es hallado",
+      "reference": "Lucas 15:32",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/LUK.15.32.RVR1960"
+    },
+    "videoId": "8CEMyTvS_tk",
+    "videoQuery": "El hijo pródigo Saddleback Kids en Español",
+    "videoUrl": "https://www.youtube.com/watch?v=8CEMyTvS_tk",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=25",
+    "prayer": "Padre Dios, gracias por tu misericordia. Ayúdanos a reconocer nuestros errores, pedir perdón y cambiar lo que hacemos. Danos un corazón que se alegre cuando otra persona vuelve a ti. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "26",
+    "number": 27,
+    "slug": "la-casa-sobre-la-roca",
+    "title": "La casa sobre la roca",
+    "icon": "🏠",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Mateo 7:24–27",
+    "objective": "Escuchamos a Jesús y ponemos en práctica sus palabras",
+    "application": "Elegir una enseñanza de Jesús y practicarla hoy.",
+    "narration": "Cuenta la parábola de las dos casas. La tormenta llegó a ambas; la diferencia fue el fundamento.",
+    "dynamic": "Dos bases: comparar una casa de bloques sobre una bandeja firme y otra sobre papel arrugado.",
+    "craft": "Casa de papel sobre una roca dibujada con una acción de obediencia.",
+    "drawPrompt": "Dibuja una casa sobre una roca firme y lluvia a su alrededor.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/la-casa-sobre-la-roca.webp",
+    "story": [
+      {
+        "title": "Dos personas construyen",
+        "text": "Jesús enseñó usando una comparación sencilla: dos hombres construyeron casas. Uno eligió una roca como fundamento; el otro construyó sobre arena. El fundamento es la base que sostiene una construcción. Pregunta al grupo qué necesita una torre de bloques para no caerse."
+      },
+      {
+        "title": "La lluvia llega a las dos casas",
+        "text": "Vinieron lluvia, ríos y vientos que golpearon la casa sobre la roca. La casa permaneció firme. La tormenta también llegó a la casa sobre la arena, pero esa casa cayó. Las dos enfrentaron dificultades; la diferencia estaba en su fundamento."
+      },
+      {
+        "title": "Escuchar y hacer",
+        "text": "Jesús explicó el significado: quien escucha sus palabras y las practica se parece al constructor prudente. Quien las escucha pero no las hace se parece al constructor insensato. Saber repetir una enseñanza no es lo mismo que vivirla."
+      },
+      {
+        "title": "Un paso para hoy",
+        "text": "Podemos escuchar la Biblia y elegir una acción: decir la verdad, compartir o tratar con bondad. Confiar en Jesús no significa que nunca habrá días difíciles. Podemos seguir sus enseñanzas y pedir ayuda. Esta parábola no sirve para culpar a una familia que pierde su casa en una tormenta real."
+      }
+    ],
+    "takeaways": [
+      "📖 Escuchamos las enseñanzas de Jesús.",
+      "👣 Lo aprendido se convierte en acciones.",
+      "🏠 Una base firme importa más que las apariencias.",
+      "🤝 Ante las dificultades podemos orar y pedir ayuda."
+    ],
+    "questions": [
+      "¿Sobre qué construyó el hombre prudente?",
+      "¿Sobre qué construyó el otro hombre?",
+      "¿A cuál de las casas llegó la tormenta?",
+      "¿Qué casa permaneció firme?",
+      "¿Por qué no basta con escuchar una enseñanza?",
+      "¿Cómo puedes practicar hoy la bondad o la verdad?",
+      "¿A quién puedes pedir ayuda en un momento difícil?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Cuál fue la base de la casa que permaneció firme?",
+        "options": [
+          "Arena",
+          "Roca",
+          "Hojas"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué representa el constructor prudente?",
+        "options": [
+          "Quien solo oye",
+          "Quien nunca tiene problemas",
+          "Quien oye a Jesús y practica sus palabras"
+        ],
+        "answer": 2
+      },
+      {
+        "question": "¿A cuántas casas llegó la tormenta?",
+        "options": [
+          "A las dos",
+          "Solo a una",
+          "A ninguna"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Probemos los cimientos",
+      "steps": [
+        "Un adulto prepara dos bandejas: una base plana y firme y otra de papel arrugado. Usen bloques grandes, sin piezas pequeñas.",
+        "Construyan una casita sobre cada base. Antes de probar, cada niño puede predecir qué ocurrirá.",
+        "Muevan suavemente las bandejas. Comparen la estabilidad sin competir ni usar agua o piedras pesadas.",
+        "La demostración usa materiales del salón; recuerden que en la parábola Jesús habló de roca y arena.",
+        "Dibujen una roca y coloquen encima una casa de papel. En ella, dibujen o escriban una enseñanza de Jesús que practicarán hoy."
+      ]
+    },
+    "memory": {
+      "text": "no cayó, porque estaba fundada sobre la roca",
+      "reference": "Mateo 7:25",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/MAT.7.25.RVR1960"
+    },
+    "videoId": "4UtyrgFTsl8",
+    "videoQuery": "Parábola de La Casa Sobre La Roca Valivan",
+    "videoUrl": "https://www.youtube.com/watch?v=4UtyrgFTsl8",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=26",
+    "prayer": "Señor Jesús, queremos escuchar tus palabras y hacer lo que nos enseñas. Ayúdanos a decir la verdad y a amar con acciones. Cuando haya dificultades, recuérdanos que podemos confiar en ti y pedir ayuda. Amén."
+  },
+  {
+    "id": "27",
+    "number": 28,
+    "slug": "adan-y-eva",
+    "title": "Adán y Eva",
+    "icon": "🌿",
+    "category": "Dios",
+    "testament": "antiguo",
+    "reference": "Génesis 2–3",
+    "objective": "Dios nos creó, nos dio responsabilidades y nos llama a obedecer",
+    "application": "Decir la verdad y pedir ayuda cuando tomamos una mala decisión.",
+    "narration": "Narra la vida en Edén, el mandato de Dios, la desobediencia y sus consecuencias sin usar vergüenza corporal. Destaca que Dios buscó a las personas y anunció esperanza.",
+    "dynamic": "El jardín que cuidamos: clasificar tarjetas de acciones que cuidan o dañan un jardín.",
+    "craft": "Árbol de decisiones con frutos que muestran elecciones responsables.",
+    "drawPrompt": "Dibuja el huerto de Edén y una manera de cuidar la creación de Dios.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/adan-y-eva.webp",
+    "story": [
+      {
+        "title": "Un hogar preparado por Dios",
+        "text": "Dios formó al hombre del polvo de la tierra y sopló en él aliento de vida. Preparó el huerto de Edén, lleno de árboles hermosos y buenos para comer. Allí puso a Adán para que lo labrara y lo guardase. Dios también formó a la mujer y la llevó junto al hombre; ambos podían ayudarse y vivir en comunión con Él."
+      },
+      {
+        "title": "Una instrucción clara",
+        "text": "Dios permitió comer de los árboles del huerto, excepto del árbol de la ciencia del bien y del mal. Era una instrucción para obedecer y confiar. La serpiente puso en duda la palabra de Dios. Eva tomó del fruto y comió; también dio a Adán, y él comió. Cada uno fue responsable de su decisión."
+      },
+      {
+        "title": "Esconderse no resolvió el problema",
+        "text": "Después de desobedecer, sintieron vergüenza y se escondieron. Dios los llamó y les preguntó dónde estaban. Adán culpó a Eva y Eva habló de la serpiente, pero Dios mostró que las decisiones tenían consecuencias. La vida fuera del huerto sería difícil."
+      },
+      {
+        "title": "Dios siguió cuidando y anunció esperanza",
+        "text": "Dios hizo túnicas para vestirlos y los sacó del huerto. La desobediencia dañó su relación con Dios, pero Él no dejó de tratar con ellos. En medio de las consecuencias anunció que un descendiente vencería a la serpiente. Cuando fallamos, podemos decir la verdad, recibir corrección y buscar la ayuda de Dios."
+      }
+    ],
+    "takeaways": [
+      "🌿 Dios creó a las personas con valor y propósito.",
+      "👣 Dios nos da instrucciones buenas para obedecer.",
+      "🗣️ Podemos decir la verdad en vez de escondernos o culpar.",
+      "💛 Dios siguió cuidando y anunció esperanza."
+    ],
+    "questions": [
+      "¿Qué tarea dio Dios a Adán en el huerto?",
+      "¿Qué árbol no debían comer?",
+      "¿Cómo puso la serpiente en duda la palabra de Dios?",
+      "¿Qué hicieron Adán y Eva después de desobedecer?",
+      "¿Por qué no ayuda culpar a otra persona?",
+      "¿Qué puedes hacer cuando tomas una mala decisión?",
+      "¿Qué responsabilidad te ha dado Dios para cuidar?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Dónde puso Dios a Adán?",
+        "options": [
+          "En el huerto de Edén",
+          "En un palacio",
+          "En un barco"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué hicieron después de desobedecer?",
+        "options": [
+          "Construyeron un altar",
+          "Se escondieron",
+          "Salieron a pescar"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué respuesta muestra responsabilidad?",
+        "options": [
+          "Culpar a todos",
+          "Ocultar lo ocurrido",
+          "Decir la verdad y pedir ayuda"
+        ],
+        "answer": 2
+      }
+    ],
+    "activity": {
+      "title": "El jardín que cuidamos",
+      "steps": [
+        "Prepara un jardín de papel y tarjetas con acciones: regar, recoger basura, arrancar una planta ajena, compartir herramientas y desperdiciar agua.",
+        "Los niños colocan cada tarjeta en cuidar o dañar. Los pequeños pueden señalar; los mayores explican su elección.",
+        "Lean Génesis 2:15 y recuerden la tarea que Dios dio a Adán.",
+        "Cada niño escoge una acción segura para cuidar la creación durante la semana.",
+        "No usen plantas tóxicas ni herramientas filosas; un adulto supervisa cualquier actividad real de jardinería."
+      ]
+    },
+    "memory": {
+      "text": "lo puso en el huerto de Edén, para que lo labrara y lo guardase",
+      "reference": "Génesis 2:15",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/GEN.2.15.RVR1960"
+    },
+    "videoId": "7ruzv7GUEMU",
+    "videoQuery": "Adán y Eva Saddleback Kids en Español",
+    "videoUrl": "https://www.youtube.com/watch?v=7ruzv7GUEMU",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=27",
+    "prayer": "Dios, gracias por crearnos y darnos un mundo para cuidar. Ayúdanos a escuchar tu Palabra, obedecer y decir la verdad cuando fallemos. Gracias porque sigues llamándonos y nos das esperanza. Amén."
+  },
+  {
+    "id": "28",
+    "number": 29,
+    "slug": "debora-sirve-con-valentia",
+    "title": "Débora sirve con valentía",
+    "icon": "🌴",
+    "category": "Carácter",
+    "testament": "antiguo",
+    "reference": "Jueces 4–5",
+    "objective": "Dios puede darnos sabiduría y valor para servir",
+    "application": "Usar nuestra voz para animar, decir la verdad y buscar ayuda segura.",
+    "narration": "Presenta a Débora juzgando bajo una palmera, su mensaje a Barac y la victoria que Dios dio por medio de varias personas. Evita representar la batalla con violencia gráfica.",
+    "dynamic": "Consejo bajo la palmera: resolver situaciones imaginarias con oración, verdad y ayuda segura.",
+    "craft": "Palmera de papel con hojas que nombran maneras de servir con valor.",
+    "drawPrompt": "Dibuja a Débora dando un consejo sabio bajo la palmera.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/debora-sirve-con-valentia.webp",
+    "story": [
+      {
+        "title": "Sabiduría bajo la palmera",
+        "text": "Débora era profetisa y juzgaba a Israel. Se sentaba bajo una palmera, y las personas acudían a ella para recibir orientación. En un tiempo difícil, Dios usó su sabiduría y su disposición para servir al pueblo."
+      },
+      {
+        "title": "Un mensaje para Barac",
+        "text": "Débora llamó a Barac y le comunicó la instrucción de Dios: debía reunir hombres de Neftalí y Zabulón. Dios prometió atraer a Sísara y entregar la victoria. Barac pidió que Débora fuera con él. Ella aceptó acompañarlo y también explicó que una mujer recibiría honra en aquella victoria."
+      },
+      {
+        "title": "Dios va delante",
+        "text": "Cuando llegó el momento, Débora animó a Barac: debía levantarse porque Jehová había salido delante de él. Dios confundió al ejército enemigo. Más adelante, Jael actuó y Sísara murió. Para los niños contamos esta parte sin recrear violencia: varias personas cumplieron funciones distintas y la victoria perteneció a Dios."
+      },
+      {
+        "title": "Una canción de gratitud",
+        "text": "Después, Débora y Barac cantaron agradeciendo a Dios. Recordaron a quienes se ofrecieron voluntariamente y celebraron la intervención de Dios. El liderazgo de Débora combinó escucha, verdad, valor, cooperación y adoración. Servir no significa mandar por orgullo, sino usar lo que Dios nos da para ayudar."
+      }
+    ],
+    "takeaways": [
+      "🌴 Dios puede dar sabiduría a mujeres y hombres para servir.",
+      "🗣️ El valor también consiste en decir la verdad y animar.",
+      "🤝 Dios puede usar a varias personas con tareas diferentes.",
+      "🎵 Después de recibir ayuda, damos gracias a Dios."
+    ],
+    "questions": [
+      "¿Dónde escuchaba Débora al pueblo?",
+      "¿Qué trabajo realizaba Débora?",
+      "¿Qué mensaje dio a Barac?",
+      "¿Qué pidió Barac a Débora?",
+      "¿Quién iba delante de ellos?",
+      "¿Por qué cantaron Débora y Barac?",
+      "¿Cómo puedes usar tu voz para ayudar sin ponerte en peligro?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Dónde juzgaba Débora al pueblo?",
+        "options": [
+          "Bajo una palmera",
+          "En una barca",
+          "Dentro de una cueva"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿A quién llamó Débora con un mensaje de Dios?",
+        "options": [
+          "David",
+          "Barac",
+          "Samuel"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué hicieron Débora y Barac después?",
+        "options": [
+          "Escondieron la historia",
+          "Cantaron agradeciendo a Dios",
+          "Construyeron un arca"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "Consejo bajo la palmera",
+      "steps": [
+        "Construyan una palmera de papel y preparen tarjetas con situaciones imaginarias: alguien está solo, dos amigos discuten o un niño necesita ayuda.",
+        "Por turnos, una tarjeta se coloca bajo la palmera. El grupo propone una respuesta con verdad, bondad y seguridad.",
+        "Clasifiquen cada propuesta: puedo ayudar, necesito un adulto o debo alejarme del peligro.",
+        "Los mayores pueden explicar por qué; los pequeños eligen un dibujo de ayuda segura.",
+        "Nadie representa peleas ni comparte problemas privados. Ante un peligro real, avisen de inmediato a un adulto responsable."
+      ]
+    },
+    "memory": {
+      "text": "¿No ha salido Jehová delante de ti?",
+      "reference": "Jueces 4:14",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/JDG.4.14.RVR1960"
+    },
+    "videoId": "142WDFVexjU",
+    "videoQuery": "Débora Pequeños Héroes historia bíblica niños",
+    "videoUrl": "https://www.youtube.com/watch?v=142WDFVexjU",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=28",
+    "prayer": "Señor, gracias por el ejemplo de Débora. Danos sabiduría para escuchar, valor para decir la verdad y humildad para trabajar con otros. Ayúdanos a servir de manera segura y a darte gracias. Amén."
+  },
+  {
+    "id": "29",
+    "number": 30,
+    "slug": "bautismo-de-jesus",
+    "title": "El bautismo de Jesús",
+    "icon": "🕊️",
+    "category": "Jesús",
+    "testament": "nuevo",
+    "reference": "Mateo 3:13–17",
+    "objective": "Jesús obedeció al Padre y fue presentado como su Hijo amado",
+    "application": "Obedecer a Dios y conversar con la familia y los líderes de la iglesia sobre el bautismo.",
+    "narration": "Cuenta cómo Jesús llegó al Jordán, Juan lo bautizó, el Espíritu descendió como paloma y se oyó la voz del cielo. Explica que el bautismo es una decisión de fe que cada iglesia acompaña.",
+    "dynamic": "Secuencia del Jordán: ordenar cuatro escenas de la llegada, el bautismo, la paloma y la voz del cielo.",
+    "craft": "Paloma móvil de papel sobre ondas azules con Mateo 3:17.",
+    "drawPrompt": "Dibuja el río Jordán, una paloma y el bautismo de Jesús.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/bautismo-de-jesus.webp",
+    "story": [
+      {
+        "title": "Jesús llega al Jordán",
+        "text": "Juan bautizaba a personas en el río Jordán y les enseñaba a arrepentirse. Entonces Jesús llegó desde Galilea para ser bautizado por él. Juan sabía que Jesús era especial y al principio trató de impedírselo."
+      },
+      {
+        "title": "Cumplir toda justicia",
+        "text": "Jesús respondió que era conveniente hacerlo para cumplir toda justicia. No necesitaba arrepentirse de pecado, porque no había pecado. Al ser bautizado mostró obediencia al Padre e inició públicamente su ministerio. Juan aceptó y lo bautizó."
+      },
+      {
+        "title": "El cielo se abre",
+        "text": "Cuando Jesús subió del agua, los cielos fueron abiertos. El Espíritu de Dios descendió como paloma y vino sobre Él. La escena mostró de una manera especial al Padre, al Hijo y al Espíritu Santo."
+      },
+      {
+        "title": "La voz del Padre",
+        "text": "Desde los cielos se oyó una voz que identificó a Jesús como el Hijo amado en quien el Padre tenía complacencia. El bautismo cristiano es importante; los niños pueden aprender su significado y conversar con su familia y los líderes de su iglesia, sin presión ni decisiones apresuradas."
+      }
+    ],
+    "takeaways": [
+      "🕊️ Jesús obedeció al Padre.",
+      "💧 El bautismo muestra públicamente una decisión de fe.",
+      "❤️ El Padre presentó a Jesús como su Hijo amado.",
+      "⛪ Podemos aprender y conversar con nuestra familia y la iglesia."
+    ],
+    "questions": [
+      "¿A qué río llegó Jesús?",
+      "¿Quién bautizó a Jesús?",
+      "¿Por qué Juan dudó al principio?",
+      "¿Qué descendió como paloma?",
+      "¿Qué dijo la voz del cielo?",
+      "¿Qué nos enseña Jesús acerca de obedecer?",
+      "¿Con qué adultos de confianza puedes conversar sobre el bautismo?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Quién bautizó a Jesús?",
+        "options": [
+          "Juan",
+          "Pedro",
+          "José"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué descendió como paloma?",
+        "options": [
+          "Una nube",
+          "El Espíritu de Dios",
+          "Una estrella"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Cómo llamó el Padre a Jesús?",
+        "options": [
+          "Mi siervo desconocido",
+          "Mi Hijo amado",
+          "Un rey de Egipto"
+        ],
+        "answer": 1
+      }
+    ],
+    "activity": {
+      "title": "La secuencia del Jordán",
+      "steps": [
+        "Prepara cuatro tarjetas grandes: Jesús llega, Juan lo bautiza, el Espíritu desciende como paloma y el Padre habla.",
+        "Mezclen las tarjetas y ordénenlas según Mateo 3:13–17.",
+        "Los pequeños imitan un gesto seguro para cada escena; los mayores explican por qué Jesús quiso ser bautizado.",
+        "Repitan juntos el fragmento de Mateo 3:17 sin convertir la actividad en un bautismo real.",
+        "El agua solo se representa con papel o tela azul. Toda conversación sobre bautismo se acompaña con la familia y los líderes responsables de la iglesia."
+      ]
+    },
+    "memory": {
+      "text": "Este es mi Hijo amado, en quien tengo complacencia",
+      "reference": "Mateo 3:17",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/MAT.3.17.RVR1960"
+    },
+    "videoId": "4affV15mFY0",
+    "videoQuery": "El bautismo de Jesús Saddleback Kids en Español",
+    "videoUrl": "https://www.youtube.com/watch?v=4affV15mFY0",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=29",
+    "prayer": "Padre Dios, gracias por mostrarnos a Jesús, tu Hijo amado. Ayúdanos a obedecerte con alegría, entender tu Palabra y conversar con adultos de confianza sobre los pasos de la fe. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "30",
+    "number": 31,
+    "slug": "gedeon-y-los-300",
+    "title": "Gedeón y los 300",
+    "icon": "📯",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "Jueces 6–8",
+    "objective": "La victoria pertenece a Dios y podemos obedecer aun cuando sentimos temor",
+    "application": "Confiar en Dios, obedecer paso a paso y pedir compañía cuando sentimos miedo.",
+    "narration": "Resume el llamado de Gedeón, cómo Dios redujo el ejército a trescientos y la estrategia de trompetas, cántaros y teas. Evita dramatizar la violencia y centra la confianza en Dios.",
+    "dynamic": "Trompetas, luz y señal: seguir una secuencia de gestos y sonidos trabajando en equipo.",
+    "craft": "Cántaro plegable de papel con una tea de colores y Jueces 7:7.",
+    "drawPrompt": "Dibuja a Gedeón y los trescientos con trompetas, cántaros y teas.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/gedeon-y-los-300.webp",
+    "story": [
+      {
+        "title": "Dios llama a alguien que siente temor",
+        "text": "Israel sufría por causa de los madianitas. Gedeón sacudía trigo escondido cuando el ángel de Jehová lo llamó “varón esforzado y valiente”. Gedeón se sentía pequeño y preguntó cómo podría salvar a Israel. Dios no ignoró su temor: le prometió estar con él y confirmó su llamado."
+      },
+      {
+        "title": "Un ejército cada vez más pequeño",
+        "text": "Miles de hombres se reunieron, pero Dios dijo que eran demasiados. Si ganaban así, Israel podía pensar que se había salvado por su propia fuerza. Primero regresaron quienes tenían miedo. Después, junto al agua, Dios indicó cuáles hombres quedarían. Solo trescientos acompañaron a Gedeón."
+      },
+      {
+        "title": "Dios fortalece a Gedeón",
+        "text": "La noche antes de actuar, Dios permitió que Gedeón bajara al campamento con su criado Fura. Allí oyó a un hombre contar un sueño que anunciaba la derrota de Madián. Gedeón adoró a Dios y regresó fortalecido. Pedir compañía cuando sentimos temor no significa que no tengamos fe."
+      },
+      {
+        "title": "Trompetas, cántaros y teas",
+        "text": "Gedeón dividió a los trescientos en tres grupos. Cada hombre llevó una trompeta, un cántaro vacío y una tea. A la señal, tocaron las trompetas, quebraron los cántaros y levantaron las luces. Se mantuvieron firmes en sus puestos, mientras Dios confundió al ejército enemigo. La victoria no dependió del tamaño del grupo, sino de Dios."
+      }
+    ],
+    "takeaways": [
+      "💛 Dios puede acompañarnos cuando sentimos temor.",
+      "👣 La fe obedece las instrucciones de Dios paso a paso.",
+      "🤝 Podemos pedir la compañía de una persona segura.",
+      "🏆 La gloria por la victoria pertenece a Dios."
+    ],
+    "questions": [
+      "¿Dónde estaba Gedeón cuando Dios lo llamó?",
+      "¿Cómo se sentía Gedeón acerca de sí mismo?",
+      "¿Por qué Dios redujo el ejército?",
+      "¿Cuántos hombres quedaron?",
+      "¿Quién acompañó a Gedeón al campamento?",
+      "¿Qué tres objetos llevaron los hombres?",
+      "¿Qué puedes hacer cuando tienes miedo de hacer algo correcto?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Con cuántos hombres quedó Gedeón?",
+        "options": [
+          "Treinta",
+          "Trescientos",
+          "Tres mil"
+        ],
+        "answer": 1
+      },
+      {
+        "question": "¿Qué llevaban los trescientos?",
+        "options": [
+          "Trompetas, cántaros y teas",
+          "Redes y peces",
+          "Coronas y libros"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Por qué era pequeño el ejército?",
+        "options": [
+          "Para que Dios recibiera la gloria",
+          "Porque olvidaron el camino",
+          "Para esconderse para siempre"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Trompetas, luz y señal",
+      "steps": [
+        "Forma tres pequeños grupos sin competir ni eliminar a nadie. Entrega trompetas de papel, vasos de cartón que representen cántaros y llamas de papel.",
+        "Practiquen una secuencia: levantar el cántaro, bajarlo con cuidado, mostrar la luz y hacer un sonido suave de trompeta.",
+        "Un niño o adulto da la señal y todos siguen el orden juntos. Cambien al líder para practicar atención y cooperación.",
+        "Relacionen cada acción con el relato: cántaro, tea, trompeta y permanecer firmes.",
+        "No rompan objetos reales, no usen fuego y no griten cerca de los oídos. Esta es una representación segura, no una batalla."
+      ]
+    },
+    "memory": {
+      "text": "Con estos trescientos hombres que lamieron el agua os salvaré",
+      "reference": "Jueces 7:7",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/JDG.7.7.RVR1960"
+    },
+    "videoId": "6mnYlfbikfU",
+    "videoQuery": "Gedeón y los 300 historia bíblica animada para niños",
+    "videoUrl": "https://www.youtube.com/watch?v=6mnYlfbikfU",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=30",
+    "prayer": "Señor, gracias porque estás con nosotros cuando sentimos temor. Ayúdanos a escuchar tus instrucciones, obedecer paso a paso y recordar que la victoria y la gloria te pertenecen. Danos humildad para pedir ayuda y valor para hacer lo correcto. Amén."
+  },
+  {
+    "id": "31",
+    "number": 32,
+    "slug": "los-doce-espias",
+    "title": "Los doce espías",
+    "icon": "🍇",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "Números 13–14",
+    "objective": "Podemos confiar en Dios aunque otros tengan miedo",
+    "application": "Nombrar un miedo, hablarlo con un adulto seguro y orar antes de actuar.",
+    "narration": "Cuenta la exploración de la tierra prometida y compara las dos respuestas: la del miedo y la de la confianza. Lee Números 14:8.",
+    "dynamic": "El racimo de la confianza: formar dos grupos, decir la frase de cada uno con respeto y animar a un compañero.",
+    "craft": "Racimo de papel con doce uvas y una promesa escrita en cada una.",
+    "drawPrompt": "Dibuja el racimo gigante que los exploradores trajeron de la tierra prometida.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/los-doce-espias.webp",
+    "story": [
+      {
+        "title": "Doce hombres exploran la tierra",
+        "text": "El pueblo de Israel estaba en el desierto, cerca de la tierra que Dios había prometido darle. Dios dijo a Moisés que enviara hombres a reconocer esa tierra. Salieron doce, uno por cada tribu, entre ellos Caleb y Josué. Caminaron cuarenta días por montes y valles."
+      },
+      {
+        "title": "Una tierra buena",
+        "text": "Los exploradores volvieron con un racimo de uvas tan grande que lo llevaban entre dos en un palo, y también higos y granadas. Contaron al pueblo: «Ciertamente la tierra fluye leche y miel». Era una tierra buena, tal como Dios había dicho."
+      },
+      {
+        "title": "Diez tuvieron miedo",
+        "text": "Pero diez de los doce también dijeron que el pueblo de aquella tierra era fuerte, que las ciudades tenían muros muy altos y que ellos se sentían como langostas. El pueblo se asustó, lloró y murmuró contra Moisés. Olvidaron que Dios iba con ellos."
+      },
+      {
+        "title": "Caleb y Josué confiaron",
+        "text": "Caleb hizo callar al pueblo y dijo: «Subamos luego, y tomemos posesión de ella». Josué también animó a confiar en Dios. Aquel día el pueblo no escuchó y tuvo que esperar muchos años en el desierto. Pero Dios cumplió su promesa: Caleb y Josué entraron en la tierra. Aprendemos que el miedo se escucha, se habla con Dios y no decide por nosotros."
+      }
+    ],
+    "takeaways": [
+      "🍇 Dios cumple lo que promete, aunque la espera sea larga.",
+      "👣 Confiar en Dios no es dejar de ver el problema: es no dejar que el miedo decida.",
+      "🗣️ Podemos decir la verdad con respeto, como Caleb y Josué.",
+      "🤝 Cuando algo da miedo, se cuenta a un adulto seguro y se ora."
+    ],
+    "questions": [
+      "¿Cuántos hombres envió Moisés a reconocer la tierra?",
+      "¿Qué frutos trajeron de la tierra?",
+      "¿Por qué tuvo miedo el pueblo?",
+      "¿Qué dijeron Caleb y Josué?",
+      "¿Qué hizo el pueblo aquel día?",
+      "¿Qué pasó al final con la promesa de Dios?",
+      "¿Qué haces tú cuando algo te da miedo?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Cuántos exploradores envió Moisés?",
+        "options": [
+          "Doce",
+          "Cuarenta",
+          "Tres"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué trajeron del viaje?",
+        "options": [
+          "Uvas, higos y granadas",
+          "Piedras y arena",
+          "Una corona"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿En quién confiaron Caleb y Josué?",
+        "options": [
+          "En Dios",
+          "En su fuerza",
+          "En el miedo"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "El racimo de la confianza",
+      "steps": [
+        "Recorten un racimo de papel con doce círculos de uva. Escriban en cada círculo una promesa o un cuidado de Dios.",
+        "Formen dos grupos: uno representa a los diez que tuvieron miedo y otro a Caleb y Josué. Cada grupo dice su frase con respeto, sin burlas.",
+        "Cuenten juntos hasta cuarenta, como los días del viaje, y cada vez que lleguen a diez digan: «Dios va con nosotros».",
+        "Animen a un compañero con una frase que ayude a no rendirse. Nadie queda fuera.",
+        "Recuerden que esta dramatización es una representación sencilla del relato, sin escenas que asusten."
+      ]
+    },
+    "memory": {
+      "text": "Si Jehová se agrada de nosotros, él nos llevará a esta tierra, y nos la entregará",
+      "reference": "Números 14:8",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/NUM.14.8.RVR1960"
+    },
+    "videoId": null,
+    "videoQuery": "los doce espías Caleb y Josué historia bíblica animada para niños",
+    "videoUrl": "https://www.youtube.com/results?search_query=los%20doce%20esp%C3%ADas%20Caleb%20y%20Josu%C3%A9%20historia%20b%C3%ADblica%20animada%20para%20ni%C3%B1os",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=31",
+    "prayer": "Señor, gracias porque tú cumples lo que prometes. Ayúdanos a no dejar que el miedo decida por nosotros, a hablar la verdad con respeto y a confiar en ti como Caleb y Josué. Danos valor para dar el siguiente paso. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "32",
+    "number": 33,
+    "slug": "naaman-sana",
+    "title": "Naamán sana",
+    "icon": "🛁",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "2 Reyes 5",
+    "objective": "Dios cuida y sana, y obedecer paso a paso es muestra de fe",
+    "application": "Obedecer una instrucción buena y sencilla durante la semana.",
+    "narration": "Narra la frase de la niña israelita, el mensaje de Eliseo y la obediencia de Naamán. Lee 2 Reyes 5:14.",
+    "dynamic": "Siete veces al agua: contar en voz alta del uno al siete y dibujar las ondas del Jordán.",
+    "craft": "Hoja azul con ondas y la silueta de Naamán recibiendo el mensaje.",
+    "drawPrompt": "Dibuja el río Jordán y a Naamán obedeciendo el mensaje de Eliseo.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/naaman-sana.webp",
+    "story": [
+      {
+        "title": "Una niña que dijo la verdad",
+        "text": "Naamán era jefe del ejército del rey de Siria. Era valiente y respetado, pero tenía lepra, una enfermedad de la piel. En su casa servía una niña israelita. Ella dijo a la esposa de Naamán: «Si mi señor fuera al profeta que está en Samaria, él lo sanaría de su lepra». Una sola frase dicha con verdad cambió una historia."
+      },
+      {
+        "title": "El mensaje de Eliseo",
+        "text": "Naamán fue con sus caballos y sus carros hasta la casa de Eliseo, el profeta de Dios. Eliseo no salió a recibirlo: envió a un mensajero con una instrucción muy sencilla: «Ve y lávate siete veces en el Jordán, y tu carne se te restaurará, y serás limpio»."
+      },
+      {
+        "title": "Naamán se enojó y luego obedeció",
+        "text": "Naamán se enojó porque esperaba algo grandioso y difícil. Sus criados le hablaron con respeto: «Si el profeta te mandara algo grande, ¿no lo harías?». Entonces Naamán bajó y se sumergió siete veces en el Jordán, tal como se le había dicho. Y quedó limpio."
+      },
+      {
+        "title": "Reconoció al Dios de Israel",
+        "text": "Naamán volvió a Eliseo y dijo: «He aquí ahora conozco que no hay Dios en toda la tierra, sino en Israel». Aprendió que Dios es el que sana y que obedecer sus instrucciones, aunque parezcan pequeñas, es el camino. También aprendió que la verdad dicha por una niña fue el comienzo de todo."
+      }
+    ],
+    "takeaways": [
+      "💧 Dios puede sanar y cuidar; todo lo bueno viene de Él.",
+      "🗣️ La verdad dicha con respeto por alguien pequeño también importa.",
+      "👣 Obedecer paso a paso, aunque parezca sencillo, es muestra de fe.",
+      "🤝 Los criados de Naamán lo animaron con respeto: así animamos nosotros."
+    ],
+    "questions": [
+      "¿Qué enfermedad tenía Naamán?",
+      "¿Quién le habló del profeta Eliseo?",
+      "¿Qué le mandó Eliseo que hiciera?",
+      "¿Cómo reaccionó Naamán al principio?",
+      "¿Qué le dijeron sus criados?",
+      "¿Qué dijo Naamán después de quedar limpio?",
+      "¿Qué instrucción sencilla puedes obedecer esta semana?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Quién habló a Naamán del profeta Eliseo?",
+        "options": [
+          "Una niña israelita",
+          "Un rey",
+          "Un soldado romano"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué le mandó Eliseo que hiciera?",
+        "options": [
+          "Lavarse siete veces en el Jordán",
+          "Construir una casa",
+          "Comprar un caballo"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué aprendió Naamán?",
+        "options": [
+          "Que no hay Dios sino en Israel",
+          "Que el río era más fuerte",
+          "Que nadie puede sanar"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Siete veces al agua",
+      "steps": [
+        "Formen una fila. Cada niño dice un número del uno al siete, en orden, y al llegar al siete todos juntos dicen: «Dios cuida de mí».",
+        "Dibujen ondas de agua en una hoja azul y peguen encima la silueta de Naamán recibiendo el mensaje.",
+        "Representen con gestos la frase de los criados: «Si el profeta te mandara algo grande, ¿no lo harías?».",
+        "Escojan una instrucción pequeña y buena para practicar esta semana, como ordenar, esperar turno o decir la verdad.",
+        "No se representa la enfermedad: usamos solo el agua, el mensaje y la obediencia."
+      ]
+    },
+    "memory": {
+      "text": "su carne se volvió como la carne de un niño, y quedó limpio",
+      "reference": "2 Reyes 5:14",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/2KI.5.14.RVR1960"
+    },
+    "videoId": null,
+    "videoQuery": "Naamán sanado Eliseo historia bíblica animada para niños",
+    "videoUrl": "https://www.youtube.com/results?search_query=Naam%C3%A1n%20sanado%20Eliseo%20historia%20b%C3%ADblica%20animada%20para%20ni%C3%B1os",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=32",
+    "prayer": "Señor, gracias porque tú cuidas de nosotros y puedes sanar. Ayúdanos a decir la verdad con respeto y a obedecer con prontitud, aunque las instrucciones parezcan sencillas. Quita de nosotros el enojo y danos un corazón dispuesto. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "33",
+    "number": 34,
+    "slug": "nehemias-y-el-muro",
+    "title": "Nehemías y el muro",
+    "icon": "🧱",
+    "category": "Carácter",
+    "testament": "antiguo",
+    "reference": "Nehemías 2–6",
+    "objective": "Cuando todos hacen su parte, la obra avanza; orar va antes de actuar",
+    "application": "Elegir una tarea de ayuda en casa o en la iglesia y cumplirla.",
+    "narration": "Resume la oración de Nehemías, el permiso del rey y el trabajo unido de todo el pueblo. Lee Nehemías 4:6.",
+    "dynamic": "El muro de todos: construir por tramos y nombrar vigías que avisan.",
+    "craft": "Muro de cajitas de papel con una tarea de ayuda escrita en cada bloque.",
+    "drawPrompt": "Dibuja a las familias construyendo el muro, cada una frente a su casa.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/nehemias-y-el-muro.webp",
+    "story": [
+      {
+        "title": "Una noticia que entristeció a Nehemías",
+        "text": "Nehemías servía al rey de Persia en la ciudad de Susa. Sus hermanos llegaron y le contaron que en Jerusalén el muro estaba derribado y las puertas quemadas, y que el pueblo pasaba dificultades. Nehemías se sentó, lloró, y por varios días ayunó y oró a Dios."
+      },
+      {
+        "title": "El rey le dio permiso",
+        "text": "Antes de hablar con el rey, Nehemías oró. El rey notó su tristeza y le preguntó qué deseaba. Nehemías le contó su plan: reconstruir el muro de la ciudad. El rey le dio permiso, cartas para los gobernadores y madera para la obra."
+      },
+      {
+        "title": "Todos construyeron juntos",
+        "text": "Cuando Nehemías llegó, animó al pueblo diciendo: «Levantémonos y edifiquemos». Cada familia tomó un tramo del muro, frente a su propia casa. Sacerdotes, comerciantes, artesanos y familias trabajaron lado a lado, incluidos los que tenían menos fuerzas."
+      },
+      {
+        "title": "Trabajaron y se cuidaron",
+        "text": "Hubo quienes se burlaron y también amenazas, así que Nehemías organizó al pueblo: una parte trabajaba y otra parte vigilaba. Cada uno construía con una mano y llevaba su herramienta en la otra. En cincuenta y dos días el muro quedó terminado, y todos entendieron que la obra se había hecho porque Dios estaba con ellos."
+      }
+    ],
+    "takeaways": [
+      "🧱 Cuando todos hacen su parte, la obra avanza.",
+      "🙏 Nehemías oró antes de actuar y siguió orando durante la obra.",
+      "👀 Trabajar también incluye cuidarse unos a otros.",
+      "🤝 Cada persona cuenta, aunque parezca que su tarea es pequeña."
+    ],
+    "questions": [
+      "¿Qué noticia entristeció a Nehemías?",
+      "¿Qué hizo Nehemías antes de hablar con el rey?",
+      "¿Qué le pidió Nehemías al rey?",
+      "¿Cómo organizó Nehemías al pueblo?",
+      "¿Por qué trabajaban y vigilaban al mismo tiempo?",
+      "¿Cuánto tardaron en terminar el muro?",
+      "¿Qué tarea pequeña puedes hacer tú en tu casa o en tu iglesia?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué estaba derribado en Jerusalén?",
+        "options": [
+          "El muro de la ciudad",
+          "El río",
+          "Un huerto"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué hizo Nehemías antes de hablar con el rey?",
+        "options": [
+          "Oró a Dios",
+          "Compró caballos",
+          "Escribió un libro"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Por qué terminaron la obra?",
+        "options": [
+          "Porque Dios estaba con ellos",
+          "Porque no había trabajo",
+          "Porque ganaron un premio"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "El muro de todos",
+      "steps": [
+        "Repartan cajitas o bloques de papel. Cada niño construye un tramo del «muro» del salón.",
+        "Escriban en su bloque una tarea en la que puede ayudar: ordenar, repartir, barrer, acompañar, avisar a un adulto.",
+        "Nombren dos «vigías» que solo observan y avisan si alguien necesita ayuda. Cambien de vigías varias veces.",
+        "Cuenten juntos hasta cincuenta y dos, como los días que duró la obra, y celebren que todos participaron.",
+        "Nadie compite: si un bloque no alcanza, se comparte el material."
+      ]
+    },
+    "memory": {
+      "text": "Edificamos, pues, el muro, y toda la muralla fue terminada hasta la mitad de su altura, porque el pueblo tuvo ánimo para trabajar",
+      "reference": "Nehemías 4:6",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/NEH.4.6.RVR1960"
+    },
+    "videoId": null,
+    "videoQuery": "Nehemías reconstruye el muro de Jerusalén historia bíblica para niños",
+    "videoUrl": "https://www.youtube.com/results?search_query=Nehem%C3%ADas%20reconstruye%20el%20muro%20de%20Jerusal%C3%A9n%20historia%20b%C3%ADblica%20para%20ni%C3%B1os",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=33",
+    "prayer": "Señor, gracias por el trabajo que se hace en equipo. Ayúdanos a orar antes de actuar, a hacer bien nuestra parte y a cuidar de los demás. Danos ánimo para no rendirnos cuando la tarea es larga. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "34",
+    "number": 35,
+    "slug": "job-confia-en-dios",
+    "title": "Job confía en Dios",
+    "icon": "🌅",
+    "category": "Fe",
+    "testament": "antiguo",
+    "reference": "Job 1–2; 42",
+    "objective": "Podemos hablar con Dios con sinceridad y acompañar a quien sufre",
+    "application": "Acompañar a alguien triste, escuchando sin juzgar y avisando a un adulto.",
+    "narration": "Cuenta la pérdida de Job, sus preguntas sinceras y la respuesta de Dios, sin entrar en detalles que asusten.",
+    "dynamic": "Acompañar sin juzgar: escuchar sin interrumpir y practicar tres frases que ayudan.",
+    "craft": "Mano abierta de papel con dos maneras de acompañar a alguien triste.",
+    "drawPrompt": "Dibuja a Job adorando a Dios y a un amigo acompañándolo con cariño.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/job-confia-en-dios.webp",
+    "story": [
+      {
+        "title": "Un hombre que amaba a Dios",
+        "text": "Job vivía en la tierra de Uz. La Biblia dice que era íntegro y recto, que temía a Dios y se apartaba del mal. Tenía una familia grande, muchos siervos y muchos animales. Job enseñaba a sus hijos a buscar a Dios."
+      },
+      {
+        "title": "Job perdió mucho",
+        "text": "En un solo día llegaron mensajeros con malas noticias: Job perdió sus animales y también a sus hijos. Job se levantó, rasgó su manto, se postró en tierra y adoró a Dios diciendo: «Jehová dio, y Jehová quitó; sea el nombre de Jehová bendito»."
+      },
+      {
+        "title": "Sus amigos y sus preguntas",
+        "text": "Después Job enfermó y sufrió mucho. Tres amigos vinieron a acompañarlo y al principio se quedaron callados con él, lo cual fue bueno. Luego hablaron mucho, y no todo lo que dijeron era cierto. Job presentó sus preguntas a Dios con sinceridad, sin dejar de hablar con Él."
+      },
+      {
+        "title": "Dios respondió y restauró",
+        "text": "Dios le respondió mostrándole que Él es el Creador sabio, que conoce lo que nosotros no alcanzamos a ver. Job reconoció que Dios sabía más que él. Después Dios restauró a Job y le dio el doble de lo que había tenido. Aprendemos dos cosas: podemos hablar con Dios con sinceridad, y a quien sufre hay que acompañarlo, no juzgarlo."
+      }
+    ],
+    "takeaways": [
+      "🌅 Podemos hablar con Dios con sinceridad, también cuando estamos tristes.",
+      "🤝 Acompañar en silencio a quien sufre ya es una forma de amar.",
+      "💛 Dios es sabio y conoce lo que nosotros no vemos.",
+      "🙏 Adorar a Dios no depende solo de las cosas buenas que recibimos."
+    ],
+    "questions": [
+      "¿Cómo describe la Biblia a Job?",
+      "¿Qué perdió Job en un solo día?",
+      "¿Qué dijo Job al adorar a Dios?",
+      "¿Qué hicieron sus amigos al principio?",
+      "¿Qué hicieron después?",
+      "¿Qué le mostró Dios a Job?",
+      "¿Cómo puedes acompañar a alguien que está triste?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué dijo Job cuando adoró a Dios?",
+        "options": [
+          "Jehová dio, y Jehová quitó",
+          "Yo lo perdí todo para siempre",
+          "Nadie me ayuda"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué hicieron sus amigos al principio?",
+        "options": [
+          "Se quedaron callados con él",
+          "Lo echaron de la casa",
+          "Le dieron dinero"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué hizo Dios al final con Job?",
+        "options": [
+          "Lo restauró",
+          "Lo olvidó",
+          "Lo dejó solo"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Acompañar sin juzgar",
+      "steps": [
+        "Siéntense en círculo. Un niño cuenta algo difícil de forma sencilla y los demás escuchan sin interrumpir ni dar consejos.",
+        "Practiquen tres frases que ayudan: «Estoy contigo», «¿Quieres que oremos?», «¿Con quién quieres hablar?».",
+        "Dibujen una mano abierta y escriban dentro dos maneras de acompañar a alguien triste.",
+        "Den gracias a Dios juntos, aunque haya cosas difíciles, como hizo Job.",
+        "Nadie está obligado a contar algo personal: se puede usar una situación imaginaria."
+      ]
+    },
+    "memory": {
+      "text": "Jehová dio, y Jehová quitó; sea el nombre de Jehová bendito",
+      "reference": "Job 1:21",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/JOB.1.21.RVR1960"
+    },
+    "videoId": null,
+    "videoQuery": "Job confía en Dios historia bíblica para niños",
+    "videoUrl": "https://www.youtube.com/results?search_query=Job%20conf%C3%ADa%20en%20Dios%20historia%20b%C3%ADblica%20para%20ni%C3%B1os",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=34",
+    "prayer": "Señor, gracias porque podemos hablar contigo con sinceridad. Enséñanos a confiar en tu sabiduría cuando no entendemos lo que pasa, y a acompañar con cariño a quien está triste, sin juzgarlo. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "35",
+    "number": 36,
+    "slug": "el-senor-es-mi-pastor",
+    "title": "El Señor es mi pastor",
+    "icon": "🍃",
+    "category": "Dios",
+    "testament": "antiguo",
+    "reference": "Salmo 23",
+    "objective": "Dios cuida de nosotros como un pastor cuida a sus ovejas",
+    "application": "Repetir el Salmo en familia durante la semana.",
+    "narration": "Lee el Salmo 23 frase por frase y explica cada imagen: pastos, aguas, vara, cayado y copa.",
+    "dynamic": "Salmo 23 con gestos: un gesto por frase y repetición en voz alta.",
+    "craft": "Oveja de papel junto a un río tranquilo con una frase del Salmo.",
+    "drawPrompt": "Dibuja al pastor guiando a su oveja junto a aguas tranquilas.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/el-senor-es-mi-pastor.webp",
+    "story": [
+      {
+        "title": "Un pastor cuida a sus ovejas",
+        "text": "David conoció a las ovejas de cerca: de joven cuidaba el rebaño de su padre. Por eso, cuando escribió este Salmo, usó una imagen que los niños entienden muy bien. Comienza así: «Jehová es mi pastor; nada me faltará»."
+      },
+      {
+        "title": "Descanso y camino seguro",
+        "text": "El Salmo sigue: «En lugares de delicados pastos me hará descansar; junto a aguas de reposo me pastoreará. Confortará mi alma; me guiará por sendas de justicia por amor de su nombre». El pastor busca buen alimento, agua tranquila y el mejor camino."
+      },
+      {
+        "title": "Aun en el valle oscuro",
+        "text": "«Aunque ande en valle de sombra de muerte, no temeré mal alguno, porque tú estarás conmigo; tu vara y tu cayado me infundirán aliento». El pastor no deja sola a su oveja cuando el camino se pone difícil. Nosotros tampoco estamos solos: Dios está con nosotros."
+      },
+      {
+        "title": "Mesa, cuidado y casa",
+        "text": "David termina diciendo que Dios prepara una mesa, cuida a su invitado con aceite y llena la copa hasta rebosar. «Ciertamente el bien y la misericordia me seguirán todos los días de mi vida, y en la casa de Jehová moraré por largos días». Este Salmo se puede memorizar con gestos y repetir en la semana."
+      }
+    ],
+    "takeaways": [
+      "🐑 Dios cuida de nosotros como un pastor cuida a sus ovejas.",
+      "💛 Aun en los días difíciles, no estamos solos: Él está con nosotros.",
+      "🧭 Dios guía por caminos buenos y nos da descanso.",
+      "🗣️ Un Salmo se puede aprender de memoria y repetir en voz alta."
+    ],
+    "questions": [
+      "¿Quién es el pastor en este Salmo?",
+      "¿Dónde hace descansar el pastor a sus ovejas?",
+      "¿Qué usa el pastor para cuidar a la oveja?",
+      "¿Qué promete el Salmo cuando el camino es oscuro?",
+      "¿Qué prepara Dios para su invitado?",
+      "¿Qué te da tranquilidad cuando tienes miedo?",
+      "¿Qué frase del Salmo quieres aprender de memoria?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué dice el primer versículo del Salmo 23?",
+        "options": [
+          "Jehová es mi pastor; nada me faltará",
+          "Jehová está muy lejos",
+          "Yo me cuido solo"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué busca el pastor para sus ovejas?",
+        "options": [
+          "Pastos y aguas de reposo",
+          "Caminos peligrosos",
+          "Ciudades grandes"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué dice el Salmo sobre el valle oscuro?",
+        "options": [
+          "No temeré, porque tú estarás conmigo",
+          "Es mejor esconderse",
+          "Nadie puede pasar"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Salmo 23 con gestos",
+      "steps": [
+        "Aprendan un gesto por frase: pastor (mano sobre los ojos), pastos (manos abiertas), aguas (olas con las manos), vara y cayado (brazos cruzados), copa (manos en forma de vaso).",
+        "Repitan el Salmo frase por frase, primero con el maestro y después todos juntos.",
+        "Dibujen una oveja junto a un río tranquilo y escriban debajo una frase del Salmo.",
+        "Escojan un día de la semana para repetirlo en familia.",
+        "Los más pequeños pueden participar solo con los gestos."
+      ]
+    },
+    "memory": {
+      "text": "Jehová es mi pastor; nada me faltará",
+      "reference": "Salmo 23:1",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/PSA.23.1.RVR1960"
+    },
+    "videoId": null,
+    "videoQuery": "Salmo 23 para niños el Señor es mi pastor canción y explicación",
+    "videoUrl": "https://www.youtube.com/results?search_query=Salmo%2023%20para%20ni%C3%B1os%20el%20Se%C3%B1or%20es%20mi%20pastor%20canci%C3%B3n%20y%20explicaci%C3%B3n",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=35",
+    "prayer": "Señor, gracias porque eres nuestro pastor y cuidas de nosotros. Ayúdanos a descansar en ti, a caminar por tus sendas y a no tener miedo cuando el camino se pone oscuro, porque tú estás con nosotros. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "36",
+    "number": 37,
+    "slug": "isaias-es-llamado",
+    "title": "Isaías es llamado",
+    "icon": "📣",
+    "category": "Dios",
+    "testament": "antiguo",
+    "reference": "Isaías 6",
+    "objective": "Dios limpia, llama y envía; podemos responder «Heme aquí»",
+    "application": "Responder «Heme aquí» a una tarea de servicio en casa o en la iglesia.",
+    "narration": "Presenta la visión de Isaías con reverencia, el canto de los serafines y su respuesta al llamado.",
+    "dynamic": "Heme aquí, envíame a mí: responder al llamado y elegir una tarea para la semana.",
+    "craft": "Papel con forma de llama donde se escribe la tarea elegida.",
+    "drawPrompt": "Dibuja a Isaías respondiendo al llamado de Dios.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/isaias-es-llamado.webp",
+    "story": [
+      {
+        "title": "Isaías vio la gloria de Dios",
+        "text": "Isaías era un profeta que hablaba al pueblo de parte de Dios. Un año, cuando murió el rey Uzías, Isaías tuvo una visión: vio al Señor sentado en un trono alto y sublime, y el templo lleno de su gloria. Todo lo demás se volvió pequeño al lado de Dios."
+      },
+      {
+        "title": "Los serafines y su canto",
+        "text": "Sobre el trono había serafines, cada uno con seis alas. Con dos se cubrían el rostro, con dos se cubrían los pies y con dos volaban. Y cantaban: «Santo, santo, santo es Jehová de los ejércitos; toda la tierra está llena de su gloria». El canto hacía temblar las puertas."
+      },
+      {
+        "title": "Isaías reconoció su necesidad",
+        "text": "Isaías se sintió pequeño delante de tanta santidad y reconoció que él también necesitaba ser limpiado. Entonces un serafín voló hacia él con un carbón encendido tomado del altar, tocó sus labios y le anunció que su pecado había sido quitado. Dios no lo rechazó: lo limpió."
+      },
+      {
+        "title": "La respuesta de Isaías",
+        "text": "Después Isaías oyó la voz del Señor: «¿A quién enviaré, y quién irá por nosotros?». Isaías respondió: «Heme aquí, envíame a mí». Dios lo envió a hablar a su pueblo. Isaías aprendió que Dios limpia, llama y envía, y que la respuesta correcta es estar disponible."
+      }
+    ],
+    "takeaways": [
+      "📣 Dios es santo y su gloria llena la tierra.",
+      "💛 Dios limpia y perdona a quien se acerca con sinceridad.",
+      "✋ Podemos responder como Isaías: «Heme aquí».",
+      "🙏 Servir a Dios empieza por estar disponible, no por sentirse perfecto."
+    ],
+    "questions": [
+      "¿Qué vio Isaías en el templo?",
+      "¿Qué cantaban los serafines?",
+      "¿Cómo se sintió Isaías?",
+      "¿Qué hizo el serafín con el carbón del altar?",
+      "¿Qué preguntó la voz del Señor?",
+      "¿Qué respondió Isaías?",
+      "¿Qué puedes hacer tú cuando te piden ayuda en la iglesia o en casa?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Qué cantaban los serafines?",
+        "options": [
+          "Santo, santo, santo es Jehová",
+          "Todos somos fuertes",
+          "El templo es muy grande"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué le anunció el serafín a Isaías?",
+        "options": [
+          "Que su pecado había sido quitado",
+          "Que debía callar",
+          "Que saliera del templo"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué respondió Isaías al llamado?",
+        "options": [
+          "Heme aquí, envíame a mí",
+          "Busca a otro",
+          "Todavía soy muy pequeño"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "Heme aquí, envíame a mí",
+      "steps": [
+        "Canten o repitan tres veces: «Santo, santo, santo es Jehová de los ejércitos». Cada vez puede subir un poco el volumen.",
+        "Formen un círculo. El maestro dice: «¿A quién enviaré?» y cada niño responde: «Heme aquí, envíame a mí», con la mano levantada.",
+        "Cada uno elige una tarea sencilla para la semana: ordenar, saludar a alguien, ayudar a llevar algo, invitar a jugar a un compañero.",
+        "Escriban su tarea en un papel con forma de llama y colóquenla en un mural del salón.",
+        "Esta actividad es una representación sencilla: el carbón del altar no se imita con fuego real."
+      ]
+    },
+    "memory": {
+      "text": "Heme aquí, envíame a mí",
+      "reference": "Isaías 6:8",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/ISA.6.8.RVR1960"
+    },
+    "videoId": null,
+    "videoQuery": "el llamado de Isaías historia bíblica animada para niños",
+    "videoUrl": "https://www.youtube.com/results?search_query=el%20llamado%20de%20Isa%C3%ADas%20historia%20b%C3%ADblica%20animada%20para%20ni%C3%B1os",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=36",
+    "prayer": "Señor, gracias porque eres santo y tu gloria llena la tierra. Reconozco que necesito tu perdón. Aquí estoy: envíame y ayúdame a servirte con alegría en mi casa, en mi iglesia y con mis amigos. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "37",
+    "number": 38,
+    "slug": "ama-a-dios-de-corazon",
+    "title": "Ama a Dios de corazón",
+    "icon": "✋",
+    "category": "Dios",
+    "testament": "antiguo",
+    "reference": "Deuteronomio 6:4–9",
+    "objective": "Amar a Dios con todo el corazón se nota en la vida diaria",
+    "application": "Elegir un momento del día para leer o hablar de la Biblia en familia.",
+    "narration": "Moisés recuerda al pueblo lo primero de todo: amar a Dios de todo corazón y enseñarlo en casa. Lee Deuteronomio 6:5.",
+    "dynamic": "La Palabra en casa: cuatro momentos del día para recordar a Dios y un compromiso familiar.",
+    "craft": "Casa de papel con la frase de Deuteronomio 6:5 en la puerta.",
+    "drawPrompt": "Dibuja tu casa y escribe en la puerta una frase de amor a Dios.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/ama-a-dios-de-corazon.webp",
+    "story": [
+      {
+        "title": "Escucha, Israel",
+        "text": "El pueblo de Israel estaba a punto de entrar en la tierra prometida. Moisés reunió a todos y les recordó lo más importante de todo: «Oye, Israel: Jehová nuestro Dios, Jehová uno es». Antes de cualquier regla venía esta verdad: Dios es uno, y es nuestro Dios."
+      },
+      {
+        "title": "Amar con todo el corazón",
+        "text": "Moisés continuó: «Y amarás a Jehová tu Dios de todo tu corazón, y de toda tu alma, y con todas tus fuerzas». Amar a Dios no es solo decirlo con la boca; es amarlo con todo lo que somos y con todo lo que hacemos."
+      },
+      {
+        "title": "Guardar sus palabras en el corazón",
+        "text": "Dios pidió que estas palabras estuvieran guardadas en el corazón. Y añadió algo muy práctico para las familias: enseñarlas a los hijos, hablando de ellas al sentarse en casa, al andar por el camino, al acostarse y al levantarse. Es decir, en cualquier momento del día."
+      },
+      {
+        "title": "Señales en la vida diaria",
+        "text": "También dijo que debían atarlas como señal en la mano, ponerlas delante de los ojos y escribirlas en los postes de la casa y en las puertas. Todo eso era para recordar que amar a Dios se nota en la vida de cada día. Hoy nosotros podemos aprender la Palabra, hablarla en familia y vivirla en casa, en la escuela y en el camino."
+      }
+    ],
+    "takeaways": [
+      "✋ Amar a Dios es lo primero, antes de cualquier otra regla.",
+      "❤️ Se ama a Dios con todo el corazón, el alma y las fuerzas.",
+      "🏠 La fe se enseña en casa, en el camino y en cada momento del día.",
+      "👣 Amar a Dios se nota en lo que hacemos cada día."
+    ],
+    "questions": [
+      "¿Qué dijo Moisés primero al pueblo?",
+      "¿Con qué debemos amar a Dios?",
+      "¿Dónde debían guardar estas palabras?",
+      "¿En qué momentos debían hablar de ellas?",
+      "¿Para qué las escribirían en los postes de la casa?",
+      "¿En qué momentos del día puedes recordar a Dios?",
+      "¿Cómo puedes ayudar a tu familia a hablar de la Biblia?"
+    ],
+    "quiz": [
+      {
+        "question": "¿Con qué debemos amar a Jehová?",
+        "options": [
+          "Con todo el corazón, el alma y las fuerzas",
+          "Solamente con palabras",
+          "Solo los domingos"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Dónde debían guardarse estas palabras?",
+        "options": [
+          "En el corazón",
+          "En un cajón",
+          "En un mercado"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Cuándo debían hablar de ellas?",
+        "options": [
+          "Al sentarse, al andar, al acostarse y al levantarse",
+          "Solo una vez al año",
+          "Nunca en casa"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "La Palabra en casa",
+      "steps": [
+        "Dibujen una casa con una puerta grande. Escriban en la puerta una frase de Deuteronomio 6:5.",
+        "Repartan tarjetas con cuatro momentos: al sentarse, al caminar, al acostarse y al levantarse. Cada niño elige uno y dice qué haría en ese momento.",
+        "Escriban un compromiso familiar sencillo: leer un versículo juntos, orar antes de dormir o cantar un cántico en el camino.",
+        "Repitan juntos: «Amarás a Jehová tu Dios de todo tu corazón».",
+        "Nadie comparte información privada de su familia: el compromiso puede ser personal."
+      ]
+    },
+    "memory": {
+      "text": "Y amarás a Jehová tu Dios de todo tu corazón, y de toda tu alma, y con todas tus fuerzas",
+      "reference": "Deuteronomio 6:5",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/DEU.6.5.RVR1960"
+    },
+    "videoId": null,
+    "videoQuery": "amarás a Dios de todo tu corazón Deuteronomio 6 para niños",
+    "videoUrl": "https://www.youtube.com/results?search_query=amar%C3%A1s%20a%20Dios%20de%20todo%20tu%20coraz%C3%B3n%20Deuteronomio%206%20para%20ni%C3%B1os",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=37",
+    "prayer": "Señor, gracias porque tú eres nuestro Dios y nos amaste primero. Ayúdanos a amarte con todo el corazón, a guardar tu Palabra y a hablar de ti en casa y en el camino. Que nuestra vida muestre que te amamos. En el nombre de Jesús, amén."
+  },
+  {
+    "id": "38",
+    "number": 39,
+    "slug": "confia-de-todo-corazon",
+    "title": "Confía de todo corazón",
+    "icon": "🧭",
+    "category": "Carácter",
+    "testament": "antiguo",
+    "reference": "Proverbios 3:5–6",
+    "objective": "Confiamos en Dios de todo corazón y pedimos dirección antes de decidir",
+    "application": "Orar y pedir consejo antes de tomar una decisión.",
+    "narration": "Explica el consejo de Proverbios con ejemplos de decisiones cotidianas y la promesa de enderezar el camino.",
+    "dynamic": "La brújula del corazón: recorrer cuatro puntos, Ora, Lee, Pregunta y Actúa.",
+    "craft": "Brújula de papel con cuatro puntos y una decisión escrita al centro.",
+    "drawPrompt": "Dibuja una brújula y escribe en el centro una decisión que pondrás en las manos de Dios.",
+    "age": "3 a 10 años",
+    "duration": "45 a 60 minutos",
+    "bibleVersion": "Reina-Valera 1960 (RVR1960)",
+    "coverImage": "/images/lessons/confia-de-todo-corazon.webp",
+    "story": [
+      {
+        "title": "Un consejo para el camino",
+        "text": "El libro de Proverbios guarda consejos de sabiduría, muchos escritos por Salomón. Uno de ellos dice: «Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia». Es un consejo para el camino de la vida."
+      },
+      {
+        "title": "No te apoyes solo en tu propia opinión",
+        "text": "Confiar en Dios no significa dejar de pensar ni de estudiar. Significa no decidir solo con nuestra propia opinión, como si lo supiéramos todo. Hay decisiones que parecen buenas y terminan mal, y otras que son difíciles pero correctas. Por eso escuchamos a Dios primero."
+      },
+      {
+        "title": "Él enderezará tus veredas",
+        "text": "El proverbio continúa: «Reconócelo en todos tus caminos, y él enderezará tus veredas». Reconocer a Dios en todo significa pedirle dirección antes de decidir, darle gracias y hacer las cosas pensando en agradarle. Él promete enderezar el camino."
+      },
+      {
+        "title": "Confiar y seguir a Dios",
+        "text": "No sabemos todo lo que vendrá, pero sí sabemos que Dios es bueno y fiel. Confiar es darle el primer lugar: leer su Palabra, orar, pedir consejo a adultos que aman a Dios y luego dar el paso. La confianza crece cada vez que obedecemos."
+      }
+    ],
+    "takeaways": [
+      "🧭 Podemos confiar en Dios de todo corazón.",
+      "🤔 Confiar en Dios no es dejar de pensar: es no decidir solo con nuestra opinión.",
+      "🛤️ Dios promete enderezar el camino de quien lo reconoce.",
+      "🙋 Pedir consejo a un adulto que ama a Dios también es confiar en Él."
+    ],
+    "questions": [
+      "¿Qué libro de la Biblia guarda estos consejos?",
+      "¿En quién debemos confiar de todo corazón?",
+      "¿Por qué no basta con nuestra propia opinión?",
+      "¿Qué promete Dios al que lo reconoce en sus caminos?",
+      "¿Cómo se reconoce a Dios antes de decidir?",
+      "¿A quién puedes pedir consejo?",
+      "¿Qué decisión puedes poner hoy en las manos de Dios?"
+    ],
+    "quiz": [
+      {
+        "question": "¿En quién debemos confiar de todo corazón?",
+        "options": [
+          "En Jehová",
+          "En la suerte",
+          "En nuestra fuerza"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué promete Dios al que lo reconoce?",
+        "options": [
+          "Enderezar sus veredas",
+          "Darle tesoros escondidos",
+          "Quitarle los problemas"
+        ],
+        "answer": 0
+      },
+      {
+        "question": "¿Qué ayuda a confiar bien en Dios?",
+        "options": [
+          "Leer su Palabra y pedir consejo",
+          "Decidir rápido sin pensar",
+          "Esperar a que otros decidan"
+        ],
+        "answer": 0
+      }
+    ],
+    "activity": {
+      "title": "La brújula del corazón",
+      "steps": [
+        "Hagan una brújula de papel con cuatro puntos: Ora, Lee, Pregunta, Actúa.",
+        "Cuenten una decisión sencilla, como elegir con quién jugar o cómo usar el tiempo, y recorran los cuatro puntos juntos.",
+        "Escriban en una tarjeta una decisión que quieren poner en las manos de Dios esta semana.",
+        "Repitan juntos: «Fíate de Jehová de todo tu corazón».",
+        "Los casos que se cuenten deben ser situaciones imaginarias o generales, no problemas privados."
+      ]
+    },
+    "memory": {
+      "text": "Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia",
+      "reference": "Proverbios 3:5",
+      "excerpt": true,
+      "sourceUrl": "https://www.bible.com/es/bible/149/PRO.3.5.RVR1960"
+    },
+    "videoId": null,
+    "videoQuery": "confía en Jehová de todo tu corazón Proverbios 3 para niños",
+    "videoUrl": "https://www.youtube.com/results?search_query=conf%C3%ADa%20en%20Jehov%C3%A1%20de%20todo%20tu%20coraz%C3%B3n%20Proverbios%203%20para%20ni%C3%B1os",
+    "printableUrl": "https://semillitasbiblicas.space/printables.html?leccion=38",
+    "prayer": "Señor, gracias porque tú ves el camino completo y nosotros solo un tramo. Ayúdanos a confiar en ti de todo corazón, a reconocerte en cada decisión y a pedir consejo sabio. Endereza nuestros caminos. En el nombre de Jesús, amén."
+  }
+]

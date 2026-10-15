@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/*
+  Paleta «semillita»: crema cálido de fondo, verde hoja como color
+  principal, sol como acento, mar como guiño al azul del sitio original
+  (#086f8b) y uva para la categoría «Dios».
+*/
+@theme {
+  --font-sans: "Nunito Variable", ui-rounded, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fredoka Variable", "Nunito Variable", ui-rounded, system-ui, sans-serif;
+
+  --color-cream-50: #fdfaf2;
+  --color-cream-100: #faf3e1;
+  --color-cream-200: #f2e7cc;
+  --color-cream-300: #e7d6ae;
+
+  --color-leaf-50: #eff8ef;
+  --color-leaf-100: #dcefdd;
+  --color-leaf-200: #bcdfbc;
+  --color-leaf-300: #8fca92;
+  --color-leaf-400: #5cb163;
+  --color-leaf-500: #3a9748;
+  --color-leaf-600: #2b7a38;
+  --color-leaf-700: #24602e;
+  --color-leaf-800: #1f4c28;
+  --color-leaf-900: #1a3f23;
+
+  --color-sun-50: #fef7e8;
+  --color-sun-100: #fdeac4;
+  --color-sun-200: #fbd888;
+  --color-sun-300: #f8bf4b;
+  --color-sun-400: #f5a425;
+  --color-sun-500: #e08712;
+  --color-sun-600: #b9660e;
+  --color-sun-700: #944b10;
+
+  --color-sea-50: #eff9fb;
+  --color-sea-100: #d8f0f5;
+  --color-sea-200: #b3e2ec;
+  --color-sea-300: #7fcadb;
+  --color-sea-400: #47a9c3;
+  --color-sea-500: #2b8ca7;
+  --color-sea-600: #23718c;
+  --color-sea-700: #215c72;
+  --color-sea-800: #214d5f;
+  --color-sea-900: #204150;
+
+  --color-grape-50: #f6f2fc;
+  --color-grape-100: #ece4f7;
+  --color-grape-200: #d9ccef;
+  --color-grape-500: #7c5cc4;
+  --color-grape-600: #684aad;
+  --color-grape-700: #5a3f99;
+
+  --color-berry-100: #fbe5e2;
+  --color-berry-500: #d9534a;
+  --color-berry-600: #c03f36;
+  --color-berry-700: #9f332c;
+
+  --color-ink-300: #a89a86;
+  --color-ink-500: #6f6353;
+  --color-ink-700: #4a4238;
+  --color-ink-900: #2b2620;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--color-sun-200);
+}
+
+@layer components {
+  /* Tarjeta base blanca sobre crema */
+  .card {
+    @apply rounded-3xl border border-cream-200/80 bg-white shadow-[0_2px_16px_rgba(43,38,32,0.05)];
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-bold;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-display text-base font-semibold transition;
+  }
+
+  .btn-primary {
+    @apply bg-leaf-600 text-white shadow-sm hover:bg-leaf-700 active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply border-2 border-leaf-600/25 bg-white/60 text-leaf-700 hover:border-leaf-600/60 hover:bg-leaf-50 active:scale-[0.98];
+  }
+
+  .title-section {
+    @apply flex items-center gap-2 font-display text-xl font-semibold text-ink-900;
+  }
+}
