@@ -31,8 +31,14 @@ export async function middleware(request: NextRequest) {
   });
 
   // Importante: llamar getUser() (no getSession) para que el middleware
-  // valide y rote el token de acceso si está por vencer.
-  await supabase.auth.getUser();
+  // valide y rote el token de acceso si está por vencer. Si el servidor no
+  // tiene salida a Supabase (p. ej. un sandbox de preview), seguimos sin
+  // romper la navegación: el cliente refresca por su cuenta.
+  try {
+    await supabase.auth.getUser();
+  } catch {
+    // Sin red hacia Supabase: continuar con las cookies como estén.
+  }
 
   return response;
 }

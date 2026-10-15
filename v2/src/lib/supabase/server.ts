@@ -34,10 +34,15 @@ export async function createSupabaseServerClient() {
 /**
  * Devuelve el usuario autenticado de la petición actual, o `null`.
  * Verifica el token con el servidor de auth (no confía solo en la cookie).
+ * Si el servidor no alcanza a Supabase, degrada a `null` sin lanzar error.
  */
 export async function getCurrentUser() {
   if (!isSupabaseConfigured()) return null;
-  const supabase = await createSupabaseServerClient();
-  const { data } = await supabase.auth.getUser();
-  return data.user ?? null;
+  try {
+    const supabase = await createSupabaseServerClient();
+    const { data } = await supabase.auth.getUser();
+    return data.user ?? null;
+  } catch {
+    return null;
+  }
 }
