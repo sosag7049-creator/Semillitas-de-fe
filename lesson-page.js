@@ -1,6 +1,12 @@
-import { LESSONS, lessonBySlug } from '/lesson-data.js?v=13';
-// Versión de 800 px de una portada, para que el celular no baje la de escritorio.
-const small = url => (typeof url === 'string' && url.endsWith('.webp') ? url.slice(0, -5) + '-800.webp' : url);
+import { LESSONS, lessonBySlug } from '/lesson-data.js?v=14';
+// Las portadas son SVG: nítidas a cualquier tamaño y sin copia reducida. Si una
+// lección todavía tuviera WebP, se usa su versión de 800 px en el celular.
+const portada = (url) => {
+  const grande = typeof url === 'string' ? url : '';
+  const chica = grande.endsWith('.webp') ? `${grande.slice(0, -5)}-800.webp` : grande;
+  const srcset = grande.endsWith('.webp') ? `${chica} 800w, ${grande} 1200w` : '';
+  return { src: chica, srcset };
+};
 
 const root=document.getElementById('lessonApp');
 const slug=document.body.dataset.lesson||location.pathname.split('/').filter(Boolean).at(-1);
@@ -8,8 +14,9 @@ const lesson=lessonBySlug(slug);
 if(!lesson){root.innerHTML='<main class="wrap" style="padding:80px 0"><h1>Lección no encontrada</h1><p><a href="/lecciones/">Volver a todas las lecciones</a></p></main>';throw new Error('Unknown lesson');}
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const index=LESSONS.indexOf(lesson),prev=LESSONS[index-1],next=LESSONS[index+1];
+const artePortada=lesson.coverImage?portada(lesson.coverImage):null;
 const heroArt=lesson.coverImage
- ? `<div class="hero-art illustrated"><img src="${lesson.coverImage}" srcset="${small(lesson.coverImage)} 800w, ${lesson.coverImage} 1200w" sizes="(max-width:800px) 94vw, 470px" alt="Ilustración infantil de ${esc(lesson.title)}" width="1200" height="800" fetchpriority="high" decoding="async"></div>`
+ ? `<div class="hero-art illustrated"><img src="${esc(artePortada.src)}"${artePortada.srcset?` srcset="${esc(artePortada.srcset)}" sizes="(max-width:800px) 94vw, 470px"`:''} alt="Ilustración infantil de ${esc(lesson.title)}" width="1200" height="800" fetchpriority="high" decoding="async"></div>`
  : `<div class="hero-art emoji-art" role="img" aria-label="Ilustración de ${esc(lesson.title)}">${lesson.icon}</div>`;
 document.title=`${lesson.title} · Clase bíblica | Semillitas de Fe`;
 // Cada /lecciones/<slug>/index.html ya trae su propia descripción, más rica y

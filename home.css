@@ -65,7 +65,7 @@
   margin-bottom: 30px; border: 1px solid #cfe5df; border-radius: 26px;
   background: #fff; box-shadow: 0 14px 38px #15493c14;
 }
-.resume-cover { width: 100%; height: 100%; min-height: 170px; object-fit: cover; }
+.resume-cover { width: 100%; height: 100%; min-height: 170px; object-fit: cover; object-position: center; background: linear-gradient(160deg, #eaf7ff, #e6f7e3 60%, #fff5d8); }
 .resume-body { padding: 22px 26px; }
 .resume-label { display: inline-block; font-weight: 900; color: #2b7a5d; font-size: .9rem; }
 .resume-body h3 { margin: 6px 0; font-size: clamp(1.5rem, 3vw, 2rem); }
@@ -86,8 +86,9 @@
   box-shadow: 0 7px 20px #1e475812; transition: transform .18s ease, box-shadow .18s ease;
 }
 .feat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-.feat-cover { position: relative; display: block; aspect-ratio: 3 / 2; background: var(--sky); }
-.feat-cover img { width: 100%; height: 100%; object-fit: cover; }
+.feat-cover { position: relative; display: block; overflow: hidden; aspect-ratio: 3 / 2; background: var(--sky); }
+.feat-cover img { width: 100%; height: 100%; object-fit: cover; background: linear-gradient(160deg, #eaf7ff, #e6f7e3 60%, #fff5d8); transition: transform .5s ease; }
+.feat-card:hover .feat-cover img, .feat-card:focus-within .feat-cover img { transform: scale(1.04); }
 .feat-badge {
   position: absolute; left: 12px; top: 12px; padding: 7px 13px; border-radius: 999px;
   background: #17364a; color: #fff; font-weight: 900; font-size: .8rem;

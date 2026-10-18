@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="1200" height="800" role="img" aria-labelledby="titulo-portada">
+<title id="titulo-portada">Las dos tablas de los mandamientos en el monte Sinaí</title>
+<style>
+.pf{isolation:isolate}
+.tw{animation:sm-twinkle 3.6s ease-in-out infinite}
+.fl{animation:sm-float 7s ease-in-out infinite}
+.sw{animation:sm-sway 5.2s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+.swc{animation:sm-sway 4.4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+.pu{animation:sm-pulse 4.2s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+.wv{animation:sm-wave 8s ease-in-out infinite alternate}
+.wv2{animation:sm-wave 11s ease-in-out infinite alternate-reverse}
+.fm{animation:sm-flame 1.7s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+.rp{animation:sm-ripple 3.4s ease-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+.hp{animation:sm-hop 3.2s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+.sp{animation:sm-spin 90s linear infinite;transform-box:fill-box;transform-origin:50% 50%}
+.sp2{animation:sm-spin 55s linear infinite reverse;transform-box:fill-box;transform-origin:50% 50%}
+.rz{animation:sm-rise 5.5s ease-out infinite}
+.fa{animation:sm-fall 4.2s linear infinite}
+.df{animation:sm-drift 10s ease-in-out infinite alternate}
+.bt{animation:sm-flap 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 45%}
+.gl{animation:sm-glow 4.6s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+.tr{animation:sm-tremble 1.15s ease-in-out infinite}
+.nd{animation:sm-needle 4.8s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 50%}
+@keyframes sm-twinkle{0%,100%{opacity:.28;transform:scale(.8)}50%{opacity:1;transform:scale(1.18)}}
+@keyframes sm-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes sm-sway{0%,100%{transform:rotate(-2.4deg)}50%{transform:rotate(2.4deg)}}
+@keyframes sm-pulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:.92;transform:scale(1.07)}}
+@keyframes sm-wave{0%{transform:translateX(-16px)}100%{transform:translateX(16px)}}
+@keyframes sm-flame{0%,100%{transform:scale(1,1)}30%{transform:scale(.93,1.12) translateY(-1px)}65%{transform:scale(1.06,.9) translateY(1px)}}
+@keyframes sm-ripple{0%{transform:scale(.55);opacity:.6}80%{opacity:.08}100%{transform:scale(1.7);opacity:0}}
+@keyframes sm-hop{0%,100%{transform:translateY(0)}40%{transform:translateY(-8px)}62%{transform:translateY(-1px)}}
+@keyframes sm-spin{to{transform:rotate(360deg)}}
+@keyframes sm-rise{0%{transform:translateY(8px);opacity:0}25%{opacity:.85}100%{transform:translateY(-52px);opacity:0}}
+@keyframes sm-fall{0%{transform:translateY(-10px);opacity:0}25%{opacity:.8}100%{transform:translateY(60px);opacity:0}}
+@keyframes sm-drift{0%{transform:translateX(-9px)}100%{transform:translateX(9px)}}
+@keyframes sm-flap{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
+@keyframes sm-glow{0%,100%{opacity:.35;transform:scale(.97)}50%{opacity:.8;transform:scale(1.04)}}
+@keyframes sm-tremble{0%,100%{transform:translateX(0)}25%{transform:translateX(-1.6px)}75%{transform:translateX(1.6px)}}
+@keyframes sm-needle{0%,100%{transform:rotate(-10deg)}50%{transform:rotate(12deg)}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+<defs>
+<radialGradient id="vineta" cx="50%" cy="46%" r="72%">
+  <stop offset=".55" stop-color="#20303c" stop-opacity="0"/>
+  <stop offset="1" stop-color="#20303c" stop-opacity=".16"/>
+</radialGradient>
+<filter id="granoPapel" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="7" result="ruido"/>
+  <feColorMatrix in="ruido" type="saturate" values="0"/>
+</filter>
+<linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#8aa0b2"/><stop offset="1" stop-color="#d7dde0"/>
+  </linearGradient><radialGradient id="luzMonte" cx="50%" cy="40%" r="55%"><stop offset="0" stop-color="#fff6cb" stop-opacity=".8"/><stop offset="1" stop-color="#fff6cb" stop-opacity="0"/></radialGradient><linearGradient id="piedraTabla" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe7d6"/><stop offset="1" stop-color="#cfc3ac"/></linearGradient>
+</defs>
+<rect width="600" height="400" fill="url(#cielo)"/>
+    <defs><linearGradient id="rayo-300-18-380" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3b0" stop-opacity="0.35"/>
+      <stop offset=".7" stop-color="#fff3b0" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#fff3b0" stop-opacity="0"/>
+    </linearGradient></defs>
+  <g transform="translate(300 18)"><g class="gl" style="animation-duration:4s">
+    <path d="M -14 0 L 14 0 L 190 260 Q 0 296.4 -190 260 Z" fill="url(#rayo-300-18-380)"/>
+    <path d="M -7 0 L 7 0 L 76 244.4 Q 0 265.2 -76 244.4 Z" fill="url(#rayo-300-18-380)" opacity=".7"/>
+  </g></g>
+    <circle cx="300" cy="190" r="150" fill="url(#luzMonte)" class="gl"/>
+    <path d="M -20 400 L 300 108 L 620 400 Z" fill="#8d7f6e"/>
+    <path d="M 300 108 L 620 400 L 380 400 Z" fill="#7a6d5e" opacity=".7"/>
+    <path d="M 300 108 L 340 176 L 276 186 Z" fill="#b7a998" opacity=".65"/>
+    <g transform="translate(300 132) scale(0.9)" opacity="0.9">
+    <g class="fl" style="animation-delay:0s">
+      <ellipse cx="0" cy="0" rx="34" ry="19" fill="#ece6dc"/>
+      <ellipse cx="-26" cy="7" rx="22" ry="13" fill="#ece6dc"/>
+      <ellipse cx="26" cy="7" rx="24" ry="14" fill="#ece6dc"/>
+      <ellipse cx="6" cy="-12" rx="20" ry="16" fill="#ece6dc"/>
+    </g>
+  </g>
+    <g transform="translate(226 160) scale(0.6)" opacity="0.8">
+    <g class="fl" style="animation-delay:-2s">
+      <ellipse cx="0" cy="0" rx="34" ry="19" fill="#e5dfd4"/>
+      <ellipse cx="-26" cy="7" rx="22" ry="13" fill="#e5dfd4"/>
+      <ellipse cx="26" cy="7" rx="24" ry="14" fill="#e5dfd4"/>
+      <ellipse cx="6" cy="-12" rx="20" ry="16" fill="#e5dfd4"/>
+    </g>
+  </g>
+    <g transform="translate(374 156) scale(0.55)" opacity="0.75">
+    <g class="fl" style="animation-delay:-3s">
+      <ellipse cx="0" cy="0" rx="34" ry="19" fill="#e5dfd4"/>
+      <ellipse cx="-26" cy="7" rx="22" ry="13" fill="#e5dfd4"/>
+      <ellipse cx="26" cy="7" rx="24" ry="14" fill="#e5dfd4"/>
+      <ellipse cx="6" cy="-12" rx="20" ry="16" fill="#e5dfd4"/>
+    </g>
+  </g>
+    <g transform="translate(300 128) scale(0.9)">
+    <g class="fm" style="animation-delay:-0.8s">
+      <path d="M0 0 C -18 -8 -20 -30 -8 -44 C -6 -32 2 -30 4 -42 C 18 -28 16 -8 0 0 Z" fill="#f2914e"/>
+      <path d="M0 -3 C -11 -10 -12 -24 -4 -34 C -2 -24 4 -22 6 -30 C 13 -20 10 -8 0 -3 Z" fill="#ffd35d"/>
+      <path d="M0 -6 C -5 -12 -4 -19 0 -24 C 4 -19 5 -12 0 -6 Z" fill="#fff6c8"/>
+    </g>
+  </g>
+    <path d="M 248 108 L 258 138 L 244 142 L 256 172" stroke="#fff3b0" stroke-width="4" fill="none" stroke-linecap="round" class="gl"/>
+    <path d="M -20 400 L -20 349.99 C 90 310 150 340 235 326 S 380 344 450 328 S 570 342 620 322 L 620 400 Z" fill="#a5967c" opacity="1"/>
+    <path d="M -20 400 L -20 352 C 140 345 300 359 620 354.8 L 620 400 Z" fill="#b8a887"/>
+    <g transform="translate(272 356) rotate(-7)"><g transform="translate(0 0) scale(1.15)">
+    <path d="M -24 0 L -24 -66 Q -24 -80 -10 -80 L 10 -80 Q 24 -80 24 -66 L 24 0 Q 0 5 -24 0 Z" fill="url(#piedraTabla)"/>
+    <path d="M -20 -2 L -20 -64 Q -20 -74 -9 -74 L 8 -74 Q 20 -74 20 -62 L 20 -2 Q 0 2 -20 -2 Z" fill="#fff8e8" opacity=".35"/>
+    <path d="M -22 -58 H 4" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/><path d="M -17 -48 H 9" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/><path d="M -22 -38 H 4" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/><path d="M -17 -28 H 9" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/><path d="M -22 -18 H 4" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+  </g></g>
+    <g transform="translate(336 358) rotate(6)"><g transform="translate(0 0) scale(1.15)">
+    <path d="M -24 0 L -24 -66 Q -24 -80 -10 -80 L 10 -80 Q 24 -80 24 -66 L 24 0 Q 0 5 -24 0 Z" fill="url(#piedraTabla)"/>
+    <path d="M -20 -2 L -20 -64 Q -20 -74 -9 -74 L 8 -74 Q 20 -74 20 -62 L 20 -2 Q 0 2 -20 -2 Z" fill="#fff8e8" opacity=".35"/>
+    <path d="M -22 -58 H 4" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/><path d="M -17 -48 H 9" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/><path d="M -22 -38 H 4" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/><path d="M -17 -28 H 9" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/><path d="M -22 -18 H 4" stroke="#5c6f7d" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+  </g></g>
+    <ellipse cx="304" cy="362" rx="86" ry="10" fill="#1c2c3a" opacity=".14"/>
+    <g transform="translate(250 250)" opacity="0.6">
+    <path d="M0 -7 L2 -2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2 -2 Z" fill="#fff6d2"/>
+  </g>
+    <g transform="translate(356 236)" opacity="0.5">
+    <path d="M0 -7 L2 -2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2 -2 Z" fill="#fff6d2"/>
+  </g>
+<g style="pointer-events:none">
+  <rect width="600" height="400" fill="url(#vineta)"/>
+  <rect width="600" height="400" filter="url(#granoPapel)" opacity=".055" style="mix-blend-mode:multiply"/>
+</g>
+</svg>

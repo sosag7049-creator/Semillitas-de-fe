@@ -14,7 +14,7 @@
  * distintas sobre lo mismo, y funciona aunque el maestro no tenga cuenta.
  */
 
-import { LESSONS } from '/lesson-data.js?v=13';
+import { LESSONS } from '/lesson-data.js?v=14';
 import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=3';
 import {
   DESTACADAS, MATERIALES, MATERIALES_POR_DEFECTO, ROTACION_SEMANAL, semanaActual,
@@ -23,8 +23,13 @@ import {
 const safe = (valor) => String(valor ?? '').replace(/[&<>"']/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-/** Versión de 800 px de una portada, para que el celular no baje la de escritorio. */
-const pequena = (url) => (typeof url === 'string' && url.endsWith('.webp') ? `${url.slice(0, -5)}-800.webp` : url);
+/** Portada lista para pintar: los SVG se usan tal cual y los WebP llevan su copia de 800 px. */
+const portada = (url) => {
+  const grande = typeof url === 'string' ? url : '';
+  const chica = grande.endsWith('.webp') ? `${grande.slice(0, -5)}-800.webp` : grande;
+  const srcset = grande.endsWith('.webp') ? `${chica} 800w, ${grande} 1200w` : '';
+  return { src: chica, srcset };
+};
 
 const porSlug = new Map(LESSONS.map((leccion) => [leccion.slug, leccion]));
 const porId = new Map(LESSONS.map((leccion) => [String(leccion.id), leccion]));
@@ -87,7 +92,7 @@ function pintarContinuar() {
 
   zona.innerHTML = `
     <article class="resume-card">
-      <img class="resume-cover" src="${safe(pequena(seguir.coverImage))}" alt="" width="800" height="533" loading="lazy" decoding="async">
+      <img class="resume-cover" src="${safe(portada(seguir.coverImage).src)}" alt="" width="800" height="533" loading="lazy" decoding="async">
       <div class="resume-body">
         <span class="resume-label">${estado.completada ? '✓ Terminaste «' + safe(ultima.title) + '»' : '⏱️ Continúa donde quedaste'}</span>
         <h3>${safe(seguir.title)}</h3>
@@ -115,10 +120,11 @@ function leccionDestacada(ficha) {
 function tarjetaDestacada(ficha, leccion) {
   const materiales = MATERIALES[leccion.slug] || MATERIALES_POR_DEFECTO;
   const estado = avance(leccion);
+  const arte = portada(leccion.coverImage);
   return `
     <article class="feat-card feat-${safe(ficha.tono)}">
       <a class="feat-cover" href="/lecciones/${safe(leccion.slug)}/" tabindex="-1" aria-hidden="true">
-        <img src="${safe(pequena(leccion.coverImage))}" alt="" width="800" height="533" loading="lazy" decoding="async">
+        <img src="${safe(arte.src)}"${arte.srcset ? ` srcset="${safe(arte.srcset)}" sizes="(max-width:640px) 92vw, 320px"` : ''} alt="" width="800" height="533" loading="lazy" decoding="async">
         <span class="feat-badge">${safe(ficha.etiqueta)}</span>
       </a>
       <div class="feat-body">

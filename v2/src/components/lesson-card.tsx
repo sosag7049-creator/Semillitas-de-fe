@@ -18,7 +18,7 @@ export function LessonCard({ lesson }: { lesson: Lesson }) {
             alt={`Ilustración de la lección ${lesson.title}`}
             fill
             sizes="(min-width: 1024px) 340px, (min-width: 640px) 45vw, 100vw"
-            className="object-cover transition duration-300 group-hover:scale-[1.04]"
+            className="object-cover object-center transition duration-500 group-hover:scale-[1.04]"
           />
         )}
         <span

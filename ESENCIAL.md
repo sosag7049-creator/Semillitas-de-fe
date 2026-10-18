@@ -15,7 +15,7 @@ Semillitas de Fe, comprobado con las herramientas de `tools/`.
 | # | Elemento esencial | Por qué | Estado hoy |
 | :-: | --- | --- | :-: |
 | 1 | **Dirección propia con HTTPS** | Sin dominio propio no se ve serio; sin HTTPS el navegador avisa que es «no seguro». | ✅ `semillitasbiblicas.space` |
-| 2 | **Carga rápida** | Cada segundo de espera pierde visitantes. Lo más pesado manda. | ✅ Portadas en WebP con `srcset`, iconos de 3.8 MB a 255 KB |
+| 2 | **Carga rápida** | Cada segundo de espera pierde visitantes. Lo más pesado manda. | ✅ Portadas SVG de ~20 KB (nítidas a cualquier tamaño), iconos de 3.8 MB a 255 KB |
 | 3 | **Que se vea bien en el celular** | La mayoría de maestros entra desde el teléfono, muchas veces en la iglesia con datos. | ✅ Menú desplegable y rejilla de accesos bajo 900 px |
 | 4 | **Título y descripción distintos en cada página** | Si las 42 páginas dicen lo mismo, Google solo muestra una. | ✅ `title`, `description` y `canonical` propios |
 | 5 | **Navegación clara desde cualquier página** | El visitante nunca debería quedar atrapado. | ✅ Menú superior + seis accesos rápidos en la portada |
@@ -191,6 +191,27 @@ muy bien, pero falta la otra mitad de un ministerio infantil: las enseñanzas.
 | **5** | Fruto del Espíritu (9) y armadura de Dios (6) | Dos trimestres completos de contenido formativo. |
 | **6** | Hechos: Pentecostés, Pablo, la iglesia primitiva | Cierra el vacío más grande del contenido bíblico. |
 | **7** | Lotería bíblica, resumen para familias, asistencia | Aprovechan lo que ya existe; mucho valor con poco trabajo nuevo. |
+
+---
+
+## Las 39 portadas ilustradas
+
+Las portadas de lección **no son fotos ni imágenes generadas**: son escenas SVG
+dibujadas pieza por pieza con `tools/generar-portadas-svg.mjs`. Cada una tiene
+su propio cielo, su terreno y sus personajes planos de cuento, y un movimiento
+lento acorde a la historia (olas que se mecen, estrellas que titilan, llamas que
+arden, corazones que laten, la brújula que busca el norte).
+
+- **Se regeneran** con `node tools/generar-portadas-svg.mjs`. Escribe la misma
+  portada en `images/lessons/<slug>.svg` y en `v2/public/images/lessons/<slug>.svg`.
+- **Para revisarlas sin reescribirlas**: `node tools/generar-portadas-svg.mjs --revisar`.
+- **Las copias WebP se conservan a propósito.** `og:image` y las vistas previas
+  de WhatsApp, Facebook y X no leen SVG animados; para esos casos se sigue
+  usando la imagen fija. El sitio, en cambio, siempre pinta el SVG.
+- **Accesibilidad:** cada archivo lleva `<title>`, y todo el movimiento se apaga
+  con `@media (prefers-reduced-motion: reduce)`.
+- **Estilo:** contornos gruesos, formas redondeadas, sin rostros realistas. La
+  regla es que se vean como ilustraciones de cuento impreso, nunca como una IA.
 
 ---
 
