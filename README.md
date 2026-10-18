@@ -263,3 +263,19 @@ maestro pueda abrir la Biblia y comprobarlo.
 
 Ver **[`MEJORAS.md`](MEJORAS.md)** para el diagnóstico técnico completo y la
 lista de mejoras pendientes por prioridad.
+
+---
+
+## 🚧 Versión 2.0 (en desarrollo)
+
+En [`v2/`](v2/) se construye la nueva generación del sitio: **Next.js 15,
+TypeScript y Tailwind CSS 4**, con las 39 lecciones migradas automáticamente,
+búsqueda instantánea, quiz interactivo, páginas pre-renderizadas y CI con
+GitHub Actions (lint · tipos · build).
+
+```bash
+cd v2 && npm install && npm run dev
+```
+
+Consulta **[`v2/README.md`](v2/README.md)** para el stack, la hoja de ruta y
+las decisiones técnicas.

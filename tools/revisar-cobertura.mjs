@@ -16,7 +16,8 @@
  *
  * Revisa, lección por lección:
  *   1. Que exista su carpeta en /lecciones/ con index.html.
- *   2. Que existan sus dos portadas y no estén vacías.
+ *   2. Que existan sus dos portadas WebP (para redes sociales) y su portada
+ *      SVG animada (la que se ve en el sitio), y que las tres estén completas.
  *   3. Que tenga su versión para 3 a 5 años en `preschool-data.json`.
  *   4. Que tenga su lista de materiales en `home-destacadas.js`.
  *   5. Que el contenido esté completo (historia, preguntas, quiz, actividad,
@@ -92,13 +93,33 @@ for (const [indice, lesson] of LESSONS.entries()) {
   if (esTexto(lesson.prayer) && lesson.prayer.length < 80)
     avisos.push(`${donde}: la oración es muy corta (${lesson.prayer.length} caracteres).`);
 
-  /* Portadas: la grande y la de 800 px. */
+  /* Portadas: la grande y la de 800 px (redes sociales) y la escena SVG. */
   for (const sufijo of ['.webp', '-800.webp']) {
     const ruta = join(RAIZ, 'images', 'lessons', `${lesson.slug}${sufijo}`);
     if (!existsSync(ruta)) anotar(donde, `falta la portada images/lessons/${lesson.slug}${sufijo}.`);
     else if (statSync(ruta).size < 20_480)
       anotar(donde, `la portada ${lesson.slug}${sufijo} pesa menos de 20 KB: puede estar dañada.`);
   }
+
+  /* La portada que se ve en el catálogo y en la clase es un SVG animado. Debe
+   * existir en las dos copias y conservar su lienzo y su respeto por quien
+   * prefiere menos movimiento; si se rompe, la tarjeta queda en blanco. */
+  for (const ruta of [
+    join(RAIZ, 'images', 'lessons', `${lesson.slug}.svg`),
+    join(RAIZ, 'v2', 'public', 'images', 'lessons', `${lesson.slug}.svg`),
+  ]) {
+    const nombre = ruta.replace(RAIZ + '/', '');
+    if (!existsSync(ruta)) { anotar(donde, `falta la portada animada ${nombre}.`); continue; }
+    const contenido = readFileSync(ruta, 'utf8');
+    if (!contenido.includes('viewBox="0 0 600 400"'))
+      anotar(donde, `${nombre} no tiene el lienzo de 600 × 400 de la colección.`);
+    if (!contenido.includes('prefers-reduced-motion'))
+      anotar(donde, `${nombre} no respeta prefers-reduced-motion.`);
+    if (statSync(ruta).size < 6_000)
+      anotar(donde, `${nombre} pesa muy poco: puede estar incompleta.`);
+  }
+  if (!String(lesson.coverImage).endsWith('.svg'))
+    anotar(donde, `su portada (${lesson.coverImage}) no apunta al SVG animado.`);
 
   /* Contenido de la clase. */
   if (!Array.isArray(lesson.story) || lesson.story.length < 3)

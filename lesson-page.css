@@ -15,7 +15,7 @@ main section{padding:54px 0}.section-head{display:flex;align-items:center;gap:12
 .memory-card,.takeaway,.prayer,.age-card,.story-card,.question-card{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .story-card,.question-card,.takeaway,.age-card,.memory-card,.prayer{break-inside:avoid;page-break-inside:avoid}}
 .video-actions{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:12px}.video-actions .video-note{margin:0}
-.hero-art.illustrated{position:relative;display:block;width:100%;min-width:0;min-height:0;aspect-ratio:3/2;border:0;padding:0;background:transparent;isolation:isolate}.hero-art.illustrated img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit}
+.hero-art.illustrated{position:relative;display:block;width:100%;min-width:0;min-height:0;aspect-ratio:3/2;border:0;padding:0;background:linear-gradient(160deg,#eaf7ff,#e6f7e3 62%,#fff5d8);isolation:isolate;animation:none;box-shadow:0 18px 38px #17364a24,0 0 0 8px #fff,0 0 0 11px #e3efe9}.hero-art.illustrated img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:inherit}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.hero-art{animation:none}}
 .bible-version{font-size:.8125rem;line-height:1.6;color:#365467;margin:12px 0 20px}.verse-source{display:inline-block;color:inherit;font-size:.875rem;margin:0 0 18px;text-underline-offset:3px}.section-head span{line-height:1.5}
 

@@ -1,0 +1,27 @@
+# dependencias
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# producción
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# depuración
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# variables de entorno
+.env*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

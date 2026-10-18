@@ -1,7 +1,14 @@
-import { LESSONS } from '/lesson-data.js?v=13';
+import { LESSONS } from '/lesson-data.js?v=14';
 import { SERIES } from '/series-data.js?v=3';
-// Versión de 800 px de una portada, para que el celular no baje la de escritorio.
-const small = url => (typeof url === 'string' && url.endsWith('.webp') ? url.slice(0, -5) + '-800.webp' : url);
+// Las portadas son SVG dibujados a mano: se ven nítidos a cualquier tamaño y no
+// necesitan versión reducida. Si alguna lección todavía usa WebP, se sirve su
+// copia de 800 px en pantallas pequeñas para no bajar la de escritorio.
+const portada = (url) => {
+  const grande = typeof url === 'string' ? url : '';
+  const srcset = grande.endsWith('.webp') ? `${grande.slice(0, -5)}-800.webp 800w, ${grande} 1200w` : '';
+  const src = grande.endsWith('.webp') ? `${grande.slice(0, -5)}-800.webp` : grande;
+  return { src, srcset };
+};
 
 const safe=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
 const grid=document.getElementById('grid');
@@ -97,7 +104,8 @@ function render(){
   grid.innerHTML=filtered.map(lesson=>{
     const status=localStatus(lesson);
     const ideal=age==='3-5'&&IDEALES.has(lesson.slug);
-    return `<article class="lesson-card"><img class="lesson-cover" src="${safe(lesson.coverImage)}" srcset="${safe(small(lesson.coverImage))} 800w, ${safe(lesson.coverImage)} 1200w" sizes="(max-width:600px) 92vw, (max-width:900px) 46vw, 31vw" alt="Ilustración infantil de ${safe(lesson.title)}" width="1200" height="800" loading="lazy" decoding="async"><div class="lesson-body"><div class="lesson-top"><span class="lesson-number">LECCIÓN ${String(Number(lesson.id)+1).padStart(2,'0')}</span><span class="lesson-category">${safe(lesson.category)}</span></div><h2>${safe(lesson.title)}</h2>${ideal?'<span class="ideal-badge">⭐ Ideal para empezar</span>':''}<p>${safe(lesson.objective)}</p>${bloqueEdad(lesson)}<span class="lesson-reference">📖 ${safe(lesson.reference)}</span><span class="lesson-status ${status[1]}">${status[0]}</span><div class="lesson-actions"><a class="open" data-i="${safe(lesson.id)}" href="/lecciones/${safe(lesson.slug)}/">Abrir clase completa</a>${enlaceImprimible(lesson)}</div></div></article>`}).join('')||'<div class="empty"><h2>No encontramos esa lección</h2><p>Prueba con otro personaje, pasaje o tema.</p></div>';
+    const arte=portada(lesson.coverImage);
+    return `<article class="lesson-card"><img class="lesson-cover" src="${safe(arte.src)}"${arte.srcset?` srcset="${safe(arte.srcset)}" sizes="(max-width:600px) 92vw, (max-width:900px) 46vw, 31vw"`:''} alt="Ilustración infantil de ${safe(lesson.title)}" width="1200" height="800" loading="lazy" decoding="async"><div class="lesson-body"><div class="lesson-top"><span class="lesson-number">LECCIÓN ${String(Number(lesson.id)+1).padStart(2,'0')}</span><span class="lesson-category">${safe(lesson.category)}</span></div><h2>${safe(lesson.title)}</h2>${ideal?'<span class="ideal-badge">⭐ Ideal para empezar</span>':''}<p>${safe(lesson.objective)}</p>${bloqueEdad(lesson)}<span class="lesson-reference">📖 ${safe(lesson.reference)}</span><span class="lesson-status ${status[1]}">${status[0]}</span><div class="lesson-actions"><a class="open" data-i="${safe(lesson.id)}" href="/lecciones/${safe(lesson.slug)}/">Abrir clase completa</a>${enlaceImprimible(lesson)}</div></div></article>`}).join('')||'<div class="empty"><h2>No encontramos esa lección</h2><p>Prueba con otro personaje, pasaje o tema.</p></div>';
   document.dispatchEvent(new CustomEvent('semillitas:catalog-rendered'));
 }
 

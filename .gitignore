@@ -39,9 +39,10 @@ dist/
 build/
 .cache/
 # Los crea `npm install jsdom` para la prueba de la portada. El sitio no usa
-# empaquetador ni compilación, así que no deben subirse.
-package.json
-package-lock.json
+# empaquetador ni compilación, así que no deben subirse. Anclados a la raíz
+# para no excluir los de la app v2/ (que sí tiene su propio package.json).
+/package.json
+/package-lock.json
 
 # Secretos: nunca subir llaves ni variables de entorno
 .env

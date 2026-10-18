@@ -10,7 +10,10 @@ const slugs=['la-creacion','noe-y-el-arca','abraham-espera','jose-perdona','mois
 // Abraham usa ✨ («como las estrellas del cielo») y la ⭐ de Belén queda
 // reservada para «Jesús nace».
 const icons=['🌍','🌈','✨','🧥','🔥','🌊','📜','🎺','🌾','👂','🪨','🤝','👑','🏺','👸','🦁','🐋','⭐','⛵','🥖','❤️','🐑','🌳','☀️'];
-const coverImages=Object.fromEntries(slugs.map(slug=>[slug,`/images/lessons/${slug}.webp`]));
+// Portadas SVG dibujadas a mano (ver tools/generar-portadas-svg.mjs): nítidas,
+// ligeras y con movimiento suave. Las copias WebP siguen en la carpeta porque
+// las necesitan og:image y las vistas previas de las redes sociales.
+const coverImages=Object.fromEntries(slugs.map(slug=>[slug,`/images/lessons/${slug}.svg`]));
 
 const stories=[
  [['Antes de todo','Antes de que existieran las montañas, los animales o las personas, Dios ya estaba allí. Dios habló y comenzó a crear un mundo bueno, hermoso y ordenado.'],['Siete días maravillosos','Dios hizo la luz; el cielo; la tierra, el mar y las plantas; el sol, la luna y las estrellas; los peces y las aves; los animales y las personas. El séptimo día descansó.'],['Una creación muy especial','Dios creó al ser humano a su imagen. Eso significa que cada niño y cada niña tiene gran valor. Dios nos encargó cuidar lo que hizo.']],
@@ -146,7 +149,7 @@ export const LESSONS=PRINTABLES.slice(0,24).map((base,i)=>({
  prayer:`Señor, gracias por enseñarnos por medio de ${base.title}. Ayúdanos a recordar que ${base.objective.toLowerCase()}. Danos amor y valor para vivirlo esta semana. En el nombre de Jesús, amén.`
 })).concat([...ADDITIONAL_LESSONS,...SECOND_BLOCK,...THIRD_BLOCK,...FOURTH_BLOCK].map((extra,i)=>({
  ...PRINTABLES[24+i], ...extra, bibleVersion:BIBLE_VERSION,
- coverImage:`/images/lessons/${extra.slug}.webp`,age:'3 a 10 años',duration:'45 a 60 minutos',
+ coverImage:`/images/lessons/${extra.slug}.svg`,age:'3 a 10 años',duration:'45 a 60 minutos',
  videoUrl:extra.videoId?`https://www.youtube.com/watch?v=${extra.videoId}`:`https://www.youtube.com/results?search_query=${encodeURIComponent(extra.videoQuery)}`,
  printable:`/printables.html?leccion=${PRINTABLES[24+i].id}`
 })));
