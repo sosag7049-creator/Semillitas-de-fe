@@ -9,7 +9,7 @@
  * distintas sobre lo mismo.
  */
 
-import { LESSONS } from '/lesson-data.js?v=16';
+import { LESSONS } from '/lesson-data.js?v=17';
 import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=3';
 
 const safe = (value) =>
