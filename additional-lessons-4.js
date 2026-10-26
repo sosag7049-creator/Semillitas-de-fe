@@ -17,6 +17,7 @@ export const FOURTH_BLOCK = [{
   activity: {title: 'El racimo de la confianza', steps: ['Recorten un racimo de papel con doce círculos de uva. Escriban en cada círculo una promesa o un cuidado de Dios.', 'Formen dos grupos: uno representa a los diez que tuvieron miedo y otro a Caleb y Josué. Cada grupo dice su frase con respeto, sin burlas.', 'Cuenten juntos hasta cuarenta, como los días del viaje, y cada vez que lleguen a diez digan: «Dios va con nosotros».', 'Animen a un compañero con una frase que ayude a no rendirse. Nadie queda fuera.', 'Recuerden que esta dramatización es una representación sencilla del relato, sin escenas que asusten.'],
   },
   memory: {text: 'Si Jehová se agrada de nosotros, él nos llevará a esta tierra, y nos la entregará', reference: 'Números 14:8', excerpt: true, sourceUrl: 'https://www.bible.com/es/bible/149/NUM.14.8.RVR1960'},
+  videoId: 'TJZfyp3mnyM', // Trueway Kids · «Los 12 Espías» (Números 13–14)
   videoQuery: 'los doce espías Caleb y Josué historia bíblica animada para niños',
   prayer: 'Señor, gracias porque tú cumples lo que prometes. Ayúdanos a no dejar que el miedo decida por nosotros, a hablar la verdad con respeto y a confiar en ti como Caleb y Josué. Danos valor para dar el siguiente paso. En el nombre de Jesús, amén.',
 }, {
@@ -38,6 +39,7 @@ export const FOURTH_BLOCK = [{
   activity: {title: 'Siete veces al agua', steps: ['Formen una fila. Cada niño dice un número del uno al siete, en orden, y al llegar al siete todos juntos dicen: «Dios cuida de mí».', 'Dibujen ondas de agua en una hoja azul y peguen encima la silueta de Naamán recibiendo el mensaje.', 'Representen con gestos la frase de los criados: «Si el profeta te mandara algo grande, ¿no lo harías?».', 'Escojan una instrucción pequeña y buena para practicar esta semana, como ordenar, esperar turno o decir la verdad.', 'No se representa la enfermedad: usamos solo el agua, el mensaje y la obediencia.'],
   },
   memory: {text: 'su carne se volvió como la carne de un niño, y quedó limpio', reference: '2 Reyes 5:14', excerpt: true, sourceUrl: 'https://www.bible.com/es/bible/149/2KI.5.14.RVR1960'},
+  videoId: 'V-iDhCs4rmE', // Trueway Kids · «Naamán» (2 Reyes 5)
   videoQuery: 'Naamán sanado Eliseo historia bíblica animada para niños',
   prayer: 'Señor, gracias porque tú cuidas de nosotros y puedes sanar. Ayúdanos a decir la verdad con respeto y a obedecer con prontitud, aunque las instrucciones parezcan sencillas. Quita de nosotros el enojo y danos un corazón dispuesto. En el nombre de Jesús, amén.',
 }, {
@@ -59,6 +61,7 @@ export const FOURTH_BLOCK = [{
   activity: {title: 'El muro de todos', steps: ['Repartan cajitas o bloques de papel. Cada niño construye un tramo del «muro» del salón.', 'Escriban en su bloque una tarea en la que puede ayudar: ordenar, repartir, barrer, acompañar, avisar a un adulto.', 'Nombren dos «vigías» que solo observan y avisan si alguien necesita ayuda. Cambien de vigías varias veces.', 'Cuenten juntos hasta cincuenta y dos, como los días que duró la obra, y celebren que todos participaron.', 'Nadie compite: si un bloque no alcanza, se comparte el material.'],
   },
   memory: {text: 'Edificamos, pues, el muro, y toda la muralla fue terminada hasta la mitad de su altura, porque el pueblo tuvo ánimo para trabajar', reference: 'Nehemías 4:6', excerpt: true, sourceUrl: 'https://www.bible.com/es/bible/149/NEH.4.6.RVR1960'},
+  videoId: 'UMTFW-G8Fs0', // Trueway Kids · «Nehemías» (Nehemías 1–6)
   videoQuery: 'Nehemías reconstruye el muro de Jerusalén historia bíblica para niños',
   prayer: 'Señor, gracias por el trabajo que se hace en equipo. Ayúdanos a orar antes de actuar, a hacer bien nuestra parte y a cuidar de los demás. Danos ánimo para no rendirnos cuando la tarea es larga. En el nombre de Jesús, amén.',
 }, {
@@ -80,6 +83,7 @@ export const FOURTH_BLOCK = [{
   activity: {title: 'Acompañar sin juzgar', steps: ['Siéntense en círculo. Un niño cuenta algo difícil de forma sencilla y los demás escuchan sin interrumpir ni dar consejos.', 'Practiquen tres frases que ayudan: «Estoy contigo», «¿Quieres que oremos?», «¿Con quién quieres hablar?».', 'Dibujen una mano abierta y escriban dentro dos maneras de acompañar a alguien triste.', 'Den gracias a Dios juntos, aunque haya cosas difíciles, como hizo Job.', 'Nadie está obligado a contar algo personal: se puede usar una situación imaginaria.'],
   },
   memory: {text: 'Jehová dio, y Jehová quitó; sea el nombre de Jehová bendito', reference: 'Job 1:21', excerpt: true, sourceUrl: 'https://www.bible.com/es/bible/149/JOB.1.21.RVR1960'},
+  videoId: 'DSJM1f4ejIw', // Trueway Kids · «Job» (Job 1–42)
   videoQuery: 'Job confía en Dios historia bíblica para niños',
   prayer: 'Señor, gracias porque podemos hablar contigo con sinceridad. Enséñanos a confiar en tu sabiduría cuando no entendemos lo que pasa, y a acompañar con cariño a quien está triste, sin juzgarlo. En el nombre de Jesús, amén.',
 }, {
@@ -101,6 +105,7 @@ export const FOURTH_BLOCK = [{
   activity: {title: 'Salmo 23 con gestos', steps: ['Aprendan un gesto por frase: pastor (mano sobre los ojos), pastos (manos abiertas), aguas (olas con las manos), vara y cayado (brazos cruzados), copa (manos en forma de vaso).', 'Repitan el Salmo frase por frase, primero con el maestro y después todos juntos.', 'Dibujen una oveja junto a un río tranquilo y escriban debajo una frase del Salmo.', 'Escojan un día de la semana para repetirlo en familia.', 'Los más pequeños pueden participar solo con los gestos.'],
   },
   memory: {text: 'Jehová es mi pastor; nada me faltará', reference: 'Salmo 23:1', excerpt: true, sourceUrl: 'https://www.bible.com/es/bible/149/PSA.23.1.RVR1960'},
+  videoId: 'gDscP_rrZFE', // Trueway Kids · «El Señor es mi pastor» (Salmo 23)
   videoQuery: 'Salmo 23 para niños el Señor es mi pastor canción y explicación',
   prayer: 'Señor, gracias porque eres nuestro pastor y cuidas de nosotros. Ayúdanos a descansar en ti, a caminar por tus sendas y a no tener miedo cuando el camino se pone oscuro, porque tú estás con nosotros. En el nombre de Jesús, amén.',
 }, {
@@ -122,6 +127,7 @@ export const FOURTH_BLOCK = [{
   activity: {title: 'Heme aquí, envíame a mí', steps: ['Canten o repitan tres veces: «Santo, santo, santo es Jehová de los ejércitos». Cada vez puede subir un poco el volumen.', 'Formen un círculo. El maestro dice: «¿A quién enviaré?» y cada niño responde: «Heme aquí, envíame a mí», con la mano levantada.', 'Cada uno elige una tarea sencilla para la semana: ordenar, saludar a alguien, ayudar a llevar algo, invitar a jugar a un compañero.', 'Escriban su tarea en un papel con forma de llama y colóquenla en un mural del salón.', 'Esta actividad es una representación sencilla: el carbón del altar no se imita con fuego real.'],
   },
   memory: {text: 'Heme aquí, envíame a mí', reference: 'Isaías 6:8', excerpt: true, sourceUrl: 'https://www.bible.com/es/bible/149/ISA.6.8.RVR1960'},
+  videoId: 'KpLMUjM4fGQ', // Isaías 6 animado en español · «Heme aquí, envíame a mí»
   videoQuery: 'el llamado de Isaías historia bíblica animada para niños',
   prayer: 'Señor, gracias porque eres santo y tu gloria llena la tierra. Reconozco que necesito tu perdón. Aquí estoy: envíame y ayúdame a servirte con alegría en mi casa, en mi iglesia y con mis amigos. En el nombre de Jesús, amén.',
 }, {
@@ -143,6 +149,7 @@ export const FOURTH_BLOCK = [{
   activity: {title: 'La Palabra en casa', steps: ['Dibujen una casa con una puerta grande. Escriban en la puerta una frase de Deuteronomio 6:5.', 'Repartan tarjetas con cuatro momentos: al sentarse, al caminar, al acostarse y al levantarse. Cada niño elige uno y dice qué haría en ese momento.', 'Escriban un compromiso familiar sencillo: leer un versículo juntos, orar antes de dormir o cantar un cántico en el camino.', 'Repitan juntos: «Amarás a Jehová tu Dios de todo tu corazón».', 'Nadie comparte información privada de su familia: el compromiso puede ser personal.'],
   },
   memory: {text: 'Y amarás a Jehová tu Dios de todo tu corazón, y de toda tu alma, y con todas tus fuerzas', reference: 'Deuteronomio 6:5', excerpt: true, sourceUrl: 'https://www.bible.com/es/bible/149/DEU.6.5.RVR1960'},
+  videoId: 'Cxi1ORj6Oq4', // Historykids · «Los 2 grandes mandamientos» (Deuteronomio 6:5; Mateo 22:37)
   videoQuery: 'amarás a Dios de todo tu corazón Deuteronomio 6 para niños',
   prayer: 'Señor, gracias porque tú eres nuestro Dios y nos amaste primero. Ayúdanos a amarte con todo el corazón, a guardar tu Palabra y a hablar de ti en casa y en el camino. Que nuestra vida muestre que te amamos. En el nombre de Jesús, amén.',
 }, {
@@ -164,6 +171,10 @@ export const FOURTH_BLOCK = [{
   activity: {title: 'La brújula del corazón', steps: ['Hagan una brújula de papel con cuatro puntos: Ora, Lee, Pregunta, Actúa.', 'Cuenten una decisión sencilla, como elegir con quién jugar o cómo usar el tiempo, y recorran los cuatro puntos juntos.', 'Escriban en una tarjeta una decisión que quieren poner en las manos de Dios esta semana.', 'Repitan juntos: «Fíate de Jehová de todo tu corazón».', 'Los casos que se cuenten deben ser situaciones imaginarias o generales, no problemas privados.'],
   },
   memory: {text: 'Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia', reference: 'Proverbios 3:5', excerpt: true, sourceUrl: 'https://www.bible.com/es/bible/149/PRO.3.5.RVR1960'},
+  // Canción con movimientos del versículo: no hay una historia narrada para
+  // Proverbios 3:5-6, así que el video enseña el texto cantado, que es lo que
+  // la clase pide memorizar.
+  videoId: 'UF_ITXuJ_Go', // Canta La Biblia · «¡Confía!» (Proverbios 3:5-6)
   videoQuery: 'confía en Jehová de todo tu corazón Proverbios 3 para niños',
   prayer: 'Señor, gracias porque tú ves el camino completo y nosotros solo un tramo. Ayúdanos a confiar en ti de todo corazón, a reconocerte en cada decisión y a pedir consejo sabio. Endereza nuestros caminos. En el nombre de Jesús, amén.',
 }];

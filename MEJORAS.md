@@ -286,6 +286,7 @@ al menos un plan.
 | --- | --- |
 | `tools/revisar-cobertura.mjs` | Que ninguna clase se quede a medias: carpeta, dos portadas, consigna de párvulos, materiales y contenido completo |
 | `tools/revisar-calendario.mjs` | Que el contenido no dependa del calendario religioso (adviento, cuaresma, Semana Santa, Navidad…) |
+| `tools/revisar-videos.mjs` | Que ninguna clase se quede sin video: cuáles ya tienen uno revisado, cuáles muestran la búsqueda guiada y si algún identificador se repite, está mal escrito o ya no existe en YouTube |
 
 La segunda cubre un hueco real: `revisar-biblia.mjs` vigila la traducción, el
 canon y el vocabulario, pero **no** el encuadre de temporada, que es por donde
@@ -300,6 +301,12 @@ se habían colado las tres líneas corregidas el 14 de octubre.
 - `lesson-page.js` (`?v=15`) muestra la búsqueda de video cuando una clase
   todavía no tiene un video revisado, en vez de un reproductor vacío. Las ocho
   clases nuevas no presumen de un video que nadie ha verificado.
+- Las ocho clases **ya tienen video revisado** (Trueway Kids para los doce
+  espías, Naamán, Nehemías, Job y el Salmo 23; Isaías 6 animado para el llamado
+  de Isaías; Historykids para los dos grandes mandamientos). «Confía de todo
+  corazón» usa la canción con movimientos de Proverbios 3:5-6: al no haber una
+  historia narrada, el video enseña el versículo cantado, que es justo lo que la
+  clase pide memorizar. La búsqueda guiada se conserva como respaldo.
 - `index.html` se resincronizó con el catálogo, `sitemap.xml` pasó a 48
   direcciones y el caché del service worker se renombró a
   `semillitas-v58-catalogo-39`.
@@ -312,9 +319,10 @@ node tools/revisar-series.mjs       node tools/revisar-destacadas.mjs
 node tools/revisar-plataforma.mjs   node tools/revisar-juegos.mjs
 node tools/sincronizar-portada.mjs  node tools/revisar-cobertura.mjs
 node tools/revisar-calendario.mjs
+node tools/revisar-videos.mjs
 ```
 
-Las nueve terminan en verde: 39 lecciones publicadas, 29 libros citados y
+Las diez terminan en verde: 39 lecciones publicadas, 29 libros citados y
 39 lecciones usadas en los planes.
 
 ---
