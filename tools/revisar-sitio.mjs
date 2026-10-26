@@ -20,6 +20,10 @@
  *      `cache.addAll` se cae entero y el modo sin conexión deja de funcionar.
  *   6. Que las etiquetas <meta> no lleven HTML dentro del content.
  *   7. Que cada lección tenga canonical, descripción propia e imagen real.
+ *   8. Que ningún archivo publicado lleve marcas de conflicto de Git
+ *      (`<<<<<<<`, `=======`, `>>>>>>>`). Un rebase mal resuelto dejó las
+ *      marcas en `sw.js` y en siete archivos más: el service worker se caía
+ *      entero en el sitio publicado y ninguna revisión lo detectaba.
  *
  * Devuelve código de salida 1 si encuentra algo, para poder usarlo en CI.
  */
@@ -95,6 +99,18 @@ for (const archivo of paginas) {
       : false;
     if (!existe) anotar(fallos, nombre, `enlace roto: ${original}`);
   }
+}
+
+/* 8 · Marcas de conflicto de Git -------------------------------------- *
+ * Un archivo con `<<<<<<<` no es válido ni como HTML ni como JavaScript: el
+ * navegador se queda con la primera mitad y descarta el resto. Es un error de
+ * quien fusiona, no del contenido, así que se revisa en todo el sitio. */
+const MARCA_CONFLICTO = /^(<{7}|={7}|>{7})(\s|$)/m;
+for (const archivo of archivos.filter((f) => /\.(html|js|mjs|css|json|md|xml|txt|webmanifest)$/.test(f))) {
+  const texto = readFileSync(archivo, 'utf8');
+  const encontrada = texto.match(MARCA_CONFLICTO);
+  if (encontrada)
+    anotar(fallos, relativo(archivo), `tiene una marca de conflicto de Git sin resolver («${encontrada[0].trim()}»).`);
 }
 
 /* 4 y 5 · Versiones (?v=) y precarga del service worker --------------- */

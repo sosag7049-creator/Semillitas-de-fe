@@ -9,11 +9,7 @@
  * distintas sobre lo mismo.
  */
 
-<<<<<<< HEAD
 import { LESSONS } from '/lesson-data.js?v=16';
-=======
-import { LESSONS } from '/lesson-data.js?v=16';
->>>>>>> e379c5a (Confía de todo corazón: video revisado, ya ninguna clase queda sin video)
 import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=3';
 
 const safe = (value) =>

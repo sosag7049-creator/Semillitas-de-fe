@@ -1,14 +1,7 @@
-<<<<<<< HEAD
-const CACHE='semillitas-v62-videos-completos';
+const CACHE='semillitas-v63-conflictos-resueltos';
 // Refresh the account presentation for installed/mobile visitors.
 const ACCOUNT_ASSETS=['/account-ui.css?v=3','/icons/bible-avatars.webp?v=3'];
 const CORE=['/board-game.js?v=3','/board-game.css?v=2','/agenda.js?v=2','/agenda-model.js','/agenda-store.js','/agenda.css?v=1','/','/index.html','/lecciones/','/juegos/','/juegos/index.html','/juegos.js?v=6','/juegos.css?v=7','/home-cinematic.css?v=7','/home-cinematic.js?v=3','/media/hero-poster.webp','/media/portada-amanecer.jpg','/lessons-page.css?v=6','/lessons-page.js?v=7','/offline.html','/404.html','/manifest.webmanifest','/auth.css','/auth-fixes.css?v=2','/teacher-store.js','/teacher-panel.js?v=2','/teacher-panel.css','/printables-home.js?v=4','/printables-home.css','/printables.html','/printables-page.js?v=4','/printables-page.css?v=3','/printables-data.js','/lesson-data.js?v=16','/lesson-page.js?v=16','/lesson-page.css?v=10','/images/lessons/la-creacion.svg','/images/lessons/noe-y-el-arca.svg','/images/lessons/david-y-goliat.svg','/icons/icon-192.png','/icons/icon-512.png','/icons/apple-touch-icon.png'];
-=======
-const CACHE='semillitas-v62-videos-completos';
-// Refresh the account presentation for installed/mobile visitors.
-const ACCOUNT_ASSETS=['/account-ui.css?v=3','/icons/bible-avatars.webp?v=3'];
-const CORE=['/board-game.js?v=3','/board-game.css?v=2','/agenda.js?v=2','/agenda-model.js','/agenda-store.js','/agenda.css?v=1','/','/index.html','/lecciones/','/juegos/','/juegos/index.html','/juegos.js?v=6','/juegos.css?v=7','/home-cinematic.css?v=7','/home-cinematic.js?v=3','/media/hero-poster.webp','/media/portada-amanecer.jpg','/lessons-page.css?v=6','/lessons-page.js?v=7','/offline.html','/404.html','/manifest.webmanifest','/auth.css','/auth-fixes.css?v=2','/teacher-store.js','/teacher-panel.js?v=2','/teacher-panel.css','/printables-home.js?v=4','/printables-home.css','/printables.html','/printables-page.js?v=4','/printables-page.css?v=3','/printables-data.js','/lesson-data.js?v=16','/lesson-page.js?v=16','/lesson-page.css?v=10','/images/lessons/la-creacion.svg','/images/lessons/noe-y-el-arca.svg','/images/lessons/david-y-goliat.svg','/icons/icon-192.png','/icons/icon-512.png','/icons/apple-touch-icon.png'];
->>>>>>> e379c5a (Confía de todo corazón: video revisado, ya ninguna clase queda sin video)
 CORE.push('/sion-widget.js?v=4','/sion-widget.css?v=2','/images/compartir.jpg');
 CORE.push('/accessibility.css?v=2','/pwa-register.js?v=1');
 CORE.push('/privacidad.html','/terminos.html','/contacto.html','/pagina.css?v=1');
