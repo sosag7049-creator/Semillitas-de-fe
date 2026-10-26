@@ -211,6 +211,20 @@ Vigila la regla del proyecto: el contenido se elige por el pasaje que enseña,
 no por el calendario religioso. Busca adviento, cuaresma, Semana Santa, Navidad
 y demás encuadres de temporada en las páginas, el contenido y los planes.
 
+**9. Revisión de videos** — que ninguna clase se quede sin video:
+
+```bash
+node tools/revisar-videos.mjs              # sin internet
+node tools/revisar-videos.mjs --en-linea   # además comprueba cada video
+```
+
+Recuerda qué clases ya tienen un video revisado y cuáles siguen mostrando la
+búsqueda guiada, comprueba que cada identificador de YouTube sea válido, que
+ninguna clase repita el video de otra y que el enlace coincida con el video.
+Con `--en-linea` pregunta por cada video a YouTube y muestra su título y su
+canal: si un video está retirado o no se deja insertar, la clase se queda con un
+reproductor vacío y aquí aparece el aviso.
+
 ### Publicar los cambios
 
 Al subir a la rama `main`, GitHub Pages reconstruye el sitio en 1-2 minutos.

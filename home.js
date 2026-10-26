@@ -14,7 +14,7 @@
  * distintas sobre lo mismo, y funciona aunque el maestro no tenga cuenta.
  */
 
-import { LESSONS } from '/lesson-data.js?v=14';
+import { LESSONS } from '/lesson-data.js?v=15';
 import { SERIES, SERIE_RECOMENDADA } from '/series-data.js?v=3';
 import {
   DESTACADAS, MATERIALES, MATERIALES_POR_DEFECTO, ROTACION_SEMANAL, semanaActual,

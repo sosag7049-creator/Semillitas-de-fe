@@ -1,4 +1,4 @@
-import { LESSONS, lessonBySlug } from '/lesson-data.js?v=14';
+import { LESSONS, lessonBySlug } from '/lesson-data.js?v=15';
 // Las portadas son SVG: nítidas a cualquier tamaño y sin copia reducida. Si una
 // lección todavía tuviera WebP, se usa su versión de 800 px en el celular.
 const portada = (url) => {
