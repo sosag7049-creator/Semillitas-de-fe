@@ -1,4 +1,8 @@
-import { LESSONS } from '/lesson-data.js?v=15';
+<<<<<<< HEAD
+import { LESSONS } from '/lesson-data.js?v=16';
+=======
+import { LESSONS } from '/lesson-data.js?v=16';
+>>>>>>> e379c5a (Confía de todo corazón: video revisado, ya ninguna clase queda sin video)
 const $=id=>document.getElementById(id),safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const tabs=[...document.querySelectorAll('.game-tab')],panels={roulette:$('game-roulette'),memory:$('game-memory'),who:$('game-who'),board:$('game-board')};
 tabs.forEach(tab=>tab.addEventListener('click',()=>{tabs.forEach(x=>{const active=x===tab;x.classList.toggle('active',active);x.setAttribute('aria-selected',String(active))});Object.entries(panels).forEach(([key,p])=>p.hidden=key!==tab.dataset.game)}));

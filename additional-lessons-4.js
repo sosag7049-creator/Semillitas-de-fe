@@ -171,6 +171,10 @@ export const FOURTH_BLOCK = [{
   activity: {title: 'La brújula del corazón', steps: ['Hagan una brújula de papel con cuatro puntos: Ora, Lee, Pregunta, Actúa.', 'Cuenten una decisión sencilla, como elegir con quién jugar o cómo usar el tiempo, y recorran los cuatro puntos juntos.', 'Escriban en una tarjeta una decisión que quieren poner en las manos de Dios esta semana.', 'Repitan juntos: «Fíate de Jehová de todo tu corazón».', 'Los casos que se cuenten deben ser situaciones imaginarias o generales, no problemas privados.'],
   },
   memory: {text: 'Fíate de Jehová de todo tu corazón, y no te apoyes en tu propia prudencia', reference: 'Proverbios 3:5', excerpt: true, sourceUrl: 'https://www.bible.com/es/bible/149/PRO.3.5.RVR1960'},
+  // Canción con movimientos del versículo: no hay una historia narrada para
+  // Proverbios 3:5-6, así que el video enseña el texto cantado, que es lo que
+  // la clase pide memorizar.
+  videoId: 'UF_ITXuJ_Go', // Canta La Biblia · «¡Confía!» (Proverbios 3:5-6)
   videoQuery: 'confía en Jehová de todo tu corazón Proverbios 3 para niños',
   prayer: 'Señor, gracias porque tú ves el camino completo y nosotros solo un tramo. Ayúdanos a confiar en ti de todo corazón, a reconocerte en cada decisión y a pedir consejo sabio. Endereza nuestros caminos. En el nombre de Jesús, amén.',
 }];

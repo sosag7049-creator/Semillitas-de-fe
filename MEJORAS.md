@@ -301,11 +301,12 @@ se habían colado las tres líneas corregidas el 14 de octubre.
 - `lesson-page.js` (`?v=15`) muestra la búsqueda de video cuando una clase
   todavía no tiene un video revisado, en vez de un reproductor vacío. Las ocho
   clases nuevas no presumen de un video que nadie ha verificado.
-- Siete de esas ocho clases **ya tienen video revisado** (Trueway Kids para los
-  doce espías, Naamán, Nehemías, Job y el Salmo 23; Isaías 6 animado para el
-  llamado de Isaías; Historykids para los dos grandes mandamientos). «Confía de
-  todo corazón» sigue con la búsqueda guiada porque todavía no hay un video en
-  español que explique Proverbios 3:5-6 a los niños.
+- Las ocho clases **ya tienen video revisado** (Trueway Kids para los doce
+  espías, Naamán, Nehemías, Job y el Salmo 23; Isaías 6 animado para el llamado
+  de Isaías; Historykids para los dos grandes mandamientos). «Confía de todo
+  corazón» usa la canción con movimientos de Proverbios 3:5-6: al no haber una
+  historia narrada, el video enseña el versículo cantado, que es justo lo que la
+  clase pide memorizar. La búsqueda guiada se conserva como respaldo.
 - `index.html` se resincronizó con el catálogo, `sitemap.xml` pasó a 48
   direcciones y el caché del service worker se renombró a
   `semillitas-v58-catalogo-39`.
