@@ -1,4 +1,6 @@
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2.57.4";
+// El cliente se sirve desde el propio sitio (vendor/) en vez de pedirlo a una
+// CDN externa: menos peticiones, funciona sin conexión y sin depender de esm.sh.
+import { createClient } from "/vendor/supabase-js.min.js?v=2.57.4";
 import { createTeacherStore, request } from "./teacher-store.js";
 import { mountTeacherPanel } from "./teacher-panel.js?v=2";
 

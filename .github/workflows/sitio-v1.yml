@@ -1,0 +1,60 @@
+name: Sitio v1 · revisores
+
+# El sitio de la raíz no tiene build: son HTML, CSS y JS planos que GitHub Pages
+# publica tal cual. Eso lo hace rápido, pero también significa que nada impide
+# subir un enlace roto, un `?v=` descuadrado o una portada que falta.
+#
+# `tools/revisar-*.mjs` ya existía y atrapa exactamente esos fallos (nació
+# después de que /series/ se subiera cortada). Corría solo cuando alguien se
+# acordaba de lanzarlo a mano; ahora se ejecuta en cada push.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "v2/**"
+      - "**/*.md"
+  pull_request:
+    paths-ignore:
+      - "v2/**"
+      - "**/*.md"
+
+jobs:
+  revisar:
+    name: Revisores del sitio
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Los revisores son Node puro: no hay dependencias que instalar, así que
+      # el trabajo termina en segundos.
+      - name: Revisión estructural, enlaces y versiones
+        run: node tools/revisar-sitio.mjs
+
+      - name: Accesibilidad, PWA y caché del service worker
+        run: node tools/revisar-plataforma.mjs
+
+      - name: Portadas y archivos de cada lección
+        run: node tools/revisar-cobertura.mjs
+
+      - name: Destacadas de la portada
+        run: node tools/revisar-destacadas.mjs
+
+      - name: Planes de enseñanza
+        run: node tools/revisar-series.mjs
+
+      - name: Juegos
+        run: node tools/revisar-juegos.mjs
+
+      - name: Videos de las lecciones
+        run: node tools/revisar-videos.mjs
+
+      - name: Contenido bíblico
+        run: node tools/revisar-biblia.mjs
+
+      - name: Calendario
+        run: node tools/revisar-calendario.mjs

@@ -1,6 +1,6 @@
 /* Hoja compartida por las paginas de texto: privacidad, terminos y contacto.
    Reutiliza la identidad visual del resto del sitio. */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+
 :root{--ink:#17364a;--blue:#086f8b;--deep:#12364c;--mint:#dff5e6;--sky:#dff5ff;--sun:#ffd45d;--orange:#ff8659;--paper:#fffdf7;--line:#dce8ea;--shadow:0 14px 36px #153c4e18}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:96px}

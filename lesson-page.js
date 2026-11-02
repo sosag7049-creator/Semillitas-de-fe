@@ -136,6 +136,20 @@ document.getElementById('copyVerse').onclick=async e=>{
 document.getElementById('memoryMode').onclick=e=>{const card=e.currentTarget.closest('.memory-card'),quote=card.querySelector('blockquote');quote.dataset.full ||= quote.textContent;quote.textContent=quote.textContent.includes('_____')?quote.dataset.full:quote.dataset.full.split(' ').map((w,i)=>i%3===2?'_____':w).join(' ');e.currentTarget.textContent=quote.textContent.includes('_____')?'👀 Mostrar':'🧠 Memorizar'};
 
 let supabase=null,user=null;const syncNote=document.getElementById('syncNote');syncNote.textContent='El avance se guarda en este dispositivo. Inicia sesión desde la página principal para sincronizar la clase completada.';
-import('https://esm.sh/@supabase/supabase-js@2.57.4').then(async({createClient})=>{supabase=createClient('https://wadfxtlbznxmbutkihkr.supabase.co','sb_publishable_5WPEB0l9NkOyynXkuSEsEQ_dVN9JO2R',{auth:{persistSession:true,autoRefreshToken:true}});const {data}=await supabase.auth.getSession();user=data.session?.user||null;if(user)syncNote.textContent='Tu avance final se guardará en tu cuenta.'}).catch(()=>{});
+/* La cuenta es opcional: la clase funciona sin ella. Por eso el cliente de
+ * Supabase se pide en segundo plano y, si la CDN tarda o falla, se rinde a los
+ * 8 s en vez de quedarse cargando para siempre. Antes cerrar la clase bloqueaba
+ * el botón mientras el import seguía pendiente. */
+{
+  const cliente=import('/vendor/supabase-js.min.js?v=2.57.4');
+  const tiempo=new Promise(resolve=>setTimeout(()=>resolve(null),8000));
+  Promise.race([cliente,tiempo]).then(async modulo=>{
+    if(!modulo)return;
+    supabase=modulo.createClient('https://wadfxtlbznxmbutkihkr.supabase.co','sb_publishable_5WPEB0l9NkOyynXkuSEsEQ_dVN9JO2R',{auth:{persistSession:true,autoRefreshToken:true}});
+    const {data}=await supabase.auth.getSession();
+    user=data.session?.user||null;
+    if(user)syncNote.textContent='Tu avance final se guardará en tu cuenta.';
+  }).catch(()=>{/* sin cuenta: el avance ya quedó guardado en este dispositivo */});
+}
 document.getElementById('finishClass').onclick=async()=>{state.completed=true;state.seeds=10;save();renderProgress();const note=document.getElementById('syncNote');if(!user||!supabase)return;note.textContent='Guardando en tu cuenta…';const now=new Date().toISOString();const {error}=await supabase.from('lesson_progress').upsert({user_id:user.id,lesson_slug:lesson.id,status:'completed',completed_at:now,updated_at:now},{onConflict:'user_id,lesson_slug'});note.textContent=error?'La celebración quedó guardada aquí, pero no se pudo sincronizar. Intenta de nuevo más tarde.':'✓ Clase completada y guardada en tu cuenta.'};
 renderProgress();

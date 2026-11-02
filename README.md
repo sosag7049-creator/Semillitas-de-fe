@@ -57,6 +57,9 @@ manifest.webmanifest    Datos de la app instalable
 sitemap.xml  robots.txt Para los buscadores
 404.html                Página de error con buscador de clases
 
+fonts.css               Declara las dos tipografías del sitio (un solo lugar)
+fonts/                  Baloo 2 y Nunito en woff2, con su licencia OFL
+vendor/                 Cliente de Supabase empaquetado (lo genera tools/)
 images/lessons/         Portadas: <nombre>.webp (1200px) y <nombre>-800.webp
 icons/  media/          Iconos y video de la portada
 tools/                  Utilidades de mantenimiento (no se usan en el sitio)
@@ -65,6 +68,38 @@ tools/                  Utilidades de mantenimiento (no se usan en el sitio)
 ---
 
 ## Tareas comunes
+
+### Comprobar que todo sigue en pie
+
+No hay que instalar nada: son revisores de Node puro que ahora también corren
+solos en cada push (`.github/workflows/sitio-v1.yml`).
+
+```bash
+node tools/revisar-sitio.mjs       # enlaces, páginas cortadas, versiones ?v=
+node tools/revisar-plataforma.mjs  # accesibilidad, PWA y caché del service worker
+node tools/revisar-cobertura.mjs   # portadas y archivos de cada lección
+```
+
+Los demás (`revisar-destacadas`, `revisar-series`, `revisar-juegos`,
+`revisar-videos`, `revisar-biblia`, `revisar-calendario`) comprueban el
+contenido. Todos deben terminar en ✅ antes de subir cambios.
+
+### Actualizar el cliente de Supabase
+
+El sitio no le pide el cliente a una CDN: lo sirve desde `vendor/`, así que
+también funciona sin conexión. Para subir de versión:
+
+```bash
+node tools/generar-vendor.mjs --version 2.57.4
+```
+
+Recuerda subir el `?v=` de `vendor/supabase-js.min.js` en `auth.js`,
+`lesson-page.js` y `sw.js`.
+
+**Tipografías.** Las fuentes viven en `fonts/` y se declaran una sola vez en
+`fonts.css`, que cada página enlaza con sus dos `preload`. Para cambiar de
+familia: deja el `.woff2` en `fonts/`, ajusta `@font-face` en `fonts.css` y
+actualiza el `?v=` de `fonts.css` en las páginas y en `sw.js`.
 
 ### Ver el sitio en tu computadora
 

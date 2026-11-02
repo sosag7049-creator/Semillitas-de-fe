@@ -24,6 +24,9 @@ const TIPOS = {
   '.xml': 'application/xml; charset=utf-8', '.txt': 'text/plain; charset=utf-8',
   '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
   '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.mp4': 'video/mp4', '.webm': 'video/webm',
+  // Tipografías propias: sin el tipo correcto algunos navegadores se niegan a
+  // usarlas al probar en local, aunque en GitHub Pages sí se sirvan bien.
+  '.woff2': 'font/woff2', '.woff': 'font/woff',
 };
 
 async function buscarArchivo(rutaUrl) {
