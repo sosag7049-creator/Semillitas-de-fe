@@ -1,15 +1,18 @@
 .hero-cinematic{position:relative;isolation:isolate;min-height:clamp(620px,82svh,820px);display:grid;align-items:center;overflow:hidden;padding:clamp(72px,10vw,124px) 0;color:#fff;background:#17364a}
-.hero-scenes,.hero-ambient,.hero-shade{position:absolute;inset:0;width:100%;height:100%}
+.hero-scenes,.hero-shade{position:absolute;inset:0;width:100%;height:100%}
+/* La escena es un SVG vectorial (media/hero-amanecer.svg): no se escala más
+ * allá de su tamaño natural, así que no pierde nitidez en ninguna pantalla.
+ * Sin `inset` negativo y con un Ken Burns muy leve (1.03) en lugar de 1.15:
+ * el movimiento lo pone el propio SVG, que además se ve igual de bien en un
+ * monitor 4K que en una laptop. */
 .hero-scenes{z-index:-4;overflow:hidden;background:#17364a;will-change:transform}
-.hero-scene{position:absolute;inset:-7%;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease}
-.hero-scene.is-active{opacity:1}
-.hero-scene:not(.is-active){animation-play-state:paused}
-.hero-scene.kenburns-a{animation:heroKenBurnsA 16s ease-in-out infinite alternate}
-.hero-scene.kenburns-b{animation:heroKenBurnsB 16s ease-in-out infinite alternate}
-@keyframes heroKenBurnsA{from{transform:scale(1) translate(0,0)}to{transform:scale(1.15) translate(-2.2%,1.5%)}}
-@keyframes heroKenBurnsB{from{transform:scale(1.13) translate(1.8%,-1.2%)}to{transform:scale(1) translate(0,0)}}
-.hero-ambient{z-index:-3;pointer-events:none}
-.hero-shade{z-index:-2;background:linear-gradient(90deg,rgba(8,28,40,.87) 0%,rgba(8,35,46,.68) 52%,rgba(8,35,46,.24) 100%),linear-gradient(0deg,rgba(5,24,34,.42),transparent 55%)}
+.hero-scene{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease}
+.hero-scene.is-active{opacity:1;animation:heroLatido 30s ease-in-out infinite alternate}
+@keyframes heroLatido{from{transform:scale(1)}to{transform:scale(1.03)}}
+/* Capa de respaldo: si el SVG no carga (navegador muy viejo), el degradado del
+ * contenedor queda como fondo y el texto sigue teniendo contraste. */
+.hero-scene-alt{display:none}
+.hero-shade{z-index:-2;background:linear-gradient(90deg,rgba(8,28,40,.78) 0%,rgba(8,35,46,.46) 38%,rgba(8,35,46,0) 62%),linear-gradient(0deg,rgba(5,24,34,.34),transparent 42%)}
 .hero-cinematic .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(280px,.65fr);gap:clamp(36px,7vw,88px)}
 .hero-copy{max-width:760px}
 .hero-cinematic .kicker{border-color:#ffffff5c;background:#ffffff16;color:#fff;backdrop-filter:none}
@@ -28,8 +31,8 @@
 @media(max-width:600px){
   .hero-cinematic{min-height:auto;padding:46px 0 38px}
   .hero-cinematic .hero-grid{gap:26px}
-  .hero-scene{background-position:center 38%}
-  .hero-shade{background:linear-gradient(100deg,rgba(6,28,39,.9),rgba(8,35,46,.62)),linear-gradient(0deg,rgba(5,24,34,.58),transparent)}
+  .hero-scene{background-position:58% center}
+  .hero-shade{background:linear-gradient(100deg,rgba(6,28,39,.84),rgba(8,35,46,.5)),linear-gradient(0deg,rgba(5,24,34,.5),transparent)}
   .hero-cinematic .kicker{padding:6px 11px;font-size:.82rem}
   .hero-cinematic h1{margin:12px 0 10px;font-size:clamp(2.45rem,12vw,3.25rem);line-height:.98;letter-spacing:-.03em}
   .hero-cinematic h1 span{margin-top:.12em}
@@ -48,7 +51,7 @@
   .hero-cinematic .stat{background:#153e50e8}
   .hero-cinematic .btn:hover{transform:none}
 }
-@media(prefers-reduced-motion:reduce){.hero-ambient{display:none}.hero-scene{transition:none;animation:none!important}.hero-cinematic{background:#17364a}}
+@media(prefers-reduced-motion:reduce){.hero-scene{transition:none;animation:none!important}}
 /* Enlaces legales en el pie. */
 .legal-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-size:.85rem;font-weight:800}
 .legal-links a{color:#bcd9e6;text-decoration:none}

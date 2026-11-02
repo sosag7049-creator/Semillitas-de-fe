@@ -132,14 +132,13 @@ prueba('ya no lleva ruleta, videoteca, método, canales ni recursos',
 prueba('las seis secciones de la portada están en orden',
   ['#inicio', '#accesos', '#destacadas', '#planes', '#herramientas', '#proteccion'].every(sel => d.querySelector(sel)));
 
-const posterHero = d.querySelector('#heroScenes .hero-scene.is-active');
-const ambientCanvas = d.querySelector('#heroAmbient');
-prueba('la portada conserva el póster mientras prepara el fondo vivo',
-  Boolean(posterHero) && posterHero.getAttribute('style')?.includes('/media/hero-poster.webp'));
-prueba('el fondo decorativo tiene un canvas accesible como contenido oculto',
-  Boolean(ambientCanvas) && ambientCanvas.getAttribute('aria-hidden') === 'true');
-const cuadrosCanvas = window.__heroCanvasFrameCount?.() || 0;
-prueba('el motor dibuja partículas y rayos en el canvas', cuadrosCanvas > 0, `${cuadrosCanvas} cuadros`);
+const escenaHero = d.querySelector('#heroScenes .hero-scene.is-active');
+prueba('el hero usa la escena vectorial (nítida a cualquier resolución)',
+  Boolean(escenaHero) && escenaHero.getAttribute('style')?.includes('/media/hero-amanecer.svg'));
+prueba('la escena está marcada como decorativa',
+  d.getElementById('heroScenes')?.getAttribute('aria-hidden') === 'true');
+prueba('el hero ya no carga fotos ni canvas',
+  !d.querySelector('#heroAmbient') && !/portada-(amanecer|trigo|galilea)\.jpg|hero-poster\.webp/.test(d.documentElement.outerHTML));
 prueba('el hero ya no descarga videos', !d.querySelector('#inicio video, #inicio source[type="video/mp4"]'));
 
 /* --------------------------------------------------------------------------

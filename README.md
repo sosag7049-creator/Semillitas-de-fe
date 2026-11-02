@@ -61,7 +61,8 @@ fonts.css               Declara las dos tipografías del sitio (un solo lugar)
 fonts/                  Baloo 2 y Nunito en woff2, con su licencia OFL
 vendor/                 Cliente de Supabase empaquetado (lo genera tools/)
 images/lessons/         Portadas: <nombre>.webp (1200px) y <nombre>-800.webp
-icons/  media/          Iconos y video de la portada
+icons/                  Iconos del sitio
+media/                  Escena vectorial del hero (hero-amanecer.svg)
 tools/                  Utilidades de mantenimiento (no se usan en el sitio)
 ```
 
@@ -83,6 +84,23 @@ node tools/revisar-cobertura.mjs   # portadas y archivos de cada lección
 Los demás (`revisar-destacadas`, `revisar-series`, `revisar-juegos`,
 `revisar-videos`, `revisar-biblia`, `revisar-calendario`) comprueban el
 contenido. Todos deben terminar en ✅ antes de subir cambios.
+
+### El fondo animado de la portada
+
+El hero no usa fotos: es una escena vectorial, `media/hero-amanecer.svg`,
+dibujada con el mismo kit que las 39 portadas de lección. Se ve nítida en
+cualquier pantalla (incluido 4K) y su movimiento —sol, nubes, niebla, trigo y
+semillas de luz— es CSS dentro del propio SVG, así que lo anima el navegador
+sin gastar CPU.
+
+```bash
+node tools/generar-hero.mjs   # vuelve a dibujar la escena
+```
+
+Para cambiar la composición (posición del sol, colores, horas del día) se edita
+`tools/generar-hero.mjs`, nunca el SVG a mano: el archivo se regenera entero.
+Recuerda subir el `?v=` de `home-cinematic.css` y el nombre de `CACHE` en
+`sw.js` para que el cambio llegue a quien ya visitó el sitio.
 
 ### Actualizar el cliente de Supabase
 
