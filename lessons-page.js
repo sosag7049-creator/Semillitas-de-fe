@@ -124,14 +124,18 @@ ages?.addEventListener('click',async event=>{
     item.classList.toggle('active',activo);
     item.setAttribute('aria-pressed',String(activo));
   });
-  /* --------------------------------------------------------------------------
+});
+
+/* --------------------------------------------------------------------------
  * Llegadas desde fuera: /lecciones/?categoria=Jesús o /lecciones/?buscar=perdón
  *
- * La portada y las tarjetas destacadas enlazan aquí con el filtro ya puesto,
- * para que el maestro no tenga que repetir la búsqueda al llegar.
+ * Antes este bloque vivía DENTRO del manejador del clic de edad, así que solo
+ * se ejecutaba si el maestro tocaba un botón de edad, y siempre volvía a
+ * pintar el catálogo sin filtro. Ahora corre al cargar la página, que es
+ * justo lo que necesitan la portada, las destacadas y el buscador del 404.
  * ----------------------------------------------------------------------- */
+const parametros=new URLSearchParams(location.search);
 {
-  const parametros=new URLSearchParams(location.search);
   const pedida=(parametros.get('categoria')||'').trim();
   if(pedida){
     const chip=[...document.querySelectorAll('[data-category]')]
@@ -144,10 +148,6 @@ ages?.addEventListener('click',async event=>{
   const texto=(parametros.get('buscar')||'').trim();
   if(texto)search.value=texto.slice(0,80);
 }
-
-if(age==='3-5')await cargarParvulos();
-  render();
-});
 // Dejar marcada la edad recordada de la visita anterior.
 ages?.querySelectorAll('[data-age]').forEach(item=>{
   const activo=item.dataset.age===age;

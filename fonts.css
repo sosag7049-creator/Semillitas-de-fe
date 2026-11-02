@@ -1,0 +1,39 @@
+/* ---------------------------------------------------------------------------
+ * Tipografías propias (Baloo 2 y Nunito)
+ *
+ * Antes cada página pedía las fuentes a fonts.googleapis.com con un @import
+ * dentro de su propia hoja de estilos. Eso tenía tres costos:
+ *
+ *   1. Un salto extra de red antes de conocer si quiera la URL del .woff2.
+ *   2. 15 bloques @font-face (5 pesos × 3 subconjuntos) cuando el sitio solo
+ *      necesita 2 archivos: un alfabeto latino variable por familia.
+ *   3. Sin internet las fuentes desaparecían: el modo sin conexión servía las
+ *      páginas desde la caché, pero los .woff2 venían de Google.
+ *
+ * Ahora los dos archivos viven en /fonts/ (SIL Open Font License, ver
+ * fonts/LICENSE-*) y se declaran una sola vez aquí. Ambos son variables: un
+ * solo archivo cubre todos los pesos que ya usa el CSS (600–800 en Baloo 2 y
+ * 400–900 en Nunito) en lugar de cinco por familia.
+ * ------------------------------------------------------------------------ */
+
+/* Baloo 2 · títulos. Pesos 400–800 en un archivo. */
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('/fonts/baloo-2-latin.woff2') format('woff2-variations'),
+       url('/fonts/baloo-2-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* Nunito · texto. Pesos 200–1000 en un archivo. */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url('/fonts/nunito-latin.woff2') format('woff2-variations'),
+       url('/fonts/nunito-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}

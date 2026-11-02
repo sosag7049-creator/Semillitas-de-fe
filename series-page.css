@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap');
+
 :root{--ink:#17364a;--blue:#086f8b;--deep:#12364c;--mint:#dff5e6;--sky:#dff5ff;--sun:#ffd45d;--orange:#ff8659;--paper:#fffdf7;--white:#fff;--line:#dce8ea;--shadow:0 12px 34px rgba(21,60,78,.12)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:linear-gradient(180deg,#f5fbf8,#fffdf7 520px);color:var(--ink);font:16px/1.55 Nunito,system-ui,sans-serif}
