@@ -2,10 +2,10 @@
 .hero-scenes,.hero-shade{position:absolute;inset:0;width:100%;height:100%}
 /* La escena es un SVG vectorial (media/hero-amanecer.svg): no se escala más
  * allá de su tamaño natural, así que no pierde nitidez en ninguna pantalla.
- * Sin `inset` negativo y con un Ken Burns muy leve (1.03) en lugar de 1.15:
- * el movimiento lo pone el propio SVG, que además se ve igual de bien en un
- * monitor 4K que en una laptop. */
-.hero-scenes{z-index:-4;overflow:hidden;background:#17364a;will-change:transform}
+ * Sin `inset` negativo y con un latido muy leve (1.03) en lugar del Ken Burns
+ * de 1.15. Todo el movimiento real —sol, nubes, niebla y trigo— está dentro
+ * del SVG; aquí no hay JavaScript que reaccione al cursor. */
+.hero-scenes{z-index:-4;overflow:hidden;background:#17364a}
 .hero-scene{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s ease}
 .hero-scene.is-active{opacity:1;animation:heroLatido 30s ease-in-out infinite alternate}
 @keyframes heroLatido{from{transform:scale(1)}to{transform:scale(1.03)}}

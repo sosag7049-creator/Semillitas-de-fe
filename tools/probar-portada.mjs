@@ -140,6 +140,13 @@ prueba('la escena está marcada como decorativa',
 prueba('el hero ya no carga fotos ni canvas',
   !d.querySelector('#heroAmbient') && !/portada-(amanecer|trigo|galilea)\.jpg|hero-poster\.webp/.test(d.documentElement.outerHTML));
 prueba('el hero ya no descarga videos', !d.querySelector('#inicio video, #inicio source[type="video/mp4"]'));
+/* El fondo se mueve solo (lo anima el SVG). Que el ratón no lo mueva es una
+ * decisión de diseño, no un detalle: sin este guardia, cualquier script nuevo
+ * que escuche pointermove sobre el hero pasaría desapercibido. */
+prueba('el hero no reacciona al ratón',
+  !d.querySelector('script[src*="home-cinematic"]')
+  && !readFileSync(join(RAIZ, 'index.html'), 'utf8').includes('pointermove')
+  && d.querySelector('#heroScenes')?.getAttribute('style') === null);
 
 /* --------------------------------------------------------------------------
  * Accesos rápidos
