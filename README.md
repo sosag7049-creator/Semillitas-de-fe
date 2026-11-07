@@ -62,9 +62,11 @@ fonts.css               Declara las dos tipografías del sitio (un solo lugar)
 fonts/                  Baloo 2 y Nunito en woff2, con su licencia OFL
 vendor/                 Cliente de Supabase y Three.js empaquetados (los genera tools/)
 images/lessons/         Portadas: <nombre>.webp (1200px) y <nombre>-800.webp
+images/avatars/         Retratos dibujados de los personajes (12 SVG de 240×240)
 icons/                  Iconos del sitio
 media/                  Escena vectorial del hero (hero-amanecer.svg)
 tools/                  Utilidades de mantenimiento (no se usan en el sitio)
+tools/generar-avatares-svg.mjs  Redibuja los 12 retratos de images/avatars/
 ```
 
 ---
@@ -144,6 +146,42 @@ Para cambiar el campo (colores, colinas, número de ovejas) se edita
 `alturaTerreno` (el relieve), `construirMundo` (la escena) y `iniciarPastor`
 (la partida). Las constantes del juego —ovejas, radio del campo, puerta del
 redil— están arriba del todo, en un solo bloque.
+
+### Los retratos de los personajes
+
+Los avatares de **Memoria bíblica**, **¿Quién soy?**, el selector de cuenta, el
+panel del maestro y las fichas del tablero son **dibujos hechos con código**:
+SVG de `images/avatars/` con el mismo lenguaje que las portadas de las clases
+—contorno grueso, color plano, caras de cuento—, nada de fotos ni de imágenes
+generadas. Cada retrato mide 240×240, tiene recorte circular, fondo pastel
+propio y un `<title>` para lectores de pantalla.
+
+```bash
+node tools/generar-avatares-svg.mjs            # vuelve a dibujar los 12 retratos
+node tools/generar-avatares-svg.mjs --revisar  # comprueba que existen y llevan título
+```
+
+| Clave | Personaje | Se usa en |
+| --- | --- | --- |
+| `semilla` | Un brote en el jardín (Creación) | memoria, cuenta (avatar por defecto) |
+| `adan` | Adán y Eva | memoria, «¿quién soy?», cuenta |
+| `noe` | Noé con arcoíris y barba blanca | memoria, «¿quién soy?», cuenta, tablero |
+| `maestro` | Moisés con cayado y tablas | memoria, «¿quién soy?», cuenta, tablero |
+| `david` | David con arpa, honda y oveja | memoria, «¿quién soy?», cuenta, tablero |
+| `leon` | Daniel junto al león | memoria, «¿quién soy?», cuenta |
+| `maestra` | Ester con corona | memoria, «¿quién soy?», cuenta, tablero |
+| `biblia` | Jesús con túnica y manto azul | memoria, «¿quién soy?», cuenta |
+| `paloma` | Paloma con rama de olivo | memoria, cuenta |
+| `juan` | Juan el Bautista en el Jordán | memoria, «¿quién soy?», cuenta |
+| `rut` | Rut con un haz de espigas | memoria, «¿quién soy?», cuenta |
+| `jonas` | Jonás sorprendido junto al gran pez | memoria, «¿quién soy?», cuenta |
+
+Para cambiar un dibujo no se edita el SVG a mano: se toca su escena en
+`tools/generar-avatares-svg.mjs` y se vuelve a ejecutar el script. Para añadir
+un personaje hacen falta tres pasos: la escena en el script, la clase
+`.avatar-art-<clave>` **en las dos hojas** (`juegos.css` y `account-ui.css`) y
+la ruta en `ACCOUNT_ASSETS` de `sw.js`, que es lo que lo deja disponible sin
+conexión. `node tools/revisar-juegos.mjs` avisa si falta alguno de los tres.
 
 ### Actualizar el cliente de Supabase
 

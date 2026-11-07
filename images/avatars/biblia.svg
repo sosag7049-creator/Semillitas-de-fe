@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-labelledby="titulo-biblia">
+<title id="titulo-biblia">Jesús con su túnica y su manto azul</title>
+<defs><clipPath id="recorte-biblia"><circle cx="120" cy="120" r="114"/></clipPath></defs>
+<circle cx="120" cy="120" r="114" fill="#fff0d2"/>
+<g clip-path="url(#recorte-biblia)">
+
+      <circle cx="120" cy="108" r="74" fill="#ffe3a8" opacity=".7"/>
+      <g transform="translate(44 54) scale(0.66)"><path d="M-38,12 C-48,12 -50,0 -40,-4 C-44,-18 -28,-24 -18,-16 C-14,-28 6,-30 12,-16 C26,-22 38,-12 32,0 C42,2 40,12 30,12 Z" fill="#ffffff" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" /></g>
+      <g transform="translate(202 64) scale(0.58)"><path d="M-38,12 C-48,12 -50,0 -40,-4 C-44,-18 -28,-24 -18,-16 C-14,-28 6,-30 12,-16 C26,-22 38,-12 32,0 C42,2 40,12 30,12 Z" fill="#ffffff" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" /></g>
+      <rect x="107" y="138" width="26" height="30" rx="9" ry="9" fill="#d8a678" stroke="#43332c" stroke-width="6" />
+      <path d="M27,246 L27,176 C33,144 71,140 120,140 C169,140 207,144 213,176 L213,246 Z" fill="#f6eed7" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M73,112 C63,58 92,38 120,38 C148,38 177,58 167,112 L171,176 C150,158 140,152 132,146 L108,146 C100,152 90,158 69,176 Z" fill="#6b472d" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <ellipse cx="120" cy="104" rx="43" ry="45" fill="#d8a678" stroke="#43332c" stroke-width="6" /><ellipse cx="78" cy="108" rx="7" ry="9" fill="#d8a678" stroke="#43332c" stroke-width="6" /><ellipse cx="162" cy="108" rx="7" ry="9" fill="#d8a678" stroke="#43332c" stroke-width="6" />
+      <path d="M75,110 C73,70 98,46 120,46 C142,46 167,70 165,110 C153,92 142,84 129,82 C123,93 117,93 111,82 C98,84 87,92 75,110 Z" fill="#6b472d" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M80,102 C78,146 94,167 120,171 C146,167 162,146 160,102 C154,132 152,144 137,141 C127,139 113,139 103,141 C88,144 86,132 80,102 Z" fill="#6b472d" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M105,116 q7,-6 15,-1 q8,-5 15,1 q-7,5 -15,4 q-8,1 -15,-4 Z" fill="#6b472d" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M96,96 q8,-5 14,0" fill="none" stroke="#43332c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><path d="M130,96 q6,-5 14,0" fill="none" stroke="#43332c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="103" cy="105" r="4.8" fill="#43332c"/><circle cx="137" cy="105" r="4.8" fill="#43332c"/>
+      <path d="M119,110 q4,6 0,9" fill="none" stroke="#43332c" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M110,127 q10,10 20,0" fill="none" stroke="#43332c" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="91" cy="114" r="7" fill="#f2a08d" opacity=".55"/><circle cx="149" cy="114" r="7" fill="#f2a08d" opacity=".55"/>
+      <path d="M60,244 C62,208 80,188 100,184 L120,210 L140,184 C160,188 178,208 180,244 Z" fill="#5b8fd6" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M120,210 L120,244" fill="none" stroke="#3f6f92" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    
+</g>
+<circle cx="120" cy="120" r="114" fill="none" stroke="#43332c" stroke-width="6"/>
+</svg>

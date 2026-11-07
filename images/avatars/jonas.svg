@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-labelledby="titulo-jonas">
+<title id="titulo-jonas">Jonás y el gran pez</title>
+<defs><clipPath id="recorte-jonas"><circle cx="120" cy="120" r="114"/></clipPath></defs>
+<circle cx="120" cy="120" r="114" fill="#d5ecf6"/>
+<g clip-path="url(#recorte-jonas)">
+
+      <path d="M-10,202 q30,-12 60,0 t60,0 t60,0 t60,0 L250,250 L-10,250 Z" fill="#a9d8ea" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <g transform="translate(40 70) scale(0.9)"><path d="M0,0 C-7,10 -9,15 -9,20 A9,9 0 0 0 9,20 C9,15 7,10 0,0 Z" fill="#9fd8ea" stroke="#43332c" stroke-width="4"/></g>
+      <g transform="translate(208 92) scale(0.75)"><path d="M0,0 C-7,10 -9,15 -9,20 A9,9 0 0 0 9,20 C9,15 7,10 0,0 Z" fill="#9fd8ea" stroke="#43332c" stroke-width="4"/></g>
+      <rect x="107" y="138" width="26" height="30" rx="9" ry="9" fill="#c98f66" stroke="#43332c" stroke-width="6" />
+      <path d="M27,246 L27,176 C33,144 71,140 120,140 C169,140 207,144 213,176 L213,246 Z" fill="#7fb3c8" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <ellipse cx="120" cy="104" rx="43" ry="45" fill="#c98f66" stroke="#43332c" stroke-width="6" /><ellipse cx="78" cy="108" rx="7" ry="9" fill="#c98f66" stroke="#43332c" stroke-width="6" /><ellipse cx="162" cy="108" rx="7" ry="9" fill="#c98f66" stroke="#43332c" stroke-width="6" />
+      <path d="M74,106 C71,64 94,44 120,44 C146,44 169,64 166,106 C154,88 144,78 120,78 C96,78 86,88 74,106 Z" fill="#3f2c22" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M80,102 C78,146 94,163 120,167 C146,163 162,146 160,102 C154,132 152,144 137,141 C127,139 113,139 103,141 C88,144 86,132 80,102 Z" fill="#4b3527" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M105,116 q7,-6 15,-1 q8,-5 15,1 q-7,5 -15,4 q-8,1 -15,-4 Z" fill="#4b3527" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M95,94 q9,-8 17,-1" fill="none" stroke="#43332c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><path d="M128,93 q8,-7 17,1" fill="none" stroke="#43332c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="102" cy="107" r="5.2" fill="#43332c"/><circle cx="138" cy="107" r="5.2" fill="#43332c"/>
+      <path d="M119,113 q4,6 0,9" fill="none" stroke="#43332c" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+      <ellipse cx="120" cy="131" rx="7" ry="9" fill="#8a3f33" stroke="#43332c" stroke-width="4"/>
+      <circle cx="90" cy="118" r="7" fill="#f2a08d" opacity=".55"/><circle cx="150" cy="118" r="7" fill="#f2a08d" opacity=".55"/>
+      
+  <g transform="translate(170 196) rotate(-14) scale(1.05)">
+    <path d="M42,0 C42,-26 14,-42 -12,-36 C-34,-31 -48,-16 -48,0 C-48,16 -34,31 -12,36 C14,42 42,26 42,0 Z" fill="#5b8fb5" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M-44,0 C-62,-18 -74,-8 -70,0 C-74,8 -62,18 -44,0 Z" fill="#5b8fb5" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+    <path d="M6,-30 C16,-46 34,-44 38,-30 Z" fill="#82b4d2" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+    <circle cx="16" cy="-12" r="9" fill="#ffffff" stroke="#43332c" stroke-width="6" />
+    <circle cx="18" cy="-12" r="4.5" fill="#43332c" stroke="#43332c" stroke-width="6" />
+    <path d="M30,4 q10,5 16,1" fill="none" stroke="#43332c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M-18,-10 q10,8 22,2" fill="none" stroke="#3f6f92" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M-22,10 q10,8 22,2" fill="none" stroke="#3f6f92" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+    
+</g>
+<circle cx="120" cy="120" r="114" fill="none" stroke="#43332c" stroke-width="6"/>
+</svg>

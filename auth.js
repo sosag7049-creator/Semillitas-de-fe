@@ -16,12 +16,13 @@ let session = null;
 let favoritesChannel = null;
 let sessionRevision = 0;
 
-document.head.insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="/auth.css"><link rel="stylesheet" href="/auth-fixes.css?v=2"><link rel="stylesheet" href="/sion-ui.css?v=3"><link rel="stylesheet" href="/account-ui.css?v=3">');
+document.head.insertAdjacentHTML("beforeend", '<link rel="stylesheet" href="/auth.css"><link rel="stylesheet" href="/auth-fixes.css?v=2"><link rel="stylesheet" href="/sion-ui.css?v=3"><link rel="stylesheet" href="/account-ui.css?v=4">');
 const bibleIcon = '<svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M10 15.5C10 12.5 12.5 10 15.5 10H30c3 0 5 2 5 5v37H16c-3.3 0-6-2.7-6-6V15.5Z" fill="currentColor" opacity=".92"/><path d="M54 15.5C54 12.5 51.5 10 48.5 10H34c-3 0-5 2-5 5v37h19c3.3 0 6-2.7 6-6V15.5Z" fill="#fff8df" opacity=".95"/><path d="M16 18h12M16 24h12M39 18h10M39 24h10" stroke="#f0bd55" stroke-width="3" stroke-linecap="round"/><path d="M32 24v14M25 31h14" stroke="#e67b55" stroke-width="3.5" stroke-linecap="round"/></svg>';
 const accountIcon = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3.2" fill="currentColor"/><path d="M5.5 20c.6-3.2 2.7-5 6.5-5s5.9 1.8 6.5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
 const profileAvatars = [
-  ['semilla','Semillita'], ['biblia','Biblia'], ['maestra','Maestra'],
-  ['maestro','Maestro'], ['leon','León'], ['noe','Noé'], ['david','David'], ['paloma','Paloma']
+  ['semilla','Semillita'], ['adan','Adán y Eva'], ['noe','Noé'], ['maestro','Maestro'],
+  ['maestra','Maestra'], ['david','David'], ['leon','León'], ['biblia','Biblia'],
+  ['paloma','Paloma'], ['juan','Juan Bautista'], ['rut','Rut'], ['jonas','Jonás']
 ];
 let selectedAvatar = 'semilla';
 const avatarById = id => profileAvatars.find(item => item[0] === id) || profileAvatars[0];
