@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-labelledby="titulo-noe">
+<title id="titulo-noe">Noé con su barba blanca bajo el arcoíris</title>
+<defs><clipPath id="recorte-noe"><circle cx="120" cy="120" r="114"/></clipPath></defs>
+<circle cx="120" cy="120" r="114" fill="#dff2ff"/>
+<g clip-path="url(#recorte-noe)">
+
+      <path d="M32,152 A88,88 0 0 1 208,152" fill="none" stroke="#ff9b76" stroke-width="9" stroke-linecap="round"/><path d="M43,152 A77,77 0 0 1 197,152" fill="none" stroke="#ffd45d" stroke-width="9" stroke-linecap="round"/><path d="M54,152 A66,66 0 0 1 186,152" fill="none" stroke="#8bd8a8" stroke-width="9" stroke-linecap="round"/><path d="M65,152 A55,55 0 0 1 175,152" fill="none" stroke="#7fc6e0" stroke-width="9" stroke-linecap="round"/><path d="M76,152 A44,44 0 0 1 164,152" fill="none" stroke="#c9a9e8" stroke-width="9" stroke-linecap="round"/>
+      <g transform="translate(44 58) scale(0.8)"><path d="M-38,12 C-48,12 -50,0 -40,-4 C-44,-18 -28,-24 -18,-16 C-14,-28 6,-30 12,-16 C26,-22 38,-12 32,0 C42,2 40,12 30,12 Z" fill="#ffffff" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" /></g>
+      <g transform="translate(202 62) scale(0.66)"><path d="M-38,12 C-48,12 -50,0 -40,-4 C-44,-18 -28,-24 -18,-16 C-14,-28 6,-30 12,-16 C26,-22 38,-12 32,0 C42,2 40,12 30,12 Z" fill="#ffffff" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" /></g>
+      <rect x="107" y="138" width="26" height="30" rx="9" ry="9" fill="#d8a678" stroke="#43332c" stroke-width="6" />
+      <path d="M27,246 L27,176 C33,144 71,140 120,140 C169,140 207,144 213,176 L213,246 Z" fill="#8a5f3c" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M96,212 q24,10 48,0" fill="none" stroke="#6b472d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <ellipse cx="120" cy="104" rx="43" ry="45" fill="#d8a678" stroke="#43332c" stroke-width="6" /><ellipse cx="78" cy="108" rx="7" ry="9" fill="#d8a678" stroke="#43332c" stroke-width="6" /><ellipse cx="162" cy="108" rx="7" ry="9" fill="#d8a678" stroke="#43332c" stroke-width="6" />
+      <path d="M80,102 C78,146 94,167 120,171 C146,167 162,146 160,102 C154,132 152,144 137,141 C127,139 113,139 103,141 C88,144 86,132 80,102 Z" fill="#f2eee4" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M105,116 q7,-6 15,-1 q8,-5 15,1 q-7,5 -15,4 q-8,1 -15,-4 Z" fill="#f2eee4" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M98,146 q22,8 44,0" fill="none" stroke="#ddd6c6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M96,96 q8,-5 14,0" fill="none" stroke="#43332c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /><path d="M130,96 q6,-5 14,0" fill="none" stroke="#43332c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="103" cy="105" r="4.8" fill="#43332c"/><circle cx="137" cy="105" r="4.8" fill="#43332c"/>
+      <path d="M119,110 q4,6 0,9" fill="none" stroke="#43332c" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M111,127 q9,9 18,0" fill="none" stroke="#43332c" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="91" cy="114" r="7" fill="#f2a08d" opacity=".55"/><circle cx="149" cy="114" r="7" fill="#f2a08d" opacity=".55"/>
+      
+  <path d="M73,106 C71,52 94,36 120,36 C146,36 169,52 167,106 C150,74 90,74 73,106 Z" fill="#e8ddc2" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+  <path d="M90,60 q30,-16 60,0" fill="none" stroke="#b9a279" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M71,74 C55,98 57,128 71,148 C83,124 81,96 71,74 Z" fill="#e8ddc2" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+
+    
+</g>
+<circle cx="120" cy="120" r="114" fill="none" stroke="#43332c" stroke-width="6"/>
+</svg>

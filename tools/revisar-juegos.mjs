@@ -8,7 +8,9 @@
  *   1. La memoria ofrece 6, 8 y 10 parejas y tiene al menos 10 figuras
  *      bíblicas para no repetir ilustraciones.
  *   2. Cada figura 'art' existe de verdad como clase .avatar-art-<clave> en
- *      alguna hoja de estilos del sitio (si no, la tarjeta se ve en blanco).
+ *      alguna hoja de estilos del sitio (si no, la tarjeta se ve en blanco),
+ *      y su dibujo /images/avatars/<clave>.svg está en el repositorio, tiene
+ *      título accesible y viaja en el modo sin conexión.
  *   3. Cada personaje de «¿Quién soy?» tiene exactamente tres pistas
  *      progresivas, escritas y distintas entre sí.
  *   4. El dado del tablero es un cubo 3D completo: seis caras con sus puntos
@@ -115,6 +117,33 @@ prueba('los personajes tienen figura válida',
     (t[0][0] === 'emoji' || cssTodo.includes(`.avatar-art-${t[0][1]}`))));
 prueba('los nombres de los personajes no se repiten',
   new Set(tarjetas.map(t => t[1])).size === tarjetas.length);
+
+/* -------------------------- Retratos dibujados --------------------------- */
+const cuentaJs = leer('auth.js');
+const inicioCuenta = cuentaJs.indexOf('const profileAvatars');
+const bloqueCuenta = cuentaJs.slice(inicioCuenta, cuentaJs.indexOf('];', inicioCuenta));
+const clavesCuenta = [...bloqueCuenta.matchAll(/\['([a-z]+)','[^']+'\]/g)].map(m => m[1]);
+const clavesArt = [...new Set([
+  ...llavesArtes,
+  ...tarjetas.filter(t => t[0][0] === 'art').map(t => t[0][1]),
+  ...clavesCuenta,
+])];
+const faltantesArchivo = clavesArt.filter(k => !existsSync(join(RAIZ, 'images/avatars', `${k}.svg`)));
+prueba('cada retrato art tiene su SVG en /images/avatars',
+  clavesArt.length >= 12 && faltantesArchivo.length === 0,
+  faltantesArchivo.length ? `faltan: ${faltantesArchivo.join(', ')}` : `${clavesArt.length} retratos`);
+
+const sinTitulo = clavesArt.filter((k) => {
+  const svg = readFileSync(join(RAIZ, 'images/avatars', `${k}.svg`), 'utf8');
+  return !/<title[^>]*>[^<]{6,}<\/title>/.test(svg) || !svg.includes('viewBox="0 0 240 240"');
+});
+prueba('los retratos llevan título y el mismo lienzo de 240×240',
+  sinTitulo.length === 0, sinTitulo.join(', '));
+
+prueba('ninguna hoja de estilos usa el sprite antiguo de avatares',
+  !juegosCss.includes('bible-avatars') && !cuentaCss.includes('bible-avatars'));
+prueba('los retratos se guardan para el modo sin conexión',
+  clavesArt.every(k => sw.includes(`/images/avatars/${k}.svg`)));
 
 /* ------------------------------ Dado 3D --------------------------------- */
 const caras = [...html.matchAll(/die-face die-face-(\d+)">([\s\S]*?)<\/div>/g)]

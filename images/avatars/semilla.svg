@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-labelledby="titulo-semilla">
+<title id="titulo-semilla">Un brote que nace en el jardín de la creación</title>
+<defs><clipPath id="recorte-semilla"><circle cx="120" cy="120" r="114"/></clipPath></defs>
+<circle cx="120" cy="120" r="114" fill="#dff2ff"/>
+<g clip-path="url(#recorte-semilla)">
+
+      <line x1="212" y1="52" x2="221" y2="52" stroke="#43332c" stroke-width="4.5" stroke-linecap="round"/><line x1="204.97056274847714" y1="68.97056274847714" x2="211.33452377915606" y2="75.33452377915606" stroke="#43332c" stroke-width="4.5" stroke-linecap="round"/><line x1="188" y1="76" x2="188" y2="85" stroke="#43332c" stroke-width="4.5" stroke-linecap="round"/><line x1="171.02943725152286" y1="68.97056274847714" x2="164.66547622084394" y2="75.33452377915607" stroke="#43332c" stroke-width="4.5" stroke-linecap="round"/><line x1="164" y1="52" x2="155" y2="52.00000000000001" stroke="#43332c" stroke-width="4.5" stroke-linecap="round"/><line x1="171.02943725152286" y1="35.029437251522864" x2="164.6654762208439" y2="28.665476220843935" stroke="#43332c" stroke-width="4.5" stroke-linecap="round"/><line x1="188" y1="28" x2="188" y2="19" stroke="#43332c" stroke-width="4.5" stroke-linecap="round"/><line x1="204.97056274847714" y1="35.02943725152286" x2="211.33452377915606" y2="28.665476220843928" stroke="#43332c" stroke-width="4.5" stroke-linecap="round"/><circle cx="188" cy="52" r="16" fill="#ffd45d" stroke="#43332c" stroke-width="6" />
+      <g transform="translate(62 50) scale(0.85)"><path d="M-38,12 C-48,12 -50,0 -40,-4 C-44,-18 -28,-24 -18,-16 C-14,-28 6,-30 12,-16 C26,-22 38,-12 32,0 C42,2 40,12 30,12 Z" fill="#ffffff" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" /></g>
+      <path d="M-10,206 C40,178 84,196 130,192 C178,188 210,206 250,194 L250,250 L-10,250 Z" fill="#bfe6a8" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M120,232 C120,210 120,196 120,176" fill="none" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M120,176 C120,202 120,216 120,232" fill="none" stroke="#4f9452" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M120,196 C100,196 86,180 86,162 C108,162 120,178 120,196 Z" fill="#7cc46a" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M120,182 C140,182 154,166 154,148 C132,148 120,164 120,182 Z" fill="#6cb268" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M120,214 C105,214 95,204 95,191 C110,191 120,201 120,214 Z" fill="#7cc46a" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M104,232 C104,220 111,213 120,213 C129,213 136,220 136,232 C136,238 129,241 120,241 C111,241 104,238 104,232 Z" fill="#c98f66" stroke="#43332c" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <path d="M120,218 q6,7 0,15" fill="none" stroke="#8a5f3c" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M64,214 q9,-13 18,0" fill="none" stroke="#6cb268" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M172,218 q9,-13 18,0" fill="none" stroke="#6cb268" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="72" cy="204" r="6" fill="#ff9b76" stroke="#43332c" stroke-width="3.5"/>
+      <circle cx="170" cy="208" r="5" fill="#ffd45d" stroke="#43332c" stroke-width="3.5"/>
+      <g transform="translate(184 108) rotate(12)">
+        <circle cx="-7" cy="0" r="7" fill="#ffb27a" stroke="#43332c" stroke-width="3.5"/>
+        <circle cx="7" cy="0" r="7" fill="#ffb27a" stroke="#43332c" stroke-width="3.5"/>
+        <path d="M0,-9 L0,9" stroke="#43332c" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+    
+</g>
+<circle cx="120" cy="120" r="114" fill="none" stroke="#43332c" stroke-width="6"/>
+</svg>
