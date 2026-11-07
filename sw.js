@@ -1,7 +1,7 @@
-const CACHE='semillitas-v67-hero-sin-parallax';
+const CACHE='semillitas-v68-juego-3d';
 // Refresh the account presentation for installed/mobile visitors.
 const ACCOUNT_ASSETS=['/account-ui.css?v=3','/icons/bible-avatars.webp?v=3'];
-const CORE=['/board-game.js?v=3','/board-game.css?v=2','/agenda.js?v=2','/agenda-model.js','/agenda-store.js','/agenda.css?v=1','/','/index.html','/lecciones/','/juegos/','/juegos/index.html','/juegos.js?v=7','/juegos.css?v=7','/home-cinematic.css?v=8','/media/hero-amanecer.svg','/lessons-page.css?v=6','/lessons-page.js?v=8','/offline.html','/404.html','/manifest.webmanifest','/auth.css','/auth-fixes.css?v=2','/teacher-store.js','/teacher-panel.js?v=2','/teacher-panel.css','/printables-home.js?v=4','/printables-home.css','/printables.html','/printables-page.js?v=4','/printables-page.css?v=3','/printables-data.js','/lesson-data.js?v=17','/lesson-page.js?v=17','/lesson-page.css?v=10','/images/lessons/la-creacion.svg','/images/lessons/noe-y-el-arca.svg','/images/lessons/david-y-goliat.svg','/icons/icon-192.png','/icons/icon-512.png','/icons/apple-touch-icon.png'];
+const CORE=['/board-game.js?v=3','/board-game.css?v=2','/agenda.js?v=2','/agenda-model.js','/agenda-store.js','/agenda.css?v=1','/','/index.html','/lecciones/','/juegos/','/juegos/index.html','/juegos.js?v=8','/juegos.css?v=7','/juegos-3d.js?v=1','/juegos-3d.css?v=1','/home-cinematic.css?v=8','/media/hero-amanecer.svg','/lessons-page.css?v=6','/lessons-page.js?v=8','/offline.html','/404.html','/manifest.webmanifest','/auth.css','/auth-fixes.css?v=2','/teacher-store.js','/teacher-panel.js?v=2','/teacher-panel.css','/printables-home.js?v=4','/printables-home.css','/printables.html','/printables-page.js?v=4','/printables-page.css?v=3','/printables-data.js','/lesson-data.js?v=17','/lesson-page.js?v=17','/lesson-page.css?v=10','/images/lessons/la-creacion.svg','/images/lessons/noe-y-el-arca.svg','/images/lessons/david-y-goliat.svg','/icons/icon-192.png','/icons/icon-512.png','/icons/apple-touch-icon.png'];
 CORE.push('/sion-widget.js?v=5','/sion-widget.css?v=2','/images/compartir.jpg');
 CORE.push('/accessibility.css?v=2','/pwa-register.js?v=1');
 // Tipografías propias: sin estos dos archivos el modo sin conexión pierde la
@@ -50,5 +50,5 @@ self.addEventListener('fetch',event=>{
     ));
     return;
   }
-  if(CORE.includes(url.pathname+url.search)||/^\/images\/lessons\/[a-z0-9-]+\.(?:webp|svg)$/.test(url.pathname)||/^\/media\/portada-(?:trigo|galilea)\.jpg$/.test(url.pathname))event.respondWith(fetch(event.request).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)))}return response}).catch(()=>caches.match(event.request)));
+  if(CORE.includes(url.pathname+url.search)||/^\/images\/lessons\/[a-z0-9-]+\.(?:webp|svg)$/.test(url.pathname)||/^\/media\/portada-(?:trigo|galilea)\.jpg$/.test(url.pathname)||/^\/vendor\/three[.\w-]*\.js$/.test(url.pathname))event.respondWith(fetch(event.request).then(response=>{if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)))}return response}).catch(()=>caches.match(event.request)));
 });

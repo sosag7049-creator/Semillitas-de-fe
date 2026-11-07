@@ -15,7 +15,7 @@ niñas de **3 a 10 años**, basados en la **Reina-Valera 1960**.
 | Clases | `/lecciones/` | Las **39 lecciones**, con buscador y filtros |
 | Planes | `/series/` | Rutas de enseñanza que agrupan las clases por semanas |
 | Cada clase | `/lecciones/<nombre>/` | Historia, versículo, preguntas, dinámica, manualidad y oración |
-| Juegos | `/juegos/` | Ruleta, memoria de 6 a 10 parejas, “¿quién soy?” con pistas y juego de mesa con dado 3D, para proyectar |
+| Juegos | `/juegos/` | Ruleta, memoria de 6 a 10 parejas, “¿quién soy?” con pistas, juego de mesa con dado 3D y **«El buen pastor» en 3D**, para proyectar |
 | Imprimibles | `/printables.html` | Hojas para colorear, versículos y actividades |
 | Guía del maestro | `/maestros/` | Método de clase mixta, programa de 60 minutos, videos y canales |
 
@@ -42,6 +42,7 @@ lecciones/index.html    Listado de las 39 clases
 lecciones/<nombre>/     Una carpeta por clase
 series/index.html       Planes de enseñanza (agrupan las clases en rutas)
 juegos/                 Juegos para proyectar (incluye la Ruleta Bíblica)
+juegos-3d.js  juegos-3d.css  «El buen pastor» en 3D (se carga solo al abrirlo)
 printables.html         Material imprimible
 
 printables-data.js      ⭐ FUENTE DE VERDAD del contenido de las 39 lecciones
@@ -59,7 +60,7 @@ sitemap.xml  robots.txt Para los buscadores
 
 fonts.css               Declara las dos tipografías del sitio (un solo lugar)
 fonts/                  Baloo 2 y Nunito en woff2, con su licencia OFL
-vendor/                 Cliente de Supabase empaquetado (lo genera tools/)
+vendor/                 Cliente de Supabase y Three.js empaquetados (los genera tools/)
 images/lessons/         Portadas: <nombre>.webp (1200px) y <nombre>-800.webp
 icons/                  Iconos del sitio
 media/                  Escena vectorial del hero (hero-amanecer.svg)
@@ -79,6 +80,7 @@ solos en cada push (`.github/workflows/sitio-v1.yml`).
 node tools/revisar-sitio.mjs       # enlaces, páginas cortadas, versiones ?v=
 node tools/revisar-plataforma.mjs  # accesibilidad, PWA y caché del service worker
 node tools/revisar-cobertura.mjs   # portadas y archivos de cada lección
+node tools/probar-juego-3d.mjs     # arma el campo 3D y revisa sus ovejas y la cerca
 ```
 
 Los demás (`revisar-destacadas`, `revisar-series`, `revisar-juegos`,
@@ -102,6 +104,47 @@ Para cambiar la composición (posición del sol, colores, horas del día) se edi
 Recuerda subir el `?v=` de `home-cinematic.css` y el nombre de `CACHE` en
 `sw.js` para que el cambio llegue a quien ya visitó el sitio.
 
+### El juego 3D («El buen pastor»)
+
+`/juegos/` tiene una quinta pestaña que abre un campo en 3D: el pastor camina,
+encuentra cinco ovejas y las lleva al redil (Lucas 15:4-7). No hay tiempo
+límite, vidas ni eliminados, y al terminar se lee Lucas 15:6.
+
+- **Motor:** Three.js viaja con el sitio en `vendor/three.module.min.js` y
+  `vendor/three.core.min.js` (MIT, con su licencia al lado). Nada de CDN: así
+  el juego funciona sin conexión y no depende de terceros.
+- **Peso:** son ~700 KB de motor que **solo se descargan al pulsar «Jugar en
+  3D»** (`import()` perezoso desde `juegos.js`). Quien entra a la ruleta no los
+  paga. El service worker los guarda la primera vez y después el juego abre sin
+  internet.
+- **Controles:** flechas o W A S D, clic/toque en el pasto para caminar y un
+  joystick para el teléfono. `P` pausa y `R` reinicia.
+- **Sin archivos de audio:** los balidos y la melodía final se sintetizan con
+  WebAudio y se pueden apagar. Con `prefers-reduced-motion` se apagan la cámara
+  flotante, los latidos de luz y los saltitos.
+- **Si el equipo no puede con el 3D**, la tarjeta de inicio lo explica y los
+  otros cuatro juegos siguen funcionando igual.
+
+```bash
+node tools/probar-juego-3d.mjs       # arma el mundo en Node: NaN, ovejas, cerca y pasaje
+node tools/revisar-juegos.mjs        # pestaña, import perezoso, licencia y versiones ?v=
+
+npm install jsdom                    # opcional, una sola vez
+node tools/probar-juego-3d.mjs --domo # juega la partida entera sin navegador
+```
+
+`--domo` es la prueba más completa: carga `/juegos/` en un DOM simulado, sustituye
+la tarjeta gráfica por un renderizador de mentira y juega con las flechas hasta
+encontrar las cinco ovejas y volver al redil. Comprueba la celebración, el
+reinicio, la pausa y el botón de sonido. Queda fuera del CI a propósito, para
+que el sitio siga sin dependencias.
+
+Para cambiar el campo (colores, colinas, número de ovejas) se edita
+`construirMundo` en `juegos-3d.js`; el juego está separado en tres piezas:
+`alturaTerreno` (el relieve), `construirMundo` (la escena) y `iniciarPastor`
+(la partida). Las constantes del juego —ovejas, radio del campo, puerta del
+redil— están arriba del todo, en un solo bloque.
+
 ### Actualizar el cliente de Supabase
 
 El sitio no le pide el cliente a una CDN: lo sirve desde `vendor/`, así que
@@ -113,6 +156,16 @@ node tools/generar-vendor.mjs --version 2.57.4
 
 Recuerda subir el `?v=` de `vendor/supabase-js.min.js` en `auth.js`,
 `lesson-page.js` y `sw.js`.
+
+**Three.js** se actualiza aparte, porque no se empaqueta: se copian los dos
+archivos oficiales desde npm.
+
+```bash
+node tools/generar-vendor.mjs --solo three --three 0.180.0
+```
+
+Después hay que subir el `?v=` de `juegos-3d.js` (va en `juegos.js` y en
+`sw.js`) y la versión de `RUTA_THREE` dentro de `juegos-3d.js`.
 
 **Tipografías.** Las fuentes viven en `fonts/` y se declaran una sola vez en
 `fonts.css`, que cada página enlaza con sus dos `preload`. Para cambiar de

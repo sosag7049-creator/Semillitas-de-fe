@@ -11,7 +11,7 @@
 | --- | --- |
 | **Lecciones** | 39 — Antiguo Testamento **28** · Nuevo Testamento **11** |
 | **Categorías** | Jesús 11 · Fe 8 · Carácter 7 · Dios 5 |
-| **Juegos** | 4 — Ruleta bíblica, Memoria, ¿Quién soy?, Escaleras y serpientes |
+| **Juegos** | 5 — Ruleta bíblica, Memoria, ¿Quién soy?, Escaleras y serpientes y **El buen pastor en 3D** |
 | **Imprimibles** | 6 tipos por lección — guía del maestro, hoja infantil, tarjetas, repaso, para la familia, trazos 3-5 años |
 | **Para el maestro** | Cuenta, progreso, favoritas, notas privadas y agenda |
 
