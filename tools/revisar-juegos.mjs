@@ -25,7 +25,7 @@
  * barrera antes de publicar.
  */
 
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -39,6 +39,8 @@ const juegosCss = leer('juegos.css');
 const boardCss = leer('board-game.css');
 const cuentaCss = readFileSync(join(RAIZ, 'account-ui.css'), 'utf8');
 const sw = leer('sw.js');
+const juego3dJs = leer('juegos-3d.js');
+const juego3dCss = leer('juegos-3d.css');
 
 let fallos = 0;
 const prueba = (nombre, ok, extra = '') => {
@@ -130,10 +132,41 @@ prueba('el dado tiene animación de giro y respeta prefers-reduced-motion',
 prueba('el juego usa el dado 3D (no texto plano)',
   boardJs.includes('die-tumble') && boardJs.includes('show-') && !boardJs.includes("journeyDie').textContent"));
 
+/* -------------------------- El buen pastor 3D --------------------------- */
+console.log('\nJuego 3D («El buen pastor»):');
+prueba('la página tiene la pestaña y el panel del juego 3D',
+  html.includes('data-game="pastor"') && html.includes('id="game-pastor"') && html.includes('id="pastorStage"'));
+prueba('el escenario trae lienzo, mapa, joystick y celebración',
+  ['pastorPoster', 'pastorMapa', 'pastorJoystick', 'pastorMensaje', 'pastorFinal']
+    .every((id) => html.includes(`id="${id}"`)));
+prueba('el juego se pide solo al abrir su pestaña (import perezoso)',
+  juegosJs.includes("import('/juegos-3d.js?v=") && !/<script[^>]+src="\/juegos-3d\.js/.test(html));
+prueba('son cinco ovejas y el pasaje es Lucas 15:4-7',
+  juego3dJs.includes('TOTAL_OVEJAS = 5') && juego3dJs.includes("REFERENCIA = 'Lucas 15:4-7'"));
+prueba('la celebración cita Lucas 15:6 en Reina-Valera 1960',
+  html.includes('Lucas 15:6') && html.includes('Reina-Valera 1960') && html.includes('/lecciones/oveja-perdida/'));
+prueba('respeta prefers-reduced-motion en el CSS y en el motor',
+  juego3dCss.includes('prefers-reduced-motion') && juego3dJs.includes('prefers-reduced-motion'));
+prueba('el audio se sintetiza y se puede apagar',
+  juego3dJs.includes('createOscillator') && html.includes('id="pastorSonido"') &&
+  juego3dJs.includes('sonido = !sonido'));
+prueba('Three.js viaja con el sitio, no desde un CDN',
+  existsSync(join(RAIZ, 'vendor/three.module.min.js')) &&
+  existsSync(join(RAIZ, 'vendor/three.core.min.js')) &&
+  existsSync(join(RAIZ, 'vendor/LICENCIA-three.txt')) &&
+  juego3dJs.includes("'/vendor/three.module.min.js?v=180'") &&
+  !/https?:\/\/[^'"]+three/.test(juego3dJs));
+prueba('el motor 3D se guarda para el modo sin conexión tras la primera visita',
+  sw.includes('/^\\/vendor\\/three[.\\w-]*\\.js$/'));
+prueba('hay una prueba del mundo 3D ejecutable sin navegador',
+  existsSync(join(RAIZ, 'tools/probar-juego-3d.mjs')));
+
 /* --------------------------- Versiones ?v= ------------------------------ */
 console.log('\nVersiones de los recursos de juegos:');
-for (const recurso of ['juegos.css', 'juegos.js', 'board-game.css', 'board-game.js']) {
-  const pagina = html.match(new RegExp(`/${recurso.replace('.', '\\.')}\\?v=(\\d+)`))?.[1];
+for (const recurso of ['juegos.css', 'juegos.js', 'board-game.css', 'board-game.js', 'juegos-3d.css', 'juegos-3d.js']) {
+  const patron = new RegExp(`/${recurso.replace('.', '\\.')}\\?v=(\\d+)`);
+  // El motor 3D no se referencia con <script>: se pide con import() desde juegos.js.
+  const pagina = (html.match(patron) || juegosJs.match(patron) || juego3dJs.match(patron))?.[1];
   const cache = sw.match(new RegExp(`/${recurso.replace('.', '\\.')}\\?v=(\\d+)`))?.[1];
   prueba(`${recurso}: misma versión en la página y en sw.js`, !!pagina && pagina === cache,
     `página v${pagina || '?'} · sw.js v${cache || '?'}`);

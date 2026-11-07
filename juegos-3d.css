@@ -1,0 +1,349 @@
+/* juegos-3d.css · «El buen pastor» (el juego 3D de /juegos/)
+   ---------------------------------------------------------------------------
+   Todo lo que necesita el juego para verse bien: el escenario, la tarjeta de
+   inicio, el marcador, el joystick, el mapa y la celebración final. El lienzo
+   3D lo pinta Three.js; aquí solo viven los controles encima.
+   Nada de animaciones indispensables: con prefers-reduced-motion se apagan. */
+
+.pastor-stage {
+  position: relative;
+  height: clamp(360px, 62vh, 620px);
+  border-radius: 24px;
+  overflow: hidden;
+  isolation: isolate;
+  background: radial-gradient(120% 100% at 50% 0%, #dff4ff, #cdeccf 62%, #eaf7d6);
+  box-shadow: inset 0 0 0 1px #cfe4e2;
+}
+
+.pastor-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  touch-action: none;
+  cursor: crosshair;
+  outline: none;
+}
+
+.pastor-canvas:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -4px;
+  box-shadow: inset 0 0 0 7px #086f8b;
+}
+
+/* ---------------------------- Tarjeta de inicio --------------------------- */
+.pastor-poster {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 12px;
+  padding: 26px;
+  text-align: center;
+  background: linear-gradient(160deg, #e8f8ff, #e9f8d8 65%, #fff6d6);
+}
+
+.pastor-poster.pastor-oculto { display: none; }
+
+.pastor-poster-art {
+  font-size: clamp(3rem, 9vw, 4.6rem);
+  line-height: 1;
+  filter: drop-shadow(0 8px 14px #17364a22);
+}
+
+.pastor-poster h3 { font-size: clamp(1.6rem, 4vw, 2.3rem); margin: 0; }
+.pastor-poster p { max-width: 540px; margin: 0; color: #3f6373; font-weight: 700; }
+.pastor-poster .primary:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.pastor-poster-nota {
+  max-width: 540px;
+  margin: 0;
+  color: #5a7882;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+/* ------------------------------- Cargando -------------------------------- */
+.pastor-cargando {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 12px;
+  background: #eaf7f0e6;
+  color: #17364a;
+  font-weight: 900;
+  backdrop-filter: blur(4px);
+}
+
+.pastor-cargando[hidden] { display: none; }
+
+.pastor-cargando::before {
+  content: '';
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 5px solid #cfe3e0;
+  border-top-color: #086f8b;
+  animation: pastorGiro 0.9s linear infinite;
+}
+
+/* -------------------------------- Controles ------------------------------ */
+.pastor-ui { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+.pastor-ui button, .pastor-ui a { pointer-events: auto; }
+
+.pastor-top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pastor-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid #d3e6e2;
+  background: #fffdf7f2;
+  color: #17364a;
+  font-weight: 900;
+  box-shadow: 0 6px 16px #17364a1f;
+}
+
+.pastor-tools { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+
+.pastor-tools button {
+  min-height: 44px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  border: 1px solid #cfe0e3;
+  background: #fffdf7f2;
+  color: #17364a;
+  font-weight: 900;
+  box-shadow: 0 6px 16px #17364a1f;
+}
+
+.pastor-tools button:hover { background: #fff; }
+.pastor-tools button[aria-pressed='true'] { background: #dff5e6; border-color: #9ad2aa; }
+.pastor-tools button:disabled { opacity: 0.55; cursor: not-allowed; }
+.pastor-tools button:focus-visible { outline: 3px solid #086f8b; outline-offset: 2px; }
+
+.pastor-pista {
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: min(560px, calc(100% - 24px));
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #d3e6e2;
+  background: #fffdf7e6;
+  color: #2c5566;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* Joystick: sirve con el dedo, con el mouse y con lápiz. */
+.pastor-joystick {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  width: 112px;
+  height: 112px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid #ffffffd9;
+  background: #fffdf7b3;
+  box-shadow: 0 8px 22px #17364a2e, inset 0 0 0 2px #ffffff8c;
+  touch-action: none;
+  pointer-events: auto;
+  cursor: grab;
+}
+
+.pastor-joystick:active { cursor: grabbing; }
+
+.pastor-joystick span {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #086f8b;
+  box-shadow: 0 4px 10px #086f8b55;
+  transition: transform 0.06s linear;
+}
+
+.pastor-mapa-wrap {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 132px;
+  height: 132px;
+  padding: 6px;
+  border-radius: 22px;
+  border: 2px solid #ffffffcc;
+  background: #fffdf7e6;
+  box-shadow: 0 8px 22px #17364a2e;
+}
+
+.pastor-mapa-wrap canvas { display: block; width: 100%; height: 100%; border-radius: 16px; }
+
+.pastor-mensaje {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  max-width: min(560px, calc(100% - 320px));
+  margin: 0;
+  padding: 10px 16px;
+  border-radius: 16px;
+  background: #17364aee;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-align: center;
+  box-shadow: 0 10px 24px #17364a40;
+}
+
+.pastor-mensaje:empty { display: none; }
+.pastor-mensaje-nuevo { animation: pastorEntra 0.22s ease-out; }
+
+/* ------------------------------- Celebración ----------------------------- */
+.pastor-final {
+  position: absolute;
+  inset: 0;
+  z-index: 6;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: #06202fb8;
+  backdrop-filter: blur(6px);
+}
+
+.pastor-final[hidden] { display: none; }
+
+.pastor-final-card {
+  width: min(560px, 100%);
+  padding: 26px 24px;
+  border-radius: 24px;
+  background: #fffdf7;
+  text-align: center;
+  box-shadow: 0 24px 60px #00000038;
+  animation: pastorAparece 0.35s ease-out;
+}
+
+.pastor-final-emoji { font-size: 2.6rem; line-height: 1; }
+.pastor-final-card h3 { margin: 6px 0 10px; font-size: clamp(1.7rem, 4vw, 2.4rem); }
+
+.pastor-final-card blockquote {
+  margin: 0 0 12px;
+  color: #2c5566;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.pastor-final-card cite {
+  display: block;
+  margin-top: 6px;
+  color: #086f8b;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.pastor-final-card p { margin: 0 0 18px; color: #4a6b7a; }
+
+.pastor-final-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+
+.pastor-final-actions .secondary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 11px 18px;
+  border: 1px solid #b8d1d7;
+  border-radius: 999px;
+  background: #fff;
+  color: #086f8b;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* ---------------------------- Instrucciones ------------------------------ */
+.pastor-rules {
+  margin-top: 16px;
+  padding: 14px 18px;
+  border: 1px solid #dce8ea;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.pastor-rules summary { cursor: pointer; color: #086f8b; font-weight: 900; }
+.pastor-rules summary:focus-visible { outline: 3px solid #086f8b; outline-offset: 3px; }
+.pastor-rules p { margin: 10px 0 0; color: #4a6b7a; }
+.pastor-rules a { color: #086f8b; font-weight: 800; }
+
+/* ------------------------------- Animaciones ----------------------------- */
+@keyframes pastorGiro { to { transform: rotate(360deg); } }
+@keyframes pastorEntra { from { opacity: 0; transform: translate(-50%, 8px); } }
+@keyframes pastorAparece { from { opacity: 0; transform: translateY(10px) scale(0.98); } }
+
+/* ------------------------------- Celular --------------------------------- */
+@media (max-width: 760px) {
+  .pastor-stage { height: clamp(330px, 58vh, 520px); border-radius: 20px; }
+  .pastor-top { flex-direction: column; align-items: flex-start; }
+  .pastor-tools { justify-content: flex-start; }
+  .pastor-tools button { min-height: 40px; padding: 7px 11px; font-size: 0.8rem; }
+  .pastor-pista {
+    top: 118px;
+    left: 10px;
+    right: 10px;
+    max-width: none;
+    transform: none;
+    font-size: 0.78rem;
+    padding: 6px 10px;
+  }
+  .pastor-joystick { width: 96px; height: 96px; }
+  .pastor-joystick span { width: 42px; height: 42px; }
+  .pastor-mapa-wrap { width: 96px; height: 96px; padding: 5px; border-radius: 18px; }
+  .pastor-mensaje {
+    left: 12px;
+    right: 12px;
+    bottom: 122px;
+    max-width: none;
+    transform: none;
+    font-size: 0.84rem;
+    padding: 8px 12px;
+  }
+  .pastor-final-card { padding: 20px 16px; }
+}
+
+@media (max-width: 420px) {
+  .pastor-pista { display: none; }
+  .pastor-tools button span { display: none; }
+}
+
+/* --------------------------------- Modo TV ------------------------------- */
+.tv-mode .pastor-stage { height: calc(100vh - 330px); min-height: 380px; }
+.tv-mode .pastor-pista { font-size: 1.05rem; }
+.tv-mode .pastor-pill { font-size: 1.15rem; }
+
+/* ------------------------- Movimiento reducido --------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .pastor-cargando::before { animation: none; }
+  .pastor-final-card { animation: none; }
+  .pastor-mensaje-nuevo { animation: none; }
+  .pastor-joystick span { transition: none; }
+}

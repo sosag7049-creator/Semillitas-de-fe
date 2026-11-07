@@ -1,7 +1,25 @@
 import { LESSONS } from '/lesson-data.js?v=17';
 const $=id=>document.getElementById(id),safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const tabs=[...document.querySelectorAll('.game-tab')],panels={roulette:$('game-roulette'),memory:$('game-memory'),who:$('game-who'),board:$('game-board')};
-tabs.forEach(tab=>tab.addEventListener('click',()=>{tabs.forEach(x=>{const active=x===tab;x.classList.toggle('active',active);x.setAttribute('aria-selected',String(active))});Object.entries(panels).forEach(([key,p])=>p.hidden=key!==tab.dataset.game)}));
+const tabs=[...document.querySelectorAll('.game-tab')],panels={roulette:$('game-roulette'),memory:$('game-memory'),who:$('game-who'),board:$('game-board'),pastor:$('game-pastor')};
+// El juego 3D pesa más que los otros cuatro juntos, así que su código se pide
+// solo cuando alguien abre la pestaña. Quien vino a la ruleta no lo descarga.
+let pastor=null,pastorCargando=false;
+function abrirPastor(){
+  if(pastor){pastor.reanudar();return}
+  if(pastorCargando)return;
+  pastorCargando=true;
+  import('/juegos-3d.js?v=1').then(({iniciarPastor})=>{pastor=iniciarPastor($('pastorStage'))}).catch(()=>{
+    const aviso=$('pastorPoster')?.querySelector('.pastor-poster-nota');
+    if(aviso)aviso.textContent='No pudimos cargar el juego 3D. Revisa tu conexión y vuelve a intentarlo; los otros juegos siguen disponibles.';
+  }).finally(()=>{pastorCargando=false});
+}
+tabs.forEach(tab=>tab.addEventListener('click',()=>{
+  const activo=tab.dataset.game;
+  tabs.forEach(x=>{const on=x===tab;x.classList.toggle('active',on);x.setAttribute('aria-selected',String(on))});
+  Object.entries(panels).forEach(([key,p])=>{if(p)p.hidden=key!==activo});
+  if(activo==='pastor')abrirPastor();
+  else pastor?.pausar();
+}));
 // Ruleta: questions are generated from the selected lesson, so the teacher can reuse it every week.
 const theme=$('gameTheme'),questions=$('rouletteQuestion'),answer=$('rouletteAnswer'),meta=$('rouletteMeta'),wheel=$('bigWheel'),count=$('rouletteCount'),reveal=$('revealAnswer');
 LESSONS.forEach((l,i)=>{const option=document.createElement('option');option.value=i;option.textContent=`${String(i+1).padStart(2,'0')} · ${l.title}`;theme.append(option)});
