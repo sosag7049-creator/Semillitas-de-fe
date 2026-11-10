@@ -142,5 +142,5 @@ if (!document.querySelector('.jerubi-launch')) {
   });
 
   // Activa el interruptor "Sion inteligente" (IA segura vía Supabase).
-  import('/sion-ai.js?v=2').catch(() => {});
+  import('/sion-ai.js?v=3').catch(() => {});
 }

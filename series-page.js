@@ -204,4 +204,4 @@ if (linea) {
   linea.textContent = `${series.length} planes · ${total} clases programadas · las mismas 39 lecciones, ordenadas de distintas formas`;
 }
 
-await import('/auth.js?v=14');
+await import('/auth.js?v=16');
