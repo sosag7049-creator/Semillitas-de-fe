@@ -1,9 +1,9 @@
-const CACHE='semillitas-v69-avatares';
+const CACHE='semillitas-v70-sion-ia';
 // Refresh the account presentation for installed/mobile visitors.
 // Retratos dibujados del sitio (antes eran cuadros de un único sprite WebP).
 const ACCOUNT_ASSETS=['/account-ui.css?v=4','/images/avatars/semilla.svg','/images/avatars/adan.svg','/images/avatars/noe.svg','/images/avatars/maestro.svg','/images/avatars/david.svg','/images/avatars/leon.svg','/images/avatars/maestra.svg','/images/avatars/biblia.svg','/images/avatars/paloma.svg','/images/avatars/juan.svg','/images/avatars/rut.svg','/images/avatars/jonas.svg'];
-const CORE=['/board-game.js?v=3','/board-game.css?v=2','/agenda.js?v=2','/agenda-model.js','/agenda-store.js','/agenda.css?v=1','/','/index.html','/lecciones/','/juegos/','/juegos/index.html','/juegos.js?v=9','/juegos.css?v=8','/juegos-3d.js?v=1','/juegos-3d.css?v=1','/home-cinematic.css?v=8','/media/hero-amanecer.svg','/lessons-page.css?v=6','/lessons-page.js?v=8','/offline.html','/404.html','/manifest.webmanifest','/auth.css','/auth-fixes.css?v=2','/teacher-store.js','/teacher-panel.js?v=2','/teacher-panel.css','/printables-home.js?v=4','/printables-home.css','/printables.html','/printables-page.js?v=4','/printables-page.css?v=3','/printables-data.js','/lesson-data.js?v=17','/lesson-page.js?v=17','/lesson-page.css?v=10','/images/lessons/la-creacion.svg','/images/lessons/noe-y-el-arca.svg','/images/lessons/david-y-goliat.svg','/icons/icon-192.png','/icons/icon-512.png','/icons/apple-touch-icon.png'];
-CORE.push('/sion-widget.js?v=5','/sion-widget.css?v=2','/images/compartir.jpg');
+const CORE=['/board-game.js?v=3','/board-game.css?v=2','/agenda.js?v=2','/agenda-model.js','/agenda-store.js','/agenda.css?v=1','/','/index.html','/lecciones/','/juegos/','/juegos/index.html','/juegos.js?v=9','/juegos.css?v=8','/juegos-3d.js?v=1','/juegos-3d.css?v=1','/home-cinematic.css?v=8','/media/hero-amanecer.svg','/lessons-page.css?v=6','/lessons-page.js?v=9','/offline.html','/404.html','/manifest.webmanifest','/auth.css','/auth-fixes.css?v=2','/teacher-store.js','/teacher-panel.js?v=2','/teacher-panel.css','/printables-home.js?v=4','/printables-home.css','/printables.html','/printables-page.js?v=4','/printables-page.css?v=3','/printables-data.js','/lesson-data.js?v=17','/lesson-page.js?v=17','/lesson-page.css?v=10','/images/lessons/la-creacion.svg','/images/lessons/noe-y-el-arca.svg','/images/lessons/david-y-goliat.svg','/icons/icon-192.png','/icons/icon-512.png','/icons/apple-touch-icon.png'];
+CORE.push('/sion-widget.js?v=6','/sion-widget.css?v=2','/images/compartir.jpg');
 CORE.push('/accessibility.css?v=2','/pwa-register.js?v=1');
 // Tipografías propias: sin estos dos archivos el modo sin conexión pierde la
 // letra del sitio (antes venían de Google y no había forma de guardarlas).
@@ -12,8 +12,8 @@ CORE.push('/fonts.css?v=1','/fonts/baloo-2-latin.woff2','/fonts/nunito-latin.wof
 // podía guardar para el modo sin conexión.
 CORE.push('/vendor/supabase-js.min.js?v=2.57.4');
 CORE.push('/privacidad.html','/terminos.html','/contacto.html','/pagina.css?v=1');
-CORE.push('/preschool-data.json','/additional-lessons.js?v=2','/additional-lessons-2.js?v=1','/additional-lessons-3.js?v=1','/additional-lessons-4.js?v=1','/sion-ui.css?v=3','/icons/sion-bible.webp?v=3','/auth.js?v=15','/sion-ai.js?v=2');
-CORE.push('/series/','/series/index.html','/series-page.css?v=1','/series-page.js?v=4','/series-data.js?v=3');
+CORE.push('/preschool-data.json','/additional-lessons.js?v=2','/additional-lessons-2.js?v=1','/additional-lessons-3.js?v=1','/additional-lessons-4.js?v=1','/sion-ui.css?v=3','/icons/sion-bible.webp?v=3','/auth.js?v=16','/sion-ai.js?v=3');
+CORE.push('/series/','/series/index.html','/series-page.css?v=1','/series-page.js?v=5','/series-data.js?v=3');
 // Portada corta: accesos rápidos, lecciones destacadas, planes y botón único.
 CORE.push('/home.css?v=2','/home.js?v=3','/home-destacadas.js?v=3','/home-dock.css?v=1','/home-dock.js?v=3');
 // Lo que salió de la portada (método, programa, recursos, videos y canales).

@@ -395,3 +395,55 @@ Las nueve revisiones, la sincronización y las 31 comprobaciones de la portada
 terminan en verde. Además se midió el resultado con Chromium de verdad a
 1920 px, 1440 px, 1439 px, 1366 px y 412 px: texto de 17.5 px y contenido de
 1320 px desde 1440 px, y exactamente los mismos valores de antes por debajo.
+
+---
+
+## 7. Sion inteligente · 9 de noviembre de 2026
+
+**Hallazgo de partida:** el interruptor «Sion inteligente» existía en las 50
+páginas, pero **la función de Supabase nunca tuvo clave del proveedor**. Es
+decir: todo lo que se escribió como «IA» devolvía en silencio «está en
+preparación» y el maestro se quedaba con las respuestas locales. Además la
+función no recordaba la conversación, no sabía en qué lección estabas y no
+tenía ningún límite de uso.
+
+### Qué cambió
+
+| Antes | Ahora |
+| --- | --- |
+| Solo viajaban 80 títulos de lección | Viaja la **lección abierta completa**: historia, dinámica, preguntas, versículo y oración |
+| Cada pregunta empezaba de cero | Los últimos turnos viajan en `history`: se puede repreguntar |
+| Los enlaces los «sugería» el modelo | Los calcula la función sobre el catálogo real: **no puede haber rutas inventadas** |
+| Cualquiera podía llamar en bucle | Cupo anónimo: 18 por hora y 60 por día, con huella hash (sin cookies ni IP en claro) |
+| Errores crípticos o un «pensando…» eterno | Códigos claros (`sin_clave`, `limite`, `tiempo`, `bloqueado`), reintento único y 20 s de tope |
+| Respuestas en texto plano | Negritas, listas y botones a las lecciones relacionadas |
+| Los botones rápidos ignoraban la IA | Cuando está encendida, también conversan |
+| CORS solo con el dominio de producción | También la vista previa de Arena y el servidor local: se puede probar antes de publicar |
+| Sin pruebas | 16 del servidor + 11 del navegador, sin red y sin gastar cuota |
+
+La personalidad y los límites del asistente están escritos una sola vez, en
+`SYSTEM_INSTRUCTION`: responde sobre la lección abierta, no inventa citas, no
+pide datos de niños y no da consejo médico ni psicológico. Si alguien menciona
+hacerse daño, responde con calidez y orienta a un adulto de confianza.
+
+### Lo que falta (una sola cosa)
+
+Poner el secreto **`GEMINI_API_KEY`** en Supabase. Los pasos están en
+`supabase/README.md`. Mientras no esté, el interruptor lo dice con claridad en
+vez de fingir que piensa, y la biblioteca local sigue funcionando igual.
+
+### De paso
+
+- Se corrigió un aviso viejo de `tools/revisar-sitio.mjs`: `auth.js` se pedía
+  con dos versiones distintas (`?v=14` y `?v=15`) y ahora todas coinciden.
+- El caché del service worker pasa a `semillitas-v70-sion-ia`, con las
+  versiones nuevas de `sion-ai.js`, `sion-widget.js`, `auth.js`,
+  `lessons-page.js` y `series-page.js`.
+
+### Verificación
+
+```bash
+node tools/revisar-sitio.mjs && node tools/revisar-plataforma.mjs
+node --experimental-strip-types supabase/functions/sion-chat/index.test.mjs
+node tools/probar-sion.mjs && node tools/probar-portada.mjs
+```

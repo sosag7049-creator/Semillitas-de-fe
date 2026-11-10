@@ -67,6 +67,8 @@ icons/                  Iconos del sitio
 media/                  Escena vectorial del hero (hero-amanecer.svg)
 tools/                  Utilidades de mantenimiento (no se usan en el sitio)
 tools/generar-avatares-svg.mjs  Redibuja los 12 retratos de images/avatars/
+supabase/               «Sion inteligente»: la función de IA y su SQL
+                        (ver supabase/README.md)
 ```
 
 ---
@@ -368,6 +370,19 @@ ninguna clase repita el video de otra y que el enlace coincida con el video.
 Con `--en-linea` pregunta por cada video a YouTube y muestra su título y su
 canal: si un video está retirado o no se deja insertar, la clase se queda con un
 reproductor vacío y aquí aparece el aviso.
+
+**10. Revisión de Sion inteligente** — la IA del asistente:
+
+```bash
+node --experimental-strip-types supabase/functions/sion-chat/index.test.mjs
+node tools/probar-sion.mjs      # necesita jsdom
+```
+
+La primera comprueba el servidor (prompt, cupo, CORS, errores del proveedor);
+la segunda simula el panel y verifica el interruptor, la memoria de la
+conversación, los botones rápidos y cómo se explican los fallos. Si la IA
+responde «todavía no está activo», falta el secreto `GEMINI_API_KEY` en
+Supabase: los pasos están en `supabase/README.md`.
 
 ### Publicar los cambios
 

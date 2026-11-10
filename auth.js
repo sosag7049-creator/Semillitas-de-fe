@@ -80,7 +80,7 @@ const closeSion = () => {
 };
 sionClose?.addEventListener("pointerdown", event => { event.preventDefault(); closeSion(); });
 sionClose?.addEventListener("click", closeSion);
-void import("./sion-ai.js?v=2").catch(() => {});
+void import("./sion-ai.js?v=3").catch(() => {});
 
 const dialog = document.getElementById("accountDialog");
 const statusBox = document.getElementById("accountStatus");
