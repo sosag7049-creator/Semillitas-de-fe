@@ -157,4 +157,4 @@ ages?.querySelectorAll('[data-age]').forEach(item=>{
 
 if(age==='3-5')await cargarParvulos();
 render();
-await import('/auth.js?v=16');
+await import('/auth.js?v=17');

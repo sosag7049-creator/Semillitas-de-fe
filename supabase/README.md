@@ -28,6 +28,11 @@ con las respuestas locales de la biblioteca.
    *Edge Functions* → *Secrets*.
 3. Crea el secreto `GEMINI_API_KEY` con la clave.
 
+> Las claves nuevas de AI Studio empiezan con `AQ.Ab…` (antes eran `AIza…`).
+> Las dos funcionan en el endpoint nativo de Gemini, que es el que usa esta
+> función. Si la clave está caducada o revocada, el sitio lo dice con el
+> código `clave_invalida` en vez de un error genérico.
+
 Opcionales:
 
 | Secreto | Para qué | Por defecto |
@@ -67,6 +72,7 @@ Códigos de respuesta:
 | `403` | Origen no permitido | — |
 | `429` + `code: "limite"` | Se agotó el cupo | El mensaje, sin botón de reintentar |
 | `503` + `code: "sin_clave"` | Falta `GEMINI_API_KEY` | «Todavía no está activo» |
+| `502` + `code: "clave_invalida"` | La clave no sirve (caducada, revocada) | El mensaje, sin botón de reintentar |
 | `504` + `code: "tiempo"` | El modelo tardó más de 20 s | Aviso y botón de reintentar |
 
 Orígenes aceptados: `semillitasbiblicas.space`, `www.semillitasbiblicas.space`,
