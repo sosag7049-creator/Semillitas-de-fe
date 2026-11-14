@@ -207,6 +207,22 @@ await prueba('sin conexión avisa antes de gastar una llamada', async () => {
   afirmar(/conexión/i.test(texto), 'no avisó de la falta de conexión');
 });
 
+await prueba('una clave inválida se explica sin botón de reintentar', async () => {
+  const { window, document } = montar({
+    respuesta: {
+      error: 'La clave del asistente no es válida. Revisa el secreto GEMINI_API_KEY en Supabase.',
+      code: 'clave_invalida',
+      __estado: 502,
+    },
+  });
+  document.querySelector('.sion-ai-toggle').click();
+  enviar(window, 'hola');
+  await esperar();
+  const ultima = [...document.querySelectorAll('.jerubi-bubble')].at(-1);
+  afirmar(/no es válida/i.test(ultima.textContent), 'no explicó que la clave falla');
+  afirmar(!ultima.querySelector('[data-sion-reintentar]'), 'no debería invitar a reintentar');
+});
+
 if (errores.length) {
   console.error(`\n❌ ${errores.length} prueba(s) fallaron.\n`);
   process.exitCode = 1;

@@ -172,6 +172,26 @@ await prueba("un bloqueo de seguridad se explica con amabilidad", async () => {
   assert.equal(data.code, "bloqueado");
 });
 
+await prueba("una clave inválida se explica sin invitar a reintentar", async () => {
+  responderFetch = () =>
+    new Response(JSON.stringify({ error: { code: 400, message: "API key not valid. Please pass a valid API key." } }), {
+      status: 400,
+      headers: { "content-type": "application/json" },
+    });
+  const res = await handler(pedido({ question: "¿Quién es Jesús?" }));
+  const data = await res.json();
+  assert.equal(res.status, 502);
+  assert.equal(data.code, "clave_invalida");
+  assert.match(data.error, /GEMINI_API_KEY/);
+});
+
+await prueba("un 403 del proveedor también se trata como clave inválida", async () => {
+  responderFetch = () => new Response("{}", { status: 403 });
+  const res = await handler(pedido({ question: "hola" }));
+  const data = await res.json();
+  assert.equal(data.code, "clave_invalida");
+});
+
 await prueba("el cupo agotado devuelve 429", async () => {
   entorno.set("SUPABASE_URL", "https://ejemplo.supabase.co");
   entorno.set("SUPABASE_SERVICE_ROLE_KEY", "service");

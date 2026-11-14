@@ -373,6 +373,8 @@ interface GeminiReply {
   answer?: string;
   blocked?: boolean;
   retryable?: boolean;
+  /** La clave del proveedor no sirve: reintentar no arregla nada. */
+  authError?: boolean;
 }
 
 async function askGemini(
@@ -409,6 +411,13 @@ async function askGemini(
   });
 
   if (!response.ok) {
+    // Una clave mal puesta o caducada se explica aparte: reintentar no ayuda y
+    // el aviso genérico dejaría al dueño del sitio buscando el problema a ciegas.
+    if (response.status === 401 || response.status === 403) return { authError: true };
+    const detalle = await response.text().catch(() => "");
+    if (/API_KEY_INVALID|API key not valid|invalid api key|API key expired/i.test(detalle)) {
+      return { authError: true };
+    }
     const retry = response.status === 429 || response.status >= 500;
     return { retryable: retry };
   }
@@ -477,6 +486,16 @@ export default async function handler(req: Request): Promise<Response> {
     try {
       const reply = await askGemini(key, model, parts, AbortSignal.timeout(20_000));
       if (reply.answer) return json({ answer: reply.answer, related }, 200, origin);
+      if (reply.authError) {
+        return json(
+          {
+            error: "La clave del asistente no es válida. Revisa el secreto GEMINI_API_KEY en Supabase.",
+            code: "clave_invalida",
+          },
+          502,
+          origin
+        );
+      }
       if (reply.blocked) {
         return json(
           {

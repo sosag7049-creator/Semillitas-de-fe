@@ -261,8 +261,9 @@ if (form && messages && input && quick) {
             : datos.code === "sin_clave"
               ? "El asistente todavía no está activo en el sitio. Mientras se configura, sigo respondiendo con la biblioteca."
               : datos.error || "No pude responder ahora mismo.";
+        const sinReintento = datos.code === "limite" || datos.code === "clave_invalida";
         pendiente.innerHTML = `${esc(mensaje)}${
-          datos.code === "limite" ? "" : `<button type="button" class="sion-ai-reintentar" data-sion-reintentar>Reintentar</button>`
+          sinReintento ? "" : `<button type="button" class="sion-ai-reintentar" data-sion-reintentar>Reintentar</button>`
         }`;
         return;
       }
