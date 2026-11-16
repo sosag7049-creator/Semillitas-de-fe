@@ -27,12 +27,19 @@
 .hero-cinematic .summary{grid-template-columns:1fr 1fr;align-self:end}
 .hero-cinematic .stat{border-color:#ffffff3d;background:#0e3446a8;color:#fff;backdrop-filter:none;box-shadow:0 16px 44px #06192333}
 .hero-cinematic .stat b{color:#ffd76d;font-size:clamp(1.5rem,3vw,2.1rem)}
-@media(max-width:900px){.hero-cinematic{min-height:720px}.hero-cinematic .hero-grid{grid-template-columns:1fr}.hero-cinematic .summary{max-width:620px}.hero-shade{background:linear-gradient(90deg,rgba(8,28,40,.88),rgba(8,35,46,.58)),linear-gradient(0deg,rgba(5,24,34,.5),transparent)}}
+@media(max-width:900px){/* Pantallas pequeñas y verticales: la escena es un paisaje 16:9. Con `cover` se escalaría
+   ~2x y se recortarían los laterales (el sol, a la derecha, se perdería), por lo que todo
+   se veía enorme. En cambio, se muestra completa, en su tamaño natural, como una franja en
+   la parte superior del hero; el contenido queda debajo sobre el fondo oscuro. */
+.hero-cinematic{min-height:auto;align-items:start;padding:calc(56.25vw + 16px) 0 40px}
+.hero-scene{background-size:100% auto;background-position:center top}
+.hero-scene.is-active{animation:none}
+.hero-shade{background:linear-gradient(180deg,rgba(6,28,39,.34),rgba(6,28,39,0) 58vw)}
+.hero-cinematic .hero-grid{grid-template-columns:1fr;gap:26px}
+.hero-cinematic .summary{max-width:620px}}
 @media(max-width:600px){
-  .hero-cinematic{min-height:auto;padding:46px 0 38px}
+  .hero-cinematic{padding:calc(56.25vw + 12px) 0 34px}
   .hero-cinematic .hero-grid{gap:26px}
-  .hero-scene{background-position:58% center}
-  .hero-shade{background:linear-gradient(100deg,rgba(6,28,39,.84),rgba(8,35,46,.5)),linear-gradient(0deg,rgba(5,24,34,.5),transparent)}
   .hero-cinematic .kicker{padding:6px 11px;font-size:.82rem}
   .hero-cinematic h1{margin:12px 0 10px;font-size:clamp(2.45rem,12vw,3.25rem);line-height:.98;letter-spacing:-.03em}
   .hero-cinematic h1 span{margin-top:.12em}
